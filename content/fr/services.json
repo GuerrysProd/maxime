@@ -1,0 +1,145 @@
+{
+  "_note": "Offres et méthode : textes proposés par la maquette, livrables indicatifs, à valider avec Maxime.",
+  "offers": [
+    {
+      "id": "architecture-interieure",
+      "number": "01",
+      "title": "Architecture intérieure & rénovation",
+      "summary": "Résidences principales et secondaires, du relevé de l’existant à la dernière finition.",
+      "audience": [
+        "particuliers",
+        "résidences secondaires"
+      ],
+      "deliverables": [
+        "Relevé et plans de l’existant",
+        "Esquisse et planches d’ambiance",
+        "Plans d’aménagement et de détails",
+        "Images 3D photoréalistes",
+        "Carnet de matériaux et de finitions",
+        "Consultation des entreprises, suivi de chantier"
+      ],
+      "image": {
+        "src": "/images/projets/duplex-pralong/vue-nord-paysage.jpg",
+        "alt": ""
+      }
+    },
+    {
+      "id": "mobilier-sur-mesure",
+      "number": "02",
+      "title": "Mobilier et luminaires sur mesure",
+      "summary": "Pièces uniques dessinées pour un lieu, ou développées avec un éditeur.",
+      "audience": [
+        "particuliers",
+        "lieux",
+        "éditeurs"
+      ],
+      "deliverables": [
+        "Croquis et intentions",
+        "Modélisation et images 3D",
+        "Plans de fabrication",
+        "Choix des matériaux et des finitions",
+        "Suivi du prototype et de la fabrication"
+      ],
+      "image": {
+        "src": "/images/projets/duplex-pralong/applique-pinturault.jpg",
+        "alt": ""
+      }
+    },
+    {
+      "id": "hospitalite-lieux-collectifs",
+      "number": "03",
+      "title": "Hôtellerie, commerces & lieux collectifs",
+      "summary": "Domaines, boutiques, lieux d’accueil et tiers-lieux : des espaces qui reçoivent.",
+      "audience": [
+        "hôtels",
+        "domaines",
+        "commerces",
+        "collectivités"
+      ],
+      "deliverables": [
+        "Programme et parcours des visiteurs",
+        "Concept d’aménagement",
+        "Plans, images 3D et carnet de matériaux",
+        "Mobilier sur mesure",
+        "Dossier de consultation, suivi de réalisation"
+      ],
+      "image": {
+        "src": "/images/projets/agora/agora-01.jpg",
+        "alt": ""
+      }
+    },
+    {
+      "id": "amenagements-exterieurs",
+      "number": "04",
+      "title": "Aménagements extérieurs",
+      "summary": "Jardins et terrasses, conçus avec Sergeant Paysage dans le Haut-Var.",
+      "audience": [
+        "domaines",
+        "jardins privés"
+      ],
+      "deliverables": [
+        "Relevé du site et intentions",
+        "Plan d’aménagement et palette végétale",
+        "Dessin des ouvrages : terrasses, pergolas, bassins",
+        "Images 3D",
+        "Suivi de réalisation avec le paysagiste"
+      ],
+      "image": {
+        "src": "/images/projets/chateau-gasqui/key-elements/abri-ete.jpg",
+        "alt": ""
+      }
+    },
+    {
+      "id": "3d-agences",
+      "number": "05",
+      "title": "Conception et 3D pour agences",
+      "summary": "Images 3D photoréalistes et dossiers de conception pour architectes et agences partenaires.",
+      "audience": [
+        "architectes",
+        "agences"
+      ],
+      "deliverables": [
+        "Images 3D photoréalistes",
+        "Modélisation à partir de vos plans",
+        "Planches de présentation et de concours",
+        "Conception d’espaces intérieurs en sous-traitance"
+      ],
+      "image": {
+        "src": "/images/projets/batiment-s/hero-passerelle.jpg",
+        "alt": ""
+      }
+    }
+  ],
+  "method": [
+    {
+      "number": "01",
+      "title": "Rencontre et visite",
+      "text": "Sur place, j’écoute vos usages et je lis le lieu : lumière, volumes, matières.",
+      "deliverable": "Un compte rendu et une proposition d’honoraires."
+    },
+    {
+      "number": "02",
+      "title": "Intentions et esquisse",
+      "text": "Premières pistes, références et plans d’aménagement pour fixer une direction.",
+      "deliverable": "Planches d’ambiance et plans d’esquisse."
+    },
+    {
+      "number": "03",
+      "title": "Conception et images 3D",
+      "text": "Plans détaillés et rendus photoréalistes : vous voyez le projet avant les travaux.",
+      "deliverable": "Plans détaillés et images 3D photoréalistes."
+    },
+    {
+      "number": "04",
+      "title": "Dessin du mobilier",
+      "text": "Les pièces sur mesure sont dessinées pour le lieu, puis suivies jusqu’en fabrication.",
+      "deliverable": "Dessins et plans de fabrication des pièces."
+    },
+    {
+      "number": "05",
+      "title": "Suivi de réalisation",
+      "text": "Coordination des entreprises et visites de chantier, jusqu’à la livraison.",
+      "deliverable": "Comptes rendus de chantier, réception des travaux."
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+.link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 44px;
+  padding: 6px 0;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.25;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-repeat: no-repeat;
+  background-size: 100% 1px;
+  background-position: 0 calc(100% - 6px);
+}
+
+.icon {
+  flex: none;
+  transition: transform var(--duration-base) var(--ease-soft);
+}
+
+.link:hover .icon {
+  transform: translateX(4px);
+}

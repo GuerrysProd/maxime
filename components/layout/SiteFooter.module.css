@@ -1,0 +1,174 @@
+.footer {
+  padding: 96px 0 40px;
+  background: var(--color-lin);
+}
+
+.columns {
+  row-gap: 48px;
+  padding-bottom: 88px;
+}
+
+.intro {
+  grid-column: 1 / span 4;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.intro p {
+  max-width: 320px;
+}
+
+.monogram {
+  width: 80px;
+  height: auto;
+}
+
+.explore {
+  grid-column: 6 / span 2;
+}
+
+.contact {
+  grid-column: 8 / span 3;
+}
+
+.follow {
+  grid-column: 11 / span 2;
+}
+
+.explore,
+.contact,
+.follow {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.contact address {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 1.6;
+}
+
+.line {
+  padding: 5px 0;
+}
+
+.link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  font-size: 16px;
+}
+
+a.link:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.lang {
+  margin-top: 4px;
+}
+
+.wordmark {
+  width: 100%;
+  height: auto;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-top: 36px;
+  padding-top: 24px;
+  border-top: 1px solid var(--color-ligne);
+}
+
+.legal {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+}
+
+.legal .link {
+  min-height: 44px;
+  font-size: 14px;
+}
+
+.mobileOnly {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .footer {
+    padding: 64px 0 32px;
+  }
+
+  .columns {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 16px;
+    row-gap: 44px;
+    padding-bottom: 44px;
+  }
+
+  .intro {
+    grid-column: 1 / -1 !important;
+    gap: 20px;
+  }
+
+  .intro p {
+    font-size: 15px;
+  }
+
+  .monogram {
+    width: 64px;
+  }
+
+  .explore {
+    grid-column: 1 / 2 !important;
+  }
+
+  .contact {
+    grid-column: 2 / 3 !important;
+  }
+
+  .explore,
+  .contact {
+    gap: 10px;
+  }
+
+  .link {
+    min-height: 44px;
+  }
+
+  .desktopOnly {
+    display: none !important;
+  }
+
+  .mobileOnly {
+    display: block;
+  }
+
+  .mobileRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 44px;
+  }
+
+  .bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin-top: 44px;
+    padding-top: 20px;
+  }
+
+  .legal {
+    gap: 20px;
+  }
+}

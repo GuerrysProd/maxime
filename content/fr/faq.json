@@ -1,0 +1,35 @@
+{
+  "_note": "Questions fréquentes : réponses rédigées par la maquette, à valider avec Maxime. home: true = affichée sur l’accueil.",
+  "items": [
+    {
+      "q": "Intervenez-vous en dehors du Var ?",
+      "a": "Oui. Basé dans le Var, je travaille sur tout le littoral — Toulon, Hyères, Giens — et dans les Alpes, notamment à Courchevel. Pour un projet ailleurs, parlons-en.",
+      "home": true
+    },
+    {
+      "q": "Comment sont fixés vos honoraires ?",
+      "a": "Ils dépendent de la mission — conseil, conception complète, dessin de mobilier, suivi de chantier — et de l’ampleur du projet. Après notre première rencontre, je vous remets une proposition écrite et détaillée.",
+      "home": true
+    },
+    {
+      "q": "Combien de temps dure un projet ?",
+      "a": "Cela dépend de la surface, du programme et des délais des entreprises. Un calendrier est établi avec vous dès la proposition.",
+      "home": false
+    },
+    {
+      "q": "Pourrai-je voir le projet avant les travaux ?",
+      "a": "Oui. Je réalise moi-même des images 3D photoréalistes de chaque espace : matières, lumière et mobilier se valident ensemble, avant le début du chantier.",
+      "home": true
+    },
+    {
+      "q": "Pouvez-vous dessiner uniquement un meuble ou un luminaire ?",
+      "a": "Oui. Une pièce sur mesure peut être une mission à part entière — pour une maison, un hôtel, une boutique ou un éditeur de mobilier.",
+      "home": true
+    },
+    {
+      "q": "Travaillez-vous pour des agences d’architecture ?",
+      "a": "Oui : images 3D, planches de concours ou conception d’espaces intérieurs, à partir de vos plans et dans votre calendrier.",
+      "home": false
+    }
+  ]
+}

@@ -1,0 +1,182 @@
+{
+  "_note": "Généré par scripts/import-images.mjs — ne pas modifier à la main.",
+  "icons": "6b7b6ebdeb95bb999050169ed7a91f3c77cf27e4-c92ffdda",
+  "images": {
+    "/images/objets/lampe-spotlight/spotlight-01.jpg": {
+      "width": 2560,
+      "height": 1440,
+      "blurDataURL": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAADQAQCdASoQAAkAA4BaJZwC7AD1RUZYQAD9H7jqfDq0F9zIaSzcQlGP6WpG4xKpWpwyzDJpwAA=",
+      "kind": "photo",
+      "source": "11-lampe-spotlight/Spotlight 01.jpg",
+      "sourceHash": "b8f97ece21c22c17e635ca546700dbb507e95052-c92ffdda"
+    },
+    "/images/objets/seau-roche-ruinart/seaux-ruinart-01.jpg": {
+      "width": 2560,
+      "height": 1440,
+      "blurDataURL": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAADwAQCdASoQAAkAA4BaJYwCdAEDe4eQ47AA/rZ0n+q1/aysztXbhq8IUzwdY3PjUq+nqtKiBLg2rTAA",
+      "kind": "photo",
+      "source": "12-seau-roche-ruinart/Seaux Ruinart 01.jpg",
+      "sourceHash": "e1043fb70115179e59dda4d4992b20dd902f8baf-c92ffdda"
+    },
+    "/images/projets/agora/agora-01.jpg": {
+      "width": 2560,
+      "height": 1440,
+      "blurDataURL": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAADwAQCdASoQAAkAA4BaJYgCdAEG71vCHgAA/sbZ8fyNXyeTsljbXogJIeILmotjb9AIrlTEDauYnQIVydufBEIlzt6kvmfn32ECg+Mrz0oormAA",
+      "kind": "photo",
+      "source": "05-agora/Agora 01.png",
+      "sourceHash": "cdea7c44757274feea4d1da809c759adf8f98171-c92ffdda"
+    },
+    "/images/projets/agora/agora-table-floating.jpg": {
+      "width": 1800,
+      "height": 1512,
+      "blurDataURL": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAACwAQCdASoQAA0AA4BaJQBWAB6Wb2nAAP7t0Cif6tAOTVp2ZILFIfXyaKWhHEN52eQAAA==",
+      "kind": "photo",
+      "source": "05-agora/agora-table-floating.jpg",
+      "sourceHash": "46a7f6a197cf314efc95ffa27f9272226a075aa6-c92ffdda"
+    },
+    "/images/projets/agora/agora-table-magnet.jpg": {
+      "width": 2500,
+      "height": 1406,
+      "blurDataURL": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAAAQAgCdASoQAAkAA4BaJYwCdADpJzj4LgMAAP1T9NQYcFZPWdtRLD7XRK/UevPt5pCBlBlJbm0owOdvuP7PG6UhMy88kOds0KK4xuIDPw+GMblAAAA=",
+      "kind": "photo",
+      "source": "05-agora/agora-table-magnet.jpg",
+      "sourceHash": "1ccce75c283779c4afb60dde24aed7a91acaecc0-c92ffdda"
+    },
+    "/images/projets/agora/agora-totem-01.jpg": {
+      "width": 2560,
+      "height": 1440,
+      "blurDataURL": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAAAQAgCdASoQAAkAA4BaJZgCdAEO9XQ4+OAAAP7tiIv2oBTA0LhzU4RgXurnBds93BoXTzxLjWzt2HY9bHjh5eaAAAA=",
+      "kind": "photo",
+      "source": "05-agora/agora-totem-01.jpg",
+      "sourceHash": "8d62054556c434d4b9ffb6168b4d37eb8d8b4978-c92ffdda"
+    },
+    "/images/projets/alta/alta-01.jpg": {
+      "width": 2048,
+      "height": 1152,
+      "blurDataURL": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAADwAQCdASoQAAkAA4BaJYgCdAEPRUtLbgAA/rHzqgKTcKPBf0t99XnB3cDUOCvB0Y05FTah88TJ7/4A9eILft7ri1xpAAAA",
+      "kind": "photo",
+      "source": "03-alta/Alta 01.jpg",
+      "sourceHash": "18a91d1538e5d86e6d33bab7fde57744dcba84ba-c92ffdda"
+    },
+    "/images/projets/alta/alta-03.jpg": {
+      "width": 2560,
+      "height": 1440,
+      "blurDataURL": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAADwAQCdASoQAAkAA4BaJZQCdAEQPZC+pAAA/rI67ePRU4Nw13fKLuCTM/JFkL5joPmEe9pCDjpvdVgDXmKoRWATaDpAAA==",
+      "kind": "photo",
+      "source": "03-alta/Alta 03.jpg",
+      "sourceHash": "96f278e6003e51731b20e1249bdb09d83da194dc-c92ffdda"
+    },
+    "/images/projets/batiment-s/hero-passerelle.jpg": {
+      "width": 1726,
+      "height": 911,
+      "blurDataURL": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAADwAQCdASoQAAgAA4BaJQBOgCPdXlfcDFAA/tvkLKtBd5mLjzcoozCunIm4SylJhmae4DUppE3KJ9YT+Hlte1N1q712s7DcwAA=",
+      "kind": "photo",
+      "source": "07-batiment-s/hero-passerelle.png",
+      "sourceHash": "61b1c917c7e4a0a006c9c897280c7f19fe59f91a-c92ffdda"
+    },
+    "/images/projets/chateau-gasqui/key-elements/abri-ete.jpg": {
+      "width": 2560,
+      "height": 1396,
+      "blurDataURL": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAADwAQCdASoQAAkAA4BaJYgCdAENdg4pLwAAyxw3n7kyNt5qVUXrOeQuQ18cg50kGQrGl8USWgSbnUNuzxp7oFIzFmpa5LY8dJB/FtixPJNe9Ykcto/2AAAA",
+      "kind": "photo",
+      "source": "06-chateau-gasqui/key-elements/abri-ete.jpg",
+      "sourceHash": "2a6d3dc4c8b2fcb1290a2f7ec3045f87c233616f-c92ffdda"
+    },
+    "/images/projets/chateau-gasqui/key-elements/terrasse-terre-cuite.jpg": {
+      "width": 1800,
+      "height": 763,
+      "blurDataURL": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAADQAQCdASoQAAcAA4BaJbACdADs+VGyWAD+wUCK7KrgJvZg1OIrHpPCnApJL/dfP5q3pFKfmlz+XEVX6qp6/G5fSMx9X4bZAAA=",
+      "kind": "photo",
+      "source": "06-chateau-gasqui/key-elements/terrasse-terre-cuite.jpg",
+      "sourceHash": "87a3887cfd3b23520fa640d3ac42036209bc6109-c92ffdda"
+    },
+    "/images/projets/clocher-saint-louis/clocher-saint-louis-entree.jpg": {
+      "width": 2000,
+      "height": 1125,
+      "blurDataURL": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAADwAQCdASoQAAkAA4BaJZACdAEVvLasXAgA/uzYPSAsd3i6E/M0x5QYpG5a7bV9gCbiIOGaPRB8HTNO+ekMxdYTHflgyr02kgAAAA==",
+      "kind": "photo",
+      "source": "08-clocher-saint-louis/Clocher Saint-Louis - Entree.png",
+      "sourceHash": "fb3554602a88079928ad307892c402068eccd3a8-c92ffdda"
+    },
+    "/images/projets/duplex-pralong/applique-pinturault.jpg": {
+      "width": 2100,
+      "height": 2100,
+      "blurDataURL": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAADwAQCdASoQABAAA4BaJZACdACzl+ZxXAAA/ubodcgUKPROhFR8WdQ4Avd8DFlnkfJ4q1JN8+QT1/ZdN2vJVNK81uYAl0UuMxUeMbdNcYCifI+ux17BTfC4JpnIAAAA",
+      "kind": "photo",
+      "source": "02-duplex-pralong/applique-pinturault.jpg",
+      "sourceHash": "f121a04f319c4b374dd8bd774c217c0f637106ae-c92ffdda"
+    },
+    "/images/projets/duplex-pralong/croquis-applique-baton-slalom.png": {
+      "width": 1265,
+      "height": 1243,
+      "blurDataURL": "data:image/webp;base64,UklGRpgBAABXRUJQVlA4WAoAAAAQAAAADwAADwAAQUxQSNYAAAABkHPb1rHX0td5P8S2nSqVVbpMlZHSSW0nrZ3O5rVt27Zt81xExAQg+JTlmhEAERBW6c9bFeRPtuW6I5iY0b5vP+Ote/XXkzgwM6yp9zWP9dfeaT8IG77kf9S4iJf153UnguXCh0O6j0rNHtLLDoLljP56m0CFprfqdWfB775qIVRozqTOYBB+USewUq0FxzQThLUai5U6bf583ECwf/jAjJkWXdZyTIL1zg0wiLn09o43gkH/KRBhi3ZiAhOFUxiCz8k30Rj/lc7/5xjkzv8GacUI/wsAVlA4IJwAAADQAgCdASoQABAAA4BaJaQAEmA5F6YB+oBtjLHEfEgAAOI0ax0ZfHHYLHX8NDXShbymKWLSok8Wn4kcKPOeBnwwr672lkDp3WuXvke24Jti6SUHM+22pe4i0lMM/XAcSOc79rAzu+i5+Eoic5XAeQNx7gv95/2mCajS8dV5H4HXckFCOI/V5ibPY8cfVkryj3j7vI0hFdj+JxUAAAA=",
+      "kind": "drawing",
+      "source": "02-duplex-pralong/croquis-applique-baton-slalom.png",
+      "sourceHash": "cb6741c89633a6b335f0d715f7731f3cb4c5843b-c92ffdda"
+    },
+    "/images/projets/duplex-pralong/fauteuil.jpg": {
+      "width": 1080,
+      "height": 1350,
+      "blurDataURL": "data:image/webp;base64,UklGRooAAABXRUJQVlA4IH4AAADQAwCdASoQABQAPu1iqU2ppaOiMAgBMB2JQBOmUABiqpFneC7BfNAA99BMUaBYEcTKkMH+AVgBhlRewZQmuzA2qcMxQDd+DZMninUazDV559lxwAUdAlJhXGPx4AQUgca12pvL+luUNfbbjSTMapsed8PPNmIQr2keElxAAAA=",
+      "kind": "photo",
+      "source": "02-duplex-pralong/fauteuil.png",
+      "sourceHash": "eed34df37d9a091b1d996f1612bf69bf4477cfda-c92ffdda"
+    },
+    "/images/projets/duplex-pralong/tables-basses-paysage.jpg": {
+      "width": 1080,
+      "height": 607,
+      "blurDataURL": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAADQAQCdASoQAAkAA4BaJaACdAEPfpCH+ADOPuxbeaZyJ1oe8PCGOq6DoJ+ZUQLJaRSJ8QUdFu7EZQ3F/Gp/sgODqEhob8suQeDZIOTls16OGAAA",
+      "kind": "photo",
+      "source": "02-duplex-pralong/tables-basses-paysage.jpg",
+      "sourceHash": "d76b3e1c0dbc3888972a5ae2d164f68e3a774d21-c92ffdda"
+    },
+    "/images/projets/duplex-pralong/vue-nord-paysage.jpg": {
+      "width": 2100,
+      "height": 1171,
+      "blurDataURL": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAAAQAgCdASoQAAkAA4BaJYgCdAD0uSIGsaxgAPWJcAe1kKE7RBv3fvxeJN7OVLQujd+xt/9aXxExPqQnJ1+VlnoKaCGmLP3wqkmUnaXIPmJFLQnaTGaHVBthhMHIi1Em3AAAAA==",
+      "kind": "photo",
+      "source": "02-duplex-pralong/vue-nord-paysage.jpg",
+      "sourceHash": "e505e960f6a327765b41ebedd94f07c96433506e-c92ffdda"
+    },
+    "/images/projets/page-blanche/page-blanche-01.jpg": {
+      "width": 2560,
+      "height": 1440,
+      "blurDataURL": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAAAwAgCdASoQAAkAA4BaJbACdAD8ti5jeVeagAD8MpQs7tghWdLeSORUG1BSGFIwZFr8wsMTilAFoIkMRfEMOdZ7MMdmtYtjh9nStWlFNU9cK2mGvri5oAZfy3oR0/Q1ywAAAA==",
+      "kind": "photo",
+      "source": "10-page-blanche/Page Blanche 01.jpg",
+      "sourceHash": "607a1f01621f6f0997a4bbd765209f7af6ecf43d-c92ffdda"
+    },
+    "/images/projets/perchee/perchee-01.jpg": {
+      "width": 2275,
+      "height": 1280,
+      "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAACwAQCdASoQAAkAA4BaJQBOgBjzmFqAAP7sEbjS0cF6Icm/S8gCyQ1YqRLWAIwTqfk6deusWjTPPQ/kAKBX/g+qmsPPdJcgYoeiAAAA",
+      "kind": "photo",
+      "source": "01-perchee/Perchée 01.png",
+      "sourceHash": "533fab824370641dbf92d9cc4eab15fd8e909889-c92ffdda"
+    },
+    "/images/projets/perchee/perchee-03.jpg": {
+      "width": 1024,
+      "height": 1536,
+      "blurDataURL": "data:image/webp;base64,UklGRn4AAABXRUJQVlA4IHIAAAAQBACdASoQABgAPu1mqk2ppaQiMAgBMB2JYwCdMoADTqq26VRQBnomAAD+nVB92J5qjyLXZmA9CrcNghs61oJZe6bfKJmPRsbeIMLf7NR9+zDfxYl22SI6vueg9OsVixc6vimTdQdwTIMMcclv1+3EAAA=",
+      "kind": "photo",
+      "source": "01-perchee/Perchée 03.jpg",
+      "sourceHash": "6fe8179121367e13d77084dbd89630e56daea6c5-c92ffdda"
+    },
+    "/images/projets/projet-dionys/dionys-01.jpg": {
+      "width": 2560,
+      "height": 1439,
+      "blurDataURL": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAAAQAgCdASoQAAkAA4BaJYgCdAECl1X1JoqAAP7SsMcFpv/Dc+zUxOuv3+8OF4orprfgLFQDHaxWL3UadD4wNtmuzxE5zScyiifgAA==",
+      "kind": "photo",
+      "source": "09-projet-dionys/Dionys 01.jpg",
+      "sourceHash": "e55552d6f8d015f623fe1bb52e01b117f6f6a1f6-c92ffdda"
+    },
+    "/images/projets/rolex-retail-express/rolex-counter.jpg": {
+      "width": 2400,
+      "height": 1350,
+      "blurDataURL": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAAAQAgCdASoQAAkAA4BaJYgCdAEVxY44MqPAAP5y9eoLQKLxOPEqCbwBeR1ZpfRNfcS2DUr9e0srQjOoHsoaILXDQTx0qiWOzdJdLkrRlAKVQAAA",
+      "kind": "photo",
+      "source": "04-rolex-retail-express/rolex-counter.jpg",
+      "sourceHash": "116a79ef2a628aae6323b0d11a88ae5904e07a81-c92ffdda"
+    }
+  }
+}

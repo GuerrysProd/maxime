@@ -1,0 +1,162 @@
+{
+  "_note": "Liste des projets. Sources : design/content/projects.json corrigé par SOURCES-REELLES §3-4. Statuts, catégories, années et surfaces à valider avec Maxime (draft). Les chapitres viendront à l’étape 3.",
+  "categories": [
+    { "id": "residentiel", "label": "Résidentiel" },
+    { "id": "hospitalite-commerce", "label": "Hospitalité & commerce" },
+    { "id": "lieux-collectifs", "label": "Lieux collectifs" },
+    { "id": "paysage", "label": "Paysage" },
+    { "id": "objets", "label": "Objets" }
+  ],
+  "statusLabels": {
+    "realisation": "Réalisation",
+    "etude": "Étude",
+    "concours": "Concours",
+    "perso": "Projet personnel",
+    "diplome": "Diplôme",
+    "preparation": "En préparation"
+  },
+  "items": [
+    {
+      "slug": "duplex-pralong",
+      "number": "01",
+      "name": "Duplex Pralong",
+      "shortName": "Pralong",
+      "place": "Courchevel 1850",
+      "region": "Alpes",
+      "categories": ["residentiel", "objets"],
+      "meta": ["Résidentiel", "Courchevel 1850", "Rénovation"],
+      "summary": "Rénovation, architecture intérieure et mobilier dessiné sur mesure, jusqu’à l’applique Pinturault.",
+      "status": { "value": "realisation", "draft": true },
+      "year": "[À COMPLÉTER : année]",
+      "surface": "[À COMPLÉTER : m²]",
+      "mission": { "value": "Rénovation, architecture intérieure, mobilier & luminaires sur mesure", "draft": true },
+      "credits": "Architecture intérieure & mobilier : Maxime Vallat · Images : [À COMPLÉTER]",
+      "cover": { "src": "/images/projets/duplex-pralong/fauteuil.jpg", "alt": "Fauteuil Pralong, coque métallique et assise textile vert olive, devant la cheminée du duplex" },
+      "hero": { "src": "/images/projets/duplex-pralong/vue-nord-paysage.jpg", "alt": "Séjour du duplex Pralong à Courchevel 1850 : escalier enduit clair, boiseries sombres, canapé et mobilier dessiné sur mesure", "position": "50% 55%" },
+      "template": "chapitres",
+      "pieces": ["applique-pinturault", "fauteuil-pralong", "tables-basses"],
+      "featured": true
+    },
+    {
+      "slug": "perchee",
+      "number": "02",
+      "name": "Perchée",
+      "shortName": "Perchée",
+      "place": "Méditerranée",
+      "region": "Méditerranée",
+      "categories": ["residentiel"],
+      "meta": ["Cabane-refuge", { "value": "Proposition pour Design Parade 2026", "draft": true }],
+      "summary": "Cabane-refuge en matériaux bruts et locaux : terre, paille de lavande, liège et pierre.",
+      "status": { "value": "concours", "draft": true },
+      "cover": { "src": "/images/projets/perchee/perchee-01.jpg", "alt": "Intérieur de la cabane Perchée : murs de terre et de paille, rideaux, table basse", "position": "42% 50%" },
+      "hero": { "src": "/images/projets/perchee/perchee-01.jpg", "alt": "Intérieur de la cabane Perchée : murs de terre et de paille, rideaux, table basse" },
+      "template": "chapitres",
+      "featured": true
+    },
+    {
+      "slug": "alta",
+      "number": "03",
+      "name": "Alta",
+      "shortName": "Alta",
+      "place": "Alpes",
+      "region": "Alpes",
+      "categories": ["residentiel"],
+      "meta": ["Refuge", "Alpes", "Préfabriqué"],
+      "summary": "Refuge mono-personnel préfabriqué, pour travailler face au paysage.",
+      "status": { "value": "etude", "draft": true },
+      "cover": { "src": "/images/projets/alta/alta-03.jpg", "alt": "Refuge Alta posé dans la neige face aux sommets alpins", "position": "30% 50%" },
+      "hero": { "src": "/images/projets/alta/alta-03.jpg", "alt": "Refuge Alta posé dans la neige face aux sommets alpins" },
+      "template": "chapitres",
+      "featured": true
+    },
+    {
+      "slug": "chateau-gasqui",
+      "number": "04",
+      "name": "Château Gasqui",
+      "shortName": "Gasqui",
+      "place": "Gonfaron, Var",
+      "region": "Méditerranée",
+      "categories": ["paysage"],
+      "meta": ["Paysage", "Gonfaron, Var"],
+      "summary": "Jardin d’auto-cueillette provençal, avec Sergeant Paysage : terre cuite Alain Vagh, miroirs en acier corten.",
+      "status": { "value": "realisation", "draft": true },
+      "year": "[À COMPLÉTER : année]",
+      "mission": { "value": "Conception du jardin et de ses ouvrages : ombrière, terrasses, miroirs", "draft": true },
+      "partners": ["Sergeant Paysage (paysagiste)", "Alain Vagh, Salernes (terre cuite)"],
+      "cover": { "src": "/images/projets/chateau-gasqui/key-elements/abri-ete.jpg", "alt": "Allée sous ombrière au Château Gasqui, bordée de cyprès, de lavandes et d’oliviers" },
+      "hero": { "src": "/images/projets/chateau-gasqui/key-elements/abri-ete.jpg", "alt": "Allée sous ombrière au Château Gasqui, bordée de cyprès, de lavandes et d’oliviers" },
+      "template": "modules",
+      "featured": true
+    },
+    {
+      "slug": "agora",
+      "number": "05",
+      "name": "Agora",
+      "shortName": "Agora",
+      "place": "Toulon",
+      "region": "Méditerranée",
+      "categories": ["lieux-collectifs", "objets"],
+      "meta": ["Tiers-lieu", "Toulon"],
+      "summary": "Tiers-lieu pour artisans et designers, et sa collection de mobilier.",
+      "status": { "value": "etude", "draft": true },
+      "cover": { "src": "/images/projets/agora/agora-01.jpg", "alt": "Espace de vie du tiers-lieu Agora : charpente bois, fauteuils enveloppants, totems en liège", "position": "30% 50%" },
+      "hero": { "src": "/images/projets/agora/agora-01.jpg", "alt": "Espace de vie du tiers-lieu Agora : charpente bois, fauteuils enveloppants, totems en liège" },
+      "template": "chapitres",
+      "pieces": ["totem-liege", "table-aimantee"]
+    },
+    {
+      "slug": "batiment-s",
+      "number": "06",
+      "name": "Bâtiment S",
+      "shortName": "Bâtiment S",
+      "place": "Université de Toulon",
+      "placeShort": "Univ. de Toulon",
+      "region": "Méditerranée",
+      "categories": ["lieux-collectifs"],
+      "meta": ["Université de Toulon"],
+      "summary": "Pôle de vie étudiante organisé autour d’une passerelle.",
+      "status": { "value": "concours", "draft": true },
+      "cover": { "src": "/images/projets/batiment-s/hero-passerelle.jpg", "alt": "Pôle de vie étudiante du Bâtiment S, organisé autour d’une passerelle", "position": "60% 50%" },
+      "hero": { "src": "/images/projets/batiment-s/hero-passerelle.jpg", "alt": "Pôle de vie étudiante du Bâtiment S, organisé autour d’une passerelle" },
+      "template": "chapitres"
+    },
+    {
+      "slug": "rolex-retail-express",
+      "number": "07",
+      "name": "Rolex Retail Express",
+      "shortName": "Rolex",
+      "place": "Projet personnel",
+      "placeShort": "Projet perso",
+      "region": null,
+      "categories": ["hospitalite-commerce"],
+      "meta": ["Commerce", "Concept non commandité"],
+      "summary": "« Une boutique en 24 h. »",
+      "disclaimer": "Projet personnel — concept non commandité",
+      "status": { "value": "perso", "draft": true },
+      "cover": { "src": "/images/projets/rolex-retail-express/rolex-counter.jpg", "alt": "Comptoir ovale en bois et étagères de la boutique imaginée", "position": "45% 50%" },
+      "hero": { "src": "/images/projets/rolex-retail-express/rolex-counter.jpg", "alt": "Comptoir ovale en bois et étagères de la boutique imaginée" },
+      "template": "chapitres"
+    }
+  ],
+  "inPreparation": [
+    {
+      "slug": "clocher-saint-louis",
+      "name": "Clocher Saint-Louis",
+      "place": "[À COMPLÉTER : lieu]",
+      "note": { "value": "Octobre 2026", "draft": true },
+      "cover": { "src": "/images/projets/clocher-saint-louis/clocher-saint-louis-entree.jpg", "alt": "Entrée du projet Clocher Saint-Louis, rendu 3D" }
+    },
+    {
+      "slug": "projet-dionys",
+      "name": "Projet Dionys",
+      "place": "Hyères",
+      "cover": { "src": "/images/projets/projet-dionys/dionys-01.jpg", "alt": "Projet Dionys à Hyères, rendu 3D" }
+    },
+    {
+      "slug": "page-blanche",
+      "name": "Page Blanche",
+      "place": "Presqu’île de Giens",
+      "cover": { "src": "/images/projets/page-blanche/page-blanche-01.jpg", "alt": "Projet Page Blanche, presqu’île de Giens, rendu 3D" }
+    }
+  ]
+}

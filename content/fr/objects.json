@@ -1,0 +1,135 @@
+{
+  "_note": "Pièces dessinées. Sources : design/content/objects.json corrigé par SOURCES-REELLES §5 (textes réels de textes/pralong.txt et textes/agora.txt). Matériaux, dimensions, source lumineuse et édition à compléter avec Maxime.",
+  "items": [
+    {
+      "slug": "applique-pinturault",
+      "number": "01",
+      "name": "Applique Pinturault",
+      "category": "Luminaire",
+      "type": "Luminaire — applique murale",
+      "tagline": "hommage à Alexis Pinturault",
+      "materials": { "value": "Coque métallique", "draft": true },
+      "dimensions": "[À COMPLÉTER : H × l × P]",
+      "light": "[À COMPLÉTER : source lumineuse]",
+      "edition": "[À COMPLÉTER : pièce unique ou série]",
+      "project": "duplex-pralong",
+      "media": [
+        { "type": "image", "src": "/images/projets/duplex-pralong/applique-pinturault.jpg", "alt": "Applique Pinturault allumée, coque métallique fixée sur un mur enduit" }
+      ],
+      "sketch": { "src": "/images/projets/duplex-pralong/croquis-applique-baton-slalom.png", "alt": "Croquis comparant une protection de bâton de slalom à l’applique Pinturault" },
+      "summary": "Une coque qui reprend la forme des protections de bâtons du slalom géant, en hommage à Alexis Pinturault.",
+      "story": [
+        "Deux appliques ont été imaginées pour l’entrée du duplex, en hommage au palmarès sportif de Courchevel et à son champion de ski alpin local, Alexis Pinturault.",
+        "La coque métallique reprend la forme des protections de bâtons utilisées en compétition de slalom géant. Transposée à l’échelle d’un luminaire, cette courbe protège la source, dirige la lumière contre le mur et donne à l’entrée un repère immédiatement identifiable.",
+        "Dans l’entrée, la paire accompagne l’arrivée par une lumière indirecte et donne un point de départ clair au parcours."
+      ]
+    },
+    {
+      "slug": "fauteuil-pralong",
+      "number": "02",
+      "name": "Fauteuil Pralong",
+      "category": "Mobilier",
+      "type": "Mobilier — fauteuil",
+      "materials": { "value": "Coque métallique, assise textile", "draft": true },
+      "dimensions": "[À COMPLÉTER : H × l × P]",
+      "edition": "[À COMPLÉTER : pièce unique ou série]",
+      "project": "duplex-pralong",
+      "media": [
+        { "type": "image", "src": "/images/projets/duplex-pralong/fauteuil.jpg", "alt": "Fauteuil Pralong, coque métallique et assise textile" }
+      ],
+      "summary": "Une coque métallique aux faces réfléchissantes et une assise textile plus souple.",
+      "story": [
+        "Le fauteuil associe une coque métallique à une assise textile plus souple. Ses faces réfléchissantes allègent visuellement la pièce et renvoient les variations de lumière du séjour, tandis que le tissu maintient une sensation de confort adaptée à un appartement de montagne."
+      ]
+    },
+    {
+      "slug": "tables-basses",
+      "number": "03",
+      "name": "Tables basses",
+      "category": "Mobilier",
+      "type": "Mobilier — tables basses",
+      "materials": "[À COMPLÉTER : matériaux]",
+      "dimensions": "[À COMPLÉTER : H × l × P]",
+      "edition": "[À COMPLÉTER : pièce unique ou série]",
+      "project": "duplex-pralong",
+      "media": [
+        { "type": "image", "src": "/images/projets/duplex-pralong/tables-basses-paysage.jpg", "alt": "Les deux tables basses du duplex Pralong, volumes complémentaires" }
+      ],
+      "summary": "Deux volumes, plusieurs usages : des tables dessinées pour un concours de la villa Noailles, reprises pour le duplex.",
+      "story": [
+        "Ces tables basses ont été dessinées à l’origine pour le concours de la Villa Noailles. Réimaginées pour le Duplex Pralong, elles trouvent une nouvelle expression dans les matières et les tonalités du projet, tout en conservant leur principe de volumes complémentaires et leur capacité à s’adapter aux usages du salon."
+      ]
+    },
+    {
+      "slug": "totem-liege",
+      "number": "04",
+      "name": "Totem liège",
+      "category": "Mobilier",
+      "type": "Mobilier — assise d’appoint, table basse",
+      "materials": "Liège",
+      "dimensions": "[À COMPLÉTER : H × l × P]",
+      "edition": "[À COMPLÉTER : pièce unique ou série]",
+      "project": "agora",
+      "media": [
+        { "type": "image", "src": "/images/projets/agora/agora-totem-01.jpg", "alt": "Totem en liège mis en scène dans un espace salon", "position": "55% 50%" }
+      ],
+      "summary": "Assise d’appoint ou table basse en liège, empilable en forme de totem.",
+      "story": [
+        "Totem est un objet polyvalent qui s’intègre aisément dans divers espaces. Sa forme compacte et sa surface plane lui permettent de remplir deux fonctions distinctes : assise d’appoint confortable ou table basse.",
+        "Le liège, matériau naturel et durable, offre à la fois légèreté et robustesse, tout en apportant une chaleur visuelle et tactile.",
+        "Lorsqu’il n’est pas utilisé, Totem peut être empilé. Une fois assemblés, les éléments forment une structure verticale qui évoque subtilement la silhouette d’un totem."
+      ]
+    },
+    {
+      "slug": "table-aimantee",
+      "number": "05",
+      "name": "Table aimantée",
+      "category": "Mobilier",
+      "type": "Mobilier — table modulable",
+      "materials": "[À COMPLÉTER : matériaux]",
+      "dimensions": "[À COMPLÉTER : H × l × P]",
+      "edition": "[À COMPLÉTER : pièce unique ou série]",
+      "project": "agora",
+      "media": [
+        { "type": "image", "src": "/images/projets/agora/agora-table-magnet.jpg", "alt": "Détail d’un aimant au coin de la table Agora" },
+        { "type": "image", "src": "/images/projets/agora/agora-table-floating.jpg", "alt": "Table Agora avec plateau posé" }
+      ],
+      "summary": "Roulettes et aimants en néodyme aux angles : les tables s’assemblent en grandes tablées.",
+      "story": [
+        "La table a été pensée dans une optique de modularité et de flexibilité. Grâce à ses roulettes et à ses aimants en néodyme positionnés aux coins, elle peut s’assembler avec d’autres tables pour former de grandes tablées ou des configurations plus réduites.",
+        "Le plateau repose sur un système d’encastrement par gravité, permettant un remplacement simple des pièces et un déplacement plus léger entre les différents bâtiments."
+      ]
+    },
+    {
+      "slug": "lampe-spotlight",
+      "number": "06",
+      "name": "Lampe Spotlight",
+      "category": "Luminaire",
+      "type": "Luminaire",
+      "materials": "[À COMPLÉTER : matériaux]",
+      "dimensions": "[À COMPLÉTER : H × l × P]",
+      "light": "[À COMPLÉTER : source lumineuse]",
+      "edition": "[À COMPLÉTER : pièce unique ou série]",
+      "project": null,
+      "projectMissing": "[À COMPLÉTER : projet d’origine]",
+      "media": [
+        { "type": "image", "src": "/images/objets/lampe-spotlight/spotlight-01.jpg", "alt": "Lampe Spotlight posée sur une table en bois" }
+      ]
+    },
+    {
+      "slug": "seau-roche-ruinart",
+      "number": "07",
+      "name": "Seau Roche Ruinart",
+      "category": "Objet",
+      "type": "Objet",
+      "materials": "[À COMPLÉTER : matériaux]",
+      "dimensions": "[À COMPLÉTER : H × l × P]",
+      "edition": "[À COMPLÉTER : cadre du projet]",
+      "project": null,
+      "projectMissing": "[À COMPLÉTER : projet d’origine]",
+      "media": [
+        { "type": "image", "src": "/images/objets/seau-roche-ruinart/seaux-ruinart-01.jpg", "alt": "Seaux à champagne en bloc translucide sculpté" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+/* Maxime Vallat — tokens du design system (v1, octobre 2026)
+   À importer dans app/globals.css. Gambarino : fichiers .woff2 à placer dans /public/fonts
+   (téléchargement gratuit sur fontshare.com, licence ITF Free Font), chargés via next/font/local. */
+:root {
+  --color-cacao: #382B2B;
+  --color-lin: #F5F0E8;
+  --color-pierre: #E6DED1;
+  --color-terre: #A9573A;
+  --color-olivier: #6E6B4F;
+  --color-laiton: #B08D57;
+  --color-cacao-70: #6B5F59;
+  --color-sable: #C9B79C;
+  --color-champ: #FBF8F3;
+  --color-carte: #FFFDF9;
+  --color-erreur: #8F4C33;
+  --color-ligne: rgba(56, 43, 43, .16);
+  --color-ligne-sombre: rgba(245, 240, 232, .16);
+
+  --font-serif: "Gambarino", "Newsreader", Georgia, serif;
+  --font-sans: "Funnel Display", system-ui, sans-serif;
+  --font-mono: "DM Mono", ui-monospace, monospace;
+
+  --space-1: 4px;  --space-2: 8px;  --space-3: 12px; --space-4: 16px;
+  --space-5: 24px; --space-6: 32px; --space-7: 48px; --space-8: 64px;
+  --space-9: 88px; --space-10: 120px; --space-11: 160px;
+
+  --radius-field: 2px;
+  --radius-pill: 999px;
+
+  --shadow-float: 0 24px 48px rgba(20, 14, 14, .40);
+  --shadow-knob: 0 8px 24px rgba(20, 14, 14, .25);
+  --shadow-header: 0 8px 24px rgba(56, 43, 43, .06);
+
+  --ease-soft: cubic-bezier(.2, .7, .2, 1);
+  --duration-fast: 300ms;
+  --duration-base: 400ms;
+  --duration-slow: 700ms;
+  --duration-zoom: 1400ms;
+
+  --container: 1280px;
+  --gutter: 24px;
+  --margin: 80px;
+}
+@media (max-width: 1099px) { :root { --margin: 40px; } }
+@media (max-width: 600px)  { :root { --margin: 20px; --gutter: 16px; } }
+
+html { background: var(--color-lin); color: var(--color-cacao); font-family: var(--font-sans); -webkit-font-smoothing: antialiased; }
+:focus-visible { outline: 2px solid var(--color-terre); outline-offset: 3px; }
+.on-dark :focus-visible { outline-color: var(--color-laiton); }
+
+.t-meta  { font-family: var(--font-mono); font-size: 12px; line-height: 1.5; letter-spacing: .14em; text-transform: uppercase; }
+.t-serif { font-family: var(--font-serif); font-weight: 400; letter-spacing: -.015em; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0s !important; animation-iteration-count: 1 !important; transition-duration: 0s !important; scroll-behavior: auto !important; }
+}

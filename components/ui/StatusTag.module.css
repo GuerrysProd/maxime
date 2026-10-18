@@ -1,0 +1,30 @@
+.tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 10px;
+  border: 1px solid rgba(107, 95, 89, 0.6);
+  border-radius: var(--radius-pill);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  line-height: 1.3;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--color-cacao-70);
+}
+
+.tag[data-draft] {
+  border-style: dashed;
+}
+
+:global(.on-dark) .tag {
+  color: var(--color-sable);
+  border-color: rgba(201, 183, 156, 0.55);
+}
+
+@media (max-width: 600px) {
+  .tag {
+    padding: 3px 9px;
+    font-size: 10px;
+  }
+}

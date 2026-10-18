@@ -1,0 +1,89 @@
+{
+  "_note": "Textes de la page d’accueil (aperçus 01, 01b, 02). Les données des projets, objets, services, FAQ et du parcours viennent des autres fichiers.",
+  "meta": {
+    "title": "Maxime Vallat — Architecte d’intérieur & designer, du Var à Courchevel",
+    "description": "Architecture intérieure et design d’objet, de la Méditerranée aux Alpes. Maxime Vallat dessine le lieu, puis les pièces qui l’habitent : mobilier, luminaires, objets."
+  },
+  "hero": {
+    "image": {
+      "src": "/images/projets/duplex-pralong/vue-nord-paysage.jpg",
+      "alt": "Séjour du duplex Pralong à Courchevel 1850 : escalier enduit clair, boiseries sombres, canapé et mobilier dessiné sur mesure",
+      "position": "50% 55%",
+      "positionMobile": "28% 50%"
+    },
+    "caption": "À l’image — Duplex Pralong, Courchevel 1850",
+    "projectsLink": { "label": "Voir les projets", "labelShort": "Projets", "href": "/projets" },
+    "scroll": "Défiler",
+    "indexTitle": "Index",
+    "imageCaption": "À l’image"
+  },
+  "manifesto": {
+    "number": "01",
+    "label": "Manifeste",
+    "link": { "label": "Découvrir le studio", "href": "/studio" }
+  },
+  "projects": {
+    "number": "02",
+    "label": "Projets sélectionnés",
+    "title": "Des lieux dessinés jusqu’au moindre détail.",
+    "intro": "Résidences, lieux d’accueil, jardins et objets — de la Méditerranée aux Alpes.",
+    "allLink": { "label": "Tous les projets", "href": "/projets" },
+    "others": "Autres projets",
+    "scrollHint": "Faire défiler →",
+    "inPreparation": "En préparation"
+  },
+  "objects": {
+    "number": "03",
+    "label": "Objets",
+    "title": "Du lieu à l’objet.",
+    "intro": "Fauteuils, luminaires, tables : quand le lieu le demande, je dessine aussi les pièces qui l’habitent. Certaines naissent d’un projet, d’autres forment une collection.",
+    "link": { "label": "Éditeurs : parlons collaboration", "href": "/contact?type=collaboration" },
+    "noImage": "Visuel à venir"
+  },
+  "services": {
+    "number": "04",
+    "label": "Services",
+    "title": "Du plan d’ensemble à la pièce unique.",
+    "intro": "Pour les particuliers et résidences secondaires, l’hôtellerie, les domaines et commerces, les collectivités et tiers-lieux, les éditeurs de mobilier et les agences partenaires.",
+    "href": "/services"
+  },
+  "method": {
+    "number": "05",
+    "label": "Méthode",
+    "title": "Cinq étapes, un seul interlocuteur.",
+    "intro": "De la première visite au suivi de chantier, chaque étape est dessinée, montrée et validée ensemble."
+  },
+  "parcours": {
+    "label": "Parcours & partenaires"
+  },
+  "territories": {
+    "number": "06",
+    "label": "Territoires",
+    "title": "Basé dans le Var, j’interviens de la Méditerranée aux Alpes."
+  },
+  "faq": {
+    "number": "07",
+    "label": "Questions fréquentes",
+    "title": "Avant de commencer.",
+    "intro": "Une autre question ? Écrivez-moi, je vous réponds personnellement.",
+    "link": { "label": "Poser une question", "href": "/contact" }
+  },
+  "cta": {
+    "number": "08",
+    "label": "Contact",
+    "title": "Parlons de votre projet.",
+    "intro": "Une résidence à repenser, un lieu à ouvrir, une pièce à dessiner : décrivez-moi votre projet en quelques lignes, je reviens vers vous pour un premier échange.",
+    "chipsLabel": "Votre projet concerne",
+    "callPrefix": "Ou appelez le",
+    "frieze": [
+      "/images/projets/perchee/perchee-03.jpg",
+      "/images/projets/chateau-gasqui/key-elements/abri-ete.jpg",
+      "/images/projets/alta/alta-03.jpg",
+      "/images/projets/agora/agora-01.jpg",
+      "/images/projets/duplex-pralong/applique-pinturault.jpg",
+      "/images/projets/perchee/perchee-01.jpg",
+      "/images/projets/rolex-retail-express/rolex-counter.jpg",
+      "/images/projets/batiment-s/hero-passerelle.jpg"
+    ]
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "_note": "Identité, coordonnées, navigation et parcours. Sources : design/content/site.json corrigé par SOURCES-REELLES §2 et §6. draft: true = sourcé mais à valider par Maxime.",
+  "identity": {
+    "name": "Maxime Vallat",
+    "title": "Architecte d’intérieur & designer",
+    "tagline": "Dessiner le lieu, jusqu’à l’objet.",
+    "taglineLines": ["Dessiner le lieu,", "jusqu’à l’objet."],
+    "subtitle": "Architecture intérieure & design d’objet — de la Méditerranée aux Alpes.",
+    "eyebrow": "Architecte d’intérieur & designer — Var · Courchevel",
+    "eyebrowShort": "Architecte d’intérieur & designer",
+    "manifesto": "Chaque projet part du lieu : sa lumière, ses matières, ses usages. Je dessine l’espace, puis les pièces qui l’habitent, pour que tout raconte la même histoire.",
+    "signature": "Maxime Vallat — architecte d’intérieur & designer, formé à l’École Camondo et à Strate.",
+    "copyright": "© 2026 Maxime Vallat — Architecte d’intérieur & designer"
+  },
+  "contact": {
+    "phone": { "value": "06 16 47 01 95", "href": "tel:+33616470195", "draft": true },
+    "email": { "value": "mvallat@maximevallat-conception.com", "href": "mailto:mvallat@maximevallat-conception.com", "draft": true },
+    "address": "[À COMPLÉTER : adresse de l’atelier]",
+    "region": "Var, France",
+    "responseDelay": "[À COMPLÉTER : délai de réponse]",
+    "socials": [
+      { "label": "Instagram", "href": null, "missing": "[À COMPLÉTER : URL Instagram]" },
+      { "label": "LinkedIn", "href": null, "missing": "[À COMPLÉTER : URL LinkedIn]" }
+    ]
+  },
+  "nav": [
+    { "id": "projets", "label": "Projets", "href": "/projets" },
+    { "id": "objets", "label": "Objets", "href": "/objets" },
+    { "id": "services", "label": "Services", "href": "/services" },
+    { "id": "studio", "label": "Le studio", "href": "/studio" }
+  ],
+  "menu": [
+    { "id": "projets", "label": "Projets", "href": "/projets", "count": "projects" },
+    { "id": "objets", "label": "Objets", "href": "/objets", "count": "objects" },
+    { "id": "services", "label": "Services", "href": "/services" },
+    { "id": "methode", "label": "Méthode", "href": "/services#methode" },
+    { "id": "studio", "label": "Le studio", "href": "/studio" },
+    { "id": "contact", "label": "Contact", "href": "/contact" }
+  ],
+  "footerNav": [
+    { "id": "projets", "label": "Projets", "href": "/projets" },
+    { "id": "objets", "label": "Objets", "href": "/objets" },
+    { "id": "services", "label": "Services", "href": "/services" },
+    { "id": "methode", "label": "Méthode", "href": "/services#methode" },
+    { "id": "studio", "label": "Le studio", "href": "/studio" },
+    { "id": "contact", "label": "Contact", "href": "/contact" }
+  ],
+  "legalNav": [
+    { "id": "mentions", "label": "Mentions légales", "href": "/mentions-legales" },
+    { "id": "confidentialite", "label": "Confidentialité", "href": "/confidentialite" },
+    { "id": "credits", "label": "Crédits", "href": "/mentions-legales#credits" }
+  ],
+  "languages": [
+    { "code": "fr", "label": "FR", "href": "/" },
+    { "code": "en", "label": "EN", "href": null }
+  ],
+  "primaryCta": { "label": "Démarrer un projet", "href": "/contact" },
+  "featured": {
+    "label": "À la une",
+    "project": "duplex-pralong",
+    "title": "Duplex Pralong, Courchevel",
+    "image": { "src": "/images/projets/duplex-pralong/vue-nord-paysage.jpg", "alt": "" }
+  },
+  "ctaChips": [
+    { "type": "residence", "label": "Une résidence", "short": "Une résidence" },
+    { "type": "hospitalite", "label": "Un hôtel, un domaine, un commerce", "short": "Hôtel, domaine, commerce" },
+    { "type": "collectif", "label": "Un lieu collectif", "short": "Un lieu collectif" },
+    { "type": "objet", "label": "Une pièce sur mesure", "short": "Une pièce sur mesure" },
+    { "type": "collaboration", "label": "Une collaboration d’agence", "short": "Une agence" }
+  ],
+  "parcours": [
+    { "id": "camondo", "name": "École Camondo Méditerranée", "shortName": "École Camondo", "kind": "Formation", "place": "Toulon", "detail": "Architecture intérieure", "period": { "value": "[À COMPLÉTER : date du diplôme]", "draft": true }, "draft": true },
+    { "id": "strate", "name": "Strate", "shortName": "Strate", "kind": "Formation", "place": "Design", "detail": "Deux ans de Master Design", "period": { "value": "[À COMPLÉTER : dates]", "draft": true }, "draft": true },
+    { "id": "festen", "name": "Festen Architecture", "shortName": "Festen Architecture", "kind": "Stage", "place": "Paris", "period": { "value": "Sept.–déc. 2025", "draft": true }, "draft": true },
+    { "id": "noe", "name": "Noé Duchauffour-Lawrence", "shortName": "Noé Duchauffour-Lawrence", "kind": "Stage", "place": "Lisbonne", "period": { "value": "Juin–août 2024", "draft": true }, "draft": true },
+    { "id": "sergeant", "name": "Sergeant Paysage", "shortName": "Sergeant Paysage", "kind": "Partenaire", "place": "Haut-Var", "detail": "Designer indépendant, aménagements extérieurs", "period": { "value": "Depuis sept. 2024", "draft": true }, "draft": true },
+    { "id": "rev", "name": "Réseau Entreprendre Var", "shortName": "Réseau Entreprendre Var", "kind": "Réseau", "place": "Var", "detail": "[À COMPLÉTER : nature de l’accompagnement]", "period": { "value": "Juillet 2026", "draft": true }, "draft": true }
+  ],
+  "territories": [
+    {
+      "id": "mediterranee",
+      "name": "Méditerranée",
+      "places": ["Toulon", "Hyères", "Giens", "Gonfaron"],
+      "text": "Résidences du littoral, domaines et jardins provençaux.",
+      "image": { "src": "/images/projets/chateau-gasqui/key-elements/terrasse-terre-cuite.jpg", "alt": "Terrasse en terre cuite du Château Gasqui, entourée de lavandes et d’oliviers" }
+    },
+    {
+      "id": "alpes",
+      "name": "Alpes",
+      "places": ["Courchevel 1850", "Savoie"],
+      "text": "Chalets et refuges d’altitude, où le bois et la matière protègent du froid.",
+      "image": { "src": "/images/projets/alta/alta-01.jpg", "alt": "Refuge Alta dans un alpage fleuri, sommets enneigés à l’horizon", "position": "62% 50%" }
+    }
+  ]
+}
