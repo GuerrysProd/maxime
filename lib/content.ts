@@ -83,5 +83,5 @@ export const projectHref = (slug: string) => `/projets/${slug}`;
 export const objectHref = (slug: string) => `/objets/${slug}`;
 export const contactHref = (type?: string) => (type ? `/contact?type=${encodeURIComponent(type)}` : "/contact");
 
-export type { Draft, FaqItem, Home, MediaItem, ObjectPiece, Project, ProjectInPreparation, Site, Ui } from "./schemas";
+export type { Draft, FaqItem, Home, MediaItem, ObjectPiece, Project, ProjectInPreparation, Services, Site, Ui } from "./schemas";
 export type { ImageAsset } from "./media";

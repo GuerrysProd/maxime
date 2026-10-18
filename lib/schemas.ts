@@ -154,6 +154,8 @@ export const projectSchema = z.object({
   region: z.enum(["Alpes", "Méditerranée"]).nullable(),
   categories: z.array(categoryId),
   meta: z.array(draftable),
+  /** Version courte pour les cartes compactes (mobile). */
+  metaShort: z.array(draftable),
   summary: z.string(),
   disclaimer: z.string().optional(),
   status: z.object({ value: projectStatus, draft: z.boolean() }),
@@ -256,5 +258,8 @@ export const uiSchema = z.object({
   draftNote: z.string(),
   missingLink: z.string(),
   frieze: z.string(),
+  friezePause: z.string(),
+  friezePlay: z.string(),
+  quickActions: z.string(),
 });
 export type Ui = z.output<typeof uiSchema>;

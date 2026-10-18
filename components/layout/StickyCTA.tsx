@@ -17,10 +17,12 @@ export function StickyCTA({
   cta,
   phone,
   callLabel,
+  label,
 }: {
   cta: { label: string; href: string };
   phone: { href: string };
   callLabel: string;
+  label: string;
 }) {
   const [visible, setVisible] = useState(false);
   const pathname = usePathname();
@@ -44,7 +46,7 @@ export function StickyCTA({
   }, [pathname]);
 
   return (
-    <div className={styles.bar} data-visible={visible || undefined} inert={!visible}>
+    <aside className={styles.bar} aria-label={label} data-visible={visible || undefined} inert={!visible}>
       <Link className={styles.cta} href={cta.href}>
         {cta.label}
       </Link>
@@ -52,6 +54,6 @@ export function StickyCTA({
         <Icon name="phone" size={18} />
         <span className="sr-only">{callLabel}</span>
       </a>
-    </div>
+    </aside>
   );
 }

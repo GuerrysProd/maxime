@@ -26,166 +26,250 @@
   }
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
+/* Les styles globaux sont rangés en couches : les CSS Modules (hors couche) l’emportent
+   toujours, quel que soit l’ordre de chargement des feuilles. */
+@layer base, utilities;
 
-html {
-  scroll-padding-top: var(--header-height-compact);
-  text-size-adjust: 100%;
-}
+@layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
 
-body {
-  margin: 0;
-  min-height: 100vh;
-  background: var(--color-lin);
-  color: var(--color-cacao);
-  font-family: var(--font-sans);
-  font-size: 17px;
-  line-height: 1.6;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  overflow-x: clip;
-}
+  html {
+    scroll-padding-top: var(--header-height-compact);
+    text-size-adjust: 100%;
+  }
 
-@media (max-width: 600px) {
   body {
-    font-size: 16px;
+    /* Contient les éléments absolus (dont .sr-only) pour que overflow-x: clip s’applique à eux. */
+    position: relative;
+    margin: 0;
+    min-height: 100vh;
+    background: var(--color-lin);
+    color: var(--color-cacao);
+    font-family: var(--font-sans);
+    font-size: 17px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: clip;
+  }
+
+  @media (max-width: 600px) {
+    body {
+      font-size: 16px;
+    }
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  p,
+  ul,
+  ol,
+  figure,
+  blockquote,
+  address,
+  dl,
+  dd {
+    margin: 0;
+    padding: 0;
+  }
+
+  ul,
+  ol {
+    list-style: none;
+  }
+
+  address {
+    font-style: normal;
+  }
+
+  img,
+  svg,
+  video {
+    display: block;
+    max-width: 100%;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  button {
+    font: inherit;
+    color: inherit;
+  }
+
+  ::selection {
+    background: var(--color-cacao);
+    color: var(--color-lin);
+  }
+
+  /* Focus visible : anneau terre cuite, laiton sur fond sombre (brief §8). */
+  :focus-visible {
+    outline: 2px solid var(--color-terre);
+    outline-offset: 4px;
+  }
+
+  .on-dark :focus-visible {
+    outline-color: var(--color-laiton);
   }
 }
 
-h1,
-h2,
-h3,
-h4,
-p,
-ul,
-ol,
-figure,
-blockquote,
-address,
-dl,
-dd {
-  margin: 0;
-  padding: 0;
+@layer utilities {
+  .wrap {
+    width: 100%;
+    max-width: var(--wide);
+    margin-inline: auto;
+    padding-inline: var(--margin);
+  }
+
+  .g12 {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    column-gap: var(--gutter);
+  }
+
+  @media (max-width: 900px) {
+    .g12 {
+      grid-template-columns: minmax(0, 1fr);
+    }
+
+    .g12 > * {
+      grid-column: 1 / -1 !important;
+    }
+  }
+
+  .serif {
+    font-family: var(--font-serif);
+    font-weight: 400;
+    letter-spacing: -0.015em;
+  }
+
+  .meta {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+  }
+
+  @media (max-width: 600px) {
+    .meta {
+      font-size: 11px;
+    }
+  }
+
+  .muted {
+    color: var(--color-cacao-70);
+  }
+
+  .on-dark .muted {
+    color: var(--color-sable);
+  }
+
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
+  .nowrap {
+    white-space: nowrap;
+  }
 }
 
-ul,
-ol {
-  list-style: none;
-}
-
-address {
-  font-style: normal;
-}
-
-img,
-svg,
-video {
-  display: block;
-  max-width: 100%;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-button {
-  font: inherit;
-  color: inherit;
-}
-
-::selection {
-  background: var(--color-cacao);
-  color: var(--color-lin);
-}
-
-/* Focus visible : anneau terre cuite, laiton sur fond sombre (brief §8). */
-:focus-visible {
-  outline: 2px solid var(--color-terre);
-  outline-offset: 4px;
-}
-
-.on-dark :focus-visible {
-  outline-color: var(--color-laiton);
-}
-
-/* ---------- Utilitaires ---------- */
-
-.wrap {
-  width: 100%;
-  max-width: var(--wide);
-  margin-inline: auto;
-  padding-inline: var(--margin);
-}
-
-.g12 {
-  display: grid;
-  grid-template-columns: repeat(12, minmax(0, 1fr));
-  column-gap: var(--gutter);
+/* Cadrage des images (Picture) */
+.picture {
+  object-position: var(--object-position, 50% 50%);
 }
 
 @media (max-width: 900px) {
-  .g12 {
-    grid-template-columns: minmax(0, 1fr);
+  .picture[data-position-m] {
+    object-position: var(--object-position-m);
   }
-
-  .g12 > * {
-    grid-column: 1 / -1 !important;
-  }
-}
-
-.serif {
-  font-family: var(--font-serif);
-  font-weight: 400;
-  letter-spacing: -0.015em;
-}
-
-.meta {
-  font-family: var(--font-mono);
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 1.5;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-}
-
-@media (max-width: 600px) {
-  .meta {
-    font-size: 11px;
-  }
-}
-
-.muted {
-  color: var(--color-cacao-70);
-}
-
-.on-dark .muted {
-  color: var(--color-sable);
-}
-
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border: 0;
-}
-
-.nowrap {
-  white-space: nowrap;
 }
 
 /* Menu mobile ouvert : la page ne défile plus. */
 html[data-menu-open] {
   overflow: hidden;
+}
+
+/* ---------- Apparitions et parallaxe (brief §7, piloté par MotionObserver) ---------- */
+
+[data-js] [data-reveal] {
+  transition:
+    opacity var(--duration-slow) var(--ease-soft),
+    transform var(--duration-slow) var(--ease-soft);
+  transition-delay: var(--reveal-delay, 0ms);
+}
+
+[data-js] [data-reveal]:not([data-revealed]) {
+  opacity: 0;
+  transform: translate3d(0, 24px, 0);
+}
+
+/* Passage Lin → Cacao en fondu au franchissement de la section. */
+[data-js] [data-reveal="tone"] {
+  transition: background-color 900ms var(--ease-soft), color 900ms var(--ease-soft);
+}
+
+[data-js] [data-reveal="tone"]:not([data-revealed]) {
+  opacity: 1;
+  transform: none;
+  background-color: var(--color-lin);
+  color: var(--color-lin);
+}
+
+[data-parallax] {
+  transform: translate3d(0, var(--parallax, 0px), 0);
+  will-change: transform;
+}
+
+@media (max-width: 900px) {
+  [data-js] [data-reveal] {
+    transition-duration: var(--duration-fast);
+  }
+
+  [data-js] [data-reveal]:not([data-revealed]) {
+    transform: translate3d(0, 16px, 0);
+  }
+
+  [data-parallax] {
+    transform: none;
+    will-change: auto;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-js] [data-reveal],
+  [data-js] [data-reveal]:not([data-revealed]) {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  [data-js] [data-reveal="tone"]:not([data-revealed]) {
+    background-color: var(--color-cacao);
+    color: var(--color-lin);
+  }
+
+  [data-parallax] {
+    transform: none;
+    will-change: auto;
+  }
 }
 
 /* ---------- Transitions de page (brief §7 : fondu enchaîné 400 ms, opacité seule) ---------- */

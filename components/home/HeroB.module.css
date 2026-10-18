@@ -1,0 +1,199 @@
+.hero {
+  position: relative;
+  min-height: 920px;
+  overflow: hidden;
+  background: var(--color-lin);
+}
+
+/* Colonne gauche : 732 / 1440 à 1440 px. */
+.left {
+  position: relative;
+  width: 50.84%;
+  max-width: 732px;
+  padding: calc(var(--header-height) + 56px) 56px 32px var(--margin);
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.index {
+  margin-top: 56px;
+}
+
+.indexHead {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 8px;
+}
+
+.index ul {
+  border-bottom: 1px solid rgba(56, 43, 43, 0.14);
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 34px 1fr auto 20px;
+  align-items: center;
+  gap: 14px;
+  min-height: 44px;
+  border-top: 1px solid rgba(56, 43, 43, 0.14);
+  color: var(--color-cacao-70);
+  transition:
+    color var(--duration-fast),
+    padding 450ms var(--ease-soft);
+}
+
+.number {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+}
+
+.name {
+  font-size: 16px;
+  color: var(--color-cacao);
+}
+
+.place {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.arrow {
+  opacity: 0;
+  transition:
+    opacity var(--duration-fast),
+    transform var(--duration-base);
+}
+
+.row[data-on] {
+  padding-left: 10px;
+}
+
+.row[data-on] .name {
+  text-decoration: underline;
+  text-decoration-color: var(--color-terre);
+  text-underline-offset: 5px;
+}
+
+.row[data-on] .arrow {
+  opacity: 1;
+  transform: translate(2px, -2px);
+}
+
+/* Image à droite, bord à bord (708 / 1440). */
+.figure {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 49.16%;
+  overflow: hidden;
+  background: var(--color-cacao);
+}
+
+.slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 800ms ease;
+}
+
+.slide[data-on] {
+  opacity: 1;
+}
+
+.shade {
+  position: absolute;
+  inset: 0 0 auto;
+  height: 160px;
+  background: linear-gradient(180deg, rgba(40, 30, 30, 0.55), rgba(40, 30, 30, 0));
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 340px;
+  padding: 18px 24px 0 0;
+  background: var(--color-lin);
+}
+
+.captionTitle {
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+
+/* Entre 901 et 1279 px, l’en-tête est sur fond Lin : l’image commence sous lui. */
+@media (min-width: 901px) and (max-width: 1279px) {
+  .figure {
+    top: var(--header-height);
+  }
+
+  .left {
+    padding-right: 32px;
+  }
+}
+
+@media (max-width: 1099px) {
+  .captionTitle {
+    font-size: 22px;
+  }
+}
+
+/* Mobile (pas de maquette) : titre, image, puis index ; pas de changement d’image au toucher. */
+@media (max-width: 900px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    padding-top: var(--header-height);
+  }
+
+  .left {
+    display: contents;
+  }
+
+  .intro {
+    order: 1;
+    gap: 16px;
+    padding: 40px var(--margin) 32px;
+  }
+
+  .figure {
+    order: 2;
+    position: relative;
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    top: auto;
+  }
+
+  .index {
+    order: 3;
+    margin: 0;
+    padding: 32px var(--margin) 56px;
+  }
+
+  .row {
+    min-height: 48px;
+  }
+
+  .caption {
+    min-width: 0;
+    max-width: calc(100% - 40px);
+    padding: 14px 20px 0 var(--margin);
+  }
+
+  .captionTitle {
+    font-size: 20px;
+  }
+}

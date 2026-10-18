@@ -15,8 +15,14 @@
   "contact": "Contact",
   "follow": "Suivre",
   "backToTop": "Haut de page ↑",
-  "projectsCount": { "one": "{n} projet", "other": "{n} projets" },
+  "projectsCount": {
+    "one": "{n} projet",
+    "other": "{n} projets"
+  },
   "draftNote": "à confirmer",
   "missingLink": "lien à venir",
-  "frieze": "Frise d’images des projets"
+  "frieze": "Frise d’images des projets",
+  "friezePause": "Mettre en pause le défilement des images",
+  "friezePlay": "Relancer le défilement des images",
+  "quickActions": "Actions rapides"
 }

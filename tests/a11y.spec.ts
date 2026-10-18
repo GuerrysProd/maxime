@@ -5,6 +5,16 @@ import { ROUTES } from "./routes";
 const TAGS = ["wcag2a", "wcag2aa", "wcag21a", "wcag21aa", "wcag22aa", "best-practice"];
 
 async function audit(page: import("@playwright/test").Page, label: string) {
+  // Attendre la fin des apparitions (sinon le contraste est mesuré sur du texte en cours de fondu).
+  await page.evaluate(() =>
+    Promise.all(
+      document
+        .getAnimations()
+        .filter((animation) => animation.effect?.getComputedTiming().iterations !== Infinity)
+        .map((animation) => animation.finished.catch(() => null)),
+    ),
+  );
+  await page.waitForTimeout(900);
   const results = await new AxeBuilder({ page }).withTags(TAGS).analyze();
   const blocking = results.violations.filter((v) => v.impact === "serious" || v.impact === "critical");
   for (const v of results.violations) {

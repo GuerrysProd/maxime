@@ -14,7 +14,6 @@
     border-top: 1px solid rgba(56, 43, 43, 0.14);
     background: rgba(245, 240, 232, 0.94);
     backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
     transform: translateY(110%);
     visibility: hidden;
     transition:

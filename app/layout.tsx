@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { DM_Mono, Funnel_Display } from "next/font/google";
 import localFont from "next/font/local";
 import { ViewTransition } from "react";
+import { MotionObserver } from "@/components/layout/MotionObserver";
 import { SiteFooter, TOP_ID } from "@/components/layout/SiteFooter";
 import { SkipLink } from "@/components/layout/SkipLink";
 import { StickyCTA } from "@/components/layout/StickyCTA";
@@ -48,12 +49,17 @@ export const viewport: Viewport = {
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="fr" className={`${gambarino.variable} ${funnel.variable} ${dmMono.variable}`}>
+      <head>
+        {/* Avant le premier rendu : active les apparitions au défilement (sans JS, tout reste visible). */}
+        <script dangerouslySetInnerHTML={{ __html: "document.documentElement.setAttribute('data-js','')" }} />
+      </head>
       <body>
         <div id={TOP_ID} />
         <SkipLink />
         <ViewTransition>{children}</ViewTransition>
         <SiteFooter />
-        <StickyCTA cta={site.primaryCta} phone={site.contact.phone} callLabel={getUi().call} />
+        <StickyCTA cta={site.primaryCta} phone={site.contact.phone} callLabel={getUi().call} label={getUi().quickActions} />
+        <MotionObserver />
       </body>
     </html>
   );

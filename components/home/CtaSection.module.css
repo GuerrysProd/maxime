@@ -1,0 +1,201 @@
+.section {
+  overflow: hidden;
+  padding-top: 128px;
+  background: var(--color-cacao);
+  color: var(--color-lin);
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+}
+
+.head {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.title {
+  font-size: 104px;
+  line-height: 1;
+  letter-spacing: -0.03em;
+}
+
+.lead {
+  max-width: 640px;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.5;
+  color: var(--color-pierre);
+}
+
+.chipsBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0 20px;
+  border: 1px solid rgba(245, 240, 232, 0.4);
+  border-radius: var(--radius-pill);
+  font-size: 15px;
+  transition:
+    background-color var(--duration-fast),
+    color var(--duration-fast);
+}
+
+.chip:hover {
+  background: var(--color-lin);
+  color: var(--color-cacao);
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.mobileOnly {
+  display: none;
+}
+
+/* ---------- Frise ---------- */
+
+.frieze {
+  position: relative;
+  margin-top: 104px;
+  overflow: hidden;
+}
+
+.track {
+  display: flex;
+  gap: 16px;
+  width: max-content;
+  animation: frieze 80s linear infinite;
+}
+
+.frieze:hover .track,
+.frieze:focus-within .track,
+.frieze[data-paused] .track {
+  animation-play-state: paused;
+}
+
+.frame {
+  position: relative;
+  flex: none;
+  width: 300px;
+  height: 220px;
+  overflow: hidden;
+  background: #2c2222;
+}
+
+@keyframes frieze {
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+.pause {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 1px solid rgba(245, 240, 232, 0.4);
+  border-radius: var(--radius-pill);
+  background: rgba(40, 30, 30, 0.6);
+  color: var(--color-lin);
+  font-size: 11px;
+  letter-spacing: -0.1em;
+  cursor: pointer;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .track {
+    animation: none;
+  }
+
+  .pause {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .section {
+    padding-top: 88px;
+  }
+
+  .inner {
+    gap: 28px;
+  }
+
+  .title {
+    font-size: 56px;
+  }
+
+  .lead {
+    font-size: 17px;
+    line-height: 1.55;
+  }
+
+  .chipsBlock {
+    gap: 14px;
+  }
+
+  .chips {
+    gap: 10px;
+  }
+
+  .chip {
+    padding: 0 18px;
+  }
+
+  .actions {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 28px;
+  }
+
+  .button {
+    width: 100%;
+  }
+
+  .desktopOnly {
+    display: none;
+  }
+
+  .mobileOnly {
+    display: inline;
+  }
+
+  .frieze {
+    margin-top: 56px;
+  }
+
+  .track {
+    gap: 12px;
+    animation-duration: 70s;
+  }
+
+  .frame {
+    width: 200px;
+    height: 150px;
+  }
+}

@@ -1,11 +1,15 @@
-import { SiteHeader } from "@/components/layout/SiteHeader";
-import { MAIN_ID } from "@/components/layout/SkipLink";
+import type { Metadata } from "next";
+import { HomePage } from "@/components/home/HomePage";
+import { getHome } from "@/lib/content";
+
+const { meta } = getHome();
+
+export const metadata: Metadata = {
+  title: { absolute: meta.title },
+  description: meta.description,
+  alternates: { canonical: "/" },
+};
 
 export default function Home() {
-  return (
-    <>
-      <SiteHeader variant="solid" />
-      <main id={MAIN_ID} style={{ minHeight: "60vh", paddingTop: "var(--header-height)" }} />
-    </>
-  );
+  return <HomePage heroVariant="origin" />;
 }

@@ -15,8 +15,8 @@ export function SiteFooter() {
   const ui = getUi();
   const { contact } = site;
 
-  const contactLink = (item: typeof contact.phone) => (
-    <a href={item.href} className={`${styles.link} nowrap`}>
+  const contactLink = (item: typeof contact.phone, wrap: "nowrap" | "anywhere") => (
+    <a href={item.href} className={`${styles.link} ${wrap === "nowrap" ? "nowrap" : styles.breakable}`}>
       <DraftText value={{ value: item.value, draft: item.draft, missing: false }} />
     </a>
   );
@@ -39,7 +39,7 @@ export function SiteFooter() {
   return (
     <footer className={styles.footer} data-site-footer>
       <div className="wrap">
-        <div className={`g12 ${styles.columns}`}>
+        <div className={styles.columns}>
           <div className={styles.intro}>
             <Logo kind="monogram" tone="cacao" width={80} className={styles.monogram} />
             <p className="muted">{site.identity.subtitle}</p>
@@ -68,8 +68,8 @@ export function SiteFooter() {
                 <DraftText value={contact.address} />
               </span>
               <span className={styles.line}>{contact.region}</span>
-              {contactLink(contact.phone)}
-              {contactLink(contact.email)}
+              {contactLink(contact.phone, "nowrap")}
+              {contactLink(contact.email, "anywhere")}
             </address>
             <ul className={styles.mobileOnly}>{socials}</ul>
           </div>
