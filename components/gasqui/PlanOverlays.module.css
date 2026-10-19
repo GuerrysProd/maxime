@@ -1,0 +1,308 @@
+/* Cadre « extrait de plan » du site actuel : en-tête, plan désaturé, légende. */
+.frame {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  border: 1px solid rgba(56, 43, 43, 0.12);
+  background: #fff;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  min-height: 52px;
+  padding: 0 20px;
+  border-bottom: 1px solid rgba(56, 43, 43, 0.12);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-cacao-70);
+}
+
+.head b {
+  font-weight: 400;
+  color: var(--color-cacao);
+}
+
+.canvas {
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+}
+
+.plan {
+  position: absolute;
+  max-width: none;
+  opacity: 0.6;
+  filter: saturate(0.5) contrast(0.86);
+  pointer-events: none;
+}
+
+.svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.caption {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px 28px;
+  padding: 16px 20px;
+  border-top: 1px solid rgba(56, 43, 43, 0.12);
+}
+
+.key {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-cacao-70);
+}
+
+.captionText {
+  flex: 1 1 280px;
+  font-size: 14px;
+  line-height: 1.55;
+  color: var(--color-texte-doux);
+}
+
+.legend {
+  display: flex;
+  flex: 1 1 auto;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+}
+
+.replay {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  margin-left: auto;
+  padding: 0 16px;
+  border: 1px solid var(--color-cacao);
+  border-radius: var(--radius-pill);
+  background: transparent;
+  color: var(--color-cacao);
+  font-size: 14px;
+  cursor: pointer;
+  transition:
+    background-color var(--duration-fast),
+    color var(--duration-fast);
+}
+
+.replay:hover {
+  background: var(--color-cacao);
+  color: var(--color-lin);
+}
+
+/* ---------- Réseau des guirlandes ---------- */
+
+.routeHalo,
+.routeLine {
+  fill: none;
+  vector-effect: non-scaling-stroke;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 1;
+  stroke-dashoffset: 0;
+}
+
+.routeHalo {
+  stroke: rgba(255, 250, 244, 0.94);
+  stroke-width: 8;
+}
+
+.routeLine {
+  stroke: var(--color-cacao);
+  stroke-width: 2.4;
+}
+
+.keyLine {
+  width: 24px;
+  height: 2px;
+  background: var(--color-cacao);
+}
+
+.anchorHalo {
+  fill: rgba(255, 250, 244, 0.94);
+}
+
+.anchorDot {
+  fill: var(--color-cacao);
+  stroke: #fff;
+  stroke-width: 1.4;
+  vector-effect: non-scaling-stroke;
+}
+
+.anchorText {
+  fill: var(--color-cacao);
+  font-family: var(--font-sans);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-anchor: middle;
+}
+
+.anchor,
+.mirror,
+.mirrorLabel {
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+/* Animations (état de base = tracé complet, ce qui reste en mouvement réduit). */
+[data-revealed] .routeHalo,
+[data-revealed] .routeLine {
+  animation: trace 1.8s cubic-bezier(0.55, 0.1, 0.25, 1) backwards;
+}
+
+[data-revealed] .anchor {
+  animation: pop 0.55s cubic-bezier(0.2, 0.9, 0.2, 1.2) backwards;
+}
+
+@keyframes trace {
+  from {
+    stroke-dashoffset: 1;
+  }
+}
+
+@keyframes pop {
+  0% {
+    opacity: 0;
+    transform: scale(0.35);
+  }
+  75% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+}
+
+/* ---------- Tracé des miroirs ---------- */
+
+/* Épaisseurs en unités du plan (≈ 3,9 px à l’écran) : avec non-scaling-stroke, Chrome
+   applique mal les tirets « pathLength » d’un tracé agrandi et en masque des segments. */
+.reflection {
+  fill: none;
+  stroke: var(--color-terre);
+  stroke-width: 0.55;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 1;
+  stroke-dashoffset: 0;
+}
+
+.reflectionHalo {
+  stroke: rgba(255, 250, 244, 0.92);
+  stroke-width: 1.6;
+}
+
+[data-revealed] .reflection {
+  animation: trace 3.1s 0.45s cubic-bezier(0.55, 0.1, 0.25, 1) backwards;
+}
+
+.mirror {
+  fill: var(--color-cacao);
+  stroke: var(--color-terre);
+  stroke-width: 3.4;
+  stroke-linejoin: round;
+  vector-effect: non-scaling-stroke;
+}
+
+[data-revealed] .mirror,
+[data-revealed] .mirrorLabel {
+  animation: pop 0.7s cubic-bezier(0.2, 0.9, 0.2, 1.25) backwards;
+}
+
+.mirrorLabel circle {
+  fill: var(--color-terre);
+  stroke: #fff;
+  stroke-width: 1;
+  vector-effect: non-scaling-stroke;
+}
+
+.mirrorLabel text {
+  fill: #fff;
+  font-family: var(--font-sans);
+  font-size: 4px;
+  font-weight: 600;
+  text-anchor: middle;
+}
+
+.observerRing {
+  fill: rgba(255, 250, 244, 0.88);
+  stroke: var(--color-terre);
+  stroke-width: 2.2;
+  vector-effect: non-scaling-stroke;
+}
+
+.observerCore {
+  fill: var(--color-terre);
+}
+
+.artwork {
+  fill: var(--color-cacao);
+  stroke: var(--color-terre);
+  stroke-width: 2.2;
+  stroke-linejoin: round;
+  vector-effect: non-scaling-stroke;
+}
+
+.observerKey,
+.mirrorKey,
+.artworkKey {
+  display: inline-block;
+  flex: none;
+}
+
+.observerKey {
+  width: 10px;
+  height: 10px;
+  border: 2px solid var(--color-terre);
+  border-radius: 50%;
+}
+
+.mirrorKey {
+  width: 16px;
+  height: 4px;
+  background: var(--color-cacao);
+  box-shadow: 0 0 0 1px var(--color-terre);
+}
+
+.artworkKey {
+  width: 9px;
+  height: 9px;
+  background: var(--color-cacao);
+  transform: rotate(45deg);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .replay {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .anchorText {
+    display: none;
+  }
+
+  .head {
+    padding: 0 14px;
+    font-size: 10px;
+  }
+
+  .caption {
+    padding: 14px;
+  }
+}

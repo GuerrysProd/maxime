@@ -21,15 +21,17 @@ function geometry(angle: number, cloth: boolean) {
   const rad = (angle * Math.PI) / 180;
   const d = { x: Math.cos(rad), y: Math.sin(rad) };
   const sun = { x: TARGET.x - SUN_DISTANCE * d.x, y: TARGET.y - SUN_DISTANCE * d.y };
+  // Avec la toile, le rayon est filtré (et non arrêté) : sa partie sous la toile est atténuée.
   const rays = [-24, 0, 24].map((offset) => {
     const start = { x: sun.x + 26 * d.x - offset * d.y, y: sun.y + 26 * d.y + offset * d.x };
-    let t = (GROUND - start.y) / d.y;
-    if (cloth) {
-      const tCloth = (CLOTH_Y - start.y) / d.y;
-      const x = start.x + tCloth * d.x;
-      if (x >= BEAM.from && x <= BEAM.to) t = tCloth;
-    }
-    return { x1: start.x, y1: start.y, x2: start.x + t * d.x, y2: start.y + t * d.y };
+    const t = (GROUND - start.y) / d.y;
+    const end = { x: start.x + t * d.x, y: GROUND };
+    const tCloth = (CLOTH_Y - start.y) / d.y;
+    const hit = { x: start.x + tCloth * d.x, y: CLOTH_Y };
+    const filtered = cloth && tCloth > 0 && hit.x >= BEAM.from && hit.x <= BEAM.to;
+    return filtered
+      ? { lit: { x1: start.x, y1: start.y, x2: hit.x, y2: hit.y }, soft: { x1: hit.x, y1: hit.y, x2: end.x, y2: end.y } }
+      : { lit: { x1: start.x, y1: start.y, x2: end.x, y2: end.y } };
   });
   const shift = (GROUND - CLOTH_Y) / Math.tan(rad);
   const shade = `${BEAM.from},${CLOTH_Y} ${BEAM.to},${CLOTH_Y} ${BEAM.to + shift},${GROUND} ${BEAM.from + shift},${GROUND}`;
@@ -46,7 +48,10 @@ function Scene({ angle, cloth, visible }: { angle: number; cloth: boolean; visib
       <line x1={TARGET.x} y1={TARGET.y} x2={sun.x} y2={sun.y} className={styles.guide} />
       <path d={arcPath} className={styles.guide} />
       {rays.map((ray, i) => (
-        <line key={i} {...ray} className={styles.ray} />
+        <g key={i}>
+          <line {...ray.lit} className={styles.ray} />
+          {ray.soft && <line {...ray.soft} className={styles.rayFiltered} />}
+        </g>
       ))}
       <circle cx={sun.x} cy={sun.y} r={18} className={styles.sun} />
       {cloth && <line x1={BEAM.from} y1={CLOTH_Y} x2={BEAM.to} y2={CLOTH_Y} className={styles.cloth} />}

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, type ReactNode } from "react";
+import { useState } from "react";
 import { Picture } from "@/components/media/Picture";
 import type { ProjectModules } from "@/lib/content";
 import { Toggle } from "./Toggle";
@@ -9,7 +9,7 @@ import styles from "./DayNight.module.css";
 type Moment = "day" | "night";
 
 /** Jour / nuit (brief §6) : fondu entre les deux rendus réels des guirlandes. */
-export function DayNight({ content, text }: { content: ProjectModules["dayNight"]; text: ReactNode }) {
+export function DayNight({ content }: { content: ProjectModules["dayNight"] }) {
   const [moment, setMoment] = useState<Moment>("day");
   const state = content[moment];
 
@@ -29,7 +29,11 @@ export function DayNight({ content, text }: { content: ProjectModules["dayNight"
         </div>
       </figure>
       <div className={styles.side}>
-        <p className={styles.text}>{text}</p>
+        <div className={styles.text}>
+          {content.text.map((paragraph, i) => (
+            <p key={i}>{paragraph}</p>
+          ))}
+        </div>
         <Toggle
           label={content.group}
           value={moment}

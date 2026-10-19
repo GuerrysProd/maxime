@@ -12,28 +12,72 @@ import { DayNight } from "./DayNight";
 import { Gardens } from "./Gardens";
 import { Herbarium } from "./Herbarium";
 import { LayerPlan } from "./LayerPlan";
-import { MirrorDiagram } from "./MirrorDiagram";
+import { GarlandNetwork, MirrorPlan } from "./PlanOverlays";
 import { Season } from "./Season";
 import styles from "./GasquiPage.module.css";
 
 const NBSP = " ";
 
 /** En-tête de module : surtitre et titre à gauche, texte (ou commandes) à droite. */
-function ModuleHeader({ id, label, title, children }: { id: string; label: string; title: string; children?: ReactNode }) {
+function ModuleHeader({
+  id,
+  label,
+  title,
+  level = 2,
+  children,
+}: {
+  id: string;
+  label: string;
+  title: string;
+  level?: 2 | 3;
+  children?: ReactNode;
+}) {
+  const Heading = level === 2 ? "h2" : "h3";
   return (
     <div className={styles.moduleHeader} data-reveal="">
       <div className={styles.moduleTitleBlock}>
         <p className="meta muted">{label}</p>
-        <h2 id={id} className={`serif ${styles.moduleTitle}`}>
+        <Heading id={id} className={`serif ${styles.moduleTitle}`}>
           {title}
-        </h2>
+        </Heading>
       </div>
       {children && <div className={styles.moduleAside}>{children}</div>}
     </div>
   );
 }
 
-/** Fiche Château Gasqui, gabarit « modules » (aperçu 10, brief §6, SOURCES §4). */
+/** Détail signature (matière, ligne) : image légendée et texte, éventuellement « Le geste ». */
+function SignatureFeature({ feature, reverse = false }: { feature: ProjectModules["matter"]; reverse?: boolean }) {
+  return (
+    <div className={styles.feature} data-reverse={reverse || undefined}>
+      <figure className={styles.featureFigure}>
+        <div className={styles.featureImage}>
+          <Picture image={feature.image} sizes="(max-width: 900px) 100vw, 58vw" />
+        </div>
+        <figcaption className="meta muted">{feature.caption}</figcaption>
+      </figure>
+      <div className={styles.featureText} data-reveal="">
+        <p className="meta muted">{feature.label}</p>
+        <h3 id={`${feature.id}-titre`} className={`serif ${styles.featureTitle}`}>
+          {feature.title}
+        </h3>
+        {feature.text.map((paragraph, i) => (
+          <p key={i} className={styles.moduleText}>
+            {paragraph}
+          </p>
+        ))}
+        {feature.gesture && (
+          <p className={styles.gesture}>
+            <span className="meta muted">{feature.gesture.label}</span>
+            {feature.gesture.text}
+          </p>
+        )}
+      </div>
+    </div>
+  );
+}
+
+/** Fiche Château Gasqui, gabarit « modules » (aperçu 10, brief §6, SOURCES §4, page du site actuel). */
 export function GasquiPage({
   project,
   content,
@@ -45,7 +89,7 @@ export function GasquiPage({
   total: number;
   next?: Project;
 }) {
-  const { plan, gardens, stats, dayNight, season, mirrors, materials, herbarium } = content;
+  const { intention, plan, stats, details, matter, dayNight, season, mirrors, line, gardens, herbarium } = content;
 
   return (
     <>
@@ -55,7 +99,24 @@ export function GasquiPage({
           <p className={styles.credit}>{content.credit}</p>
         </ProjectIntro>
 
-        {/* 01 — Plan en calques */}
+        {/* 01 — L’intention */}
+        <section className={`${styles.module} ${styles.ruled}`} aria-labelledby="intention-titre">
+          <div className={`wrap ${styles.intention}`}>
+            <div className={styles.intentionText}>
+              <ModuleHeader id="intention-titre" label={intention.label} title={intention.title} />
+              {intention.text.map((paragraph, i) => (
+                <p key={i} className={styles.intentionParagraph} data-reveal="">
+                  {paragraph}
+                </p>
+              ))}
+            </div>
+            <figure className={styles.intentionImage}>
+              <Picture image={intention.image} sizes="(max-width: 900px) 100vw, 40vw" />
+            </figure>
+          </div>
+        </section>
+
+        {/* 02 — Le plan */}
         <section className={`${styles.module} ${styles.stone}`} aria-labelledby="plan-titre">
           <div className="wrap">
             <ModuleHeader id="plan-titre" label={plan.label} title={plan.title}>
@@ -65,7 +126,7 @@ export function GasquiPage({
               plan={plan}
               steps={plan.steps.map((step) => ({ title: <DraftText value={step.title} />, text: <DraftText value={step.text} /> }))}
             />
-            <a className={styles.pdf} href={plan.pdf.href} target="_blank" rel="noopener">
+            <a className={styles.pdf} href={plan.pdf.href} download>
               <span className={styles.pdfPreview}>
                 <Picture image={plan.pdf.preview} sizes="(max-width: 900px) 100vw, 25vw" />
               </span>
@@ -73,7 +134,7 @@ export function GasquiPage({
                 <span className={`serif ${styles.pdfTitle}`}>{plan.pdf.title}</span>
                 <span className={styles.pdfLabel}>
                   {plan.pdf.label}
-                  <Icon name="arrow-up-right" size={14} />
+                  <Icon name="download" size={14} />
                 </span>
                 <span className="meta muted">{plan.pdf.meta}</span>
               </span>
@@ -81,16 +142,8 @@ export function GasquiPage({
           </div>
         </section>
 
-        {/* 02 — Quatre jardins */}
-        <section className={styles.module} aria-labelledby="jardins-titre">
-          <div className="wrap">
-            <ModuleHeader id="jardins-titre" label={gardens.label} title={gardens.title} />
-            <Gardens gardens={gardens} paletteHref="#herbier" />
-          </div>
-        </section>
-
-        {/* Le projet en chiffres */}
-        <section className={`${styles.stats} ${styles.stone}`} aria-labelledby="chiffres-titre">
+        {/* Le projet en matière */}
+        <section className={styles.stats} aria-labelledby="chiffres-titre">
           <div className={`wrap ${styles.statsGrid}`}>
             <div className={styles.statsHead} data-reveal="">
               <p className="meta muted">{stats.label}</p>
@@ -103,9 +156,7 @@ export function GasquiPage({
                 <div key={item.label} className={styles.stat} data-reveal="">
                   <dt className={styles.statLabel}>{item.label}</dt>
                   <dd className={`serif ${styles.statValue}`}>
-                    <span className="sr-only">
-                      {[item.prefix, item.value, item.unit].filter(Boolean).join(NBSP)}
-                    </span>
+                    <span className="sr-only">{[item.prefix, item.value, item.unit].filter(Boolean).join(NBSP)}</span>
                     <span aria-hidden="true">
                       {item.prefix && <span className={styles.statPrefix}>{item.prefix}</span>}
                       <CountUp value={item.value} />
@@ -118,37 +169,59 @@ export function GasquiPage({
           </div>
         </section>
 
-        {/* 03 — Jour / nuit */}
-        <section className={styles.module} aria-labelledby="nuit-titre">
-          <div className="wrap">
-            <ModuleHeader id="nuit-titre" label={dayNight.label} title={dayNight.title} />
-            <DayNight content={dayNight} text={<DraftText value={dayNight.text} />} />
+        {/* 03 — Les détails signature */}
+        <section aria-labelledby="details-titre">
+          {/* 01 / Matière */}
+          <div className={`${styles.module} ${styles.stone}`}>
+            <div className="wrap">
+              <ModuleHeader id="details-titre" label={details.label} title={details.title}>
+                <p className={styles.moduleText}>{details.text}</p>
+              </ModuleHeader>
+              <SignatureFeature feature={matter} />
+            </div>
           </div>
-        </section>
 
-        {/* 04 — Été / hiver */}
-        <section className={`${styles.module} ${styles.stone}`} aria-labelledby="saisons-titre">
-          <div className="wrap">
-            <ModuleHeader id="saisons-titre" label={season.label} title={season.title} />
-            <Season content={season} />
+          {/* 02 / Lumière */}
+          <div className={styles.module}>
+            <div className="wrap">
+              <ModuleHeader id="lumiere-titre" label={dayNight.label} title={dayNight.title} level={3} />
+              <DayNight content={dayNight} />
+              <div className={styles.network}>
+                <GarlandNetwork image={content.planImage} content={dayNight.network} />
+              </div>
+            </div>
           </div>
-        </section>
 
-        {/* 05 — Miroirs : le jardin par ricochet */}
-        <section className={styles.module} aria-labelledby="miroirs-titre">
-          <div className="wrap">
-            <ModuleHeader id="miroirs-titre" label={mirrors.label} title={mirrors.title}>
-              <p className={styles.moduleText}>{mirrors.text}</p>
-            </ModuleHeader>
-            <div className={styles.mirrors}>
-              <div className={styles.mirrorDiagram}>
-                <MirrorDiagram label={mirrors.diagram} observer={mirrors.observer} artwork={mirrors.artwork} />
+          {/* 03 / Ombre */}
+          <div className={`${styles.module} ${styles.stone}`}>
+            <div className="wrap">
+              <ModuleHeader id="ombre-titre" label={season.label} title={season.title} level={3} />
+              <Season content={season} />
+            </div>
+          </div>
+
+          {/* 04 / Perspective */}
+          <div className={styles.module}>
+            <div className="wrap">
+              <ModuleHeader id="perspective-titre" label={mirrors.label} title={mirrors.title} level={3}>
+                <p className={styles.moduleText}>{mirrors.text}</p>
+              </ModuleHeader>
+              <div className={styles.mirrors}>
+                <figure className={styles.mirrorPhoto}>
+                  <div className={styles.mirrorImage}>
+                    <Picture image={mirrors.image} sizes="(max-width: 900px) 100vw, 58vw" />
+                  </div>
+                  <figcaption className="meta muted">{mirrors.caption}</figcaption>
+                </figure>
+                <div className={styles.mirrorPlan}>
+                  <MirrorPlan image={content.planImage} content={mirrors.plan} />
+                </div>
               </div>
               <ol className={styles.mirrorSteps}>
                 {mirrors.steps.map((step) => (
                   <li key={step.number} className={styles.mirrorStep} data-reveal="">
                     <span className={styles.mirrorNumber}>{step.number}</span>
-                    <h3 className={`serif ${styles.mirrorTitle}`}>{step.title}</h3>
+                    <h4 className={`serif ${styles.mirrorTitle}`}>{step.title}</h4>
                     <p className={styles.mirrorText}>
                       <DraftText value={step.text} />
                     </p>
@@ -156,40 +229,28 @@ export function GasquiPage({
                 ))}
               </ol>
             </div>
-            <figure className={styles.mirrorImage}>
-              <Picture image={mirrors.image} sizes="(max-width: 1440px) 100vw, 1280px" parallax={0.05} />
-            </figure>
           </div>
-        </section>
 
-        {/* 06 — Matières */}
-        <section className={`${styles.module} ${styles.ruled}`} aria-label={materials.label}>
-          <div className="wrap">
-            <p className={`meta muted ${styles.materialsLabel}`}>{materials.label}</p>
-            <div className={styles.materials}>
-              {materials.items.map((item) => (
-                <article key={item.id} className={styles.material} aria-labelledby={`${item.id}-titre`}>
-                  <figure className={styles.materialImage}>
-                    <Picture image={item.image} sizes="(max-width: 900px) 100vw, 58vw" />
-                  </figure>
-                  <div className={styles.materialText} data-reveal="">
-                    <h2 id={`${item.id}-titre`} className={`serif ${styles.materialTitle}`}>
-                      {item.title}
-                    </h2>
-                    {item.text.map((paragraph, i) => (
-                      <p key={i} className={styles.moduleText}>
-                        {paragraph}
-                      </p>
-                    ))}
-                  </div>
-                </article>
-              ))}
+          {/* 05 / Ligne */}
+          <div className={`${styles.module} ${styles.stone}`}>
+            <div className="wrap">
+              <SignatureFeature feature={line} reverse />
             </div>
           </div>
         </section>
 
-        {/* 07 — Herbier */}
-        <section id="herbier" className={`${styles.module} ${styles.ruled}`} aria-labelledby="herbier-titre">
+        {/* 04 — Les jardins */}
+        <section className={styles.module} aria-labelledby="jardins-titre">
+          <div className="wrap">
+            <ModuleHeader id="jardins-titre" label={gardens.label} title={gardens.title}>
+              <p className={`serif ${styles.subtitle}`}>{gardens.subtitle}</p>
+            </ModuleHeader>
+            <Gardens gardens={gardens} paletteHref="#herbier" />
+          </div>
+        </section>
+
+        {/* 05 — La palette végétale */}
+        <section id="herbier" className={`${styles.module} ${styles.stone}`} aria-labelledby="herbier-titre">
           <div className="wrap">
             <ModuleHeader id="herbier-titre" label={herbarium.label} title={herbarium.title}>
               <p className={styles.moduleText}>{herbarium.text}</p>

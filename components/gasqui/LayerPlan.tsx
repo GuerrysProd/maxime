@@ -47,7 +47,7 @@ export function LayerPlan({ plan, steps }: { plan: Plan; steps: { title: ReactNo
 
   const isVisible = (layer: Plan["layers"][number]) =>
     layer.step <= active && (layer.until === undefined || active <= layer.until);
-  const visibleCount = plan.layers.filter(isVisible).length;
+  const visibleLayers = plan.layers.filter(isVisible);
   const showSpaces = plan.layers.some((layer) => layer.until !== undefined && isVisible(layer));
 
   return (
@@ -82,7 +82,10 @@ export function LayerPlan({ plan, steps }: { plan: Plan; steps: { title: ReactNo
         <figcaption className={styles.caption}>
           <span className="meta muted">{plan.caption}</span>
           <span className="meta muted" aria-live="polite">
-            {fill(plan.visible, { n: visibleCount, total: plan.layers.length })}
+            {fill(plan.visible, { n: visibleLayers.length, total: plan.layers.length })}
+          </span>
+          <span className="sr-only">
+            {plan.visibleList} {visibleLayers.map((layer) => layer.label).join(", ")}.
           </span>
         </figcaption>
       </figure>
@@ -92,9 +95,20 @@ export function LayerPlan({ plan, steps }: { plan: Plan; steps: { title: ReactNo
           <li key={plan.steps[index].id} className={styles.step}>
             <button type="button" className={styles.button} aria-pressed={index === active} onClick={() => setActive(index)}>
               <span className={styles.number}>{String(index + 1).padStart(2, "0")}</span>
+              <span className={`meta ${styles.label}`}>{plan.steps[index].label}</span>
               <span className={`serif ${styles.title}`}>{step.title}</span>
               <span className={styles.text}>{step.text}</span>
             </button>
+            {plan.steps[index].details && (
+              <dl className={styles.details}>
+                {plan.steps[index].details?.map((detail) => (
+                  <div key={detail.title}>
+                    <dt className="serif">{detail.title}</dt>
+                    <dd>{detail.text}</dd>
+                  </div>
+                ))}
+              </dl>
+            )}
             {plan.steps[index].facts && (
               <ul className={styles.facts}>
                 {plan.steps[index].facts?.map((fact) => (

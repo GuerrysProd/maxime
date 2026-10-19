@@ -1,113 +1,457 @@
 {
   "slug": "chateau-gasqui",
-  "_note": "Gabarit « modules » (aperçu 10, brief §6, SOURCES §4 Château Gasqui). Textes réels : site-actuel/src/gasqui.js (quatre jardins, bordures corten, libellés jour / nuit et été / hiver, floraisons, compteurs) et SOURCES (intention, crédit, ricochet, fibre de coco, Alain Vagh). Le contenu de la page actuelle (site-actuel/assets/gasqui/page.html → textes/gasqui-contenu.txt) manque : les textes rédigés d’après les rendus et les calques sont en brouillon (draft) et seront remplacés par les textes réels. Noms français de l’herbier déduits des noms des photos, noms latins et floraisons de gasqui.js.",
-  "lead": "À Gonfaron, dans le Var, le Selbstpflückfeld allemand — le champ d’auto-cueillette — transposé en jardin provençal.",
+  "_note": "Gabarit « modules » (aperçu 10, brief §6, SOURCES §4). Textes réels : textes/gasqui-contenu.txt (page.html du site actuel) dans la version affichée en ligne, c’est-à-dire après les corrections de site-actuel/src/gasqui.js (titre de l’intention, bordures corten, quatre jardins, floraisons, compteurs). Numérotation des étapes du plan corrigée (« 04 » en double sur le site actuel). Le réseau des guirlandes et le tracé des miroirs reprennent les coordonnées de page.html sur plan-gasqui.png.",
+  "lead": "Le principe allemand du Selbstpflückfeld — un champ où chacun récolte lui-même — est transposé au cœur de la Provence.",
   "intro": [
-    "Quatre atmosphères — jardin provençal, espace central, jardin exotique, restanque herborée —, une palette de trente essences, des terrasses en terre cuite d’Alain Vagh, des guirlandes, une ombrière qui suit les saisons et des miroirs en acier corten."
+    "Toute la composition du jardin s’organise autour de cette expérience : parcourir, choisir, cueillir et découvrir une palette méditerranéenne au fil des saisons.",
+    "Une composition en quatre scènes : jardin provençal, espace central, jardin exotique, restanque herborée."
   ],
   "credit": "Conception effectuée en étroite collaboration avec Sergeant Paysage.",
   "specs": [
-    { "label": "Lieu", "value": "Gonfaron, Var" },
-    { "label": "Programme", "value": "Champ d’auto-cueillette provençal" },
-    { "label": "Statut", "status": true },
-    { "label": "Mission", "value": { "value": "Conception du jardin et de ses ouvrages : ombrière, terrasses, miroirs", "draft": true } },
-    { "label": "Partenaires", "value": "Sergeant Paysage (paysagiste) · Alain Vagh, Salernes (terre cuite)" },
-    { "label": "Année", "value": "[À COMPLÉTER : année]" },
-    { "label": "Surface", "value": "[À COMPLÉTER : surface du jardin]" }
+    {
+      "label": "Lieu",
+      "value": "Gonfaron, Var"
+    },
+    {
+      "label": "Programme",
+      "value": "Champ d’auto-cueillette provençal"
+    },
+    {
+      "label": "Statut",
+      "status": true
+    },
+    {
+      "label": "Mission",
+      "value": {
+        "value": "Conception du jardin et de ses ouvrages : ombrière, terrasses, miroirs",
+        "draft": true
+      }
+    },
+    {
+      "label": "Partenaires",
+      "value": "Sergeant Paysage (paysagiste) · Alain Vagh, Salernes (terre cuite)"
+    },
+    {
+      "label": "Année",
+      "value": "[À COMPLÉTER : année]"
+    },
+    {
+      "label": "Surface",
+      "value": "[À COMPLÉTER : surface du jardin]"
+    }
   ],
   "contactType": "hospitalite",
-
+  "planImage": "/images/projets/chateau-gasqui/plan/plan-gasqui.png",
+  "intention": {
+    "label": "01 — L’intention",
+    "title": "De l’auto-cueillette germanique à un paysage provençal.",
+    "text": [
+      "Le projet reprend l’esprit des Selbstpflückfelder allemands, ces champs d’auto-cueillette où le visiteur entre directement dans la culture, choisit ce qu’il récolte et compose lui-même son parcours. À Château Gasqui, ce principe devient l’idée directrice de tout le jardin.",
+      "Les rangs agricoles cèdent la place à des chemins souples et à une succession de paysages provençaux. Plantes aromatiques, espèces utiles, floraisons saisonnières et végétaux méditerranéens se mêlent dans une composition accessible, généreuse et volontairement immersive. La cueillette n’est plus un geste isolé : elle devient une manière de découvrir les parfums, les textures et les cycles du vivant.",
+      "Le jardin ne cherche pas à reproduire littéralement un champ allemand. Il en transpose l’usage dans le Var, avec ses sols clairs, ses courbes en acier corten, ses arbres d’ombre et son atmosphère de garrigue. Chaque séquence invite à marcher, observer et prélever avec mesure, au rythme des saisons."
+    ],
+    "image": {
+      "src": "/images/projets/chateau-gasqui/plants/arbres-olivier.jpg",
+      "alt": "Olivier proposé pour le projet"
+    }
+  },
   "plan": {
-    "label": "01 — Plan en calques",
-    "title": "Le jardin, calque par calque.",
-    "text": "Le plan reste fixe ; à chaque étape du récit, un calque s’ajoute. Les étapes se choisissent aussi d’un clic.",
+    "label": "02 — Le plan",
+    "title": "Le plan détaillé.",
+    "text": "Faites défiler pour voir le site existant devenir jardin. Chaque dessin, chaque couleur et chaque implantation provient de son calque technique d’origine.",
     "group": "Étapes du plan",
     "visible": "Calques visibles : {n} / {total}",
-    "caption": "Plan du jardin, calque par calque",
+    "visibleList": "Calques affichés :",
+    "caption": "Plan évolutif · Projet Gasqui",
     "layers": [
-      { "id": "existing-ground", "src": "/images/projets/chateau-gasqui/plan/layers/existing-ground.png", "step": 0 },
-      { "id": "existing-tiles", "src": "/images/projets/chateau-gasqui/plan/layers/existing-tiles.png", "step": 0 },
-      { "id": "zone-paths", "src": "/images/projets/chateau-gasqui/plan/layers/zone-paths.png", "step": 1 },
-      { "id": "zone-aromatics", "src": "/images/projets/chateau-gasqui/plan/layers/zone-aromatics.png", "step": 1 },
-      { "id": "zone-lawn", "src": "/images/projets/chateau-gasqui/plan/layers/zone-lawn.png", "step": 1, "focus": 7 },
-      { "id": "zone-planted", "src": "/images/projets/chateau-gasqui/plan/layers/zone-planted.png", "step": 1 },
-      { "id": "terracotta", "src": "/images/projets/chateau-gasqui/plan/layers/terracotta.png", "step": 1 },
-      { "id": "wood-deck", "src": "/images/projets/chateau-gasqui/plan/layers/wood-deck.png", "step": 1 },
-      { "id": "stone-water", "src": "/images/projets/chateau-gasqui/plan/layers/stone-water.png", "step": 1, "focus": 7 },
-      { "id": "hatch-provence", "src": "/images/projets/chateau-gasqui/plan/layers/hatch-provence.png", "step": 2, "until": 2, "opacity": 0.75 },
-      { "id": "hatch-central", "src": "/images/projets/chateau-gasqui/plan/layers/hatch-central.png", "step": 2, "until": 2, "opacity": 0.75 },
-      { "id": "hatch-exotic", "src": "/images/projets/chateau-gasqui/plan/layers/hatch-exotic.png", "step": 2, "until": 2, "opacity": 0.75 },
-      { "id": "base", "src": "/images/projets/chateau-gasqui/plan/layers/base.png", "step": 0 },
-      { "id": "path-lines", "src": "/images/projets/chateau-gasqui/plan/layers/path-lines.png", "step": 1 },
-      { "id": "flowers", "src": "/images/projets/chateau-gasqui/plan/layers/flowers.png", "step": 5 },
-      { "id": "trees-canopy", "src": "/images/projets/chateau-gasqui/plan/layers/trees-canopy.png", "step": 4 },
-      { "id": "trees-special", "src": "/images/projets/chateau-gasqui/plan/layers/trees-special.png", "step": 3 },
-      { "id": "shade-sail", "src": "/images/projets/chateau-gasqui/plan/layers/shade-sail.png", "step": 6 },
-      { "id": "furniture", "src": "/images/projets/chateau-gasqui/plan/layers/furniture.png", "step": 6 }
+      {
+        "id": "existing-ground",
+        "label": "Zones goudronnées et murées existantes",
+        "src": "/images/projets/chateau-gasqui/plan/layers/existing-ground.png",
+        "step": 0
+      },
+      {
+        "id": "existing-tiles",
+        "label": "Carreaux existants",
+        "src": "/images/projets/chateau-gasqui/plan/layers/existing-tiles.png",
+        "step": 0
+      },
+      {
+        "id": "zone-paths",
+        "label": "Zones des chemins en clapissette",
+        "src": "/images/projets/chateau-gasqui/plan/layers/zone-paths.png",
+        "step": 1
+      },
+      {
+        "id": "zone-aromatics",
+        "label": "Zone de culture aromatique",
+        "src": "/images/projets/chateau-gasqui/plan/layers/zone-aromatics.png",
+        "step": 1
+      },
+      {
+        "id": "zone-lawn",
+        "label": "Zone de gazon",
+        "src": "/images/projets/chateau-gasqui/plan/layers/zone-lawn.png",
+        "step": 1,
+        "focus": 7
+      },
+      {
+        "id": "zone-planted",
+        "label": "Zones arborées et plantées",
+        "src": "/images/projets/chateau-gasqui/plan/layers/zone-planted.png",
+        "step": 1
+      },
+      {
+        "id": "terracotta",
+        "label": "Nouvelles terrasses en terre cuite",
+        "src": "/images/projets/chateau-gasqui/plan/layers/terracotta.png",
+        "step": 1
+      },
+      {
+        "id": "wood-deck",
+        "label": "Terrasse en bois",
+        "src": "/images/projets/chateau-gasqui/plan/layers/wood-deck.png",
+        "step": 1
+      },
+      {
+        "id": "stone-water",
+        "label": "Zones de pierre, restanque et fontaine",
+        "src": "/images/projets/chateau-gasqui/plan/layers/stone-water.png",
+        "step": 1,
+        "focus": 7
+      },
+      {
+        "id": "hatch-provence",
+        "label": "Emprise du jardin provençal",
+        "src": "/images/projets/chateau-gasqui/plan/layers/hatch-provence.png",
+        "step": 2,
+        "until": 2,
+        "opacity": 0.75
+      },
+      {
+        "id": "hatch-central",
+        "label": "Emprise de l’espace central",
+        "src": "/images/projets/chateau-gasqui/plan/layers/hatch-central.png",
+        "step": 2,
+        "until": 2,
+        "opacity": 0.75
+      },
+      {
+        "id": "hatch-exotic",
+        "label": "Emprise du jardin exotique",
+        "src": "/images/projets/chateau-gasqui/plan/layers/hatch-exotic.png",
+        "step": 2,
+        "until": 2,
+        "opacity": 0.75
+      },
+      {
+        "id": "base",
+        "label": "Plan de départ du projet Gasqui",
+        "src": "/images/projets/chateau-gasqui/plan/layers/base.png",
+        "step": 0
+      },
+      {
+        "id": "path-lines",
+        "label": "Tracé technique des chemins",
+        "src": "/images/projets/chateau-gasqui/plan/layers/path-lines.png",
+        "step": 1
+      },
+      {
+        "id": "flowers",
+        "label": "Implantation des plantes fleuries",
+        "src": "/images/projets/chateau-gasqui/plan/layers/flowers.png",
+        "step": 5
+      },
+      {
+        "id": "trees-canopy",
+        "label": "Implantation des autres nouveaux arbres",
+        "src": "/images/projets/chateau-gasqui/plan/layers/trees-canopy.png",
+        "step": 4
+      },
+      {
+        "id": "trees-special",
+        "label": "Localisation des cinq arbres d’exception",
+        "src": "/images/projets/chateau-gasqui/plan/layers/trees-special.png",
+        "step": 3
+      },
+      {
+        "id": "shade-sail",
+        "label": "Poteaux et toile d’ombrage",
+        "src": "/images/projets/chateau-gasqui/plan/layers/shade-sail.png",
+        "step": 6
+      },
+      {
+        "id": "furniture",
+        "label": "Mobilier des espaces de pause",
+        "src": "/images/projets/chateau-gasqui/plan/layers/furniture.png",
+        "step": 6
+      }
     ],
     "spaces": [
-      { "name": "Jardin provençal", "x": 25.81, "y": 30.03 },
-      { "name": "Espace central", "x": 48.47, "y": 30.53 },
-      { "name": "Jardin exotique", "x": 67.6, "y": 33.69 }
+      {
+        "name": "Jardin provençal",
+        "x": 25.81,
+        "y": 30.03
+      },
+      {
+        "name": "Espace central",
+        "x": 48.47,
+        "y": 30.53
+      },
+      {
+        "name": "Jardin exotique",
+        "x": 67.6,
+        "y": 33.69
+      }
     ],
     "steps": [
       {
         "id": "existant",
-        "title": { "value": "Le site existant", "draft": true },
-        "text": { "value": "La parcelle telle qu’elle est : ses sols, son dallage et ses limites, point de départ du dessin.", "draft": true }
+        "label": "L’existant",
+        "title": "Le site comme point de départ.",
+        "text": "Le plan s’ouvre sur la trame conservée : les limites bâties et murées, les surfaces goudronnées, la dalle centrale et les carreaux existants. Chaque geste du projet vient ensuite se glisser autour de cette structure, sans la masquer."
       },
       {
-        "id": "chemins",
-        "title": { "value": "Les chemins et les sols", "draft": true },
-        "text": { "value": "Les allées dessinent les massifs ; terre cuite, platelage en bois, pierre et eau prennent place.", "draft": true }
+        "id": "parcours",
+        "label": "Le parcours",
+        "title": "Le chemin dessine le jardin.",
+        "text": "Le trait révèle les courbes des chemins, tandis que les grandes zones paysagères prennent place sous le dessin technique."
       },
       {
-        "id": "atmospheres",
-        "title": { "value": "Trois atmosphères", "draft": true },
-        "text": { "value": "Jardin provençal, espace central et jardin exotique se partagent la parcelle ; la restanque herborée les borde.", "draft": true }
+        "id": "paysages",
+        "label": "Trois paysages",
+        "title": "Trois atmosphères, un même geste.",
+        "text": "Les hachures apparaissent momentanément pour rendre lisibles les trois séquences majeures du projet.",
+        "details": [
+          {
+            "title": "Jardin provençal",
+            "text": "Une promenade sinueuse et immersive ralentit la marche. Elle compose un jardin endémique, libre et fleuri, où les strates végétales recréent l’atmosphère sensible d’une garrigue provençale."
+          },
+          {
+            "title": "Jardin exotique",
+            "text": "Les mêmes courbes organiques encadrent une allée volontairement rectiligne entre l’espace central et la serre. Les essences, parfaitement adaptées au climat provençal, sont choisies pour leurs silhouettes plus graphiques et leur présence subtilement dépaysante."
+          },
+          {
+            "title": "Espace central",
+            "text": "Autour de la dalle et des quatre arbres taillés existants, une clairière habitée forme le cœur du jardin et distribue naturellement les différentes promenades."
+          }
+        ]
       },
       {
-        "id": "arbres",
-        "title": { "value": "Les arbres remarquables", "draft": true },
-        "text": { "value": "Quelques sujets choisis ponctuent le plan et guident le regard.", "draft": true }
+        "id": "exception",
+        "label": "Arbres d’exception",
+        "title": "Cinq arbres d’exception.",
+        "text": "Cinq arbres d’exception prennent place comme des pièces majeures. Choisis pour leur port, leur écorce, leur floraison ou leur ombre, ils donnent une identité forte à leur scène et deviennent des points de repère tout au long de la promenade."
       },
       {
         "id": "canopee",
-        "title": { "value": "La canopée", "draft": true },
-        "text": { "value": "Les arbres taillés apportent l’ombre aux terrasses et aux allées.", "draft": true }
+        "label": "La canopée",
+        "title": "Les arbres du jardin.",
+        "text": "Neuf autres arbres complètent la composition. Le jeu de leurs hauteurs, de leurs ports et de leurs densités installe des respirations, cadre les vues et fait varier l’ombre au fil du jardin et des saisons."
       },
       {
         "id": "floraisons",
-        "title": { "value": "Les floraisons", "draft": true },
-        "text": { "value": "Les massifs se remplissent : trente essences, près de 190 arbustes fleuris.", "draft": true }
+        "label": "Les floraisons",
+        "title": "Les plantes.",
+        "text": "Les plantes fleuries se développent avec générosité. Elles sont accompagnées et entretenues, mais peu contraintes par la taille afin de conserver leur port naturel. Dans les zones arborées, les couvre-sols et les strates basses occupent presque toute la surface : la terre s’efface sous une matière végétale continue."
       },
       {
-        "id": "ombriere",
-        "title": { "value": "L’ombrière et le mobilier", "draft": true },
-        "text": { "value": "La toile d’été démontable couvre l’axe qui mène à la serre ; tables et assises s’installent sur les terrasses.", "draft": true }
+        "id": "terrasses",
+        "label": "Les terrasses",
+        "title": "Des pauses à toutes les échelles.",
+        "text": "De petites terrasses en terre cuite et une terrasse en bois ponctuent le parcours. Elles accueillent des tables pour deux ou quatre personnes ; au centre, une table de six places devient le lieu du partage. Poteaux et toile d’ombrage complètent ces haltes sans alourdir les vues."
       },
       {
         "id": "restanque",
-        "title": "La restanque herborée",
-        "text": "La restanque rassemble les plantes utiles et médicinales autour de la fontaine ancienne. Une terrasse en bois domine le jardin et offre un point d’arrêt au-dessus des zones de culture.",
-        "facts": ["Ortie", "Consoude", "Camomille", "Achillée millefeuille"]
+        "label": "La restanque",
+        "title": "Un belvédère herboré.",
+        "text": "La restanque accueille une fontaine ancienne en pierre, une terrasse en bois panoramique ouverte sur le jardin et une nouvelle bande arborée. L’espace de culture compose en contrebas un herbier utile, vivant et accessible.",
+        "facts": [
+          "Ortie",
+          "Prêle des champs",
+          "Consoude",
+          "Camomille",
+          "Achillée millefeuille",
+          "Pissenlit",
+          "Valériane"
+        ]
       }
     ],
     "pdf": {
-      "title": "Le plan d’ensemble",
-      "label": "Ouvrir le plan du jardin",
+      "title": "Plan jardin Gasqui V3",
+      "label": "Télécharger le plan",
       "href": "/images/projets/chateau-gasqui/plan/plan-jardin-v3.pdf",
       "meta": "PDF · 3,4 Mo",
       "preview": {
         "src": "/images/projets/chateau-gasqui/plan/plan-jardin-v3-preview.png",
-        "alt": "Plan du jardin : jardin provençal, espace central, jardin exotique et restanque herborée avec sa fontaine ancienne"
+        "alt": "Aperçu du plan jardin Gasqui V3"
       }
     }
   },
-
+  "stats": {
+    "label": "Le projet en matière",
+    "title": "Des mesures précises.",
+    "items": [
+      {
+        "value": 421,
+        "unit": "m²",
+        "label": "de plantations"
+      },
+      {
+        "value": 190,
+        "prefix": "≈",
+        "label": "arbustes fleuris"
+      },
+      {
+        "value": 30,
+        "label": "essences végétales"
+      },
+      {
+        "value": 4,
+        "label": "jardins"
+      }
+    ]
+  },
+  "details": {
+    "label": "03 — Les détails signature",
+    "title": "Les points forts du projet.",
+    "text": "Au-delà des surfaces et des plantations, certains gestes donnent au projet sa personnalité. Ils se découvrent par la matière, la lumière et le regard."
+  },
+  "matter": {
+    "id": "terre-cuite",
+    "label": "01 / Matière",
+    "title": "La terre cuite signée Alain Vagh.",
+    "text": [
+      "Le sol des terrasses devient une pièce du projet à part entière. Les carreaux signés Alain Vagh, à Salernes, apportent une chaleur minérale et des nuances que seule une terre cuite artisanale peut offrir.",
+      "Irrégularités, variations de cuisson et patine future donneront aux terrasses une présence vivante — précise dans son dessin, jamais uniforme dans sa matière."
+    ],
+    "gesture": {
+      "label": "Le geste",
+      "text": "Un sol tactile qui prolonge la maison dans le jardin."
+    },
+    "image": {
+      "src": "/images/projets/chateau-gasqui/chateau-gasqui-terrasse-terre-cuite.jpg",
+      "alt": "Terrasse en carreaux de terre cuite autour d’un jardin"
+    },
+    "caption": "Terre cuite artisanale · Alain Vagh, Salernes"
+  },
+  "dayNight": {
+    "label": "02 / Lumière",
+    "title": "Une lumière suspendue.",
+    "text": [
+      "Des guirlandes dessinent de légers ponts au-dessus des chemins. Le jour, leurs lignes accompagnent la promenade sans l’encombrer. À la nuit tombée, elles composent un plafond de lumière chaude, bas et intime.",
+      "L’éclairage souligne la clapissette, révèle les feuillages et guide naturellement les pas. Il ne cherche pas à éclairer tout le jardin : il crée des halos, ménage des zones d’ombre et préserve la profondeur du paysage nocturne."
+    ],
+    "group": "Choisir l’ambiance lumineuse",
+    "day": {
+      "button": "Jour",
+      "label": "Le jour",
+      "image": {
+        "src": "/images/projets/chateau-gasqui/key-elements/guirlande-day.jpg",
+        "alt": "Guirlandes suspendues au-dessus du chemin, de jour"
+      }
+    },
+    "night": {
+      "button": "Nuit",
+      "label": "La nuit",
+      "image": {
+        "src": "/images/projets/chateau-gasqui/key-elements/guirlande-night.jpg",
+        "alt": "Les mêmes guirlandes allumées dans le jardin de nuit"
+      }
+    },
+    "network": {
+      "head": "Plan V3 · vue d’ensemble",
+      "title": "Réseau des guirlandes",
+      "key": "Déploiement au-dessus des chemins",
+      "text": "Le réseau se ramifie depuis l’espace central pour accompagner les principales séquences de promenade.",
+      "replay": "Revoir l’animation",
+      "replayLabel": "Revoir l’animation du déploiement des guirlandes",
+      "aria": "Réseau de guirlandes au-dessus des chemins du jardin : quinze points d’accroche, ramifiés depuis l’espace central"
+    }
+  },
+  "season": {
+    "label": "03 / Ombre",
+    "title": "Une ombre saisonnière.",
+    "group": "Choisir la saison",
+    "diagram": "Coupe de l’axe qui mène à la serre et hauteur du soleil à midi aux solstices, à la latitude de Gonfaron (≈ 43,3° N)",
+    "summer": {
+      "button": "Été",
+      "label": "L’été",
+      "sun": 70,
+      "sunLabel": "≈ 70° à midi, solstice d’été : la toile filtre le soleil",
+      "text": "Sur l’axe qui conduit à la serre, une toile en fibre de coco se tend au-dessus de la structure légère pendant la saison chaude. Sa trame filtre le soleil plutôt que de l’arrêter complètement : elle tempère le chemin, dessine une ombre mouvante sur la clapissette et conserve une lumière douce au cœur des plantations.",
+      "image": {
+        "src": "/images/projets/chateau-gasqui/key-elements/abri-ete.jpg",
+        "alt": "Chemin menant à la serre en été, ombragé par une toile en fibre de coco"
+      }
+    },
+    "winter": {
+      "button": "Hiver",
+      "label": "L’hiver",
+      "sun": 23,
+      "sunLabel": "≈ 23° à midi, solstice d’hiver : la toile est retirée",
+      "text": "En hiver, la toile est simplement retirée. La structure retrouve sa transparence, laisse entrer le soleil bas et ouvre à nouveau le ciel vers la serre. Ce geste saisonnier permet au même passage d’adapter naturellement son confort sans alourdir le jardin.",
+      "image": {
+        "src": "/images/projets/chateau-gasqui/key-elements/abri-hiver.jpg",
+        "alt": "Chemin menant à la serre en hiver, sans toile d’ombrage"
+      }
+    }
+  },
+  "mirrors": {
+    "label": "04 / Perspective",
+    "title": "Le jardin par ricochet.",
+    "text": "De fins miroirs intégrés à des cadres en acier corten sont positionnés selon des axes très précis. Depuis un point d’observation déterminé, le regard rebondit d’un miroir au suivant jusqu’à révéler une œuvre — ou une pièce centrale — pourtant située ailleurs dans le jardin.",
+    "image": {
+      "src": "/images/projets/chateau-gasqui/chateau-gasqui-miroir-corten.jpg",
+      "alt": "Jeu de cadres et de miroirs en acier corten dans un jardin"
+    },
+    "caption": "Un dispositif discret · une perspective impossible",
+    "plan": {
+      "head": "Extrait du plan V3",
+      "title": "Tracé de réflexion",
+      "aria": "Trajet du regard sur le plan : du point d’observation, il rebondit sur trois miroirs corten jusqu’à l’œuvre révélée",
+      "observer": "Point d’observation",
+      "mirrors": "3 miroirs corten",
+      "artwork": "Œuvre révélée",
+      "replay": "Revoir l’animation",
+      "replayLabel": "Revoir l’animation du trajet des miroirs"
+    },
+    "steps": [
+      {
+        "number": "01",
+        "title": "Se placer",
+        "text": "Le point de vue aligne le visiteur avec le premier miroir."
+      },
+      {
+        "number": "02",
+        "title": "Faire rebondir",
+        "text": "Le reflet circule selon la ligne bleue déjà inscrite au plan."
+      },
+      {
+        "number": "03",
+        "title": "Révéler",
+        "text": "La succession de miroirs recompose l’œuvre dans un seul cadre."
+      }
+    ]
+  },
+  "line": {
+    "id": "corten",
+    "label": "05 / Ligne",
+    "title": "Des bordures nettes pour les massifs.",
+    "text": [
+      "Des bordures en acier corten séparent les chemins en clapissette des plantations. Posées au ras du sol, elles maintiennent la terre et le paillage en place et empêchent les matériaux de se mélanger.",
+      "Elles suivent les courbes du plan et donnent aux massifs une limite propre et régulière. Leur finition oxydée s’accorde simplement avec la terre cuite et les sols minéraux du jardin."
+    ],
+    "image": {
+      "src": "/images/projets/chateau-gasqui/key-elements/delimitation-corten.jpg",
+      "alt": "Fine délimitation en acier corten entre un chemin clair et un massif méditerranéen fleuri"
+    },
+    "caption": "Une ligne fine entre chemin et massif"
+  },
   "gardens": {
-    "label": "02 — Quatre jardins",
-    "title": "De l’auto-cueillette germanique à un paysage provençal.",
+    "label": "04 — Les jardins",
+    "title": "Quatre atmosphères.",
+    "subtitle": "Quatre façons d’habiter.",
     "group": "Choisir un jardin",
     "paletteLink": "Explorer sa palette",
     "items": [
@@ -116,173 +460,308 @@
         "kicker": "01 — La mémoire du lieu",
         "title": "Jardin provençal",
         "description": "Une scène sèche et lumineuse où les feuillages gris, les ombelles et les parfums familiers répondent à la pierre. La palette privilégie les plantes sobres, capables d’installer une présence généreuse avec peu d’eau.",
-        "facts": ["Lavande vraie", "Fenouil sauvage", "Orlaya grandiflora", "Immortelles"],
+        "facts": [
+          "Lavande vraie",
+          "Fenouil sauvage",
+          "Orlaya grandiflora",
+          "Immortelles"
+        ],
         "caption": "Senteurs · argent · lumière",
-        "image": { "src": "/images/projets/chateau-gasqui/plants/mediterraneennes-lavande-vraie.jpg", "alt": "Lavande vraie en fleurs" }
+        "image": {
+          "src": "/images/projets/chateau-gasqui/plants/mediterraneennes-lavande-vraie.jpg",
+          "alt": "Lavande vraie en fleurs"
+        }
       },
       {
         "id": "central",
         "kicker": "02 — Le cœur du jardin",
         "title": "Espace central",
         "description": "La dalle existante devient le point de rencontre du jardin. Les arbres taillés apportent l’ombre, les terrasses accueillent les pauses et les différents chemins se rejoignent autour de cet espace commun.",
-        "facts": ["Terre cuite", "Table commune", "Arbres taillés", "Départ des promenades"],
+        "facts": [
+          "Terre cuite",
+          "Table commune",
+          "Arbres taillés",
+          "Départ des promenades"
+        ],
         "caption": "Terrasse · ombre · partage",
-        "image": { "src": "/images/projets/chateau-gasqui/key-elements/terrasse-terre-cuite.jpg", "alt": "Terrasse ronde en terre cuite près d’un bassin, table et chaises de jardin, massifs de lavandes et cyprès" }
+        "image": {
+          "src": "/images/projets/chateau-gasqui/key-elements/terrasse-terre-cuite.jpg",
+          "alt": "Terrasse ronde en terre cuite près d’un bassin, table et chaises de jardin, massifs de lavandes et cyprès"
+        }
       },
       {
         "id": "exotique",
         "kicker": "03 — Le contrepoint",
         "title": "Jardin exotique",
         "description": "Une allée plus directe mène vers la serre au milieu de feuillages graphiques et de floraisons franches. Les espèces sont choisies pour leur aspect dépaysant et leur adaptation au climat provençal.",
-        "facts": ["Kniphofia", "Agapanthe", "Grevillea", "Callistemon"],
+        "facts": [
+          "Kniphofia",
+          "Agapanthe",
+          "Grevillea",
+          "Callistemon"
+        ],
         "caption": "Silhouettes · couleurs · contraste",
-        "image": { "src": "/images/projets/chateau-gasqui/plants/exotiques-kniphofia.jpg", "alt": "Kniphofia en fleurs" }
+        "image": {
+          "src": "/images/projets/chateau-gasqui/plants/exotiques-kniphofia.jpg",
+          "alt": "Kniphofia en fleurs"
+        }
       },
       {
         "id": "restanque",
         "kicker": "04 — Le jardin utile",
         "title": "Restanque herborée",
         "description": "La restanque rassemble les plantes utiles et médicinales autour de la fontaine ancienne. Une terrasse en bois domine le jardin et offre un point d’arrêt au-dessus des zones de culture.",
-        "facts": ["Ortie", "Consoude", "Camomille", "Achillée millefeuille"],
-        "caption": "Fontaine · culture · belvédère",
-        "image": { "src": "/images/projets/chateau-gasqui/key-elements/fontaine-loin.jpg", "alt": "Vue plongeante sur la restanque : pelouse, fontaine ancienne et murets de pierre" }
-      }
-    ]
-  },
-
-  "stats": {
-    "label": "Le projet en matière",
-    "title": "Des mesures précises.",
-    "items": [
-      { "value": 421, "unit": "m²", "label": "de plantations" },
-      { "value": 190, "prefix": "≈", "label": "arbustes fleuris" },
-      { "value": 30, "label": "essences végétales" },
-      { "value": 4, "label": "jardins" }
-    ]
-  },
-
-  "dayNight": {
-    "label": "03 — Jour / nuit",
-    "title": "À la tombée du jour, les guirlandes.",
-    "text": { "value": "Des guirlandes tendues entre les arbres prennent le relais du soleil le long des allées.", "draft": true },
-    "group": "Moment de la journée",
-    "day": {
-      "button": "Jour",
-      "label": "Le jour",
-      "image": { "src": "/images/projets/chateau-gasqui/key-elements/guirlande-day.jpg", "alt": "Allée du jardin en journée, entre graminées et massifs fleuris, sous des guirlandes éteintes" }
-    },
-    "night": {
-      "button": "Nuit",
-      "label": "La nuit",
-      "image": { "src": "/images/projets/chateau-gasqui/key-elements/guirlande-night.jpg", "alt": "La même allée à la nuit tombée, guirlandes allumées entre les arbres" }
-    }
-  },
-
-  "season": {
-    "label": "04 — Été / hiver",
-    "title": "L’ombrière suit les saisons.",
-    "group": "Saison",
-    "diagram": "Coupe de l’ombrière et hauteur du soleil à midi aux solstices, à la latitude de Gonfaron (≈ 43,3° N)",
-    "summer": {
-      "button": "Été",
-      "label": "L’été",
-      "sun": 70,
-      "sunLabel": "≈ 70° à midi, solstice d’été",
-      "text": "En saison chaude, une toile en fibre de coco est tendue sur l’axe qui mène à la serre : elle arrête le soleil haut de midi et garde l’allée à l’ombre.",
-      "image": { "src": "/images/projets/chateau-gasqui/key-elements/abri-ete.jpg", "alt": "Ombrière couverte d’une toile en fibre de coco sur l’allée qui mène à la serre, entre deux cyprès" }
-    },
-    "winter": {
-      "button": "Hiver",
-      "label": "L’hiver",
-      "sun": 23,
-      "sunLabel": "≈ 23° à midi, solstice d’hiver",
-      "text": "En hiver, la toile est retirée : le soleil bas traverse la structure et éclaire l’allée.",
-      "image": { "src": "/images/projets/chateau-gasqui/key-elements/abri-hiver.jpg", "alt": "La même ombrière en hiver, sans sa toile, au-dessus de l’allée qui mène à la serre" }
-    }
-  },
-
-  "mirrors": {
-    "label": "05 — Les miroirs en acier corten",
-    "title": "Le jardin par ricochet.",
-    "text": "Depuis un point d’observation précis, le regard rebondit sur trois miroirs encadrés d’acier corten jusqu’à révéler une œuvre située ailleurs dans le jardin.",
-    "steps": [
-      { "number": "01", "title": "Se placer", "text": { "value": "Le regard part d’un point d’observation précis.", "draft": true } },
-      { "number": "02", "title": "Faire rebondir", "text": { "value": "Il rebondit d’un miroir à l’autre, trois fois.", "draft": true } },
-      { "number": "03", "title": "Révéler", "text": { "value": "Le dernier miroir révèle une œuvre située ailleurs dans le jardin.", "draft": true } }
-    ],
-    "diagram": "Schéma de principe : trajet du regard du point d’observation à l’œuvre",
-    "observer": "Point d’observation",
-    "artwork": "Œuvre",
-    "image": { "src": "/images/projets/chateau-gasqui/chateau-gasqui-miroir-corten.jpg", "alt": "Miroirs encadrés d’acier corten dressés entre les massifs fleuris" }
-  },
-
-  "materials": {
-    "label": "06 — Matières",
-    "items": [
-      {
-        "id": "terre-cuite",
-        "title": "La terre cuite d’Alain Vagh.",
-        "text": ["Les terrasses sont en terre cuite signée Alain Vagh, à Salernes."],
-        "image": { "src": "/images/projets/chateau-gasqui/chateau-gasqui-terrasse-terre-cuite.jpg", "alt": "Dallage en terre cuite posé en cercles autour d’un bassin, fontaine à tête de lion" }
-      },
-      {
-        "id": "corten",
-        "title": "Des bordures nettes pour les massifs.",
-        "text": [
-          "Des bordures en acier corten séparent les chemins en clapissette des plantations. Posées au ras du sol, elles maintiennent la terre et le paillage en place et empêchent les matériaux de se mélanger.",
-          "Elles suivent les courbes du plan et donnent aux massifs une limite propre et régulière. Leur finition oxydée s’accorde simplement avec la terre cuite et les sols minéraux du jardin."
+        "facts": [
+          "Ortie",
+          "Consoude",
+          "Camomille",
+          "Achillée millefeuille"
         ],
-        "image": { "src": "/images/projets/chateau-gasqui/key-elements/delimitation-corten.jpg", "alt": "Bordure en acier corten entre une allée en clapissette et un massif de lavandes et de sauges" }
+        "caption": "Fontaine · culture · belvédère",
+        "image": {
+          "src": "/images/projets/chateau-gasqui/key-elements/fontaine-loin.jpg",
+          "alt": "Vue plongeante sur la restanque : pelouse, fontaine ancienne et murets de pierre"
+        }
       }
     ]
   },
-
   "herbarium": {
-    "label": "07 — Palette végétale",
-    "title": "Trente essences.",
-    "text": "La palette végétale proposée pour le projet, avec la période de floraison de chaque essence.",
+    "label": "05 — La palette végétale",
+    "title": "Un herbier à ciel ouvert.",
+    "text": "Trente essences sont aujourd’hui proposées, chacune avec sa période de floraison.",
     "group": "Filtrer la palette",
     "all": "Toutes",
-    "count": { "one": "{n} essence", "other": "{n} essences" },
+    "count": {
+      "one": "{n} essence",
+      "other": "{n} essences"
+    },
     "flowering": "Floraison",
     "categories": [
-      { "id": "arbres", "label": "Arbres" },
-      { "id": "mediterraneennes", "label": "Méditerranéennes" },
-      { "id": "exotiques", "label": "Exotiques" }
+      {
+        "id": "arbres",
+        "label": "Arbres"
+      },
+      {
+        "id": "mediterraneennes",
+        "label": "Méditerranéennes"
+      },
+      {
+        "id": "exotiques",
+        "label": "Exotiques"
+      }
     ],
     "plants": [
-      { "name": "Amélanchier ovale", "latin": "Amelanchier ovalis", "category": "arbres", "flowering": "Avril à mai", "image": "/images/projets/chateau-gasqui/plants/arbres-amelanchier-ovale.jpg" },
-      { "name": "Arbousier", "latin": "Arbutus unedo", "category": "arbres", "flowering": "Octobre à janvier", "image": "/images/projets/chateau-gasqui/plants/arbres-arbousier.jpg" },
-      { "name": "Arbre à perruques", "latin": "Cotinus coggygria", "category": "arbres", "flowering": "Juin à juillet", "image": "/images/projets/chateau-gasqui/plants/arbres-arbre-a-perruques.jpg" },
-      { "name": "Cyprès", "latin": "Cupressus sempervirens", "category": "arbres", "flowering": "Mars à avril", "image": "/images/projets/chateau-gasqui/plants/arbres-cypres.jpg" },
-      { "name": "Laurier-tin", "latin": "Viburnum tinus", "category": "arbres", "flowering": "Novembre à avril", "image": "/images/projets/chateau-gasqui/plants/arbres-laurier-tin.jpg" },
-      { "name": "Olivier", "latin": "Olea europaea", "category": "arbres", "flowering": "Mai à juin", "image": "/images/projets/chateau-gasqui/plants/arbres-olivier.jpg" },
-      { "name": "Poirier à feuilles d’amandier", "latin": "Pyrus spinosa", "category": "arbres", "flowering": "Mars à avril", "image": "/images/projets/chateau-gasqui/plants/arbres-poirier-a-feuilles-d-amandier.jpg" },
-      { "name": "Tamaris de France", "latin": "Tamarix gallica", "category": "arbres", "flowering": "Mai à juin", "image": "/images/projets/chateau-gasqui/plants/arbres-tamaris-de-france.jpg" },
-      { "name": "Centranthus ruber", "latin": "Centranthus ruber", "category": "mediterraneennes", "flowering": "Avril à octobre", "image": "/images/projets/chateau-gasqui/plants/mediterraneennes-centranthus-ruber.jpg" },
-      { "name": "Echinops ritro", "latin": "Echinops ritro", "category": "mediterraneennes", "flowering": "Juillet à septembre", "image": "/images/projets/chateau-gasqui/plants/mediterraneennes-echinops-ritro.jpg" },
-      { "name": "Fenouil sauvage", "latin": "Foeniculum vulgare", "category": "mediterraneennes", "flowering": "Juillet à septembre", "image": "/images/projets/chateau-gasqui/plants/mediterraneennes-fenouil-sauvage.jpg" },
-      { "name": "Immortelles des dunes", "latin": "Helichrysum stoechas", "category": "mediterraneennes", "flowering": "Juin à septembre", "image": "/images/projets/chateau-gasqui/plants/mediterraneennes-immortelles-des-dunes.jpg" },
-      { "name": "Lavande vraie", "latin": "Lavandula angustifolia", "category": "mediterraneennes", "flowering": "Juin à août", "image": "/images/projets/chateau-gasqui/plants/mediterraneennes-lavande-vraie.jpg" },
-      { "name": "Marguerite commune", "latin": "Leucanthemum vulgare", "category": "mediterraneennes", "flowering": "Juin à septembre", "image": "/images/projets/chateau-gasqui/plants/mediterraneennes-marguerite-commune.jpg" },
-      { "name": "Narcisse à bouquet", "latin": "Narcissus tazetta", "category": "mediterraneennes", "flowering": "Février à avril", "image": "/images/projets/chateau-gasqui/plants/mediterraneennes-narcisse-a-bouquet.jpg" },
-      { "name": "Orlaya grandiflora", "latin": "Orlaya grandiflora", "category": "mediterraneennes", "flowering": "Avril à juin", "image": "/images/projets/chateau-gasqui/plants/mediterraneennes-orlaya-grandiflora.jpg" },
-      { "name": "Sauge des prés", "latin": "Salvia pratensis", "category": "mediterraneennes", "flowering": "Mai à juillet", "image": "/images/projets/chateau-gasqui/plants/mediterraneennes-sauge-des-pres.jpg" },
-      { "name": "Scabieuse colombaire", "latin": "Scabiosa columbaria", "category": "mediterraneennes", "flowering": "Juin à octobre", "image": "/images/projets/chateau-gasqui/plants/mediterraneennes-scabieuse-colombaire.jpg" },
-      { "name": "Viburnum tinus", "latin": "Viburnum tinus", "category": "mediterraneennes", "flowering": "Novembre à avril", "image": "/images/projets/chateau-gasqui/plants/mediterraneennes-viburnum-tinus.jpg" },
-      { "name": "Agapanthe", "latin": "Agapanthus africanus", "category": "exotiques", "flowering": "Juin à août", "image": "/images/projets/chateau-gasqui/plants/exotiques-agapanthe.jpg" },
-      { "name": "Callistemon", "latin": "Callistemon citrinus", "category": "exotiques", "flowering": "Avril à juillet", "image": "/images/projets/chateau-gasqui/plants/exotiques-callistemon.jpg" },
-      { "name": "Gaura", "latin": "Oenothera lindheimeri", "category": "exotiques", "flowering": "Juin à octobre", "image": "/images/projets/chateau-gasqui/plants/exotiques-gaura.jpg" },
-      { "name": "Grenadier à fleurs", "latin": "Punica granatum", "category": "exotiques", "flowering": "Mai à juillet", "image": "/images/projets/chateau-gasqui/plants/exotiques-grenadier-a-fleurs.jpg" },
-      { "name": "Grevillea", "latin": "Grevillea rosmarinifolia", "category": "exotiques", "flowering": "Printemps et automne", "image": "/images/projets/chateau-gasqui/plants/exotiques-grevillea.jpg" },
-      { "name": "Kniphofia", "latin": "Kniphofia uvaria", "category": "exotiques", "flowering": "Juin à septembre", "image": "/images/projets/chateau-gasqui/plants/exotiques-kniphofia.jpg" },
-      { "name": "Lagerstroemia", "latin": "Lagerstroemia indica", "category": "exotiques", "flowering": "Juillet à octobre", "image": "/images/projets/chateau-gasqui/plants/exotiques-lagerstroemia.jpg" },
-      { "name": "Leucadendron", "latin": "Leucadendron salignum", "category": "exotiques", "flowering": "Janvier à avril", "image": "/images/projets/chateau-gasqui/plants/exotiques-leucadendron.jpg" },
-      { "name": "Queue de lion", "latin": "Leonotis leonurus", "category": "exotiques", "flowering": "Août à novembre", "image": "/images/projets/chateau-gasqui/plants/exotiques-queue-de-lion.jpg" },
-      { "name": "Sauge d’Afghanistan", "latin": "Perovskia atriplicifolia", "category": "exotiques", "flowering": "Juillet à octobre", "image": "/images/projets/chateau-gasqui/plants/exotiques-sauge-d-afganistan.jpg" },
-      { "name": "Sauge de Gregg", "latin": "Salvia greggii", "category": "exotiques", "flowering": "Mai à octobre", "image": "/images/projets/chateau-gasqui/plants/exotiques-sauge-de-gregg.jpg" }
+      {
+        "name": "Amélanchier ovale",
+        "latin": "Amelanchier ovalis",
+        "category": "arbres",
+        "flowering": "Avril à mai",
+        "image": "/images/projets/chateau-gasqui/plants/arbres-amelanchier-ovale.jpg"
+      },
+      {
+        "name": "Arbousier",
+        "latin": "Arbutus unedo",
+        "category": "arbres",
+        "flowering": "Octobre à janvier",
+        "image": "/images/projets/chateau-gasqui/plants/arbres-arbousier.jpg"
+      },
+      {
+        "name": "Arbre à perruques",
+        "latin": "Cotinus coggygria",
+        "category": "arbres",
+        "flowering": "Juin à juillet",
+        "image": "/images/projets/chateau-gasqui/plants/arbres-arbre-a-perruques.jpg"
+      },
+      {
+        "name": "Cyprès",
+        "latin": "Cupressus sempervirens",
+        "category": "arbres",
+        "flowering": "Mars à avril",
+        "image": "/images/projets/chateau-gasqui/plants/arbres-cypres.jpg"
+      },
+      {
+        "name": "Laurier-tin",
+        "latin": "Viburnum tinus",
+        "category": "arbres",
+        "flowering": "Novembre à avril",
+        "image": "/images/projets/chateau-gasqui/plants/arbres-laurier-tin.jpg"
+      },
+      {
+        "name": "Olivier",
+        "latin": "Olea europaea",
+        "category": "arbres",
+        "flowering": "Mai à juin",
+        "image": "/images/projets/chateau-gasqui/plants/arbres-olivier.jpg"
+      },
+      {
+        "name": "Poirier à feuilles d’amandier",
+        "latin": "Pyrus spinosa",
+        "category": "arbres",
+        "flowering": "Mars à avril",
+        "image": "/images/projets/chateau-gasqui/plants/arbres-poirier-a-feuilles-d-amandier.jpg"
+      },
+      {
+        "name": "Tamaris de France",
+        "latin": "Tamarix gallica",
+        "category": "arbres",
+        "flowering": "Mai à juin",
+        "image": "/images/projets/chateau-gasqui/plants/arbres-tamaris-de-france.jpg"
+      },
+      {
+        "name": "Sauge des prés",
+        "latin": "Salvia pratensis",
+        "category": "mediterraneennes",
+        "flowering": "Mai à juillet",
+        "image": "/images/projets/chateau-gasqui/plants/mediterraneennes-sauge-des-pres.jpg"
+      },
+      {
+        "name": "Centranthe rouge",
+        "latin": "Centranthus ruber",
+        "category": "mediterraneennes",
+        "flowering": "Avril à octobre",
+        "image": "/images/projets/chateau-gasqui/plants/mediterraneennes-centranthus-ruber.jpg"
+      },
+      {
+        "name": "Échinops ritro",
+        "latin": "Echinops ritro",
+        "category": "mediterraneennes",
+        "flowering": "Juillet à septembre",
+        "image": "/images/projets/chateau-gasqui/plants/mediterraneennes-echinops-ritro.jpg"
+      },
+      {
+        "name": "Fenouil sauvage",
+        "latin": "Foeniculum vulgare",
+        "category": "mediterraneennes",
+        "flowering": "Juillet à septembre",
+        "image": "/images/projets/chateau-gasqui/plants/mediterraneennes-fenouil-sauvage.jpg"
+      },
+      {
+        "name": "Immortelle des dunes",
+        "latin": "Helichrysum stoechas",
+        "category": "mediterraneennes",
+        "flowering": "Juin à septembre",
+        "image": "/images/projets/chateau-gasqui/plants/mediterraneennes-immortelles-des-dunes.jpg"
+      },
+      {
+        "name": "Lavande vraie",
+        "latin": "Lavandula angustifolia",
+        "category": "mediterraneennes",
+        "flowering": "Juin à août",
+        "image": "/images/projets/chateau-gasqui/plants/mediterraneennes-lavande-vraie.jpg"
+      },
+      {
+        "name": "Marguerite commune",
+        "latin": "Leucanthemum vulgare",
+        "category": "mediterraneennes",
+        "flowering": "Juin à septembre",
+        "image": "/images/projets/chateau-gasqui/plants/mediterraneennes-marguerite-commune.jpg"
+      },
+      {
+        "name": "Narcisse à bouquet",
+        "latin": "Narcissus tazetta",
+        "category": "mediterraneennes",
+        "flowering": "Février à avril",
+        "image": "/images/projets/chateau-gasqui/plants/mediterraneennes-narcisse-a-bouquet.jpg"
+      },
+      {
+        "name": "Orlaya grandiflora",
+        "latin": "Orlaya grandiflora",
+        "category": "mediterraneennes",
+        "flowering": "Avril à juin",
+        "image": "/images/projets/chateau-gasqui/plants/mediterraneennes-orlaya-grandiflora.jpg"
+      },
+      {
+        "name": "Scabieuse colombaire",
+        "latin": "Scabiosa columbaria",
+        "category": "mediterraneennes",
+        "flowering": "Juin à octobre",
+        "image": "/images/projets/chateau-gasqui/plants/mediterraneennes-scabieuse-colombaire.jpg"
+      },
+      {
+        "name": "Viorne tin",
+        "latin": "Viburnum tinus",
+        "category": "mediterraneennes",
+        "flowering": "Novembre à avril",
+        "image": "/images/projets/chateau-gasqui/plants/mediterraneennes-viburnum-tinus.jpg"
+      },
+      {
+        "name": "Agapanthe",
+        "latin": "Agapanthus africanus",
+        "category": "exotiques",
+        "flowering": "Juin à août",
+        "image": "/images/projets/chateau-gasqui/plants/exotiques-agapanthe.jpg"
+      },
+      {
+        "name": "Callistemon",
+        "latin": "Callistemon citrinus",
+        "category": "exotiques",
+        "flowering": "Avril à juillet",
+        "image": "/images/projets/chateau-gasqui/plants/exotiques-callistemon.jpg"
+      },
+      {
+        "name": "Gaura",
+        "latin": "Oenothera lindheimeri",
+        "category": "exotiques",
+        "flowering": "Juin à octobre",
+        "image": "/images/projets/chateau-gasqui/plants/exotiques-gaura.jpg"
+      },
+      {
+        "name": "Grenadier à fleurs",
+        "latin": "Punica granatum",
+        "category": "exotiques",
+        "flowering": "Mai à juillet",
+        "image": "/images/projets/chateau-gasqui/plants/exotiques-grenadier-a-fleurs.jpg"
+      },
+      {
+        "name": "Grevillea",
+        "latin": "Grevillea rosmarinifolia",
+        "category": "exotiques",
+        "flowering": "Printemps et automne",
+        "image": "/images/projets/chateau-gasqui/plants/exotiques-grevillea.jpg"
+      },
+      {
+        "name": "Kniphofia",
+        "latin": "Kniphofia uvaria",
+        "category": "exotiques",
+        "flowering": "Juin à septembre",
+        "image": "/images/projets/chateau-gasqui/plants/exotiques-kniphofia.jpg"
+      },
+      {
+        "name": "Lagerstroemia",
+        "latin": "Lagerstroemia indica",
+        "category": "exotiques",
+        "flowering": "Juillet à octobre",
+        "image": "/images/projets/chateau-gasqui/plants/exotiques-lagerstroemia.jpg"
+      },
+      {
+        "name": "Leucadendron",
+        "latin": "Leucadendron salignum",
+        "category": "exotiques",
+        "flowering": "Janvier à avril",
+        "image": "/images/projets/chateau-gasqui/plants/exotiques-leucadendron.jpg"
+      },
+      {
+        "name": "Queue-de-lion",
+        "latin": "Leonotis leonurus",
+        "category": "exotiques",
+        "flowering": "Août à novembre",
+        "image": "/images/projets/chateau-gasqui/plants/exotiques-queue-de-lion.jpg"
+      },
+      {
+        "name": "Sauge d’Afghanistan",
+        "latin": "Perovskia atriplicifolia",
+        "category": "exotiques",
+        "flowering": "Juillet à octobre",
+        "image": "/images/projets/chateau-gasqui/plants/exotiques-sauge-d-afganistan.jpg"
+      },
+      {
+        "name": "Sauge de Gregg",
+        "latin": "Salvia greggii",
+        "category": "exotiques",
+        "flowering": "Mai à octobre",
+        "image": "/images/projets/chateau-gasqui/plants/exotiques-sauge-de-gregg.jpg"
+      }
     ]
   },
-
   "cta": "Un jardin, une terrasse, un domaine : les aménagements extérieurs se dessinent avec Sergeant Paysage."
 }

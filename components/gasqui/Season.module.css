@@ -56,6 +56,13 @@
   stroke-linecap: round;
 }
 
+.rayFiltered {
+  stroke: var(--color-laiton);
+  stroke-width: 2;
+  stroke-dasharray: 3 6;
+  opacity: 0.55;
+}
+
 .guide {
   fill: none;
   stroke: rgba(56, 43, 43, 0.4);

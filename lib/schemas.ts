@@ -302,6 +302,17 @@ export type SpecRow = ProjectDetail["specs"][number];
 const decorative = z.string().startsWith("/images/").transform((src) => resolveImage({ src, alt: "" }));
 const toggleState = z.object({ button: z.string(), label: z.string(), image: imageRef });
 
+/** Bloc « détail signature » (matière, ligne) : texte, image et légende. */
+const signatureFeature = z.object({
+  id: z.string(),
+  label: z.string(),
+  title: z.string(),
+  text: paragraphs,
+  gesture: z.object({ label: z.string(), text: z.string() }).optional(),
+  image: imageRef,
+  caption: z.string(),
+});
+
 export const projectModulesSchema = z.object({
   slug: z.string(),
   _note: z.string().optional(),
@@ -311,17 +322,22 @@ export const projectModulesSchema = z.object({
   specs: z.array(specRow),
   /** Type de demande pré-rempli par le bandeau d’appel (/contact?type=…). */
   contactType: z.string().optional(),
+  /** Plan d’ensemble (2200 × 1148) sous le réseau des guirlandes et le tracé des miroirs. */
+  planImage: decorative,
+  intention: z.object({ label: z.string(), title: z.string(), text: paragraphs, image: imageRef }),
   plan: z.object({
     label: z.string(),
     title: z.string(),
     text: z.string(),
     group: z.string(),
     visible: z.string(),
+    visibleList: z.string(),
     caption: z.string(),
     /** Calques dans l’ordre d’empilement ; `step` = étape où ils apparaissent (0 : toujours). */
     layers: z.array(
       z.object({
         id: z.string(),
+        label: z.string(),
         src: decorative,
         step: z.number().int().min(0),
         /** Dernière étape où le calque reste visible (hachures des trois espaces). */
@@ -333,39 +349,42 @@ export const projectModulesSchema = z.object({
     ),
     spaces: z.array(z.object({ name: z.string(), x: z.number(), y: z.number() })),
     steps: z
-      .array(z.object({ id: z.string(), title: draftable, text: draftable, facts: z.array(z.string()).optional() }))
+      .array(
+        z.object({
+          id: z.string(),
+          label: z.string(),
+          title: draftable,
+          text: draftable,
+          details: z.array(z.object({ title: z.string(), text: z.string() })).optional(),
+          facts: z.array(z.string()).optional(),
+        }),
+      )
       .min(2),
     pdf: z.object({ title: z.string(), label: z.string(), href: z.string(), meta: z.string(), preview: imageRef }),
-  }),
-  gardens: z.object({
-    label: z.string(),
-    title: z.string(),
-    group: z.string(),
-    paletteLink: z.string(),
-    items: z.array(
-      z.object({
-        id: z.string(),
-        kicker: z.string(),
-        title: z.string(),
-        description: z.string(),
-        facts: z.array(z.string()),
-        caption: z.string(),
-        image: imageRef,
-      }),
-    ),
   }),
   stats: z.object({
     label: z.string(),
     title: z.string(),
     items: z.array(z.object({ value: z.number(), prefix: z.string().optional(), unit: z.string().optional(), label: z.string() })),
   }),
+  details: z.object({ label: z.string(), title: z.string(), text: z.string() }),
+  matter: signatureFeature,
   dayNight: z.object({
     label: z.string(),
     title: z.string(),
-    text: draftable,
+    text: paragraphs,
     group: z.string(),
     day: toggleState,
     night: toggleState,
+    network: z.object({
+      head: z.string(),
+      title: z.string(),
+      key: z.string(),
+      text: z.string(),
+      replay: z.string(),
+      replayLabel: z.string(),
+      aria: z.string(),
+    }),
   }),
   season: z.object({
     label: z.string(),
@@ -379,15 +398,38 @@ export const projectModulesSchema = z.object({
     label: z.string(),
     title: z.string(),
     text: z.string(),
-    steps: z.array(z.object({ number: z.string(), title: z.string(), text: draftable })).length(3),
-    diagram: z.string(),
-    observer: z.string(),
-    artwork: z.string(),
     image: imageRef,
+    caption: z.string(),
+    plan: z.object({
+      head: z.string(),
+      title: z.string(),
+      aria: z.string(),
+      observer: z.string(),
+      mirrors: z.string(),
+      artwork: z.string(),
+      replay: z.string(),
+      replayLabel: z.string(),
+    }),
+    steps: z.array(z.object({ number: z.string(), title: z.string(), text: draftable })).length(3),
   }),
-  materials: z.object({
+  line: signatureFeature,
+  gardens: z.object({
     label: z.string(),
-    items: z.array(z.object({ id: z.string(), title: z.string(), text: paragraphs, image: imageRef })),
+    title: z.string(),
+    subtitle: z.string(),
+    group: z.string(),
+    paletteLink: z.string(),
+    items: z.array(
+      z.object({
+        id: z.string(),
+        kicker: z.string(),
+        title: z.string(),
+        description: z.string(),
+        facts: z.array(z.string()),
+        caption: z.string(),
+        image: imageRef,
+      }),
+    ),
   }),
   herbarium: z.object({
     label: z.string(),

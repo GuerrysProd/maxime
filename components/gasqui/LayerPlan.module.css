@@ -121,7 +121,13 @@
   letter-spacing: 0.1em;
 }
 
+.label {
+  grid-column: 2;
+  font-size: 11px;
+}
+
 .title {
+  grid-column: 2;
   font-size: 24px;
   line-height: 1.2;
 }
@@ -141,6 +147,31 @@
 .button[aria-pressed="true"] .number {
   text-decoration: underline 2px var(--color-terre);
   text-underline-offset: 5px;
+}
+
+.details {
+  display: grid;
+  gap: 0;
+  margin: 0 0 18px 52px;
+  border-top: 1px solid var(--color-ligne);
+}
+
+.details > div {
+  padding: 14px 0;
+  border-bottom: 1px solid var(--color-ligne);
+}
+
+.details dt {
+  margin-bottom: 4px;
+  font-size: 19px;
+  line-height: 1.2;
+}
+
+.details dd {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--color-texte-doux);
 }
 
 .facts {

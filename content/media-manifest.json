@@ -647,6 +647,14 @@
       "source": "06-chateau-gasqui/plan/layers/zone-planted.png",
       "sourceHash": "47243db67509cd34888699a41e960e15d5b3f4d3-c92ffdda"
     },
+    "/images/projets/chateau-gasqui/plan/plan-gasqui.png": {
+      "width": 2200,
+      "height": 1148,
+      "blurDataURL": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAADQAQCdASoQAAgAA4BaJQAAW550futCIAD+8EkxYH4SYcU578b07vp0lrHwgK8Ku0SuU46AAAA=",
+      "kind": "drawing",
+      "source": "06-chateau-gasqui/plan/plan-gasqui.png",
+      "sourceHash": "e7caafea40d5e7727ef380f03f88e373bbcde961-c92ffdda"
+    },
     "/images/projets/chateau-gasqui/plan/plan-jardin-v3-preview.png": {
       "width": 1684,
       "height": 901,
