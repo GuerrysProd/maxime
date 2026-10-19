@@ -1,0 +1,29 @@
+.toggle {
+  display: inline-flex;
+  padding: 4px;
+  border: 1px solid rgba(56, 43, 43, 0.3);
+  border-radius: var(--radius-pill);
+  background: var(--color-lin);
+}
+
+.toggle button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 0 20px;
+  border: 0;
+  border-radius: var(--radius-pill);
+  background: transparent;
+  color: var(--color-cacao);
+  font-size: 14px;
+  cursor: pointer;
+  transition:
+    background-color var(--duration-fast),
+    color var(--duration-fast);
+}
+
+.toggle button[aria-pressed="true"] {
+  background: var(--color-cacao);
+  color: var(--color-lin);
+}

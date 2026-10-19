@@ -1,0 +1,192 @@
+.plan {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  column-gap: var(--gutter);
+  row-gap: 40px;
+  align-items: start;
+}
+
+/* ---------- Plan collant ---------- */
+
+.figure {
+  grid-column: 1 / span 7;
+  position: sticky;
+  top: calc(var(--header-height-compact) + 24px);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin: 0;
+}
+
+.canvas {
+  position: relative;
+  aspect-ratio: 2220 / 1158;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 0 0 1px rgba(56, 43, 43, 0.08);
+  isolation: isolate;
+}
+
+.layer {
+  opacity: 0;
+  transition: opacity var(--duration-slow) var(--ease-soft);
+  pointer-events: none;
+  object-fit: fill;
+}
+
+.layer[data-visible] {
+  opacity: var(--layer-opacity, 1);
+}
+
+/* Restanque mise en avant à la dernière étape (repris de gasqui.css). */
+.layer[data-visible][data-focus] {
+  animation: focus 1.3s ease both;
+}
+
+@keyframes focus {
+  0%,
+  100% {
+    filter: none;
+  }
+  45% {
+    filter: saturate(1.25) brightness(0.96);
+  }
+}
+
+.space {
+  position: absolute;
+  z-index: 30;
+  transform: translate(-50%, calc(-50% + 6px));
+  padding: 4px 8px;
+  background: rgba(56, 43, 43, 0.82);
+  color: var(--color-lin);
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  opacity: 0;
+  transition:
+    opacity var(--duration-base) ease,
+    transform var(--duration-slow) var(--ease-soft);
+}
+
+.space[data-visible] {
+  opacity: 1;
+  transform: translate(-50%, -50%);
+}
+
+.caption {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+}
+
+/* ---------- Récit ---------- */
+
+.steps {
+  grid-column: 9 / span 4;
+  border-bottom: 1px solid var(--color-ligne);
+}
+
+/* Assez de hauteur pour que chaque étape soit « atteinte » au défilement. */
+.step {
+  min-height: 34vh;
+  border-top: 1px solid var(--color-ligne);
+}
+
+.step:last-child {
+  min-height: 50vh;
+}
+
+.button {
+  display: grid;
+  grid-template-columns: 40px minmax(0, 1fr);
+  gap: 4px 12px;
+  width: 100%;
+  padding: 18px 0;
+  border: 0;
+  background: transparent;
+  color: var(--color-cacao-70);
+  text-align: left;
+  cursor: pointer;
+  transition: color var(--duration-fast);
+}
+
+.number {
+  padding-top: 6px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.1em;
+}
+
+.title {
+  font-size: 24px;
+  line-height: 1.2;
+}
+
+.text {
+  grid-column: 2;
+  font-size: 15px;
+  line-height: 1.55;
+}
+
+.button:hover,
+.button[aria-pressed="true"] {
+  color: var(--color-cacao);
+}
+
+/* Terre cuite en soulignement : en texte, elle n’atteint pas 4,5:1 sur Pierre. */
+.button[aria-pressed="true"] .number {
+  text-decoration: underline 2px var(--color-terre);
+  text-underline-offset: 5px;
+}
+
+.facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0 0 18px 52px;
+  padding: 0;
+  list-style: none;
+}
+
+.facts li {
+  padding: 4px 12px;
+  border: 1px solid rgba(56, 43, 43, 0.25);
+  border-radius: var(--radius-pill);
+  font-size: 13px;
+}
+
+@media (max-width: 900px) {
+  .figure,
+  .steps {
+    grid-column: 1 / -1;
+  }
+
+  /* Le plan reste en haut de l’écran pendant que le récit défile dessous. */
+  .figure {
+    z-index: 2;
+    margin: 0 calc(var(--margin) * -1);
+    padding: 12px var(--margin);
+    background: var(--color-pierre);
+  }
+
+  .caption {
+    display: none;
+  }
+
+  .step {
+    min-height: 0;
+  }
+
+  .step:last-child {
+    min-height: 40vh;
+  }
+
+  .space {
+    font-size: 8px;
+    padding: 2px 5px;
+  }
+}

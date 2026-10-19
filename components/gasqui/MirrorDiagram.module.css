@@ -1,0 +1,106 @@
+.figure {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin: 0;
+}
+
+.frame {
+  border: 1px solid rgba(56, 43, 43, 0.1);
+  background: #efe8dd;
+}
+
+.frame svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.track {
+  fill: none;
+  stroke: rgba(56, 43, 43, 0.18);
+  stroke-width: 1.5;
+  stroke-dasharray: 4 6;
+}
+
+/* État de base : tracé complet (c’est lui qui reste en mouvement réduit). */
+.ray {
+  fill: none;
+  stroke: var(--color-terre);
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 1;
+  stroke-dashoffset: 0;
+  animation: ray 2.4s var(--ease-soft) infinite;
+}
+
+@keyframes ray {
+  0% {
+    stroke-dashoffset: 1;
+  }
+  75%,
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.mirror {
+  stroke: #9a4f2c;
+  stroke-width: 9;
+  stroke-linecap: square;
+}
+
+.number {
+  fill: var(--color-cacao);
+  font-family: var(--font-mono);
+  font-size: 18px;
+  text-anchor: middle;
+}
+
+.observer {
+  fill: var(--color-cacao);
+}
+
+.artwork {
+  fill: none;
+  stroke: var(--color-cacao);
+  stroke-width: 3;
+}
+
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 24px;
+  font-size: 14px;
+}
+
+.key {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--color-cacao);
+}
+
+.square {
+  width: 10px;
+  height: 10px;
+  border: 2px solid var(--color-cacao);
+}
+
+.legend > :last-child {
+  margin-left: auto;
+}
+
+@media (max-width: 600px) {
+  .legend > :last-child {
+    margin-left: 0;
+  }
+}

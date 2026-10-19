@@ -13,6 +13,7 @@ import projectsFr from "@/content/fr/projects.json";
 import agoraFr from "@/content/fr/projects/agora.json";
 import altaFr from "@/content/fr/projects/alta.json";
 import batimentSFr from "@/content/fr/projects/batiment-s.json";
+import gasquiFr from "@/content/fr/projects/chateau-gasqui.json";
 import pralongFr from "@/content/fr/projects/duplex-pralong.json";
 import percheeFr from "@/content/fr/projects/perchee.json";
 import rolexFr from "@/content/fr/projects/rolex-retail-express.json";
@@ -28,6 +29,7 @@ import {
   objectsSchema,
   pagesSchema,
   projectDetailSchema,
+  projectModulesSchema,
   projectsSchema,
   servicesSchema,
   siteSchema,
@@ -36,6 +38,7 @@ import {
   type ObjectPiece,
   type Project,
   type ProjectDetail,
+  type ProjectModules,
 } from "./schemas";
 import { applyTypo, fill } from "./typo";
 
@@ -56,6 +59,11 @@ const details: Record<Locale, Record<string, unknown>> = {
     "batiment-s": batimentSFr,
     "rolex-retail-express": rolexFr,
   },
+};
+
+/** Fiches au gabarit « modules » (Château Gasqui). */
+const moduleDetails: Record<Locale, Record<string, unknown>> = {
+  fr: { "chateau-gasqui": gasquiFr },
 };
 
 type SourceName = keyof (typeof sources)["fr"];
@@ -103,8 +111,26 @@ export function getProjectDetail(slug: string, locale: Locale = defaultLocale): 
   return cache.get(key) as ProjectDetail;
 }
 
-/** Slugs des projets qui ont une fiche (pages générées). */
-export const projectDetailSlugs = (locale: Locale = defaultLocale) => Object.keys(details[locale]);
+/** Fiche au gabarit « modules », ou undefined. */
+export function getProjectModules(slug: string, locale: Locale = defaultLocale): ProjectModules | undefined {
+  const key = `${locale}:modules:${slug}`;
+  if (!cache.has(key)) {
+    const source = moduleDetails[locale][slug];
+    if (!source) return undefined;
+    const parsed = projectModulesSchema.safeParse(applyTypo(source));
+    if (!parsed.success) {
+      throw new Error(`Contenu invalide (content/${locale}/projects/${slug}.json) :\n${parsed.error.message}`);
+    }
+    cache.set(key, parsed.data);
+  }
+  return cache.get(key) as ProjectModules;
+}
+
+/** Slugs des projets qui ont une fiche (pages générées), tous gabarits confondus. */
+export const projectDetailSlugs = (locale: Locale = defaultLocale) => [
+  ...Object.keys(details[locale]),
+  ...Object.keys(moduleDetails[locale]),
+];
 
 export function getObject(slug: string, locale: Locale = defaultLocale): ObjectPiece | undefined {
   return getObjects(locale).find((piece) => piece.slug === slug);
@@ -144,6 +170,7 @@ export type {
   Project,
   ProjectDetail,
   ProjectInPreparation,
+  ProjectModules,
   Services,
   Site,
   SpecRow,

@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import { GasquiPage } from "@/components/gasqui/GasquiPage";
 import { ProjectPage } from "@/components/project/ProjectPage";
-import { getProjectDetail, getProjects, projectDetailSlugs } from "@/lib/content";
+import { getProjectDetail, getProjectModules, getProjects, projectDetailSlugs } from "@/lib/content";
 
-/** Une page par projet qui a une fiche (Château Gasqui viendra avec son gabarit « modules »). */
+/** Une page par projet qui a une fiche : gabarit « chapitres », ou « modules » pour Château Gasqui. */
 export function generateStaticParams() {
   return projectDetailSlugs().map((slug) => ({ slug }));
 }
@@ -12,11 +13,12 @@ function resolve(slug: string) {
   const { items } = getProjects();
   const project = items.find((item) => item.slug === slug);
   const detail = getProjectDetail(slug);
-  if (!project || !detail) return undefined;
+  const modules = getProjectModules(slug);
+  if (!project || (!detail && !modules)) return undefined;
   // Projet suivant : le prochain qui a une fiche, en boucle.
   const withPages = items.filter((item) => projectDetailSlugs().includes(item.slug));
   const next = withPages[(withPages.indexOf(project) + 1) % withPages.length];
-  return { project, detail, total: items.length, next: next === project ? undefined : next };
+  return { project, detail, modules, total: items.length, next: next === project ? undefined : next };
 }
 
 export async function generateMetadata({ params }: PageProps<"/projets/[slug]">): Promise<Metadata> {
@@ -40,5 +42,7 @@ export default async function ProjectRoute({ params }: PageProps<"/projets/[slug
   const { slug } = await params;
   const page = resolve(slug);
   if (!page) notFound();
-  return <ProjectPage {...page} />;
+  const { detail, modules, ...rest } = page;
+  if (modules) return <GasquiPage {...rest} content={modules} />;
+  return detail ? <ProjectPage {...rest} detail={detail} /> : notFound();
 }

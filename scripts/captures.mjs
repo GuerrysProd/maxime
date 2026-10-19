@@ -34,6 +34,7 @@ const PAGES = [
   { name: "projet-alta", path: "/projets/alta", desktop: null, mobile: null },
   { name: "projet-agora", path: "/projets/agora", desktop: null, mobile: null },
   { name: "projet-batiment-s", path: "/projets/batiment-s", desktop: null, mobile: null },
+  { name: "projet-chateau-gasqui", path: "/projets/chateau-gasqui", desktop: "10-projet-chateau-gasqui.html", mobile: null },
   { name: "projet-rolex-retail-express", path: "/projets/rolex-retail-express", desktop: null, mobile: null },
   { name: "objets", path: "/objets", desktop: "06-objets.html", mobile: null },
   { name: "objet-applique-pinturault", path: "/objets/applique-pinturault", desktop: "06b-objet-applique-pinturault.html", mobile: null },

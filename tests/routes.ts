@@ -10,6 +10,7 @@ export const ROUTES = [
   "/projets/agora",
   "/projets/batiment-s",
   "/projets/rolex-retail-express",
+  "/projets/chateau-gasqui",
   "/objets",
   "/objets/applique-pinturault",
   "/objets/fauteuil-pralong",
@@ -30,7 +31,6 @@ export const ROUTES = [
 
 /** Pages liées mais construites aux étapes suivantes (brief §10). À vider au fil des étapes. */
 export const FUTURE_ROUTES = [
-  "/projets/chateau-gasqui",
   "/mentions-legales",
   "/confidentialite",
 ];

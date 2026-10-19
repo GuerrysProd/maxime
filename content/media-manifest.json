@@ -423,6 +423,22 @@
       "source": "07-batiment-s/zoning-vie.png",
       "sourceHash": "b41bba9e5e65c09db5d21176fd37f46807b72d64-c92ffdda"
     },
+    "/images/projets/chateau-gasqui/chateau-gasqui-miroir-corten.jpg": {
+      "width": 2560,
+      "height": 1396,
+      "blurDataURL": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAAAQAgCdASoQAAkAA4BaJaACdAERDj+AQUswAM4rh4752WYejXkIp60IVvPI7JZJzmYWEcBhXu8U4ZNJ1R/Vrg4ZM0ePNVuOE41Y019VqQBBYOF5OeYjwAAA",
+      "kind": "photo",
+      "source": "06-chateau-gasqui/Château Gasqui - Miroir corten.jpg",
+      "sourceHash": "650a2af4242fe2feb427994ecbcfcf6e0f28b4ff-c92ffdda"
+    },
+    "/images/projets/chateau-gasqui/chateau-gasqui-terrasse-terre-cuite.jpg": {
+      "width": 2560,
+      "height": 1086,
+      "blurDataURL": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAADwAQCdASoQAAcAA4BaJbACdADs9aovwAAA/sFAiuyq4Cb2TqBz0M+upkUbcYcD2SQn0tg8GF0NP+JvXFzZEUOhalFsNSAA",
+      "kind": "photo",
+      "source": "06-chateau-gasqui/Château Gasqui - Terrasse terre cuite.jpg",
+      "sourceHash": "3268f001197507571cf862772dee1b039b462f3f-c92ffdda"
+    },
     "/images/projets/chateau-gasqui/key-elements/abri-ete.jpg": {
       "width": 2560,
       "height": 1396,
@@ -430,6 +446,14 @@
       "kind": "photo",
       "source": "06-chateau-gasqui/key-elements/abri-ete.jpg",
       "sourceHash": "2a6d3dc4c8b2fcb1290a2f7ec3045f87c233616f-c92ffdda"
+    },
+    "/images/projets/chateau-gasqui/key-elements/abri-hiver.jpg": {
+      "width": 2560,
+      "height": 1396,
+      "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADQAQCdASoQAAkAA4BaJYwCsAEKNCpaAAD6nnimL6q803N1Rs1RatiD+ukLZd12/SgCykj0yLtoIRqDJuRQPEdLgtFyfuLd0yqnSzeqwAA=",
+      "kind": "photo",
+      "source": "06-chateau-gasqui/key-elements/abri-hiver.jpg",
+      "sourceHash": "c4a8fb87f106da5b1c30d906dc0b28520a444f89-c92ffdda"
     },
     "/images/projets/chateau-gasqui/key-elements/delimitation-corten.jpg": {
       "width": 2560,
@@ -439,6 +463,30 @@
       "source": "06-chateau-gasqui/key-elements/delimitation-corten.jpg",
       "sourceHash": "b19185dbaaa9c6d5c4eb058bcf63fc0117f16bdc-c92ffdda"
     },
+    "/images/projets/chateau-gasqui/key-elements/fontaine-loin.jpg": {
+      "width": 1520,
+      "height": 1020,
+      "blurDataURL": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAAAQAgCdASoQAAsAA4BaJbACdAYwTONb6d+AAPWLn66FdaNMg1XQabR7rwhOJPvf4WuKGF63zmccWJ6oQam9EnbRd58joLVTyY5Sr5g5rgTFpDRSDI8NSwgV4187ezgA",
+      "kind": "photo",
+      "source": "06-chateau-gasqui/key-elements/fontaine-loin.jpg",
+      "sourceHash": "5d8ab86689e867e438c969972f7d2a0d52a75ee1-c92ffdda"
+    },
+    "/images/projets/chateau-gasqui/key-elements/guirlande-day.jpg": {
+      "width": 1393,
+      "height": 1800,
+      "blurDataURL": "data:image/webp;base64,UklGRpQAAABXRUJQVlA4IIgAAAAQBACdASoQABUAPu1iqU2ppaOiMAgBMB2JYgCdMoAC9mkCqfebWQQpgAD+sQF430y34Ed8ZvJOWWyXoCQXJ46/KhsygcxRpX+5KIRPOWB68DGKMw753+OOsRbZA0/rpFWBzgFpYQDnEexYDAQBKzlX7zOEyVvf6LkAlth14gJPxU6ewQ4zQgAA",
+      "kind": "photo",
+      "source": "06-chateau-gasqui/key-elements/guirlande-day.jpg",
+      "sourceHash": "75f0a2cbf706aef8763ada3536fe65509367936f-c92ffdda"
+    },
+    "/images/projets/chateau-gasqui/key-elements/guirlande-night.jpg": {
+      "width": 1393,
+      "height": 1800,
+      "blurDataURL": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAAAwBACdASoQABUAPu1iqU2ppaOiMAgBMB2JQBOmUGSxhmiwZvZPtONrNQAA3PmbcB7drM+Mjk3WUBl2aE3+Se/JjmxO0X7vGPKpJS4ZuFA5yftBFr7K3d8gft2yq7iZQE4Fyz6FJdprl4AA",
+      "kind": "photo",
+      "source": "06-chateau-gasqui/key-elements/guirlande-night.jpg",
+      "sourceHash": "a5990a87142f1f46805771592cbc0a5cb715e0a8-c92ffdda"
+    },
     "/images/projets/chateau-gasqui/key-elements/terrasse-terre-cuite.jpg": {
       "width": 1800,
       "height": 763,
@@ -447,6 +495,355 @@
       "source": "06-chateau-gasqui/key-elements/terrasse-terre-cuite.jpg",
       "sourceHash": "87a3887cfd3b23520fa640d3ac42036209bc6109-c92ffdda"
     },
+    "/images/projets/chateau-gasqui/plan/layers/base.png": {
+      "width": 2220,
+      "height": 1158,
+      "blurDataURL": "data:image/webp;base64,UklGRuIAAABXRUJQVlA4WAoAAAAQAAAADwAABwAAQUxQSGYAAAABgBvbroPo6Un/SXgTesg8KVWQQxPUQMhQCzXQ3G4REZFwj6b0lsXtLshOkxPbCQKvN9ILf/cLHN8PqrvvNUkkHY/nbFwdMzNqPB11NPxdJTczDMVueN0W5iFJJYcZXPhHMjJT3QJWUDggVgAAANABAJ0BKhAACAADgFolpAAPhaxONIt4APd+VsZ6mjYIiIovFpNzkcg+wfh964NEp21Yszf+u2WetlRqBk0bPPau8ZRds4dkfuStoY8UjRLptiVxQAAA",
+      "kind": "drawing",
+      "source": "06-chateau-gasqui/plan/layers/base.png",
+      "sourceHash": "77c32c4620f580958d8e2e4dc8aae3fa9255064e-c92ffdda"
+    },
+    "/images/projets/chateau-gasqui/plan/layers/existing-ground.png": {
+      "width": 2220,
+      "height": 1158,
+      "blurDataURL": "data:image/webp;base64,UklGRs4AAABXRUJQVlA4WAoAAAAQAAAADwAABwAAQUxQSGgAAAABcFvbthJd3N1dQzJqoQn68FZoiJwqiHSmh4iYAFKVZSMIwzCMgrofCTY1HYWmvhzWUxAD/KcxXEG7KyD/jUeRNwBAEAQBAlsnBJ7GMAyBL1lHNi1pYRh6rmcyNA3Rw09OFtUwirw0AlZQOCBAAAAA8AEAnQEqEAAIAAOAWiWcAA+JD74o8PeoAP7XMu6Op3SMsPwgQVAZbRIMQwKx9z+uhEIE0xo0TbU//WNyXgAAAA==",
+      "kind": "drawing",
+      "source": "06-chateau-gasqui/plan/layers/existing-ground.png",
+      "sourceHash": "fd883ac88312f6564236047f8fe90313d757c93c-c92ffdda"
+    },
+    "/images/projets/chateau-gasqui/plan/layers/existing-tiles.png": {
+      "width": 2220,
+      "height": 1158,
+      "blurDataURL": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4WAoAAAAQAAAADwAABwAAQUxQSCgAAAABN6CQbQQ4tTuIR+ciIpC7HAratmFj7g6vQVlE/wMA1wG/BQAAAAAAVlA4ICIAAAAwAQCdASoQAAgAA4BaJZwAA3AA/vIVXsDehgBsAUOfwAAA",
+      "kind": "drawing",
+      "source": "06-chateau-gasqui/plan/layers/existing-tiles.png",
+      "sourceHash": "5580ae42ca51e82b7c0afeaaa2d447ba760e8d4e-c92ffdda"
+    },
+    "/images/projets/chateau-gasqui/plan/layers/flowers.png": {
+      "width": 2220,
+      "height": 1158,
+      "blurDataURL": "data:image/webp;base64,UklGRt4AAABXRUJQVlA4WAoAAAAQAAAADwAABwAAQUxQSHUAAAABcFvbtmmt975t27ZtRS/6ZsoafvW/h4hIRK1Wa9SH/Xa9LRQyQbrd6G4KkcJjKW0RIVivxCtZQtK8EUQAcTBejO/TwvP7O9kQBNzdRS8Y8WIunTIIGle62S0AFp0gQ0CmVemdPp/HlYiq5Ar+VTq10efzuZUAVlA4IEIAAABwAQCdASoQAAgAA4BaJQAB8JBAAAD4jfxP5P8j+BCn8/LL9/pMTg5Qj8wO1Vat7oRzM302VIQE6T7lBAiuUGPAAAA=",
+      "kind": "drawing",
+      "source": "06-chateau-gasqui/plan/layers/flowers.png",
+      "sourceHash": "a25183a997b12063ba51935cc0047e3a1e6cbfab-c92ffdda"
+    },
+    "/images/projets/chateau-gasqui/plan/layers/furniture.png": {
+      "width": 2220,
+      "height": 1158,
+      "blurDataURL": "data:image/webp;base64,UklGRp4AAABXRUJQVlA4WAoAAAAQAAAADwAABwAAQUxQSDUAAAABZ0AgaYu/7RERAwTxFwxq25ax/2SeFRCFShKIIJJ4IkT0Py+cHTfPXmD5KsCRgbcPYIl+AABWUDggQgAAAJABAJ0BKhAACAADgFollAAPgAlagAD8sk1QmA6cBZ3ke74+m3m8qE/jhUHQg3n9U+NoAiFOhE6OzTHAEpn9mwAAAA==",
+      "kind": "drawing",
+      "source": "06-chateau-gasqui/plan/layers/furniture.png",
+      "sourceHash": "3169b0119836fc9fe636835573cdb3872259ab8b-c92ffdda"
+    },
+    "/images/projets/chateau-gasqui/plan/layers/hatch-central.png": {
+      "width": 2220,
+      "height": 1158,
+      "blurDataURL": "data:image/webp;base64,UklGRogAAABXRUJQVlA4WAoAAAAQAAAADwAABwAAQUxQSDoAAAABb6CgkaQ2+L3RUYYAIiIAsVm/TufzUyhoJKm5o3eQhEc8oQE/1UJE/ycA4LDYxYr8mOGArvHZeDoCVlA4ICgAAABQAQCdASoQAAgAA4BaJQBYdjfQAP7xQ3I49az9xfQ0P9qnxQADgaAA",
+      "kind": "drawing",
+      "source": "06-chateau-gasqui/plan/layers/hatch-central.png",
+      "sourceHash": "ffb711a4442b926c2729847914fc00f827332ee9-c92ffdda"
+    },
+    "/images/projets/chateau-gasqui/plan/layers/hatch-exotic.png": {
+      "width": 2220,
+      "height": 1158,
+      "blurDataURL": "data:image/webp;base64,UklGRroAAABXRUJQVlA4WAoAAAAQAAAADwAABwAAQUxQSE4AAAABYFNr25L3l3PYfSQRq4wuMyk0Ah1IQBkyMLn9P1SIiAmAkMAuyi4CgZjBP5ezB/3gnvOZgn3wzvUcVRARgRVUw+SAicQKx0fCOcFvAgBWUDggRgAAAFACAJ0BKhAACAADgFoliAB2gBEAF+Al/0ITgAD+5yGSAmCsSyk640exqRoMciDzDscoNmB+PxlCu+RUKmTHJevEH7igAAA=",
+      "kind": "drawing",
+      "source": "06-chateau-gasqui/plan/layers/hatch-exotic.png",
+      "sourceHash": "870e2631b1f36efc57d61e19b837887d2b3bd212-c92ffdda"
+    },
+    "/images/projets/chateau-gasqui/plan/layers/hatch-provence.png": {
+      "width": 2220,
+      "height": 1158,
+      "blurDataURL": "data:image/webp;base64,UklGRqQAAABXRUJQVlA4WAoAAAAQAAAADwAABwAAQUxQSEEAAAABYBvZtpL3Pp46RORQNB3QAKlbDBVYAWRu77cQERMAmu75YQD/UjIu65kRtOE8tjMlgB13ZR9RABEFRkHgxjeJFwBWUDggPAAAANABAJ0BKhAACAADgFolkAB2gAKKtCkAAPzIOgQf5W6UqXj/dw8di8unb9duoJsQVD8TX99SW++2h33AAA==",
+      "kind": "drawing",
+      "source": "06-chateau-gasqui/plan/layers/hatch-provence.png",
+      "sourceHash": "d38a96928f555176482dd8ef53fd965741877d7a-c92ffdda"
+    },
+    "/images/projets/chateau-gasqui/plan/layers/path-lines.png": {
+      "width": 2220,
+      "height": 1158,
+      "blurDataURL": "data:image/webp;base64,UklGRroAAABXRUJQVlA4WAoAAAAQAAAADwAABwAAQUxQSE0AAAABZ0AgQFH4/9qHiEi86MAmsm0n5xPbj4RsgMFA7DNtxsKXgIVU4wVlaIjof4Ir47rUR3VG+6FRnZe9KAO8uR9yC75ni9IE3lsKBODwDwBWUDggRgAAAHABAJ0BKhAACAADgFolpAAPiQAAAM4XJucrhtfmRxeuIriehxxQwUQL8REuubrL5MhUTj0XmH/Xjho4mH3/Zf1LsUoQAAA=",
+      "kind": "drawing",
+      "source": "06-chateau-gasqui/plan/layers/path-lines.png",
+      "sourceHash": "81a25cfbee4c8bae53e821cb3e0ec0320735765d-c92ffdda"
+    },
+    "/images/projets/chateau-gasqui/plan/layers/shade-sail.png": {
+      "width": 2220,
+      "height": 1158,
+      "blurDataURL": "data:image/webp;base64,UklGRogAAABXRUJQVlA4WAoAAAAQAAAADwAABwAAQUxQSCsAAAABR6CobRs41Ps1BIuIAD3rj1AMSZKUc/kMxIqsxfo/lyCi/wkAexLcN+EbAFZQOCA2AAAAMAEAnQEqEAAIAAOAWiUAAG4AAP7mT//8aOn/3Q/xKe448oxjn28dQc+4Vqdj5/uP+bhNwAAA",
+      "kind": "drawing",
+      "source": "06-chateau-gasqui/plan/layers/shade-sail.png",
+      "sourceHash": "adffd573f910d4bab9bdce23fdec923d6181024c-c92ffdda"
+    },
+    "/images/projets/chateau-gasqui/plan/layers/stone-water.png": {
+      "width": 2220,
+      "height": 1158,
+      "blurDataURL": "data:image/webp;base64,UklGRqQAAABXRUJQVlA4WAoAAAAQAAAADwAABwAAQUxQSEEAAAABYBvZtpL7PvAlxCG32DOvgNpo+WsJETEBCEi6C0UwM0aaHOu2bZWKYSbOORf1+x1dLhis/y6nXBTSlnJ4EwEEAABWUDggPAAAALABAJ0BKhAACAADgFolnAAC7V8nE0AA/vHiI1OKNmBWcz1CevYYjwXbgS4DiKSuNbNWEK+fEg7ZgBAgAA==",
+      "kind": "drawing",
+      "source": "06-chateau-gasqui/plan/layers/stone-water.png",
+      "sourceHash": "37fc00b2f2c189543768fc4a1106184fcd042edd-c92ffdda"
+    },
+    "/images/projets/chateau-gasqui/plan/layers/terracotta.png": {
+      "width": 2220,
+      "height": 1158,
+      "blurDataURL": "data:image/webp;base64,UklGRqAAAABXRUJQVlA4WAoAAAAQAAAADwAABwAAQUxQSEAAAAABb6C2bSM3dznfVV99RAQgimkqntL7YBBJkpP5HEgrCQNZCRLwggFUnoaI/m/C7dC/ic+hp2EQsGYA9I4Om7xVVlA4IDoAAABQAQCdASoQAAgAA4BaJQBYdi6gAP7w9/pD3GR7ptPvNykfhJ/P5YK8Zi3lEgD5jddgQiJmf1aqXaAA",
+      "kind": "drawing",
+      "source": "06-chateau-gasqui/plan/layers/terracotta.png",
+      "sourceHash": "080e0c646ce682b2bdd8139c0735a3b563febe2e-c92ffdda"
+    },
+    "/images/projets/chateau-gasqui/plan/layers/trees-canopy.png": {
+      "width": 2220,
+      "height": 1158,
+      "blurDataURL": "data:image/webp;base64,UklGRsQAAABXRUJQVlA4WAoAAAAQAAAADwAABwAAQUxQSDwAAAABcFDbtmmtZ9tGBlZw/z6fESJiAnjriYDAW8GYnVpWGrtFeNGfEVBiPXkR2PYJCSUz8xcQRIG/Cgg//B1WUDggYgAAANABAJ0BKhAACAADgFolmDbbFBE8AA7AAP7ndNx8fWxC2eUWeqYcW4/FJgfMziOENcfP+0qZ4wYlgRdxutmsPNvXd1bJWdTEC6KIRNPxOQTyqNG3b7JVNvqSXRsQe+J/AAAA",
+      "kind": "drawing",
+      "source": "06-chateau-gasqui/plan/layers/trees-canopy.png",
+      "sourceHash": "bb49229e443909a053f62e37cb0a0ca3b3e59647-c92ffdda"
+    },
+    "/images/projets/chateau-gasqui/plan/layers/trees-special.png": {
+      "width": 2220,
+      "height": 1158,
+      "blurDataURL": "data:image/webp;base64,UklGRpAAAABXRUJQVlA4WAoAAAAQAAAADwAABwAAQUxQSC8AAAABYBPbVqNLziUdDqhAAhX+NW1eAxExAdwPA3y+4jtxT+QZIA2rloY4EABRKcM/AQBWUDggOgAAABACAJ0BKhAACAADgFoljALDsRVNKWeitoAA/q7SgHBUnL9C+NKRwiA2C5FPhyLs4uajM7xlhFMygAA=",
+      "kind": "drawing",
+      "source": "06-chateau-gasqui/plan/layers/trees-special.png",
+      "sourceHash": "306253244da48eb23c1cb3040d67a2d59d7f4cca-c92ffdda"
+    },
+    "/images/projets/chateau-gasqui/plan/layers/wood-deck.png": {
+      "width": 2220,
+      "height": 1158,
+      "blurDataURL": "data:image/webp;base64,UklGRp4AAABXRUJQVlA4WAoAAAAQAAAADwAABwAAQUxQSDQAAAABV6CokSRl4clw5N/qmYiIBPzB8hZURbZB3SuBGj61UEglSZ8RIvo/AXh16UaWNcjoZiUAVlA4IEQAAADwAQCdASoQAAgAA4BaJbABTAsxYGJvm0gA/vizFoijpVGWdoI98uYvR33jBBUxpHk8zYy3t/HA+//ybXmPO2Rj8kgAAA==",
+      "kind": "drawing",
+      "source": "06-chateau-gasqui/plan/layers/wood-deck.png",
+      "sourceHash": "f44264915d5d2a421695dbd4cdfa48c71e573508-c92ffdda"
+    },
+    "/images/projets/chateau-gasqui/plan/layers/zone-aromatics.png": {
+      "width": 2220,
+      "height": 1158,
+      "blurDataURL": "data:image/webp;base64,UklGRoQAAABXRUJQVlA4WAoAAAAQAAAADwAABwAAQUxQSDEAAAABX6BGkgw4vG4ysZhURASY6HWu2hZmArCwLBIslSJauDXdqBDR/wmIP1NZdKkdcSQEAFZQOCAsAAAAsAEAnQEqEAAIAAOAWiWcAAJX1IO4AAD90oBPRCOa9/NRjNmpUtJfMCVtAAA=",
+      "kind": "drawing",
+      "source": "06-chateau-gasqui/plan/layers/zone-aromatics.png",
+      "sourceHash": "2aaf33887e6ee4a871ff0bbe914e51414f7aec38-c92ffdda"
+    },
+    "/images/projets/chateau-gasqui/plan/layers/zone-lawn.png": {
+      "width": 2220,
+      "height": 1158,
+      "blurDataURL": "data:image/webp;base64,UklGRtYAAABXRUJQVlA4WAoAAAAQAAAADwAABwAAQUxQSGcAAAAFcBvbtqqc74a7u0NEF9IQFVgftGEZqbtDCpm7QwsRMQH4n8D9j48EdbsTuN8B8OrD/bTDZ/IeL1fyrDPZOtcWiuEa4ArT4jKazqdiK8Wm38tUSb3fYnLJIxEV7iAS+ExwksHnc0ZyAFZQOCBIAAAAsAEAnQEqEAAIAAOAWiWwAALH/VkiMAD+8EjA2+5Xe3lt37f5Jzz528Z5KbMI3Ouh5pCpSAihz1yjMt5/9Io7w8Gh4Yrfc6AA",
+      "kind": "drawing",
+      "source": "06-chateau-gasqui/plan/layers/zone-lawn.png",
+      "sourceHash": "1369781eea94dde656a35454589d8b6bf1052ac5-c92ffdda"
+    },
+    "/images/projets/chateau-gasqui/plan/layers/zone-paths.png": {
+      "width": 2220,
+      "height": 1158,
+      "blurDataURL": "data:image/webp;base64,UklGRroAAABXRUJQVlA4WAoAAAAQAAAADwAABwAAQUxQSGIAAAABcBvbtqqc+z7u7u4eQQodQObuZO4U4N4EhVoNETEBACBVc9DI+FkXALL7K+nubHHJ1Wo6EMSv0eYxfL92m+c+DAJMWr4qn0revTprAgzfCfaMqRH7IIA4RgATEf4lBvz3G1ZQOCAyAAAAsAEAnQEqEAAIAAOAWiWcAALnXBIVAAD+9+ei2eJNvewh4Nj8bLYa7mg5ihPo4DqEAAA=",
+      "kind": "drawing",
+      "source": "06-chateau-gasqui/plan/layers/zone-paths.png",
+      "sourceHash": "279142962a0b4cbe2c36e80358a3eb38f8bb43c8-c92ffdda"
+    },
+    "/images/projets/chateau-gasqui/plan/layers/zone-planted.png": {
+      "width": 2220,
+      "height": 1158,
+      "blurDataURL": "data:image/webp;base64,UklGRr4AAABXRUJQVlA4WAoAAAAQAAAADwAABwAAQUxQSHcAAAABgGLb1vLm/qQiWXEUo2WUjDI2ihOFA2BmamtrmTsIZl3dCeAUIiJBsmV8vjnhUwpMIaNcgfRN73w7TKb26hcN0DQR2u2UFkk4JrmyGQTA7H8+z05vy08fXwMBCAJCtzcSyXqgiRyEQeEvgkUBAEF9kwRJ4V8CAABWUDggIAAAADABAJ0BKhAACAADgFolAABuAAD+8/w3uiyOxJmgAAAA",
+      "kind": "drawing",
+      "source": "06-chateau-gasqui/plan/layers/zone-planted.png",
+      "sourceHash": "47243db67509cd34888699a41e960e15d5b3f4d3-c92ffdda"
+    },
+    "/images/projets/chateau-gasqui/plan/plan-jardin-v3-preview.png": {
+      "width": 1684,
+      "height": 901,
+      "blurDataURL": "data:image/webp;base64,UklGRjwAAABXRUJQVlA4IDAAAACwAQCdASoQAAkAA4BaJZQAAudIrD8AAP71Iqwxyijxo4qIFIi1/5JIoXdQgPsvAAA=",
+      "kind": "drawing",
+      "source": "06-chateau-gasqui/plan/plan-jardin-v3-preview.png",
+      "sourceHash": "63341a8671c4acea5676815b63422782db53da08-c92ffdda"
+    },
+    "/images/projets/chateau-gasqui/plan/plan-jardin-v3.pdf": {
+      "kind": "file",
+      "source": "06-chateau-gasqui/plan/plan-jardin-v3.pdf",
+      "sourceHash": "0246af1b218035afed99fbf955f987ad92bd6b07-c92ffdda"
+    },
+    "/images/projets/chateau-gasqui/plants/arbres-amelanchier-ovale.jpg": {
+      "width": 1400,
+      "height": 763,
+      "blurDataURL": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAADQAQCdASoQAAkAA4BaJZACdAEQQq7FoAD8+5FIBvtPwkGYfw6v+e2BkBlB1j0w3VH6fAjywTYaAazprJ/T55k6XfGkm20CgL9Tq0Hc6czSmAAA",
+      "kind": "photo",
+      "source": "06-chateau-gasqui/plants/arbres-amelanchier-ovale.jpg",
+      "sourceHash": "29bb85cc6830b235b2dc5f3a0b959392d325caba-c92ffdda"
+    },
+    "/images/projets/chateau-gasqui/plants/arbres-arbousier.jpg": {
+      "width": 1400,
+      "height": 763,
+      "blurDataURL": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAACwAQCdASoQAAkAA4BaJZACdADV1VPAAP5qdXj5xqaywcP3IK9XBH156nXNgOQKpvhPvpkJPjfPK6R/xiu3Xg6UbP4RerQbbUgImlydTE8HQCCIYyAAAA==",
+      "kind": "photo",
+      "source": "06-chateau-gasqui/plants/arbres-arbousier.jpg",
+      "sourceHash": "248e0e727ac71f19312a4e8cf252290b528bfe71-c92ffdda"
+    },
+    "/images/projets/chateau-gasqui/plants/arbres-arbre-a-perruques.jpg": {
+      "width": 1400,
+      "height": 781,
+      "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAACwAQCdASoQAAkAA4BaJQBOj+ABDEwAAP7XAGuL4vcZEdGUDYO9Fkv3+fzvlAz7Ea0ul+FMEYOpYOI9X08//CjGP/UikZdwFRgCNtD7JGUAAA==",
+      "kind": "photo",
+      "source": "06-chateau-gasqui/plants/arbres-arbre-a-perruques.jpg",
+      "sourceHash": "0439eb809d352a49d1de6ce860459bd8ff58527b-c92ffdda"
+    },
+    "/images/projets/chateau-gasqui/plants/arbres-cypres.jpg": {
+      "width": 1400,
+      "height": 763,
+      "blurDataURL": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAAAwAgCdASoQAAkAA4BaJYgCdGuAAt0ylstggAD+xeK92EOvgm2NfgjoBU4mgvVF2cjjTW4G8nR/JisiPyjxl0AVGCdyFiJ4FH0AAA==",
+      "kind": "photo",
+      "source": "06-chateau-gasqui/plants/arbres-cypres.jpg",
+      "sourceHash": "a4bdad6a104e617801f66d3515a1fbba84bd7611-c92ffdda"
+    },
+    "/images/projets/chateau-gasqui/plants/arbres-laurier-tin.jpg": {
+      "width": 1400,
+      "height": 763,
+      "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADQAQCdASoQAAkAA4BaJZgCdAEMWK2TwAD82SeANatmEISumcdfqEFZYt4DWv0Z2iX9DtbZ9PmyonVIc96eWbMzDEIyeI/IOF99OeoGouwAAA==",
+      "kind": "photo",
+      "source": "06-chateau-gasqui/plants/arbres-laurier-tin.jpg",
+      "sourceHash": "e3cf327d382bff2a33ad3a8ae39532a277eba5a8-c92ffdda"
+    },
+    "/images/projets/chateau-gasqui/plants/arbres-olivier.jpg": {
+      "width": 1400,
+      "height": 781,
+      "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAAAQAgCdASoQAAkAA4BaJaACdAEf/B4lEJBAAP7V5YfM7yL4OJA7xdZy6KT6J8AVsoF+Ebvr1jlbtwstzAFULfqE/yXPHUr2JRpHT5oMAAA=",
+      "kind": "photo",
+      "source": "06-chateau-gasqui/plants/arbres-olivier.jpg",
+      "sourceHash": "716834a2fb393d9478910f1c235baceac37e61e7-c92ffdda"
+    },
+    "/images/projets/chateau-gasqui/plants/arbres-poirier-a-feuilles-d-amandier.jpg": {
+      "width": 1400,
+      "height": 763,
+      "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADQAQCdASoQAAkAA4BaJZACdAEDVpTKQAD+mFyjALj8jAZg4XjvDjCqjfuzuCqil6ZLu94v7Eb/6Xk3JVv0y5CfKPVAXxrGVNkUQ9XoAAA=",
+      "kind": "photo",
+      "source": "06-chateau-gasqui/plants/arbres-poirier-a-feuilles-d-amandier.jpg",
+      "sourceHash": "d7e8c0a7519eb1b0427afbcb60974300bc42960b-c92ffdda"
+    },
+    "/images/projets/chateau-gasqui/plants/arbres-tamaris-de-france.jpg": {
+      "width": 1400,
+      "height": 763,
+      "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADwAQCdASoQAAkAA4BaJbACdAEOzfihWoAA/sn/K7HkfhsZuh3rySNZ3nnbhmS0wN6zdb6WAMequ1R3HV9VqlRgjCTmGUVpSMURbWb4gAA=",
+      "kind": "photo",
+      "source": "06-chateau-gasqui/plants/arbres-tamaris-de-france.jpg",
+      "sourceHash": "e6b0f39113c997526d82fab1ab9fe2110ef73fbf-c92ffdda"
+    },
+    "/images/projets/chateau-gasqui/plants/exotiques-agapanthe.jpg": {
+      "width": 1400,
+      "height": 763,
+      "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAAAQAgCdASoQAAkAA4BaJYgCdAEVuBym6UQAAM4/LZylrPoyA8RzAsPQ7Mzo09hLGBP6xDNJdXjn7JshvQUhh2O9NqqFSXmN2TNtgKTAAAA=",
+      "kind": "photo",
+      "source": "06-chateau-gasqui/plants/exotiques-agapanthe.jpg",
+      "sourceHash": "4e65fe65d019c493349980aa8e1df3590ab15fda-c92ffdda"
+    },
+    "/images/projets/chateau-gasqui/plants/exotiques-callistemon.jpg": {
+      "width": 1400,
+      "height": 763,
+      "blurDataURL": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAAAQAgCdASoQAAkAA4BaJZgCdAEDGLoYp4gAAPzyXoiuL7Hz0oxVPRedcaT0v05Azi5GH5VEEhLdfFsPMHCn0jIf5c1zLQ1TDL5qJruBZA5M3AkG8r4AAA==",
+      "kind": "photo",
+      "source": "06-chateau-gasqui/plants/exotiques-callistemon.jpg",
+      "sourceHash": "8a94cad3d07c0025b6b4978d3567c1754052b68f-c92ffdda"
+    },
+    "/images/projets/chateau-gasqui/plants/exotiques-gaura.jpg": {
+      "width": 1400,
+      "height": 763,
+      "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAAAQAgCdASoQAAkAA4BaJagCdAD5hYQl2tLAAPail6WGJCUr5sW12hlnlM214ZJQwpTIbT1GgrJkiaL4Lu+z/Q6m75oS0vYlkhuNn1gAAAA=",
+      "kind": "photo",
+      "source": "06-chateau-gasqui/plants/exotiques-gaura.jpg",
+      "sourceHash": "514dfa7bf8acf7a3e852305b76766239da869749-c92ffdda"
+    },
+    "/images/projets/chateau-gasqui/plants/exotiques-grenadier-a-fleurs.jpg": {
+      "width": 1400,
+      "height": 781,
+      "blurDataURL": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAADQAQCdASoQAAkAA4BaJZACdAC9OmhIQAD9/SAHoOAc3duPl1cK12N+tjkAmz9B+bFftiewyOj0xk4MVtkLYvtZCdYvYJTLrg6rUgImuUAKhtlBgQAAAA==",
+      "kind": "photo",
+      "source": "06-chateau-gasqui/plants/exotiques-grenadier-a-fleurs.jpg",
+      "sourceHash": "a715eb01a795e08a90695bd94606d08dda4fe1ca-c92ffdda"
+    },
+    "/images/projets/chateau-gasqui/plants/exotiques-grevillea.jpg": {
+      "width": 1400,
+      "height": 763,
+      "blurDataURL": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAADwAQCdASoQAAkAA4BaJagCdAEMWZ7isgAA+XCAEl3DXnGuzNIksLztSbEqBBSyjHN7GV2QTRZQ9kilcalXI7kDn5RNdxJ1v4bqzSzll0SSgAAA",
+      "kind": "photo",
+      "source": "06-chateau-gasqui/plants/exotiques-grevillea.jpg",
+      "sourceHash": "1dc5db4db40e164fe086a5e2dce41e3e4f9c3e89-c92ffdda"
+    },
+    "/images/projets/chateau-gasqui/plants/exotiques-kniphofia.jpg": {
+      "width": 1400,
+      "height": 763,
+      "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADQAQCdASoQAAkAA4BaJYgCdADzoFqqAAD2vYb3SZu6dqIx7yVnDQilw5OAZpstvqblIUl5Dbr2aX3+VezXiBViwO+jmJpVYIEWATd9cAA=",
+      "kind": "photo",
+      "source": "06-chateau-gasqui/plants/exotiques-kniphofia.jpg",
+      "sourceHash": "ed640e665bb5144089abc07d2f8081663c4eda31-c92ffdda"
+    },
+    "/images/projets/chateau-gasqui/plants/exotiques-lagerstroemia.jpg": {
+      "width": 1400,
+      "height": 763,
+      "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAAAwAgCdASoQAAkAA4BaJYgCdH8AE76q6Ocz6AD+34n5FQ9/aRWwKtsYrzXfww9WNtYUlC8MyeA8ftxGFRKcc8GvZL0MeG/jjk5zCc4qmMYQAA==",
+      "kind": "photo",
+      "source": "06-chateau-gasqui/plants/exotiques-lagerstroemia.jpg",
+      "sourceHash": "fb1b418c17a53657194568cb80973bcf6df4809d-c92ffdda"
+    },
+    "/images/projets/chateau-gasqui/plants/exotiques-leucadendron.jpg": {
+      "width": 1400,
+      "height": 781,
+      "blurDataURL": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAACQAQCdASoQAAkAA4BaJagCdACBqegA/l8zHy4FftEOqMtuNLHUIYUYz2IwSzj3BFT0+E9WWBjhqmXTlPNtYOQ7knc450h2AFFITOucMqP1IxbfUEHDxAAA",
+      "kind": "photo",
+      "source": "06-chateau-gasqui/plants/exotiques-leucadendron.jpg",
+      "sourceHash": "dc8e023ea08ad7fdf44572d9efaa711378f42f4b-c92ffdda"
+    },
+    "/images/projets/chateau-gasqui/plants/exotiques-queue-de-lion.jpg": {
+      "width": 1400,
+      "height": 763,
+      "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADwAQCdASoQAAkAA4BaJZACdBHABgnEn/gA/I+8i5wvezZWlHUoa0ge4mmzdtQTdt7c6iOEhctT+XID5aw2cFfCo7jIMIfPm20O6ul2EAA=",
+      "kind": "photo",
+      "source": "06-chateau-gasqui/plants/exotiques-queue-de-lion.jpg",
+      "sourceHash": "3694ea0060594efc385084a68dff7d8e324eb4e6-c92ffdda"
+    },
+    "/images/projets/chateau-gasqui/plants/exotiques-sauge-d-afganistan.jpg": {
+      "width": 1400,
+      "height": 763,
+      "blurDataURL": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAAAwAgCdASoQAAkAA4BaJagCdAEDfqJY8Q2RQAD+P940lbfswYaIrmueITt3Ruxyv98Xz0P76+Q+wM79WaO6VXdRbqVVOLd1qnDoE3YmHC4nnGcgAAA=",
+      "kind": "photo",
+      "source": "06-chateau-gasqui/plants/exotiques-sauge-d-afganistan.jpg",
+      "sourceHash": "fd478bf5cc6ee78f0382049ab76c7400a3b19085-c92ffdda"
+    },
+    "/images/projets/chateau-gasqui/plants/exotiques-sauge-de-gregg.jpg": {
+      "width": 1400,
+      "height": 763,
+      "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAAAQAgCdASoQAAkAA4BaJZgCdAD0loLtF9wAAP6r4LptWtK1+RSSxN9eJ48OAKXWW74yo0FussJJHgTgiz3Z/OMKuMaLxcm6bzBZZWozQAA=",
+      "kind": "photo",
+      "source": "06-chateau-gasqui/plants/exotiques-sauge-de-gregg.jpg",
+      "sourceHash": "821ee3f8c1bc1db52a8b60ea3d11455f397096b1-c92ffdda"
+    },
+    "/images/projets/chateau-gasqui/plants/mediterraneennes-centranthus-ruber.jpg": {
+      "width": 1400,
+      "height": 763,
+      "blurDataURL": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAADwAQCdASoQAAkAA4BaJagCdAD8K9K0ISAA3eAwwtrS5SZY3Fpav60l+x2eUMS8iVuQs0QR7TFCmlYOfLwuqI7f+0+t6pqwg/X6eu1f0UhygAAA",
+      "kind": "photo",
+      "source": "06-chateau-gasqui/plants/mediterraneennes-centranthus-ruber.jpg",
+      "sourceHash": "7d0f029630bbe4badea70b2282201e58cdf0ee61-c92ffdda"
+    },
+    "/images/projets/chateau-gasqui/plants/mediterraneennes-echinops-ritro.jpg": {
+      "width": 1400,
+      "height": 781,
+      "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADwAQCdASoQAAkAA4BaJZACdAEKVZEl7eAAzj27jmByVgxK5g7MRXOPfV3SrSUzhAOx8sQqAcHUtv4epZPV+oEKlL0FI78UodF6gYAA",
+      "kind": "photo",
+      "source": "06-chateau-gasqui/plants/mediterraneennes-echinops-ritro.jpg",
+      "sourceHash": "983a4d59cc2423ed6fe2c7be3c49c3d44fba6715-c92ffdda"
+    },
+    "/images/projets/chateau-gasqui/plants/mediterraneennes-fenouil-sauvage.jpg": {
+      "width": 1400,
+      "height": 763,
+      "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADQAQCdASoQAAkAA4BaJZgCdAEO8GlD8AD+th+nibXQVzDaAXf61Jc4DQxS84xsbdhiZSjSH2raGueQFB2z3WI9rnKlsyj8omF1N3AA",
+      "kind": "photo",
+      "source": "06-chateau-gasqui/plants/mediterraneennes-fenouil-sauvage.jpg",
+      "sourceHash": "bb9763052b77158f13614f90779e3ae703932012-c92ffdda"
+    },
+    "/images/projets/chateau-gasqui/plants/mediterraneennes-immortelles-des-dunes.jpg": {
+      "width": 1400,
+      "height": 763,
+      "blurDataURL": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAADwAQCdASoQAAkAA4BaJZACdAEKE8XeJpgA+OWC0aZrkqnJLx6TSWOKwxdwRu4IHsDXnPmWNBoDauu8UvLNOGpMkZG9PcZwpy6CFKfSuUraAAAA",
+      "kind": "photo",
+      "source": "06-chateau-gasqui/plants/mediterraneennes-immortelles-des-dunes.jpg",
+      "sourceHash": "0081572739feaf5ab4a57e076e0fa97a0c21ab51-c92ffdda"
+    },
     "/images/projets/chateau-gasqui/plants/mediterraneennes-lavande-vraie.jpg": {
       "width": 1400,
       "height": 763,
@@ -454,6 +851,54 @@
       "kind": "photo",
       "source": "06-chateau-gasqui/plants/mediterraneennes-lavande-vraie.jpg",
       "sourceHash": "98ece91bd7262baa93326d525d11956ae571934c-c92ffdda"
+    },
+    "/images/projets/chateau-gasqui/plants/mediterraneennes-marguerite-commune.jpg": {
+      "width": 1400,
+      "height": 763,
+      "blurDataURL": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAACwAQCdASoQAAkAA4BaJaACdABzcm4AAN5ndTDtbYIlJ9YNZ39Z1KdbIHJ1PCzV8vExljjePNqs59U6oiPa75Yb+Ta7Ox419GOmtXuar9Dt0+AA",
+      "kind": "photo",
+      "source": "06-chateau-gasqui/plants/mediterraneennes-marguerite-commune.jpg",
+      "sourceHash": "64c725db55a9f5568f080233755b559e920a1857-c92ffdda"
+    },
+    "/images/projets/chateau-gasqui/plants/mediterraneennes-narcisse-a-bouquet.jpg": {
+      "width": 1400,
+      "height": 763,
+      "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAAAQAgCdASoQAAkAA4BaJaACdAED9vDFfVwAAPJLA5+LOLTJi6AVIBA17wOZ7bPiGQ5H3hoRqmdi5T3B7B4uDXNvDI7DNTd4lzIujugAAAA=",
+      "kind": "photo",
+      "source": "06-chateau-gasqui/plants/mediterraneennes-narcisse-a-bouquet.jpg",
+      "sourceHash": "ff4cb7683ff4ea4a91d2d3ef4493212685ef6f4c-c92ffdda"
+    },
+    "/images/projets/chateau-gasqui/plants/mediterraneennes-orlaya-grandiflora.jpg": {
+      "width": 1400,
+      "height": 763,
+      "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADwAQCdASoQAAkAA4BaJaACdADcZLnt3GAA4UlglJ8NWViR1ZT7Vt7UblP1Q8hAs7CMgDPwFwG/D46pjYp0zSkfjSOHDmBwyPKlevXIoZWAAA==",
+      "kind": "photo",
+      "source": "06-chateau-gasqui/plants/mediterraneennes-orlaya-grandiflora.jpg",
+      "sourceHash": "419e5eb48646f84906d0f39b9f4b16dcaa73a675-c92ffdda"
+    },
+    "/images/projets/chateau-gasqui/plants/mediterraneennes-sauge-des-pres.jpg": {
+      "width": 1400,
+      "height": 763,
+      "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAAAQAgCdASoQAAkAA4BaJYgCdAEDZaRWSu4gAP3jaAhBhoJg/SGcAygO9nOPizQXGPJ0CYdB+Qi5Apj4syuULPGLnmn0LD9be3ap2AAA",
+      "kind": "photo",
+      "source": "06-chateau-gasqui/plants/mediterraneennes-sauge-des-pres.jpg",
+      "sourceHash": "bef77cbe76d912faa38c94bc11e70eb6e2590d6d-c92ffdda"
+    },
+    "/images/projets/chateau-gasqui/plants/mediterraneennes-scabieuse-colombaire.jpg": {
+      "width": 1400,
+      "height": 763,
+      "blurDataURL": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAADQAQCdASoQAAkAA4BaJaACdAEI29pQAAD5N96XWAF3i6nwv+pQoayHXTgl2VRaahJljZbCKVa1cgPiAy6N/NOHsBs3MxsKaMAAAA==",
+      "kind": "photo",
+      "source": "06-chateau-gasqui/plants/mediterraneennes-scabieuse-colombaire.jpg",
+      "sourceHash": "d2c83a743d647b00148ccb629308f72e8d6b0b6f-c92ffdda"
+    },
+    "/images/projets/chateau-gasqui/plants/mediterraneennes-viburnum-tinus.jpg": {
+      "width": 1400,
+      "height": 763,
+      "blurDataURL": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAAAQAgCdASoQAAkAA4BaJZACdAEO5BPk1L4AAPk9OC2OWyvjCn2USV5Sm0ArlQIXhMciTreDlYYT3shXnEXXZPyuMKbXo6n0gAA=",
+      "kind": "photo",
+      "source": "06-chateau-gasqui/plants/mediterraneennes-viburnum-tinus.jpg",
+      "sourceHash": "a9c8208c341bac3b15f83687af94137c93c0c6a8-c92ffdda"
     },
     "/images/projets/clocher-saint-louis/clocher-saint-louis-entree.jpg": {
       "width": 2000,

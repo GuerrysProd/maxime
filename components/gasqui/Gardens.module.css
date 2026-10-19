@@ -1,0 +1,135 @@
+.gardens {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.selector {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  border-top: 1px solid var(--color-ligne);
+}
+
+.tab {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+  min-height: 88px;
+  padding: 18px 16px 18px 0;
+  border: 0;
+  border-top: 2px solid transparent;
+  margin-top: -1px;
+  background: transparent;
+  color: var(--color-cacao-70);
+  text-align: left;
+  cursor: pointer;
+  transition:
+    color var(--duration-fast),
+    border-color var(--duration-fast);
+}
+
+.tab:hover {
+  color: var(--color-cacao);
+}
+
+.tab[aria-pressed="true"] {
+  border-top-color: var(--color-terre);
+  color: var(--color-cacao);
+}
+
+.tabNumber {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.1em;
+}
+
+.tabTitle {
+  font-family: var(--font-serif);
+  font-size: 24px;
+  line-height: 1.15;
+}
+
+.feature {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  column-gap: var(--gutter);
+  row-gap: 32px;
+  align-items: center;
+}
+
+.figure {
+  grid-column: 1 / span 7;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 0;
+}
+
+.frame {
+  position: relative;
+  aspect-ratio: 3 / 2;
+  overflow: hidden;
+  background: var(--color-pierre);
+}
+
+.content {
+  grid-column: 9 / span 4;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 18px;
+}
+
+.title {
+  font-size: 44px;
+  line-height: 1.1;
+}
+
+.description {
+  color: var(--color-texte-doux);
+}
+
+.facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 0;
+  list-style: none;
+}
+
+.facts li {
+  padding: 6px 14px;
+  border: 1px solid rgba(56, 43, 43, 0.25);
+  border-radius: var(--radius-pill);
+  font-size: 14px;
+}
+
+.link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 44px;
+  border-bottom: 1px solid currentColor;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+@media (max-width: 900px) {
+  .selector {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .figure,
+  .content {
+    grid-column: 1 / -1;
+  }
+
+  .title {
+    font-size: 36px;
+  }
+
+  .tabTitle {
+    font-size: 20px;
+  }
+}

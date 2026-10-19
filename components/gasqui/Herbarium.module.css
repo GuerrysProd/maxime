@@ -1,0 +1,149 @@
+.herbarium {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 0 18px;
+  border: 1px solid rgba(56, 43, 43, 0.28);
+  border-radius: var(--radius-pill);
+  background: transparent;
+  color: var(--color-cacao);
+  font-size: 15px;
+  cursor: pointer;
+  transition:
+    background-color var(--duration-fast),
+    color var(--duration-fast),
+    border-color var(--duration-fast);
+}
+
+.chip:hover {
+  border-color: var(--color-cacao);
+}
+
+.chipCount {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--color-cacao-70);
+}
+
+.chip[aria-pressed="true"] {
+  border-color: var(--color-cacao);
+  background: var(--color-cacao);
+  color: var(--color-lin);
+}
+
+.chip[aria-pressed="true"] .chipCount {
+  color: var(--color-sable);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 16px;
+  padding: 0;
+  list-style: none;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(56, 43, 43, 0.12);
+  background: var(--color-champ);
+}
+
+.photo {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background: var(--color-pierre);
+}
+
+.image {
+  object-fit: cover;
+}
+
+.body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 6px;
+  padding: 16px 18px 18px;
+}
+
+.category {
+  font-size: 10px;
+}
+
+.name {
+  font-size: 21px;
+  line-height: 1.2;
+}
+
+.latin {
+  font-size: 14px;
+  font-style: italic;
+  line-height: 1.35;
+  color: var(--color-cacao-70);
+}
+
+.flowering {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin-top: auto;
+  padding-top: 10px;
+  border-top: 1px solid rgba(56, 43, 43, 0.12);
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.floweringLabel {
+  font-size: 10px;
+}
+
+@media (max-width: 1099px) {
+  .grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .body {
+    padding: 12px;
+  }
+
+  .name {
+    font-size: 18px;
+  }
+}

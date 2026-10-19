@@ -296,6 +296,117 @@ export const projectDetailSchema = z.object({
 export type ProjectDetail = z.output<typeof projectDetailSchema>;
 export type SpecRow = ProjectDetail["specs"][number];
 
+/* ---------- Fiche projet, gabarit « modules » (Château Gasqui) ---------- */
+
+/** Image décorative désignée par son seul chemin (calques, vignettes de l’herbier). */
+const decorative = z.string().startsWith("/images/").transform((src) => resolveImage({ src, alt: "" }));
+const toggleState = z.object({ button: z.string(), label: z.string(), image: imageRef });
+
+export const projectModulesSchema = z.object({
+  slug: z.string(),
+  _note: z.string().optional(),
+  lead: z.string(),
+  intro: paragraphs.optional(),
+  credit: z.string(),
+  specs: z.array(specRow),
+  /** Type de demande pré-rempli par le bandeau d’appel (/contact?type=…). */
+  contactType: z.string().optional(),
+  plan: z.object({
+    label: z.string(),
+    title: z.string(),
+    text: z.string(),
+    group: z.string(),
+    visible: z.string(),
+    caption: z.string(),
+    /** Calques dans l’ordre d’empilement ; `step` = étape où ils apparaissent (0 : toujours). */
+    layers: z.array(
+      z.object({
+        id: z.string(),
+        src: decorative,
+        step: z.number().int().min(0),
+        /** Dernière étape où le calque reste visible (hachures des trois espaces). */
+        until: z.number().int().optional(),
+        opacity: z.number().optional(),
+        /** Étape où le calque est mis en avant. */
+        focus: z.number().int().optional(),
+      }),
+    ),
+    spaces: z.array(z.object({ name: z.string(), x: z.number(), y: z.number() })),
+    steps: z
+      .array(z.object({ id: z.string(), title: draftable, text: draftable, facts: z.array(z.string()).optional() }))
+      .min(2),
+    pdf: z.object({ title: z.string(), label: z.string(), href: z.string(), meta: z.string(), preview: imageRef }),
+  }),
+  gardens: z.object({
+    label: z.string(),
+    title: z.string(),
+    group: z.string(),
+    paletteLink: z.string(),
+    items: z.array(
+      z.object({
+        id: z.string(),
+        kicker: z.string(),
+        title: z.string(),
+        description: z.string(),
+        facts: z.array(z.string()),
+        caption: z.string(),
+        image: imageRef,
+      }),
+    ),
+  }),
+  stats: z.object({
+    label: z.string(),
+    title: z.string(),
+    items: z.array(z.object({ value: z.number(), prefix: z.string().optional(), unit: z.string().optional(), label: z.string() })),
+  }),
+  dayNight: z.object({
+    label: z.string(),
+    title: z.string(),
+    text: draftable,
+    group: z.string(),
+    day: toggleState,
+    night: toggleState,
+  }),
+  season: z.object({
+    label: z.string(),
+    title: z.string(),
+    group: z.string(),
+    diagram: z.string(),
+    summer: toggleState.extend({ sun: z.number(), sunLabel: z.string(), text: z.string() }),
+    winter: toggleState.extend({ sun: z.number(), sunLabel: z.string(), text: z.string() }),
+  }),
+  mirrors: z.object({
+    label: z.string(),
+    title: z.string(),
+    text: z.string(),
+    steps: z.array(z.object({ number: z.string(), title: z.string(), text: draftable })).length(3),
+    diagram: z.string(),
+    observer: z.string(),
+    artwork: z.string(),
+    image: imageRef,
+  }),
+  materials: z.object({
+    label: z.string(),
+    items: z.array(z.object({ id: z.string(), title: z.string(), text: paragraphs, image: imageRef })),
+  }),
+  herbarium: z.object({
+    label: z.string(),
+    title: z.string(),
+    text: z.string(),
+    group: z.string(),
+    all: z.string(),
+    count: z.object({ one: z.string(), other: z.string() }),
+    flowering: z.string(),
+    categories: z.array(z.object({ id: z.string(), label: z.string() })),
+    plants: z.array(
+      z.object({ name: z.string(), latin: z.string(), category: z.string(), flowering: z.string(), image: decorative }),
+    ),
+  }),
+  /** Phrase propre au bandeau d’appel de cette fiche. */
+  cta: z.string().optional(),
+});
+export type ProjectModules = z.output<typeof projectModulesSchema>;
+
 /* ---------- Objets ---------- */
 
 export const objectSchema = z.object({

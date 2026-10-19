@@ -1,0 +1,136 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  column-gap: var(--gutter);
+  row-gap: 32px;
+  align-items: start;
+}
+
+/* ---------- Coupe ---------- */
+
+.diagram {
+  grid-column: 1 / span 7;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin: 0;
+}
+
+.svgFrame {
+  background: var(--color-lin);
+}
+
+.svgFrame svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.ground {
+  stroke: rgba(56, 43, 43, 0.45);
+  stroke-width: 2;
+}
+
+.post {
+  stroke: var(--color-cacao);
+  stroke-width: 4;
+  stroke-linecap: round;
+}
+
+.scene {
+  opacity: 0;
+  transition: opacity var(--duration-slow) var(--ease-soft);
+}
+
+.scene[data-visible] {
+  opacity: 1;
+}
+
+.sun {
+  fill: var(--color-laiton);
+}
+
+.ray {
+  stroke: var(--color-laiton);
+  stroke-width: 2;
+  stroke-linecap: round;
+}
+
+.guide {
+  fill: none;
+  stroke: rgba(56, 43, 43, 0.4);
+  stroke-width: 1.2;
+  stroke-dasharray: 4 5;
+}
+
+.cloth {
+  stroke: #8a6a45;
+  stroke-width: 8;
+  stroke-linecap: round;
+}
+
+.shade {
+  fill: rgba(56, 43, 43, 0.08);
+}
+
+.caption {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+}
+
+/* ---------- Rendus ---------- */
+
+.side {
+  grid-column: 9 / span 4;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.frame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background: var(--color-cacao);
+}
+
+.photo {
+  position: absolute;
+  inset: 0;
+}
+
+.winter {
+  opacity: 0;
+  transition: opacity var(--duration-slow) var(--ease-soft);
+}
+
+.frame[data-season="winter"] .winter {
+  opacity: 1;
+}
+
+.badge {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  z-index: 1;
+  padding: 6px 10px;
+  background: rgba(245, 240, 232, 0.94);
+  color: var(--color-cacao);
+}
+
+.text {
+  font-size: 16px;
+  line-height: 1.65;
+  color: var(--color-texte-doux);
+}
+
+@media (max-width: 900px) {
+  .diagram,
+  .side {
+    grid-column: 1 / -1;
+  }
+}

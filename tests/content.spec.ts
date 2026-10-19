@@ -5,6 +5,7 @@ import {
   getHome,
   getObjects,
   getProjectDetail,
+  getProjectModules,
   getProjects,
   getServices,
   getSite,
@@ -26,9 +27,16 @@ test("contenu valide", () => {
 
   const { items } = getProjects();
   for (const slug of projectDetailSlugs()) {
+    expect(items.some((project) => project.slug === slug), `${slug} absent de projects.json`).toBe(true);
+    const modules = getProjectModules(slug);
+    if (modules) {
+      expect(items.find((project) => project.slug === slug)?.template, slug).toBe("modules");
+      expect(modules.plan.steps.length, slug).toBeGreaterThan(1);
+      expect(modules.herbarium.plants, slug).toHaveLength(30);
+      continue;
+    }
     const detail = getProjectDetail(slug);
     expect(detail?.chapters.length, slug).toBeGreaterThan(0);
-    expect(items.some((project) => project.slug === slug), `${slug} absent de projects.json`).toBe(true);
     for (const chapter of detail!.chapters) {
       for (const block of chapter.blocks) {
         if (block.type === "feature" && block.object) {
