@@ -3,6 +3,12 @@ import { notFound } from "next/navigation";
 import { ObjectPage } from "@/components/objects/ObjectPage";
 import { getObject, getObjects } from "@/lib/content";
 
+/**
+ * Toutes les fiches sont prérendues (generateStaticParams) : la validation « navigation
+ * instantanée » du mode développement, qui signale la lecture de params, ne s’applique pas.
+ */
+export const instant = false;
+
 export function generateStaticParams() {
   return getObjects().map((piece) => ({ slug: piece.slug }));
 }

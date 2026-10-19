@@ -5,6 +5,12 @@ import { ProjectPage } from "@/components/project/ProjectPage";
 import { getProjectDetail, getProjectModules, getProjects, projectDetailSlugs } from "@/lib/content";
 
 /** Une page par projet qui a une fiche : gabarit « chapitres », ou « modules » pour Château Gasqui. */
+/**
+ * Toutes les fiches sont prérendues (generateStaticParams) : la validation « navigation
+ * instantanée » du mode développement, qui signale la lecture de params, ne s’applique pas.
+ */
+export const instant = false;
+
 export function generateStaticParams() {
   return projectDetailSlugs().map((slug) => ({ slug }));
 }

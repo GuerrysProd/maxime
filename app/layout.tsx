@@ -33,6 +33,8 @@ const dmMono = DM_Mono({
 
 const site = getSite();
 const home = getHome();
+/** Site de test (maxime.projectoi.fr) non indexé tant que SITE_INDEXABLE ne vaut pas « true ». */
+const indexable = process.env.SITE_INDEXABLE === "true";
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"),
@@ -40,6 +42,7 @@ export const metadata: Metadata = {
   description: home.meta.description,
   applicationName: site.identity.name,
   openGraph: { type: "website", locale: "fr_FR", siteName: site.identity.name },
+  robots: indexable ? undefined : { index: false, follow: false },
 };
 
 export const viewport: Viewport = {
@@ -48,7 +51,12 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="fr" className={`${gambarino.variable} ${funnel.variable} ${dmMono.variable}`}>
+    <html
+      lang="fr"
+      className={`${gambarino.variable} ${funnel.variable} ${dmMono.variable}`}
+      // data-js est posé par le script en ligne avant l’hydratation (voir plus bas).
+      suppressHydrationWarning
+    >
       <head>
         {/* Avant le premier rendu : active les apparitions au défilement (sans JS, tout reste visible). */}
         <script dangerouslySetInnerHTML={{ __html: "document.documentElement.setAttribute('data-js','')" }} />

@@ -61,7 +61,8 @@ export function Picture({
     bottom: `${-bleed}%`,
   };
   return (
-    <div className={className} style={layer} data-parallax={parallax} data-parallax-mode={parallaxMode}>
+    // --parallax est écrit par MotionObserver, parfois avant l’hydratation.
+    <div className={className} style={layer} data-parallax={parallax} data-parallax-mode={parallaxMode} suppressHydrationWarning>
       {img}
     </div>
   );
