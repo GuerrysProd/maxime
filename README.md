@@ -36,7 +36,7 @@ npm run captures -- etape-2    # captures maquette / site dans .captures/etape-2
 
 Hébergement Node.js Hostinger, relié au dépôt GitHub : chaque `git push` sur `main` relance la construction (`npm run build`) puis le serveur (`next start`).
 
-Réglages de l’hébergement : application `next`, Node.js 22, script `build`, dossier de sortie `.next`.
+Réglages de l’hébergement : application `next`, Node.js 22, script `build`, dossier de sortie `.next`. Le serveur n’accepte que le compilateur WASM de Next (GLIBC trop ancienne pour le binaire natif) : d’où `next build --webpack` et `next.config.mjs` (et non `.ts`).
 
 Variables à définir dans hPanel (une nouvelle construction est nécessaire après chaque modification) :
 
