@@ -12,5 +12,54 @@
   },
   "cta": {
     "intro": "Une résidence en montagne ou sur le littoral, une pièce sur mesure : décrivez-moi votre projet en quelques lignes."
+  },
+  "objects": {
+    "meta": {
+      "title": "Objets",
+      "description": "Fauteuils, luminaires, tables et objets dessinés par Maxime Vallat, architecte d’intérieur & designer, pour les lieux qu’il conçoit."
+    },
+    "eyebrow": "Collection — {n} pièces",
+    "title": "Objets",
+    "intro": "Fauteuils, luminaires, tables, objets : des pièces dessinées pour un lieu. Chaque fiche indique ses matériaux et le projet dont elle est née.",
+    "viewPiece": "Voir la pièce",
+    "editors": {
+      "label": "Éditeurs & fabricants",
+      "title": "Une pièce pour votre catalogue ?",
+      "text": "Je dessine aussi pour des éditeurs de mobilier et de luminaires : du croquis aux images 3D.",
+      "cta": {
+        "label": "Parlons collaboration",
+        "href": "/contact?type=collaboration"
+      },
+      "link": {
+        "label": "Voir les services",
+        "href": "/services"
+      }
+    }
+  },
+  "object": {
+    "position": "Pièce {n} / {total}",
+    "back": "Tous les objets",
+    "request": "Demander cette pièce",
+    "viewProject": "Voir le projet",
+    "story": "Histoire",
+    "sketchTitle": "Du croquis à la pièce.",
+    "sketchMeta": "Croquis · la pièce",
+    "sketchCaption": "Croquis préparatoire",
+    "pieceCaption": "La pièce",
+    "galleryTitle": "Vues de la pièce",
+    "inSitu": "Dans son lieu",
+    "others": "Autres pièces",
+    "allObjects": "Toute la collection",
+    "specs": {
+      "materials": "Matériaux",
+      "dimensions": "Dimensions",
+      "light": "Source lumineuse",
+      "edition": "Édition",
+      "project": "Projet d’origine"
+    },
+    "custom": {
+      "label": "Sur mesure",
+      "title": "Une pièce dessinée pour votre lieu ?"
+    }
   }
 }

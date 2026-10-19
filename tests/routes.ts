@@ -10,12 +10,19 @@ export const ROUTES = [
   "/projets/agora",
   "/projets/batiment-s",
   "/projets/rolex-retail-express",
+  "/objets",
+  "/objets/applique-pinturault",
+  "/objets/fauteuil-pralong",
+  "/objets/tables-basses",
+  "/objets/totem-liege",
+  "/objets/table-aimantee",
+  "/objets/lampe-spotlight",
+  "/objets/seau-roche-ruinart",
 ];
 
 /** Pages liées mais construites aux étapes suivantes (brief §10). À vider au fil des étapes. */
 export const FUTURE_ROUTES = [
   "/projets/chateau-gasqui",
-  "/objets",
   "/services",
   "/studio",
   "/contact",

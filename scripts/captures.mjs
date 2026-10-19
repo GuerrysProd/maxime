@@ -35,6 +35,10 @@ const PAGES = [
   { name: "projet-agora", path: "/projets/agora", desktop: null, mobile: null },
   { name: "projet-batiment-s", path: "/projets/batiment-s", desktop: null, mobile: null },
   { name: "projet-rolex-retail-express", path: "/projets/rolex-retail-express", desktop: null, mobile: null },
+  { name: "objets", path: "/objets", desktop: "06-objets.html", mobile: null },
+  { name: "objet-applique-pinturault", path: "/objets/applique-pinturault", desktop: "06b-objet-applique-pinturault.html", mobile: null },
+  { name: "objet-table-aimantee", path: "/objets/table-aimantee", desktop: null, mobile: null },
+  { name: "objet-lampe-spotlight", path: "/objets/lampe-spotlight", desktop: null, mobile: null },
 ];
 
 const VIEWPORTS = [

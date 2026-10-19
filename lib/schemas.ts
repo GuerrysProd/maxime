@@ -306,9 +306,13 @@ export const objectSchema = z.object({
   edition: draftable.optional(),
   project: z.string().nullable(),
   projectMissing: z.string().optional(),
-  media: z.array(mediaItem),
+  extraSpecs: z.array(z.object({ label: z.string(), value: draftable })).optional(),
+  media: z.array(mediaItem).min(1),
   sketch: imageRef.optional(),
+  /** Vue de la pièce dans son lieu (sinon : image principale du projet d’origine). */
+  inSitu: figure.optional(),
   summary: z.string().optional(),
+  storyTitle: z.string().optional(),
   story: z.array(z.string()).optional(),
 });
 export type ObjectPiece = z.output<typeof objectSchema>;
@@ -346,6 +350,31 @@ export const pagesSchema = z.object({
   _note: z.string().optional(),
   projects: z.object({ meta: pageMeta, eyebrow: z.string(), title: z.string(), intro: z.string(), counts: z.string() }),
   cta: z.object({ intro: z.string() }),
+  objects: z.object({
+    meta: pageMeta,
+    eyebrow: z.string(),
+    title: z.string(),
+    intro: z.string(),
+    viewPiece: z.string(),
+    editors: z.object({ label: z.string(), title: z.string(), text: z.string(), cta: link, link }),
+  }),
+  object: z.object({
+    position: z.string(),
+    back: z.string(),
+    request: z.string(),
+    viewProject: z.string(),
+    story: z.string(),
+    sketchTitle: z.string(),
+    sketchMeta: z.string(),
+    sketchCaption: z.string(),
+    pieceCaption: z.string(),
+    galleryTitle: z.string(),
+    inSitu: z.string(),
+    others: z.string(),
+    allObjects: z.string(),
+    specs: z.object({ materials: z.string(), dimensions: z.string(), light: z.string(), edition: z.string(), project: z.string() }),
+    custom: z.object({ label: z.string(), title: z.string() }),
+  }),
 });
 export type Pages = z.output<typeof pagesSchema>;
 

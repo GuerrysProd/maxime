@@ -1,5 +1,5 @@
 {
-  "_note": "Pièces dessinées. Sources : design/content/objects.json corrigé par SOURCES-REELLES §5 (textes réels de textes/pralong.txt et textes/agora.txt). Matériaux, dimensions, source lumineuse et édition à compléter avec Maxime.",
+  "_note": "Pièces dessinées. Sources : design/content/objects.json corrigé par SOURCES-REELLES §5 (textes réels de textes/pralong.txt et textes/agora.txt). storyTitle = intertitre réel du site actuel, s’il existe. Matériaux, dimensions, source lumineuse et édition à compléter avec Maxime. Spotlight : la maquette la décrivait « posée sur une table » ; les images montrent un arc suspendu.",
   "items": [
     {
       "slug": "applique-pinturault",
@@ -38,6 +38,7 @@
         { "type": "image", "src": "/images/projets/duplex-pralong/fauteuil.jpg", "alt": "Fauteuil Pralong, coque métallique et assise textile" }
       ],
       "summary": "Une coque métallique aux faces réfléchissantes et une assise textile plus souple.",
+      "storyTitle": "Réfléchir la lumière au cœur du bois.",
       "story": [
         "Le fauteuil associe une coque métallique à une assise textile plus souple. Ses faces réfléchissantes allègent visuellement la pièce et renvoient les variations de lumière du séjour, tandis que le tissu maintient une sensation de confort adaptée à un appartement de montagne."
       ]
@@ -53,9 +54,11 @@
       "edition": "[À COMPLÉTER : pièce unique ou série]",
       "project": "duplex-pralong",
       "media": [
-        { "type": "image", "src": "/images/projets/duplex-pralong/tables-basses-paysage.jpg", "alt": "Les deux tables basses du duplex Pralong, volumes complémentaires" }
+        { "type": "image", "src": "/images/projets/duplex-pralong/tables-basses-paysage.jpg", "alt": "Les deux tables basses du duplex Pralong, volumes complémentaires" },
+        { "type": "image", "src": "/images/projets/duplex-pralong/tables-basses-portrait.jpg", "alt": "Les tables basses vues de plus près, plateau clair et volume sombre imbriqués" }
       ],
       "summary": "Deux volumes, plusieurs usages : des tables dessinées pour un concours de la villa Noailles, reprises pour le duplex.",
+      "storyTitle": "Deux volumes, plusieurs usages.",
       "story": [
         "Ces tables basses ont été dessinées à l’origine pour le concours de la Villa Noailles. Réimaginées pour le Duplex Pralong, elles trouvent une nouvelle expression dans les matières et les tonalités du projet, tout en conservant leur principe de volumes complémentaires et leur capacité à s’adapter aux usages du salon."
       ]
@@ -71,7 +74,9 @@
       "edition": "[À COMPLÉTER : pièce unique ou série]",
       "project": "agora",
       "media": [
-        { "type": "image", "src": "/images/projets/agora/agora-totem-01.jpg", "alt": "Totem en liège mis en scène dans un espace salon", "position": "55% 50%" }
+        { "type": "image", "src": "/images/projets/agora/agora-totem-01.jpg", "alt": "Totem en liège mis en scène dans un espace salon", "position": "55% 50%" },
+        { "type": "image", "src": "/images/projets/agora/agora-totem-02.jpg", "alt": "Totems en liège empilés en colonnes" },
+        { "type": "image", "src": "/images/projets/agora/agora-totem-03.jpg", "alt": "Modules Totem en liège, l’un posé sur l’autre" }
       ],
       "summary": "Assise d’appoint ou table basse en liège, empilable en forme de totem.",
       "story": [
@@ -91,8 +96,9 @@
       "edition": "[À COMPLÉTER : pièce unique ou série]",
       "project": "agora",
       "media": [
+        { "type": "image", "src": "/images/projets/agora/agora-table-floating.jpg", "alt": "Table Agora à roulettes, plateau posé sur son piètement métallique" },
         { "type": "image", "src": "/images/projets/agora/agora-table-magnet.jpg", "alt": "Détail d’un aimant au coin de la table Agora" },
-        { "type": "image", "src": "/images/projets/agora/agora-table-floating.jpg", "alt": "Table Agora avec plateau posé" }
+        { "type": "image", "src": "/images/projets/agora/agora-banquet.jpg", "alt": "Tables aimantées assemblées en banquet, avec chaises et suspensions" }
       ],
       "summary": "Roulettes et aimants en néodyme aux angles : les tables s’assemblent en grandes tablées.",
       "story": [
@@ -112,8 +118,11 @@
       "edition": "[À COMPLÉTER : pièce unique ou série]",
       "project": null,
       "projectMissing": "[À COMPLÉTER : projet d’origine]",
+      "summary": "[À COMPLÉTER : présentation de la pièce]",
       "media": [
-        { "type": "image", "src": "/images/objets/lampe-spotlight/spotlight-01.jpg", "alt": "Lampe Spotlight posée sur une table en bois" }
+        { "type": "image", "src": "/images/objets/lampe-spotlight/spotlight-03.jpg", "alt": "Lampe Spotlight : arc en bois sombre suspendu à deux câbles, petit projecteur conique en métal sous l’arc", "position": "50% 50%" },
+        { "type": "image", "src": "/images/objets/lampe-spotlight/spotlight-01.jpg", "alt": "Détail du projecteur métallique fixé sur l’arc en bois" },
+        { "type": "image", "src": "/images/objets/lampe-spotlight/spotlight-02.jpg", "alt": "Le projecteur conique vu de dessous, sous l’arc en bois" }
       ]
     },
     {
@@ -124,11 +133,13 @@
       "type": "Objet",
       "materials": "[À COMPLÉTER : matériaux]",
       "dimensions": "[À COMPLÉTER : H × l × P]",
-      "edition": "[À COMPLÉTER : cadre du projet]",
+      "edition": "[À COMPLÉTER : pièce unique ou série]",
       "project": null,
       "projectMissing": "[À COMPLÉTER : projet d’origine]",
+      "extraSpecs": [{ "label": "Cadre", "value": "[À COMPLÉTER : commande, concours ou projet personnel]" }],
+      "summary": "[À COMPLÉTER : présentation de la pièce]",
       "media": [
-        { "type": "image", "src": "/images/objets/seau-roche-ruinart/seaux-ruinart-01.jpg", "alt": "Seaux à champagne en bloc translucide sculpté" }
+        { "type": "image", "src": "/images/objets/seau-roche-ruinart/seaux-ruinart-01.jpg", "alt": "Deux seaux à champagne en bloc translucide, creusés d’une cavité sculptée, avec deux flûtes" }
       ]
     }
   ]

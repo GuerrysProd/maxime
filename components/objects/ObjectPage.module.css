@@ -1,0 +1,347 @@
+.main {
+  background: var(--color-cacao);
+}
+
+.dark {
+  padding-top: var(--header-height);
+  color: var(--color-lin);
+}
+
+.topline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 16px;
+  padding-bottom: 24px;
+}
+
+.back {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 44px;
+}
+
+.back:hover {
+  color: var(--color-lin);
+}
+
+/* ---------- En-tête : média + fiche ---------- */
+
+.header {
+  align-items: start;
+  row-gap: 40px;
+}
+
+.figure {
+  grid-column: 1 / span 7;
+  position: relative;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  background: #2c2222;
+}
+
+.intro {
+  grid-column: 9 / span 4;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-top: 24px;
+}
+
+.title {
+  font-size: 72px;
+  line-height: 1;
+  letter-spacing: -0.03em;
+}
+
+.summary {
+  font-size: 19px;
+  font-weight: 300;
+  line-height: 1.5;
+  color: var(--color-pierre);
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding-top: 8px;
+}
+
+/* ---------- Histoire ---------- */
+
+.story {
+  row-gap: 32px;
+  padding-top: 140px;
+  padding-bottom: 120px;
+}
+
+.storyHead {
+  grid-column: 1 / span 4;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.storyTitle {
+  font-size: 48px;
+  line-height: 1.1;
+}
+
+.storyText {
+  grid-column: 6 / span 6;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  font-size: 17px;
+  line-height: 1.7;
+  color: var(--color-pierre);
+}
+
+.storyText p:first-child {
+  font-size: 19px;
+  line-height: 1.65;
+}
+
+/* ---------- Croquis / vues (fond clair) ---------- */
+
+.light {
+  padding: 120px 0;
+  background: var(--color-pierre);
+  color: var(--color-cacao);
+}
+
+.lightHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-bottom: 48px;
+}
+
+.lightTitle {
+  font-size: 48px;
+  line-height: 1.1;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 32px var(--gutter);
+}
+
+.galleryItem {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.galleryMedia,
+.sketch {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  background: #2c2222;
+}
+
+.sketch {
+  background: var(--color-carte);
+}
+
+.sketch img {
+  padding: 40px;
+}
+
+/* ---------- Dans son lieu ---------- */
+
+.inSitu {
+  position: relative;
+  height: 520px;
+  overflow: hidden;
+  background: #2c2222;
+  color: var(--color-lin);
+}
+
+.inSituVeil {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(0deg, rgba(40, 30, 30, 0.82) 0%, rgba(40, 30, 30, 0) 55%);
+}
+
+.inSituCaption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.inSituCaption .meta {
+  color: var(--color-pierre);
+}
+
+.inSituCaption :focus-visible {
+  outline-color: var(--color-laiton);
+}
+
+.inSituTitle {
+  margin-top: 8px;
+  font-size: 36px;
+  line-height: 1.1;
+}
+
+/* ---------- Autres pièces ---------- */
+
+.others {
+  padding: 120px 0;
+  color: var(--color-lin);
+}
+
+.othersHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-bottom: 48px;
+}
+
+.othersTitle {
+  font-size: 40px;
+  line-height: 1.1;
+}
+
+.othersList {
+  row-gap: 40px;
+}
+
+.othersList > li {
+  grid-column: span 4;
+}
+
+.otherCard {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.otherMedia {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background: #2c2222;
+}
+
+.otherName {
+  font-size: 24px;
+  line-height: 1.25;
+}
+
+.zoom {
+  transition: transform var(--duration-zoom) var(--ease-soft);
+}
+
+.otherCard:hover .zoom {
+  transform: scale(1.035);
+}
+
+/* ---------- Sur mesure ---------- */
+
+.custom {
+  padding: 112px 0;
+  background: var(--color-lin);
+  color: var(--color-cacao);
+  border-bottom: 1px solid rgba(56, 43, 43, 0.12);
+}
+
+.customGrid {
+  align-items: end;
+  row-gap: 32px;
+}
+
+.customText {
+  grid-column: 1 / span 8;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.customTitle {
+  font-size: 64px;
+  line-height: 1.02;
+  letter-spacing: -0.025em;
+}
+
+.customActions {
+  grid-column: 9 / span 4;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 18px;
+}
+
+@media (max-width: 1099px) {
+  .title {
+    font-size: 56px;
+  }
+
+  .intro {
+    grid-column: 8 / span 5;
+  }
+}
+
+@media (max-width: 900px) {
+  .title {
+    font-size: 48px;
+  }
+
+  .intro {
+    padding-top: 0;
+  }
+
+  .story {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .storyTitle,
+  .lightTitle {
+    font-size: 34px;
+  }
+
+  .light,
+  .others {
+    padding: 72px 0;
+  }
+
+  .gallery {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .inSitu {
+    height: 420px;
+  }
+
+  .inSituTitle {
+    font-size: 28px;
+  }
+
+  .othersTitle {
+    font-size: 32px;
+  }
+
+  .custom {
+    padding: 72px 0;
+  }
+
+  .customTitle {
+    font-size: 40px;
+  }
+}

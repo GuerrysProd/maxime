@@ -149,6 +149,17 @@
   background: #4c3c3b;
 }
 
+/* Pages Objets (fond cacao, aperçus 06 et 06b) : bouton plein Lin. */
+.header[data-variant="dark"]:not([data-compact]) .cta {
+  background: var(--color-lin);
+  border-color: var(--color-lin);
+  color: var(--color-cacao);
+}
+
+.header[data-variant="dark"]:not([data-compact]) .cta:hover {
+  background: #fff;
+}
+
 .header[data-compact] .cta {
   background: var(--color-cacao);
   border-color: var(--color-cacao);

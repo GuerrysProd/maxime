@@ -10,6 +10,22 @@
       "source": "11-lampe-spotlight/Spotlight 01.jpg",
       "sourceHash": "b8f97ece21c22c17e635ca546700dbb507e95052-c92ffdda"
     },
+    "/images/objets/lampe-spotlight/spotlight-02.jpg": {
+      "width": 1440,
+      "height": 2560,
+      "blurDataURL": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAADQAwCdASoQABwAPu1iqk4ppaQiMAgBMB2JZQAAOTLiUoyVysyccAAAypwDi9PWukhGh4s4itTu6ifVlpllEVih06NdywzQTB8RwRN64iluNSgunSSuWHAFAcowTHA889Th8AAA",
+      "kind": "photo",
+      "source": "11-lampe-spotlight/Spotlight 02.jpg",
+      "sourceHash": "35adbd9f7ca163d0666685546274bbb6898120b5-c92ffdda"
+    },
+    "/images/objets/lampe-spotlight/spotlight-03.jpg": {
+      "width": 2560,
+      "height": 976,
+      "blurDataURL": "data:image/webp;base64,UklGRjgAAABXRUJQVlA4ICwAAACwAQCdASoQAAYAA4BaJZQCdACAqJUAAPyjaY1fkWECb93edZcq73nCQZUAAA==",
+      "kind": "photo",
+      "source": "11-lampe-spotlight/Spotlight 03.jpg",
+      "sourceHash": "a2e8a12fbdba00f1b23e376cf1fabcbd69a78dd4-c92ffdda"
+    },
     "/images/objets/seau-roche-ruinart/seaux-ruinart-01.jpg": {
       "width": 2560,
       "height": 1440,
