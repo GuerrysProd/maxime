@@ -21,14 +21,16 @@ export const ROUTES = [
   "/objets/suspension-agora",
   "/objets/applique-ecorce-liege",
   "/objets/bougeoirs-mineraux",
+  "/studio",
+  "/services",
+  "/contact",
+  "/contact?type=objet&piece=applique-pinturault",
+  "/contact/merci",
 ];
 
 /** Pages liées mais construites aux étapes suivantes (brief §10). À vider au fil des étapes. */
 export const FUTURE_ROUTES = [
   "/projets/chateau-gasqui",
-  "/services",
-  "/studio",
-  "/contact",
   "/mentions-legales",
   "/confidentialite",
 ];

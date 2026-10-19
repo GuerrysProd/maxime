@@ -1,0 +1,347 @@
+.main {
+  padding-top: var(--header-height);
+}
+
+/* ---------- En-tête ---------- */
+
+.header {
+  align-items: end;
+  row-gap: 40px;
+  padding-top: 56px;
+  padding-bottom: 120px;
+}
+
+.portrait {
+  grid-column: 1 / span 5;
+  position: relative;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  background: var(--color-pierre);
+}
+
+.portrait[data-missing] {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  border: 1px dashed rgba(107, 95, 89, 0.6);
+  background: var(--color-lin-doux);
+}
+
+.portraitMark {
+  width: 96px;
+  height: auto;
+  opacity: 0.35;
+}
+
+.intro {
+  grid-column: 7 / span 6;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.title {
+  font-size: 104px;
+  line-height: 0.95;
+  letter-spacing: -0.035em;
+}
+
+.lead {
+  font-size: 21px;
+  font-weight: 300;
+  line-height: 1.45;
+}
+
+.bio {
+  max-width: 560px;
+  color: var(--color-texte-doux);
+}
+
+.quote {
+  padding-top: 24px;
+  border-top: 1px solid var(--color-ligne);
+}
+
+.quote p {
+  font-size: 32px;
+  font-style: italic;
+  line-height: 1.2;
+}
+
+/* ---------- Approche ---------- */
+
+.approach {
+  padding: 120px 0;
+  background: var(--color-pierre);
+}
+
+.principles {
+  row-gap: 40px;
+}
+
+.principles > li {
+  grid-column: span 4;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(56, 43, 43, 0.28);
+}
+
+.principleNumber {
+  font-size: 48px;
+  line-height: 1;
+}
+
+.principleTitle {
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+/* ---------- Parcours ---------- */
+
+.parcours {
+  padding: 120px 0;
+}
+
+.timeline {
+  position: relative;
+}
+
+.timelineLine {
+  position: absolute;
+  top: 7px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: rgba(56, 43, 43, 0.28);
+}
+
+.steps {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 40px var(--gutter);
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.dot {
+  width: 15px;
+  height: 15px;
+  border: 3px solid var(--color-lin);
+  border-radius: 50%;
+  background: var(--color-cacao);
+}
+
+.dot[data-first] {
+  background: var(--color-terre);
+}
+
+.stepName {
+  font-size: 24px;
+  line-height: 1.15;
+}
+
+.stepDetail {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.secondary {
+  row-gap: 32px;
+  margin-top: 72px;
+  padding-top: 28px;
+  border-top: 1px solid var(--color-ligne);
+}
+
+.other {
+  grid-column: 1 / span 6;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.other ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.other li {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.otherName {
+  font-size: 16px;
+}
+
+.tools {
+  grid-column: 8 / span 5;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-size: 16px;
+}
+
+/* ---------- Matières ---------- */
+
+.materials {
+  padding: 120px 0;
+  border-top: 1px solid var(--color-ligne);
+}
+
+.materialList {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 48px var(--gutter);
+}
+
+.material {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.materialImage {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  margin-bottom: 4px;
+  background: var(--color-pierre);
+}
+
+.materialName {
+  font-size: 24px;
+  line-height: 1.2;
+}
+
+/* ---------- Partenaires ---------- */
+
+.partners {
+  padding: 120px 0;
+  background: var(--color-pierre);
+}
+
+.partnerList {
+  border-bottom: 1px solid rgba(56, 43, 43, 0.2);
+}
+
+.partner {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  column-gap: var(--gutter);
+  row-gap: 8px;
+  align-items: baseline;
+  padding: 28px 0;
+  border-top: 1px solid rgba(56, 43, 43, 0.2);
+}
+
+.partnerName {
+  grid-column: 1 / span 4;
+  font-size: 30px;
+  line-height: 1.15;
+}
+
+.partner > :global(.meta) {
+  grid-column: 5 / span 3;
+}
+
+.partnerText {
+  grid-column: 8 / span 5;
+  font-size: 16px;
+  color: var(--color-texte-doux);
+}
+
+@media (max-width: 1099px) {
+  .title {
+    font-size: 80px;
+  }
+
+  .steps {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .timelineLine {
+    display: none;
+  }
+
+  .materialList {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 900px) {
+  .header {
+    padding-top: 24px;
+    padding-bottom: 72px;
+  }
+
+  .portrait {
+    max-height: 70svh;
+  }
+
+  .title {
+    font-size: 56px;
+  }
+
+  .lead {
+    font-size: 18px;
+  }
+
+  .quote p {
+    font-size: 26px;
+  }
+
+  .approach,
+  .parcours,
+  .materials,
+  .partners {
+    padding: 72px 0;
+  }
+
+  .principleNumber {
+    font-size: 36px;
+  }
+
+  .steps {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 32px 16px;
+  }
+
+  .stepName {
+    font-size: 20px;
+  }
+
+  .materialList {
+    gap: 32px 16px;
+  }
+
+  .materialName {
+    font-size: 19px;
+  }
+
+  .partner {
+    grid-template-columns: minmax(0, 1fr);
+    padding: 22px 0;
+  }
+
+  .partnerName,
+  .partner > :global(.meta),
+  .partnerText {
+    grid-column: 1;
+  }
+
+  .partnerName {
+    font-size: 24px;
+  }
+}

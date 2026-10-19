@@ -61,5 +61,80 @@
       "label": "Sur mesure",
       "title": "Une pièce dessinée pour votre lieu ?"
     }
+  },
+  "services": {
+    "meta": {
+      "title": "Services & méthode",
+      "description": "Architecture intérieure et rénovation, mobilier et luminaires sur mesure, lieux d’accueil, aménagements extérieurs, 3D pour agences : les offres de Maxime Vallat et sa méthode en cinq étapes."
+    },
+    "eyebrow": "Services & méthode",
+    "title": "Services",
+    "intro": "Du plan d’ensemble à la pièce unique, pour les particuliers, l’hôtellerie, les commerces, les collectivités, les éditeurs de mobilier et les agences partenaires.",
+    "offersNav": "Offres",
+    "offersTitle": "Cinq offres",
+    "offersNote": "Livrables indicatifs — à valider",
+    "forLabel": "Pour :",
+    "deliverablesLabel": "Livrables",
+    "offerCta": "En parler",
+    "method": {
+      "label": "Méthode",
+      "title": "Cinq étapes, un seul interlocuteur.",
+      "intro": "À chaque étape, ce que vous recevez — à valider ensemble avant de passer à la suivante.",
+      "receive": "Vous recevez"
+    },
+    "zones": {
+      "label": "Zones d’intervention",
+      "title": "De la Méditerranée aux Alpes.",
+      "text": "Basé dans le Var, j’interviens sur le littoral varois et dans l’arrière-pays, et dans les Alpes, notamment à Courchevel. Pour un projet ailleurs, parlons-en.",
+      "listLabel": "Lieux, du nord au sud",
+      "places": [
+        {
+          "name": "Courchevel 1850",
+          "region": "Savoie · Alpes",
+          "tone": "cacao"
+        },
+        {
+          "name": "Haut-Var",
+          "region": "Var",
+          "tone": "olivier"
+        },
+        {
+          "name": "Gonfaron",
+          "region": "Var",
+          "tone": "olivier"
+        },
+        {
+          "name": "Toulon · Hyères · Giens",
+          "region": "Littoral varois",
+          "tone": "terre"
+        }
+      ],
+      "images": [
+        {
+          "caption": "Alpes",
+          "image": {
+            "src": "/images/projets/alta/alta-01.jpg",
+            "alt": "Alpage et sommets enneigés, projet Alta",
+            "position": "62% 50%"
+          }
+        },
+        {
+          "caption": "Méditerranée",
+          "image": {
+            "src": "/images/projets/chateau-gasqui/key-elements/terrasse-terre-cuite.jpg",
+            "alt": "Terrasse en terre cuite du Château Gasqui",
+            "position": "50% 50%"
+          }
+        }
+      ]
+    },
+    "faq": {
+      "label": "Questions fréquentes",
+      "title": "Avant de commencer.",
+      "link": {
+        "label": "Poser une autre question",
+        "href": "/contact"
+      }
+    }
   }
 }

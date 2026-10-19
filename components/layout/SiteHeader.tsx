@@ -120,7 +120,7 @@ export function SiteHeader({ variant = "solid", current }: { variant?: HeaderVar
       </nav>
       <div className={styles.actions}>
         <LangSwitch className={styles.lang} />
-        <Link className={styles.cta} href={site.primaryCta.href}>
+        <Link className={styles.cta} href={site.primaryCta.href} aria-current={current === "contact" ? "page" : undefined}>
           {site.primaryCta.label}
         </Link>
       </div>

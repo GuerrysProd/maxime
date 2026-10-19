@@ -35,7 +35,7 @@ const site = getSite();
 const home = getHome();
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000"),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"),
   title: { default: home.meta.title, template: `%s — ${site.identity.name}` },
   description: home.meta.description,
   applicationName: site.identity.name,

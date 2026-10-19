@@ -431,6 +431,14 @@
       "source": "06-chateau-gasqui/key-elements/abri-ete.jpg",
       "sourceHash": "2a6d3dc4c8b2fcb1290a2f7ec3045f87c233616f-c92ffdda"
     },
+    "/images/projets/chateau-gasqui/key-elements/delimitation-corten.jpg": {
+      "width": 2560,
+      "height": 1396,
+      "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADwAQCdASoQAAkAA4BaJaACdAEWG017eAAA/iW/2cubm3BUDOvmfAph8rtgA+JmCBPgDINJSoDHR5I0Y374b2diWMKXNKjC5d7zCUAA",
+      "kind": "photo",
+      "source": "06-chateau-gasqui/key-elements/delimitation-corten.jpg",
+      "sourceHash": "b19185dbaaa9c6d5c4eb058bcf63fc0117f16bdc-c92ffdda"
+    },
     "/images/projets/chateau-gasqui/key-elements/terrasse-terre-cuite.jpg": {
       "width": 1800,
       "height": 763,
@@ -438,6 +446,14 @@
       "kind": "photo",
       "source": "06-chateau-gasqui/key-elements/terrasse-terre-cuite.jpg",
       "sourceHash": "87a3887cfd3b23520fa640d3ac42036209bc6109-c92ffdda"
+    },
+    "/images/projets/chateau-gasqui/plants/mediterraneennes-lavande-vraie.jpg": {
+      "width": 1400,
+      "height": 763,
+      "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADwAQCdASoQAAkAA4BaJZgCdAEfRZc7h/gA/pG9ukJ3//cQbVaRSiHPHwuuJq29aLgLsT0GcY3rmmXwVahcGkqmCcTh7A7yxLlWQAAA",
+      "kind": "photo",
+      "source": "06-chateau-gasqui/plants/mediterraneennes-lavande-vraie.jpg",
+      "sourceHash": "98ece91bd7262baa93326d525d11956ae571934c-c92ffdda"
     },
     "/images/projets/clocher-saint-louis/clocher-saint-louis-entree.jpg": {
       "width": 2000,

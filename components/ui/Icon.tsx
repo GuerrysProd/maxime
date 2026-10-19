@@ -11,7 +11,8 @@ type IconName =
   | "plus"
   | "grid"
   | "list"
-  | "download";
+  | "download"
+  | "check";
 
 const paths: Record<IconName, { viewBox: string; d: string; width?: number }> = {
   "arrow-right": { viewBox: "0 0 16 16", d: "M2 8h11.5M9 3.5L13.5 8 9 12.5", width: 1.4 },
@@ -30,6 +31,7 @@ const paths: Record<IconName, { viewBox: string; d: string; width?: number }> = 
     width: 1.3,
   },
   plus: { viewBox: "0 0 14 14", d: "M7 1v12M1 7h12", width: 1.3 },
+  check: { viewBox: "0 0 22 22", d: "M4 11.5l4.5 4.5L18 6.5", width: 1.6 },
 };
 
 export function Icon({ name, size = 16, className }: { name: IconName; size?: number; className?: string }) {

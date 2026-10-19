@@ -41,6 +41,10 @@ const PAGES = [
   { name: "objet-lampe-spotlight", path: "/objets/lampe-spotlight", desktop: null, mobile: null },
   { name: "objet-fauteuil-pralong", path: "/objets/fauteuil-pralong", desktop: null, mobile: null },
   { name: "objet-suspension-agora", path: "/objets/suspension-agora", desktop: null, mobile: null },
+  { name: "studio", path: "/studio", desktop: "07-studio.html", mobile: null },
+  { name: "services", path: "/services", desktop: "08-services.html", mobile: null },
+  { name: "contact", path: "/contact", desktop: "09-contact.html", mobile: null },
+  { name: "contact-merci", path: "/contact/merci", desktop: "09b-contact-confirmation.html", mobile: null },
 ];
 
 const VIEWPORTS = [

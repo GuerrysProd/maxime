@@ -4,9 +4,20 @@ import { SectionHeader } from "./SectionHeader";
 import styles from "./Method.module.css";
 
 /** 05 — Méthode : cinq étapes sur une ligne de temps. */
-export function Method({ home, steps }: { home: Home["method"]; steps: Services["method"] }) {
+export function Method({
+  home,
+  steps,
+  receiveLabel,
+  id,
+}: {
+  home: Pick<Home["method"], "label" | "title" | "intro"> & { number?: string };
+  steps: Services["method"];
+  /** Affiche, pour chaque étape, ce que le client reçoit (page Services). */
+  receiveLabel?: string;
+  id?: string;
+}) {
   return (
-    <section className={styles.section} aria-labelledby="methode-titre">
+    <section className={styles.section} aria-labelledby="methode-titre" id={id}>
       <div className="wrap">
         <SectionHeader
           id="methode-titre"
@@ -32,6 +43,12 @@ export function Method({ home, steps }: { home: Home["method"]; steps: Services[
               <div className={styles.text}>
                 <h3 className={styles.title}>{step.title}</h3>
                 <p className="muted">{step.text}</p>
+                {receiveLabel && (
+                  <p className={styles.receive}>
+                    <span className="meta muted">{receiveLabel}</span>
+                    {step.deliverable}
+                  </p>
+                )}
               </div>
             </li>
           ))}

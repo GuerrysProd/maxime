@@ -45,6 +45,9 @@ export function StickyCTA({
     return () => observer.disconnect();
   }, [pathname]);
 
+  // Inutile sur les pages du formulaire lui-même.
+  if (pathname.startsWith("/contact")) return null;
+
   return (
     <aside className={styles.bar} aria-label={label} data-visible={visible || undefined} inert={!visible}>
       <Link className={styles.cta} href={cta.href}>

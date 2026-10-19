@@ -1,0 +1,55 @@
+{
+  "_note": "Page Studio (aperçu 07). Parcours : SOURCES-REELLES §6 (brouillon, « stage » quand c’en est un). La présentation reformule ces faits sans en ajouter. Approche et matières : textes de la maquette à valider avec Maxime. Le parcours lui-même est dans site.json.",
+  "meta": {
+    "title": "Le studio",
+    "description": "Maxime Vallat, architecte d’intérieur & designer basé dans le Var : formation, parcours, approche, matières et partenaires."
+  },
+  "eyebrow": "Le studio",
+  "lead": "Architecte d’intérieur & designer, entre la Méditerranée et les Alpes.",
+  "bio": {
+    "value": "Formé à l’École Camondo Méditerranée, à Toulon, et à Strate en design, Maxime Vallat a fait ses stages chez Festen Architecture, à Paris, et au studio de Noé Duchauffour-Lawrence, à Lisbonne. Basé dans le Var, il dessine des lieux — résidences, domaines, commerces, tiers-lieux — et les objets qui les habitent, et produit lui-même ses images 3D.",
+    "draft": true
+  },
+  "bioNote": "Présentation à valider avec Maxime",
+  "portrait": {
+    "image": null,
+    "missing": "Portrait de Maxime à fournir"
+  },
+  "approach": {
+    "label": "Approche",
+    "title": "Trois principes.",
+    "items": [
+      { "number": "01", "title": "Partir du lieu", "text": "Lumière, matières, usages : chaque projet commence par une visite et une lecture attentive de l’existant." },
+      { "number": "02", "title": "Dessiner jusqu’à l’objet", "text": "Quand le lieu le demande, je dessine aussi le mobilier et les luminaires, pour que l’espace et les pièces racontent la même histoire." },
+      { "number": "03", "title": "Montrer avant de construire", "text": "Je produis moi-même des images 3D photoréalistes : on valide ensemble matières et lumière avant le chantier." }
+    ]
+  },
+  "parcours": {
+    "label": "Parcours",
+    "title": "De Toulon à Lisbonne, et retour.",
+    "note": "Dates et intitulés à confirmer.",
+    "otherTitle": "Autres expériences",
+    "toolsTitle": "Outils"
+  },
+  "materials": {
+    "label": "Matières de prédilection",
+    "title": "Ce qui vient du lieu.",
+    "intro": "Les matières qui reviennent d’un projet à l’autre.",
+    "seenIn": "Vu dans",
+    "items": [
+      { "name": "Terre & paille de lavande", "projects": ["perchee"], "image": { "src": "/images/projets/perchee/perchee-lavender-wall.jpg", "alt": "Mur en marqueterie de paille de lavande de la cabane Perchée", "position": "70% 40%" } },
+      { "name": "Liège", "projects": ["agora", "perchee"], "image": { "src": "/images/projets/agora/agora-totem-02.jpg", "alt": "Modules Totem en liège empilés", "position": "50% 60%" } },
+      { "name": "Pierre", "projects": ["perchee"], "image": { "src": "/images/projets/perchee/perchee-03.jpg", "alt": "Bougeoirs en pierres percées", "position": "50% 58%" } },
+      { "name": "Terre cuite", "projects": ["chateau-gasqui"], "image": { "src": "/images/projets/chateau-gasqui/key-elements/terrasse-terre-cuite.jpg", "alt": "Dallage en terre cuite de la terrasse du Château Gasqui", "position": "45% 88%" } },
+      { "name": "Acier corten", "projects": ["chateau-gasqui"], "image": { "src": "/images/projets/chateau-gasqui/key-elements/delimitation-corten.jpg", "alt": "Bordure en acier corten entre une allée et un massif au Château Gasqui", "position": "30% 70%" } },
+      { "name": "Bois", "projects": ["duplex-pralong", "agora"], "image": { "src": "/images/projets/duplex-pralong/vue-nord-portrait.jpg", "alt": "Boiseries sombres du duplex Pralong", "position": "80% 20%" } },
+      { "name": "Métal", "projects": ["duplex-pralong"], "image": { "src": "/images/projets/duplex-pralong/applique-pinturault.jpg", "alt": "Reflets de la coque métallique de l’applique Pinturault", "position": "64% 46%" } },
+      { "name": "Le végétal", "projects": ["chateau-gasqui"], "image": { "src": "/images/projets/chateau-gasqui/plants/mediterraneennes-lavande-vraie.jpg", "alt": "Lavande vraie dans un massif du Château Gasqui", "position": "50% 60%" } }
+    ]
+  },
+  "partners": {
+    "label": "Partenaires",
+    "title": "On ne dessine jamais seul.",
+    "artisans": { "name": "[À COMPLÉTER : artisans & fabricants]", "role": "Atelier", "text": "[À COMPLÉTER : menuisiers, métalliers, céramistes…]" }
+  }
+}

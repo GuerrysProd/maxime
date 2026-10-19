@@ -1,0 +1,161 @@
+.box {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 32px;
+  background: var(--color-pierre);
+}
+
+.title {
+  font-size: 30px;
+  line-height: 1.15;
+}
+
+.text {
+  font-size: 15px;
+  color: var(--color-texte-doux);
+}
+
+.weekRow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.weekOf {
+  margin-left: auto;
+}
+
+.month::first-letter {
+  text-transform: uppercase;
+}
+
+.weekNav {
+  display: flex;
+  gap: 6px;
+}
+
+.navButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border: 1px solid rgba(56, 43, 43, 0.22);
+  border-radius: var(--radius-pill);
+  background: transparent;
+  cursor: pointer;
+}
+
+.navButton:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+
+.days {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 6px;
+}
+
+.day {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  min-height: 64px;
+  border: 1px solid rgba(56, 43, 43, 0.22);
+  border-radius: var(--radius-field);
+  background: transparent;
+  cursor: pointer;
+}
+
+.day:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.dayName {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-cacao-70);
+}
+
+.dayNumber {
+  font-size: 20px;
+  line-height: 1.1;
+}
+
+.day[aria-checked="true"] {
+  border-color: var(--color-cacao);
+  background: var(--color-cacao);
+  color: var(--color-lin);
+}
+
+.day[aria-checked="true"] .dayName {
+  color: var(--color-sable);
+}
+
+.slots {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+  min-height: 96px;
+  align-content: start;
+}
+
+.slot {
+  min-height: 44px;
+  border: 1px solid rgba(56, 43, 43, 0.22);
+  border-radius: var(--radius-pill);
+  background: transparent;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.slot[aria-checked="true"] {
+  border-color: var(--color-cacao);
+  background: var(--color-cacao);
+  color: var(--color-lin);
+}
+
+.book {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 48px;
+  padding: 0 24px;
+  border: 0;
+  border-radius: var(--radius-pill);
+  background: var(--color-cacao);
+  color: var(--color-lin);
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.book:hover {
+  background: #4c3c3b;
+}
+
+/* Outil non relié : même aspect que la maquette, la note explique pourquoi rien ne se passe. */
+.book[aria-disabled="true"] {
+  cursor: not-allowed;
+}
+
+.help {
+  font-size: 13px;
+  line-height: 1.45;
+  color: var(--color-cacao-70);
+}
+
+@media (max-width: 600px) {
+  .box {
+    padding: 24px 20px;
+  }
+}

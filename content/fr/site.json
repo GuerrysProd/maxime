@@ -76,6 +76,17 @@
     { "id": "sergeant", "name": "Sergeant Paysage", "shortName": "Sergeant Paysage", "kind": "Partenaire", "place": "Haut-Var", "detail": "Designer indépendant, aménagements extérieurs", "period": { "value": "Depuis sept. 2024", "draft": true }, "draft": true },
     { "id": "rev", "name": "Réseau Entreprendre Var", "shortName": "Réseau Entreprendre Var", "kind": "Réseau", "place": "Var", "detail": "[À COMPLÉTER : nature de l’accompagnement]", "period": { "value": "Juillet 2026", "draft": true }, "draft": true }
   ],
+  "parcoursOther": [
+    { "id": "nouvellement", "name": "Entreprise Nouvellement", "kind": "Stage", "place": "Sallanches", "period": { "value": "2023", "draft": true } },
+    { "id": "atmana", "name": "Atmana, ébénisterie", "kind": "Stage", "place": "Saint-Tropez", "period": { "value": "2022", "draft": true } },
+    { "id": "fogacci", "name": "Fogacci + Fogacci Architectes", "kind": "Assistant", "place": "Brignoles", "period": { "value": "2021", "draft": true } }
+  ],
+  "tools": { "value": "Rhino 8 · Grasshopper · KeyShot · Cinema 4D · Redshift · AutoCAD · ArchiCAD · Twinmotion · suite Adobe", "draft": true },
+  "partners": [
+    { "id": "sergeant", "name": "Sergeant Paysage", "role": "Paysagiste · Haut-Var", "text": "Aménagements extérieurs conçus en duo, dont le jardin du Château Gasqui." },
+    { "id": "vagh", "name": "Alain Vagh", "role": "Terre cuite · Salernes", "text": "Terre cuite des terrasses du jardin d’auto-cueillette du Château Gasqui." },
+    { "id": "rev", "name": "Réseau Entreprendre Var", "role": "Réseau", "text": "[À COMPLÉTER : nature de l’accompagnement]" }
+  ],
   "territories": [
     {
       "id": "mediterranee",

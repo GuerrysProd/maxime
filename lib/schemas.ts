@@ -91,6 +91,11 @@ export const siteSchema = z.object({
       draft: z.boolean(),
     }),
   ),
+  parcoursOther: z.array(
+    z.object({ id: z.string(), name: z.string(), kind: z.string(), place: z.string(), period: draftable }),
+  ),
+  tools: draftable,
+  partners: z.array(z.object({ id: z.string(), name: z.string(), role: z.string(), text: draftable })),
   territories: z.array(
     z.object({ id: z.string(), name: z.string(), places: z.array(z.string()), text: z.string(), image: imageRef }),
   ),
@@ -337,6 +342,8 @@ export const servicesSchema = z.object({
       audience: z.array(z.string()),
       deliverables: z.array(z.string()),
       image: imageRef,
+      /** Type de demande pré-rempli dans le formulaire (/contact?type=…). */
+      contactType: z.string(),
     }),
   ),
   method: z.array(z.object({ number: z.string(), title: z.string(), text: z.string(), deliverable: z.string() })),
@@ -364,6 +371,28 @@ export const pagesSchema = z.object({
     viewPiece: z.string(),
     editors: z.object({ label: z.string(), title: z.string(), text: z.string(), cta: link, link }),
   }),
+  services: z.object({
+    meta: pageMeta,
+    eyebrow: z.string(),
+    title: z.string(),
+    intro: z.string(),
+    offersNav: z.string(),
+    offersTitle: z.string(),
+    offersNote: z.string(),
+    forLabel: z.string(),
+    deliverablesLabel: z.string(),
+    offerCta: z.string(),
+    method: z.object({ label: z.string(), title: z.string(), intro: z.string(), receive: z.string() }),
+    zones: z.object({
+      label: z.string(),
+      title: z.string(),
+      text: z.string(),
+      listLabel: z.string(),
+      places: z.array(z.object({ name: z.string(), region: z.string(), tone: z.enum(["cacao", "olivier", "terre"]) })),
+      images: z.array(z.object({ caption: z.string(), image: imageRef })),
+    }),
+    faq: z.object({ label: z.string(), title: z.string(), link }),
+  }),
   object: z.object({
     position: z.string(),
     back: z.string(),
@@ -383,6 +412,128 @@ export const pagesSchema = z.object({
   }),
 });
 export type Pages = z.output<typeof pagesSchema>;
+
+/* ---------- Studio ---------- */
+
+export const studioSchema = z.object({
+  _note: z.string().optional(),
+  meta: pageMeta,
+  eyebrow: z.string(),
+  lead: z.string(),
+  bio: draftable,
+  bioNote: z.string(),
+  portrait: z.object({ image: imageRef.nullable(), missing: z.string() }),
+  approach: z.object({
+    label: z.string(),
+    title: z.string(),
+    items: z.array(z.object({ number: z.string(), title: z.string(), text: z.string() })),
+  }),
+  parcours: z.object({ label: z.string(), title: z.string(), note: z.string(), otherTitle: z.string(), toolsTitle: z.string() }),
+  materials: z.object({
+    label: z.string(),
+    title: z.string(),
+    intro: z.string(),
+    seenIn: z.string(),
+    items: z.array(z.object({ name: z.string(), projects: z.array(z.string()), image: imageRef })),
+  }),
+  partners: z.object({
+    label: z.string(),
+    title: z.string(),
+    artisans: z.object({ name: draftable, role: z.string(), text: draftable }),
+  }),
+});
+export type Studio = z.output<typeof studioSchema>;
+
+/* ---------- Contact ---------- */
+
+const option = z.object({ id: z.string(), label: z.string() });
+const field = z.object({ label: z.string(), placeholder: z.string().optional(), hint: z.string().optional(), help: z.string().optional() });
+
+export const contactSchema = z.object({
+  _note: z.string().optional(),
+  meta: pageMeta,
+  eyebrow: z.string(),
+  title: z.string(),
+  intro: z.string(),
+  form: z.object({
+    stepCounter: z.string(),
+    steps: z.array(z.object({ id: z.string(), short: z.string(), name: z.string(), title: z.string() })).length(5),
+    projectTypesLabel: z.string(),
+    projectTypes: z.array(option.extend({ desc: z.string() })),
+    place: field,
+    surface: field,
+    budget: field.extend({ pending: draftable, options: z.array(option) }),
+    deadline: field.extend({ options: z.array(option) }),
+    message: field.extend({ pieceIntro: z.string() }),
+    attachments: field.extend({ drop: z.string(), browse: z.string(), maxNote: draftable, remove: z.string() }),
+    name: field,
+    email: field,
+    phone: field,
+    preference: field.extend({ options: z.array(option) }),
+    consent: z.string(),
+    honeypot: z.string(),
+    optional: z.string(),
+    back: z.string(),
+    next: z.string(),
+    submit: z.string(),
+    sending: z.string(),
+    editable: z.string(),
+    errors: z.object({
+      summary: z.string(),
+      type: z.string(),
+      place: z.string(),
+      surface: z.string(),
+      budget: z.string(),
+      deadline: z.string(),
+      message: z.string(),
+      files: z.string(),
+      name: z.string(),
+      email: z.string(),
+      phone: z.string(),
+      preference: z.string(),
+      phoneNeeded: z.string(),
+      consent: z.string(),
+      server: z.string(),
+      rateLimit: z.string(),
+      spam: z.string(),
+    }),
+  }),
+  booking: z.object({
+    label: z.string(),
+    title: z.string(),
+    text: z.string(),
+    duration: draftable,
+    weekOf: z.string(),
+    dayGroup: z.string(),
+    slotGroup: z.string(),
+    book: z.string(),
+    slotFormat: z.string(),
+    demoNote: z.string(),
+    previousWeek: z.string(),
+    nextWeek: z.string(),
+    empty: z.string(),
+  }),
+  details: z.object({ label: z.string(), note: z.string() }),
+  confirmation: z.object({
+    meta: pageMeta,
+    label: z.string(),
+    title: z.string(),
+    titleAnonymous: z.string(),
+    text: z.string(),
+    recap: z.object({ type: z.string(), place: z.string(), deadline: z.string() }),
+    copySent: z.string(),
+    projects: link,
+    call: z.string(),
+    image: imageRef,
+    caption: z.string(),
+  }),
+  emails: z.object({
+    toMaxime: z.object({ subject: z.string(), intro: z.string() }),
+    toVisitor: z.object({ subject: z.string(), greeting: z.string(), intro: z.string(), signature: z.string() }),
+    fields: z.record(z.string(), z.string()),
+  }),
+});
+export type Contact = z.output<typeof contactSchema>;
 
 /* ---------- Dictionnaire d’interface ---------- */
 

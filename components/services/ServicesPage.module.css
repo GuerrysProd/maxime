@@ -1,0 +1,315 @@
+.main {
+  padding-top: var(--header-height);
+}
+
+/* ---------- En-tête et sommaire des offres ---------- */
+
+.header {
+  align-items: end;
+  row-gap: 40px;
+  padding-top: 72px;
+  padding-bottom: 96px;
+}
+
+.titleBlock {
+  grid-column: 1 / span 7;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.title {
+  font-size: 120px;
+  line-height: 0.95;
+  letter-spacing: -0.035em;
+}
+
+.lead {
+  max-width: 560px;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.anchors {
+  grid-column: 9 / span 4;
+}
+
+.anchors ol {
+  border-bottom: 1px solid var(--color-ligne);
+}
+
+.anchor {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  min-height: 44px;
+  padding: 9px 0;
+  border-top: 1px solid var(--color-ligne);
+  font-size: 15px;
+}
+
+.anchor:hover .anchorTitle {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+/* ---------- Offres ---------- */
+
+.offers {
+  padding-bottom: 120px;
+}
+
+.offersHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding-bottom: 16px;
+}
+
+.offer {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  column-gap: var(--gutter);
+  row-gap: 24px;
+  align-items: start;
+  padding: 48px 0;
+  border-top: 1px solid var(--color-ligne);
+  scroll-margin-top: calc(var(--header-height-compact) + 24px);
+}
+
+.offer:last-child {
+  border-bottom: 1px solid var(--color-ligne);
+}
+
+.offerNumber {
+  grid-column: 1 / span 1;
+  font-size: 40px;
+  line-height: 1;
+}
+
+.offerMain {
+  grid-column: 2 / span 5;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.offerTitle {
+  font-size: 38px;
+  line-height: 1.1;
+}
+
+.offerSummary {
+  color: var(--color-texte-doux);
+}
+
+.offerDeliverables {
+  grid-column: 7 / span 4;
+}
+
+.offerDeliverables ul {
+  margin-top: 6px;
+}
+
+.offerDeliverables li {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  padding: 7px 0;
+  border-bottom: 1px solid rgba(56, 43, 43, 0.1);
+  font-size: 15px;
+  line-height: 1.45;
+}
+
+.offerDeliverables li::before {
+  content: "";
+  flex: none;
+  width: 10px;
+  height: 1px;
+  background: var(--color-terre);
+  transform: translateY(-4px);
+}
+
+.offerImage {
+  grid-column: 11 / span 2;
+  position: relative;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  background: var(--color-pierre);
+}
+
+/* ---------- Zones d’intervention ---------- */
+
+.zones {
+  padding: 120px 0;
+}
+
+.zonesGrid {
+  align-items: center;
+  row-gap: 48px;
+}
+
+.zonesText {
+  grid-column: 1 / span 5;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.zonesTitle {
+  font-size: 56px;
+  line-height: 1.05;
+}
+
+.zonesLead {
+  color: var(--color-texte-doux);
+}
+
+.places {
+  border-top: 1px solid var(--color-ligne);
+}
+
+.places li {
+  display: grid;
+  grid-template-columns: 9px 1fr auto;
+  align-items: center;
+  gap: 16px;
+  min-height: 52px;
+  border-bottom: 1px solid rgba(56, 43, 43, 0.1);
+}
+
+.placeDot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--color-cacao);
+}
+
+.placeDot[data-tone="olivier"] {
+  background: var(--color-olivier);
+}
+
+.placeDot[data-tone="terre"] {
+  background: var(--color-terre);
+}
+
+.zonesImages {
+  grid-column: 7 / span 6;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--gutter);
+}
+
+.zonesImages figure {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: var(--offset, 0);
+}
+
+.zoneImage {
+  position: relative;
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+  background: var(--color-pierre);
+}
+
+/* ---------- FAQ ---------- */
+
+.faq {
+  padding: 120px 0;
+  border-top: 1px solid var(--color-ligne);
+}
+
+.faqGrid {
+  align-items: start;
+  row-gap: 48px;
+}
+
+.faqIntro {
+  grid-column: 1 / span 4;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.faqTitle {
+  font-size: 56px;
+  line-height: 1.05;
+}
+
+.faqList {
+  grid-column: 6 / span 7;
+}
+
+@media (max-width: 1099px) {
+  .title {
+    font-size: 96px;
+  }
+
+  .offerMain {
+    grid-column: 2 / span 6;
+  }
+
+  .offerDeliverables {
+    grid-column: 8 / span 5;
+  }
+
+  .offerImage {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .header {
+    padding-top: 40px;
+    padding-bottom: 56px;
+  }
+
+  .title {
+    font-size: 64px;
+  }
+
+  .lead {
+    font-size: 17px;
+  }
+
+  .offers {
+    padding-bottom: 72px;
+  }
+
+  .offer {
+    grid-template-columns: 40px minmax(0, 1fr);
+    column-gap: 12px;
+    padding: 32px 0;
+  }
+
+  .offerNumber {
+    grid-column: 1;
+    font-size: 28px;
+  }
+
+  .offerMain,
+  .offerDeliverables {
+    grid-column: 2;
+  }
+
+  .offerTitle {
+    font-size: 28px;
+  }
+
+  .zones,
+  .faq {
+    padding: 72px 0;
+  }
+
+  .zonesTitle,
+  .faqTitle {
+    font-size: 36px;
+  }
+}

@@ -15,6 +15,10 @@ const LEGACY_REDIRECTS: [string, string][] = [
 const nextConfig: NextConfig = {
   cacheComponents: true,
   partialPrefetching: true,
+  experimental: {
+    // Pièces jointes du formulaire de contact : 4 Mo au total (lib/contact/validate.ts).
+    serverActions: { bodySizeLimit: "5mb" },
+  },
   images: {
     formats: ["image/avif", "image/webp"],
   },

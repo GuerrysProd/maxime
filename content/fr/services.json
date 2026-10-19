@@ -21,7 +21,8 @@
       "image": {
         "src": "/images/projets/duplex-pralong/vue-nord-paysage.jpg",
         "alt": ""
-      }
+      },
+      "contactType": "residence"
     },
     {
       "id": "mobilier-sur-mesure",
@@ -43,7 +44,8 @@
       "image": {
         "src": "/images/projets/duplex-pralong/applique-pinturault.jpg",
         "alt": ""
-      }
+      },
+      "contactType": "objet"
     },
     {
       "id": "hospitalite-lieux-collectifs",
@@ -66,7 +68,8 @@
       "image": {
         "src": "/images/projets/agora/agora-01.jpg",
         "alt": ""
-      }
+      },
+      "contactType": "hospitalite"
     },
     {
       "id": "amenagements-exterieurs",
@@ -87,7 +90,8 @@
       "image": {
         "src": "/images/projets/chateau-gasqui/key-elements/abri-ete.jpg",
         "alt": ""
-      }
+      },
+      "contactType": "residence"
     },
     {
       "id": "3d-agences",
@@ -107,7 +111,8 @@
       "image": {
         "src": "/images/projets/batiment-s/hero-passerelle.jpg",
         "alt": ""
-      }
+      },
+      "contactType": "collaboration"
     }
   ],
   "method": [

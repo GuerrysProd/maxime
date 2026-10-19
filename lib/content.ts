@@ -4,6 +4,7 @@
  * et ses images sont complétées par le manifeste. Une erreur de contenu fait échouer le build.
  */
 import type { z } from "zod";
+import contactFr from "@/content/fr/contact.json";
 import faqFr from "@/content/fr/faq.json";
 import homeFr from "@/content/fr/home.json";
 import objectsFr from "@/content/fr/objects.json";
@@ -17,9 +18,11 @@ import percheeFr from "@/content/fr/projects/perchee.json";
 import rolexFr from "@/content/fr/projects/rolex-retail-express.json";
 import servicesFr from "@/content/fr/services.json";
 import siteFr from "@/content/fr/site.json";
+import studioFr from "@/content/fr/studio.json";
 import uiFr from "@/content/fr/ui.json";
 import { resolveImage, type ImageAsset } from "./media";
 import {
+  contactSchema,
   faqSchema,
   homeSchema,
   objectsSchema,
@@ -28,6 +31,7 @@ import {
   projectsSchema,
   servicesSchema,
   siteSchema,
+  studioSchema,
   uiSchema,
   type ObjectPiece,
   type Project,
@@ -39,7 +43,7 @@ export type Locale = "fr";
 export const defaultLocale: Locale = "fr";
 
 const sources = {
-  fr: { site: siteFr, home: homeFr, ui: uiFr, pages: pagesFr, projects: projectsFr, objects: objectsFr, services: servicesFr, faq: faqFr },
+  fr: { site: siteFr, home: homeFr, ui: uiFr, pages: pagesFr, studio: studioFr, contact: contactFr, projects: projectsFr, objects: objectsFr, services: servicesFr, faq: faqFr },
 } as const;
 
 /** Fiches détaillées (gabarit « chapitres »), une par projet. */
@@ -73,6 +77,8 @@ export const getSite = (locale: Locale = defaultLocale) => load("site", siteSche
 export const getHome = (locale: Locale = defaultLocale) => load("home", homeSchema, locale);
 export const getUi = (locale: Locale = defaultLocale) => load("ui", uiSchema, locale);
 export const getPages = (locale: Locale = defaultLocale) => load("pages", pagesSchema, locale);
+export const getStudio = (locale: Locale = defaultLocale) => load("studio", studioSchema, locale);
+export const getContact = (locale: Locale = defaultLocale) => load("contact", contactSchema, locale);
 export const getProjects = (locale: Locale = defaultLocale) => load("projects", projectsSchema, locale);
 export const getObjects = (locale: Locale = defaultLocale) => load("objects", objectsSchema, locale).items;
 export const getServices = (locale: Locale = defaultLocale) => load("services", servicesSchema, locale);
@@ -126,6 +132,7 @@ export const contactHref = (type?: string) => (type ? `/contact?type=${encodeURI
 
 export type {
   Chapter,
+  Contact,
   ChapterBlock,
   Draft,
   FaqItem,
@@ -140,6 +147,7 @@ export type {
   Services,
   Site,
   SpecRow,
+  Studio,
   Ui,
 } from "./schemas";
 export type { ImageAsset } from "./media";

@@ -26,6 +26,7 @@ const SKIPPED_KEYS = new Set([
   "color",
   "layout",
   "fit",
+  "contactType",
 ]);
 
 export function frTypo(text: string): string {

@@ -1,0 +1,156 @@
+{
+  "_note": "Page Contact, formulaire en 5 étapes, prise de rendez-vous, confirmation et e-mails (aperçus 09 et 09b, brief §6). Fourchettes de budget, taille des pièces jointes, durée de l’appel et délai de réponse : à définir par Maxime. Les identifiants des types correspondent aux puces du bandeau d’appel (site.json → ctaChips).",
+  "meta": {
+    "title": "Démarrer un projet",
+    "description": "Décrivez votre projet en cinq étapes courtes ou réservez un appel avec Maxime Vallat, architecte d’intérieur & designer."
+  },
+  "eyebrow": "Contact",
+  "title": "Démarrer un projet",
+  "intro": "Cinq étapes courtes pour comprendre votre projet. Je lis chaque demande personnellement.",
+  "form": {
+    "stepCounter": "Étape {n} / {total}",
+    "steps": [
+      { "id": "projet", "short": "Projet", "name": "Projet", "title": "Quel est votre projet ?" },
+      { "id": "lieu", "short": "Lieu", "name": "Lieu et surface", "title": "Où, et sur quelle surface ?" },
+      { "id": "budget", "short": "Budget", "name": "Budget et échéance", "title": "Budget indicatif et échéance" },
+      { "id": "message", "short": "Message", "name": "Message", "title": "Parlez-moi de votre projet" },
+      { "id": "coordonnees", "short": "Coordonnées", "name": "Coordonnées", "title": "Vos coordonnées" }
+    ],
+    "projectTypesLabel": "Type de projet",
+    "projectTypes": [
+      { "id": "residence", "label": "Une résidence", "desc": "Principale ou secondaire, rénovation ou aménagement" },
+      { "id": "hospitalite", "label": "Un hôtel, un domaine, un commerce", "desc": "Lieux d’accueil et de vente" },
+      { "id": "collectif", "label": "Un lieu collectif", "desc": "Tiers-lieu, équipement public, collectivité" },
+      { "id": "objet", "label": "Une pièce sur mesure", "desc": "Mobilier ou luminaire" },
+      { "id": "collaboration", "label": "Une collaboration", "desc": "Agence d’architecture ou éditeur de mobilier" }
+    ],
+    "place": { "label": "Lieu du projet", "placeholder": "Ville ou station, ex. Hyères, Courchevel…" },
+    "surface": { "label": "Surface approximative", "hint": "en m²", "placeholder": "Ex. 120", "help": "Une estimation suffit. Laissez vide si vous ne savez pas." },
+    "budget": {
+      "label": "Budget indicatif",
+      "hint": "travaux et mobilier",
+      "help": "Il m’aide à proposer une mission juste et reste confidentiel.",
+      "pending": "[À COMPLÉTER : fourchettes de budget à définir par Maxime]",
+      "options": [
+        { "id": "b1", "label": "Moins de [X] €" },
+        { "id": "b2", "label": "[X] – [Y] €" },
+        { "id": "b3", "label": "[Y] – [Z] €" },
+        { "id": "b4", "label": "Plus de [Z] €" },
+        { "id": "a-definir", "label": "À définir ensemble" }
+      ]
+    },
+    "deadline": {
+      "label": "Échéance souhaitée",
+      "options": [
+        { "id": "asap", "label": "Dès que possible" },
+        { "id": "annee", "label": "Dans l’année" },
+        { "id": "plus-tard", "label": "Plus tard" },
+        { "id": "renseignement", "label": "Je me renseigne" }
+      ]
+    },
+    "message": { "label": "Votre message", "placeholder": "L’état actuel, ce que vous aimeriez changer, vos envies…", "pieceIntro": "Pièce concernée : {name}." },
+    "attachments": {
+      "label": "Pièces jointes",
+      "hint": "facultatif",
+      "drop": "Déposer des fichiers ou",
+      "browse": "parcourir",
+      "help": "Plans, photos, inspirations — PDF, JPG, PNG · {max} Mo au total",
+      "maxNote": "[À COMPLÉTER : taille maximale souhaitée par Maxime]",
+      "remove": "Retirer {name}"
+    },
+    "name": { "label": "Nom" },
+    "email": { "label": "E-mail" },
+    "phone": { "label": "Téléphone", "hint": "facultatif" },
+    "preference": {
+      "label": "Je préfère être recontacté par",
+      "options": [
+        { "id": "email", "label": "E-mail" },
+        { "id": "telephone", "label": "Téléphone" }
+      ]
+    },
+    "consent": "J’accepte que ces informations soient utilisées pour répondre à ma demande.",
+    "honeypot": "Laissez ce champ vide",
+    "optional": "facultatif",
+    "back": "Retour",
+    "next": "Continuer",
+    "submit": "Envoyer ma demande",
+    "sending": "Envoi en cours…",
+    "editable": "Vos réponses restent modifiables.",
+    "errors": {
+      "summary": "Merci de corriger les champs signalés.",
+      "type": "Choisissez le type de votre projet.",
+      "place": "Indiquez le lieu du projet.",
+      "surface": "Indiquez une surface en chiffres, ou laissez vide.",
+      "budget": "Choisissez une fourchette, ou « À définir ensemble ».",
+      "deadline": "Choisissez une échéance.",
+      "message": "Décrivez votre projet en quelques mots (20 caractères au moins).",
+      "files": "Fichiers acceptés : PDF, JPG, PNG, {max} Mo au total.",
+      "name": "Indiquez votre nom.",
+      "email": "Indiquez une adresse e-mail valide.",
+      "phone": "Ce numéro ne semble pas valide.",
+      "preference": "Choisissez comment être recontacté.",
+      "phoneNeeded": "Indiquez un numéro pour être rappelé par téléphone.",
+      "consent": "Votre accord est nécessaire pour traiter la demande.",
+      "server": "L’envoi n’a pas abouti. Réessayez, ou écrivez directement à {email}.",
+      "rateLimit": "Plusieurs demandes viennent d’être envoyées. Réessayez dans quelques minutes, ou appelez le {phone}.",
+      "spam": "La demande n’a pas pu être envoyée. Réessayez dans quelques secondes."
+    }
+  },
+  "booking": {
+    "label": "Prendre rendez-vous",
+    "title": "Préférez-vous en parler de vive voix ?",
+    "text": "Un appel découverte de {duration}, sans engagement.",
+    "duration": "[À COMPLÉTER : durée de l’appel]",
+    "weekOf": "Semaine du {day}",
+    "dayGroup": "Jour",
+    "slotGroup": "Créneau",
+    "book": "Réserver {slot}",
+    "slotFormat": "{day} à {time}",
+    "demoNote": "Créneaux d’exemple — la réservation sera reliée à l’outil choisi (Cal.com, Calendly…).",
+    "previousWeek": "Semaine précédente",
+    "nextWeek": "Semaine suivante",
+    "empty": "Aucun créneau cette semaine."
+  },
+  "details": {
+    "label": "Coordonnées",
+    "note": "Interventions de la Méditerranée aux Alpes."
+  },
+  "confirmation": {
+    "meta": { "title": "Demande envoyée", "description": "Votre demande a bien été envoyée à Maxime Vallat." },
+    "label": "Demande envoyée",
+    "title": "Merci, {name}.",
+    "titleAnonymous": "Merci.",
+    "text": "Votre demande est bien arrivée. Je la lis personnellement et je vous réponds sous {delay}, par e-mail ou par téléphone selon votre préférence.",
+    "recap": { "type": "Projet", "place": "Lieu", "deadline": "Échéance" },
+    "copySent": "Un récapitulatif vous a été envoyé par e-mail.",
+    "projects": { "label": "Voir les projets", "href": "/projets" },
+    "call": "Réserver un appel",
+    "image": { "src": "/images/projets/duplex-pralong/fauteuil.jpg", "alt": "Fauteuil Pralong devant la cheminée du duplex" },
+    "caption": "Duplex Pralong, Courchevel 1850"
+  },
+  "emails": {
+    "toMaxime": {
+      "subject": "Nouvelle demande — {type} — {name}",
+      "intro": "Nouvelle demande reçue depuis le site."
+    },
+    "toVisitor": {
+      "subject": "Votre demande à Maxime Vallat",
+      "greeting": "Bonjour {name},",
+      "intro": "Merci pour votre demande. Je la lis personnellement et je vous réponds sous {delay}. Voici ce que vous m’avez envoyé :",
+      "signature": "Maxime Vallat — architecte d’intérieur & designer"
+    },
+    "fields": {
+      "type": "Projet",
+      "place": "Lieu",
+      "surface": "Surface",
+      "budget": "Budget indicatif",
+      "deadline": "Échéance",
+      "message": "Message",
+      "files": "Pièces jointes",
+      "name": "Nom",
+      "email": "E-mail",
+      "phone": "Téléphone",
+      "preference": "Préférence de contact"
+    }
+  }
+}

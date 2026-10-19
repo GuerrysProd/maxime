@@ -13,7 +13,7 @@ export function SectionHeader({
   spacing = "lg",
 }: {
   id: string;
-  number: string;
+  number?: string;
   label: string;
   title: string;
   /** Texte sous le titre, dans la colonne gauche. */
@@ -26,9 +26,7 @@ export function SectionHeader({
   return (
     <div className={`g12 ${styles.header}`} data-spacing={spacing} data-aside={asideAlign} data-reveal="">
       <div className={styles.main}>
-        <p className="meta muted">
-          {number} — {label}
-        </p>
+        <p className="meta muted">{number ? `${number} — ${label}` : label}</p>
         <h2 id={id} className={`serif ${styles.title}`}>
           {title}
         </h2>
