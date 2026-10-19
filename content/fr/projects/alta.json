@@ -1,0 +1,191 @@
+{
+  "slug": "alta",
+  "_note": "Textes : textes/alta.txt (site actuel), découpés en chapitres sans ajout. Cadre du projet (diplôme, concours, personnel) et année inconnus.",
+  "lead": "Un refuge mono-personnel pour travailler depuis le paysage.",
+  "specs": [
+    { "label": "Lieu", "value": "Alpes" },
+    { "label": "Programme", "value": "Refuge mono-personnel préfabriqué en atelier" },
+    { "label": "Pour", "value": "Communes et stations de montagne" },
+    { "label": "Statut", "status": true },
+    { "label": "Cadre", "value": "[À COMPLÉTER : diplôme, concours ou projet personnel]" },
+    { "label": "Année", "value": "[À COMPLÉTER : année]" }
+  ],
+  "similar": { "label": "Un projet similaire ?", "type": "hospitalite" },
+  "chapters": [
+    {
+      "id": "attention",
+      "label": "Une attention lente",
+      "title": "Retrouver une attention lente.",
+      "blocks": [
+        {
+          "type": "text",
+          "paragraphs": [
+            "Dans l’environnement urbain, les flux, le bruit, les écrans et le rythme quotidien fragmentent l’attention. Le corps s’adapte en permanence, mais finit par perdre une partie de ses mécanismes d’ancrage et de régulation.",
+            "Alta prend cette fatigue diffuse comme point de départ. Le projet s’appuie sur l’idée que le contact avec la nature peut réduire le stress, régénérer l’attention et nourrir un rapport plus stable au vivant.",
+            "Plutôt qu’une simple retraite de vacances, Alta propose une autre manière de produire : un temps court, isolé mais non coupé du monde, où le paysage devient une ressource cognitive et émotionnelle.",
+            "Le projet s’inscrit dans une forme de workation contemplatif. La nature n’y est pas traitée comme un décor, mais comme une alliée de concentration, de ralentissement et de reprise mentale."
+          ]
+        },
+        {
+          "type": "media",
+          "layout": "full",
+          "items": [
+            { "src": "/images/projets/alta/alta-01.jpg", "alt": "Refuge Alta implanté dans un paysage alpin fleuri, sommets enneigés à l’horizon", "position": "62% 50%" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tourisme",
+      "label": "Un tourisme plus durable",
+      "title": "Un tourisme alpin plus durable.",
+      "blocks": [
+        {
+          "type": "text",
+          "paragraphs": [
+            "Alta est un refuge préfabriqué en atelier dans la vallée, pensé pour être installé en basse, moyenne ou haute montagne. Il offre aux communes et aux stations une alternative au tourisme alpin traditionnel.",
+            "Accessible à pied ou en VTT l’été, en raquettes ou en ski l’hiver, le refuge prend place aux abords de sentiers discrets. L’usager reste immergé dans le domaine naturel, tout en pouvant rejoindre les activités disponibles en station."
+          ]
+        },
+        {
+          "type": "media",
+          "layout": "duo",
+          "items": [
+            { "src": "/images/projets/alta/alta-08.jpg", "alt": "Alta installé en porte-à-faux sur un relief rocheux" },
+            { "src": "/images/projets/alta/alta-02.jpg", "alt": "Vue extérieure du refuge Alta au coucher du soleil" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reversible",
+      "label": "Une architecture réversible",
+      "title": "Une architecture réversible.",
+      "blocks": [
+        {
+          "type": "text",
+          "paragraphs": [
+            "Pour s’adapter à des plaines comme à des reliefs plus pentus, Alta peut fonctionner dans deux sens. Le module peut être posé directement sur un sol plat, porté par des pilotis ou placé en porte-à-faux à flanc de montagne.",
+            "Ce principe permet d’uniformiser la production des pièces tout en diversifiant les situations d’installation. Le refuge devient un objet reproductible, mais jamais tout à fait identique dans son rapport au site."
+          ]
+        },
+        {
+          "type": "media",
+          "layout": "full",
+          "items": [
+            { "src": "/images/projets/alta/alta-structure-iso.png", "alt": "Isométrie des couches structurelles du module Alta", "fit": "contain" }
+          ]
+        },
+        {
+          "type": "media",
+          "layout": "duo",
+          "items": [
+            { "src": "/images/projets/alta/alta-document-10.png", "alt": "Élévation du refuge Alta sur terrain en pente", "fit": "contain" },
+            { "src": "/images/projets/alta/alta-document-11.png", "alt": "Élévation latérale du refuge Alta", "fit": "contain" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "interieur",
+      "label": "L’intérieur",
+      "title": "L’intérieur comme point de vue.",
+      "blocks": [
+        {
+          "type": "text",
+          "paragraphs": [
+            "Les volumes intérieurs ont été épurés pour concentrer l’expérience sur l’extérieur. Alta ne cherche pas à multiplier les usages visibles : il organise un cadre, une respiration et une direction du regard.",
+            "Le volume général résulte de l’étude des vues offertes à l’usager : un grand panorama central et un poste d’observation plus étroit, tourné vers un détail latéral du paysage.",
+            "Les parois latérales accueillent les fonctions afin de libérer le champ visuel. L’alcôve du couchage s’efface dans la forme, comme une pause silencieuse dans une composition tournée vers la lumière."
+          ]
+        },
+        {
+          "type": "media",
+          "layout": "duo",
+          "items": [
+            { "src": "/images/projets/alta/alta-06.jpg", "alt": "Vue en angle sur les deux fenêtres, la couchette et le bureau d’Alta" },
+            { "src": "/images/projets/alta/alta-13.jpg", "alt": "Alcôve de couchage du refuge Alta" }
+          ]
+        },
+        {
+          "type": "media",
+          "layout": "wide",
+          "items": [
+            { "src": "/images/projets/alta/alta-15.jpg", "alt": "Vue intérieure longitudinale du refuge Alta" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bureau",
+      "label": "Un bureau face au vide",
+      "title": "Un bureau face au vide.",
+      "blocks": [
+        {
+          "type": "text",
+          "paragraphs": [
+            "Les bords supérieur et inférieur du cadre panoramique forment de grands plans horizontaux. Le bureau devient la pièce maîtresse du refuge : un centre de contrôle à la fois minimal et immersif.",
+            "Assis à cette longue surface de travail, l’usager n’a presque rien entre lui et le panorama, sinon une fine couche de verre. Travailler, manger, contempler ou réfléchir se font dans une même position d’attention, au plus proche de l’environnement."
+          ]
+        },
+        {
+          "type": "media",
+          "layout": "full",
+          "items": [
+            { "src": "/images/projets/alta/alta-04.jpg", "alt": "Bureau panoramique d’Alta face au paysage" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "terrasse",
+      "label": "La terrasse",
+      "title": "La terrasse comme prolongement.",
+      "blocks": [
+        {
+          "type": "text",
+          "paragraphs": [
+            "L’espace extérieur prolonge le plan de travail et ouvre le refuge à une expérience plus directe du paysage. La terrasse reste volontairement dégagée, disponible pour l’observation, l’oisiveté ou la photographie.",
+            "Un plateau dissimulé dans la paroi latérale révèle une niche de rangement destinée aux tréteaux. Une fois assemblé, l’ensemble devient une table extérieure ; le reste du temps, la terrasse conserve son caractère nu et contemplatif."
+          ]
+        },
+        {
+          "type": "media",
+          "layout": "duo",
+          "items": [
+            { "src": "/images/projets/alta/alta-07.jpg", "alt": "Accès intérieur menant vers la terrasse du refuge" },
+            { "src": "/images/projets/alta/alta-14.jpg", "alt": "Vue depuis le couchage vers le cadre panoramique" }
+          ]
+        },
+        {
+          "type": "media",
+          "layout": "wide",
+          "items": [
+            { "src": "/images/projets/alta/alta-16.jpg", "alt": "Vue intérieure hivernale du refuge Alta avec un usager assis" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "plans",
+      "label": "Plans d’aménagement",
+      "title": "Plans d’aménagement.",
+      "blocks": [
+        {
+          "type": "text",
+          "paragraphs": [
+            "Les plans rendent lisible la logique d’un module compact, réversible et adaptable. Ils précisent l’organisation du couchage, du bureau panoramique, des rangements latéraux et de l’accès vers la terrasse."
+          ]
+        },
+        {
+          "type": "media",
+          "layout": "duo",
+          "items": [
+            { "src": "/images/projets/alta/alta-document-12.png", "alt": "Plan d’aménagement du refuge Alta", "fit": "contain" },
+            { "src": "/images/projets/alta/alta-plan-02.png", "alt": "Plan alternatif du refuge Alta", "fit": "contain" }
+          ]
+        }
+      ]
+    }
+  ]
+}

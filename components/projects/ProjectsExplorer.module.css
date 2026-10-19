@@ -1,0 +1,449 @@
+/* ---------- Barre de filtres (collante sous l’en-tête compact) ---------- */
+
+.toolbar {
+  position: sticky;
+  top: var(--header-height-compact);
+  z-index: 20;
+  background: rgba(245, 240, 232, 0.94);
+  backdrop-filter: blur(10px);
+}
+
+.toolbarInner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px 24px;
+}
+
+.toolbarInner {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border-top: 1px solid var(--color-ligne);
+  border-bottom: 1px solid var(--color-ligne);
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 0 18px;
+  border: 1px solid rgba(56, 43, 43, 0.28);
+  border-radius: var(--radius-pill);
+  background: transparent;
+  font-size: 15px;
+  white-space: nowrap;
+  cursor: pointer;
+  transition:
+    background-color var(--duration-fast),
+    color var(--duration-fast),
+    border-color var(--duration-fast);
+}
+
+.chip:hover {
+  border-color: var(--color-cacao);
+}
+
+.chipCount {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--color-cacao-70);
+}
+
+.chip[aria-pressed="true"] {
+  border-color: var(--color-cacao);
+  background: var(--color-cacao);
+  color: var(--color-lin);
+}
+
+.chip[aria-pressed="true"] .chipCount {
+  color: var(--color-sable);
+}
+
+.toolbarEnd {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.segment {
+  display: inline-flex;
+  padding: 4px;
+  border: 1px solid rgba(56, 43, 43, 0.28);
+  border-radius: var(--radius-pill);
+}
+
+.segment button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 40px;
+  padding: 0 16px;
+  border: 0;
+  border-radius: var(--radius-pill);
+  background: transparent;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.segment button[aria-pressed="true"] {
+  background: var(--color-pierre);
+}
+
+/* ---------- Résultats ---------- */
+
+.results {
+  padding-top: 64px;
+  padding-bottom: 140px;
+  transition: opacity var(--leave, 200ms) ease;
+}
+
+.results[data-leaving] {
+  opacity: 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  column-gap: var(--gutter);
+  row-gap: 120px;
+}
+
+.slot,
+.rowItem {
+  animation: enter var(--duration-slow) var(--ease-soft) both;
+  animation-delay: var(--enter-delay, 0ms);
+}
+
+.slot {
+  align-self: start;
+}
+
+.offset {
+  margin-top: 180px;
+}
+
+.bottom {
+  align-self: end;
+}
+
+@keyframes enter {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 24px, 0);
+  }
+}
+
+.preparation {
+  margin-top: 120px;
+  padding-top: 32px;
+  border-top: 1px solid var(--color-ligne);
+}
+
+.preparationHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 32px;
+}
+
+.preparationList {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+/* ---------- Vue Index ---------- */
+
+.index {
+  position: relative;
+  border-bottom: 1px solid var(--color-ligne);
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 64px minmax(0, 1fr) 220px 200px 150px 24px;
+  align-items: center;
+  column-gap: 24px;
+  min-height: 104px;
+  padding: 16px 0;
+  border-top: 1px solid var(--color-ligne);
+  transition:
+    padding 450ms var(--ease-soft),
+    background-color var(--duration-fast);
+}
+
+.row[data-on] {
+  padding-left: 16px;
+  background: rgba(230, 222, 209, 0.5);
+}
+
+.rowHead {
+  min-height: 44px;
+  padding: 10px 0;
+  border-top: 0;
+}
+
+.preview {
+  position: absolute;
+  z-index: 2;
+  width: 280px;
+  height: 190px;
+  overflow: hidden;
+  box-shadow: 0 24px 48px rgba(20, 14, 14, 0.35);
+  pointer-events: none;
+  opacity: 0;
+  transition:
+    left 350ms var(--ease-soft),
+    top 350ms var(--ease-soft),
+    opacity var(--duration-fast);
+}
+
+.preview[data-visible] {
+  opacity: 1;
+}
+
+.previewImage {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+}
+
+.previewImage[data-on] {
+  opacity: 1;
+}
+
+@media (hover: none) {
+  .preview {
+    display: none;
+  }
+}
+
+@media (max-width: 1099px) {
+  .row {
+    grid-template-columns: 48px minmax(0, 1fr) 160px 24px;
+  }
+
+  .optional {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .toolbar {
+    top: var(--header-height-compact);
+  }
+
+  .toolbar :global(.wrap) {
+    padding-inline: 0;
+  }
+
+  .toolbarInner {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    gap: 12px;
+  }
+
+  .filters {
+    min-width: 0;
+    flex-wrap: nowrap;
+    padding: 0 var(--margin);
+    overflow-x: auto;
+    scrollbar-width: none;
+    position: relative;
+  }
+
+  .filters::-webkit-scrollbar {
+    display: none;
+  }
+
+  .chip {
+    padding: 0 16px;
+    font-size: 14px;
+  }
+
+  .toolbarEnd {
+    justify-content: space-between;
+    padding: 0 var(--margin);
+  }
+
+  .segment {
+    padding: 3px;
+  }
+
+  .segment button {
+    min-height: 38px;
+    padding: 0 14px;
+  }
+
+  .results {
+    padding-top: 40px;
+    padding-bottom: 72px;
+  }
+
+  .grid {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+  }
+
+  .slot {
+    --card-ratio: 4 / 3 !important;
+  }
+
+  .slot:first-child {
+    --card-ratio: 4 / 5 !important;
+  }
+
+  .offset {
+    margin-top: 0;
+  }
+
+  .preparation {
+    margin-top: 56px;
+    padding-top: 20px;
+  }
+
+  .preparationHead {
+    margin-bottom: 16px;
+  }
+
+  .preparationList {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .row {
+    grid-template-columns: 32px minmax(0, 1fr) 18px;
+    column-gap: 12px;
+    row-gap: 6px;
+    min-height: 0;
+    padding: 18px 0;
+    align-items: baseline;
+  }
+
+  .row[data-on] {
+    padding-left: 0;
+    background: none;
+  }
+
+  .rowHead {
+    display: none;
+  }
+
+  .preview {
+    display: none;
+  }
+}
+
+/* ---------- Cellules d’une ligne d’index (rendues côté serveur par IndexRow) ---------- */
+
+.cellName {
+  font-family: var(--font-serif);
+  font-size: 40px;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.row[data-muted] .cellName {
+  color: var(--color-cacao-70);
+}
+
+.prepTag {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 10px;
+  border-radius: var(--radius-pill);
+  background: var(--color-olivier);
+  color: var(--color-lin);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  line-height: 1.3;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+/* Carte « En préparation » (grille) */
+.prepCard {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.prepMedia {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background: var(--color-pierre);
+}
+
+.prepHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.prepName {
+  font-size: 24px;
+  line-height: 1.2;
+}
+
+@media (max-width: 900px) {
+  .cellNumber {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .cellName {
+    grid-column: 2;
+    grid-row: 1;
+    font-size: 26px;
+  }
+
+  .cellStatus {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .row > svg {
+    grid-column: 3;
+    grid-row: 1;
+  }
+
+  .prepCard {
+    flex-direction: row;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .prepMedia {
+    flex: none;
+    width: 96px;
+    aspect-ratio: 4 / 3;
+  }
+
+  .prepHead {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  .prepName {
+    font-size: 20px;
+  }
+}

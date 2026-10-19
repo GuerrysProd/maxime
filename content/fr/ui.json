@@ -24,5 +24,44 @@
   "frieze": "Frise d’images des projets",
   "friezePause": "Mettre en pause le défilement des images",
   "friezePlay": "Relancer le défilement des images",
-  "quickActions": "Actions rapides"
+  "quickActions": "Actions rapides",
+  "allProjects": "Tous les projets",
+  "projectPosition": "Projet {n} / {total}",
+  "specSheet": "Fiche technique",
+  "chapters": "Chapitres",
+  "chaptersNav": "Chapitres du projet",
+  "nextProject": "Projet suivant — {n} / {total}",
+  "viewProject": "Voir le projet",
+  "viewObject": "Voir l’objet",
+  "piecesLabel": "Objets",
+  "piecesTitle": "Pièces dessinées pour le projet.",
+  "allObjects": "Tous les objets",
+  "beforeAfter": {
+    "label": "Comparer avant et après",
+    "valueText": "Avant à {before} %, après à {after} %",
+    "hint": "Glisser ou utiliser les flèches du clavier",
+    "before": "Avant",
+    "after": "Après"
+  },
+  "zoning": {
+    "stage": "Isométrie interactive des espaces du projet",
+    "hint": "Survolez le bâtiment ou choisissez un pôle pour l’ouvrir.",
+    "zones": "Pôles du projet",
+    "reset": "Vue générale"
+  },
+  "filters": {
+    "group": "Filtrer par catégorie",
+    "all": "Tous",
+    "views": "Affichage",
+    "grid": "Grille",
+    "list": "Index",
+    "columns": {
+      "number": "N°",
+      "project": "Projet",
+      "category": "Catégorie",
+      "place": "Lieu",
+      "status": "Statut"
+    }
+  },
+  "inPreparation": "En préparation"
 }

@@ -1,0 +1,194 @@
+{
+  "slug": "agora",
+  "_note": "Textes : textes/agora.txt (site actuel), découpés en chapitres sans ajout. « Agora 01/02 » sont les mêmes images que agora-hero / agora-workshop-front. Cadre du projet et année inconnus.",
+  "lead": "Un tiers-lieu de rencontre entre artisans et designers, et la collection de mobilier dessinée pour lui.",
+  "specs": [
+    { "label": "Lieu", "value": "Toulon" },
+    { "label": "Programme", "value": "Tiers-lieu : espace de vie, ateliers individuels, mobilier" },
+    { "label": "Statut", "status": true },
+    { "label": "Cadre", "value": "[À COMPLÉTER : cadre du projet]" },
+    { "label": "Année", "value": "[À COMPLÉTER : année]" }
+  ],
+  "similar": { "label": "Un lieu à ouvrir ?", "type": "collectif" },
+  "chapters": [
+    {
+      "id": "rencontre",
+      "label": "Un lieu de rencontre",
+      "title": "Un lieu de rencontre.",
+      "blocks": [
+        {
+          "type": "text",
+          "paragraphs": [
+            "Le projet s’inscrit dans une démarche profondément ancrée dans les notions de circulation et d’échange. La configuration initiale des bâtiments pouvait entraver la fluidité des déplacements et limiter la capacité des usagers à interagir efficacement.",
+            "L’ambition première consiste à créer un environnement propice aux échanges entre artisans et concepteurs. La circulation n’est pas seulement un enjeu fonctionnel : elle devient un outil facilitateur de collaborations et de synergies.",
+            "Chaque espace, passage et articulation entre les différentes zones a été pensé dans une logique de connexion. Les couloirs deviennent des espaces vivants où les idées circulent aussi librement que les personnes.",
+            "Les espaces collectifs s’organisent près des axes principaux, tandis que les zones plus intimes se placent en retrait. L’ensemble s’appuie sur une compréhension fine des flux humains, matériels et symboliques."
+          ]
+        },
+        {
+          "type": "media",
+          "layout": "full",
+          "items": [
+            { "src": "/images/projets/agora/agora-general-project-iso.png", "alt": "Grande isométrie générale du projet Agora : façades, toitures et anciennes casemates", "fit": "contain" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "espace-de-vie",
+      "label": "Espace de vie",
+      "title": "Espace de vie.",
+      "blocks": [
+        {
+          "type": "text",
+          "paragraphs": [
+            "Cet espace, situé dans le Bâtiment 01, a été imaginé dans une optique de modularité et d’adaptabilité. Dans sa configuration standard, il sert de cuisine partagée, salle à manger commune, salon et espace de loisirs collectifs.",
+            "Le salon, installé sous la mezzanine et doté de gradins, peut se transformer en petit amphithéâtre. L’espace volontairement légèrement plus sombre permet aussi des projections ou présentations audiovisuelles.",
+            "La salle à manger bénéficie de tables modulaires spécialement conçues pour le projet. Elles permettent un réaménagement rapide et efficace, adapté aux repas collectifs comme aux événements."
+          ]
+        },
+        {
+          "type": "media",
+          "layout": "full",
+          "items": [
+            { "src": "/images/projets/agora/agora-living-iso.png", "alt": "Axonométrie de l’espace de vie Agora", "fit": "contain" }
+          ]
+        },
+        {
+          "type": "media",
+          "layout": "duo",
+          "items": [
+            { "src": "/images/projets/agora/agora-01.jpg", "alt": "Espace de vie du projet Agora : charpente bois, fauteuils enveloppants, totems en liège" },
+            { "src": "/images/projets/agora/agora-living.jpg", "alt": "Vue générale de l’espace de vie Agora, mezzanine et grandes baies" }
+          ]
+        },
+        {
+          "type": "feature",
+          "label": "Totem",
+          "title": "Totem.",
+          "paragraphs": [
+            "Totem est un objet polyvalent qui s’intègre aisément dans divers espaces. Sa forme compacte et sa surface plane lui permettent de remplir deux fonctions distinctes : assise d’appoint confortable ou table basse.",
+            "Le liège, matériau naturel et durable, offre à la fois légèreté et robustesse, tout en apportant une chaleur visuelle et tactile.",
+            "Lorsqu’il n’est pas utilisé, Totem peut être empilé. Une fois assemblés, les éléments forment une structure verticale qui évoque subtilement la silhouette d’un totem."
+          ],
+          "media": [
+            { "src": "/images/projets/agora/agora-totem-01.jpg", "alt": "Totem en liège mis en scène dans un espace salon", "position": "55% 50%" },
+            { "src": "/images/projets/agora/agora-totem-02.jpg", "alt": "Totems en liège empilés en colonnes" },
+            { "src": "/images/projets/agora/agora-totem-03.jpg", "alt": "Modules Totem en liège, l’un posé sur l’autre" }
+          ],
+          "layout": "stacked",
+          "object": "totem-liege"
+        }
+      ]
+    },
+    {
+      "id": "ateliers",
+      "label": "Ateliers individuels",
+      "title": "Ateliers individuels.",
+      "blocks": [
+        {
+          "type": "text",
+          "paragraphs": [
+            "Les ateliers prennent place au sein des anciennes casemates, transformées pour offrir des espaces généreux et fonctionnels. Chaque atelier dispose d’une superficie individuelle de 45 m².",
+            "De larges ouvertures vitrées donnent sur le couloir central. Elles évitent l’isolement des artisans tout en offrant aux visiteurs la possibilité d’observer leur travail.",
+            "Les ateliers sont directement connectés aux étages supérieurs et aux bureaux attenants, afin de favoriser une collaboration intuitive entre artisans et concepteurs."
+          ]
+        },
+        {
+          "type": "media",
+          "layout": "full",
+          "items": [
+            { "src": "/images/projets/agora/agora-workshop-iso.png", "alt": "Isométrie d’un atelier individuel Agora sous voûte", "fit": "contain" }
+          ]
+        },
+        {
+          "type": "media",
+          "layout": "duo",
+          "items": [
+            { "src": "/images/projets/agora/agora-workshop-inside.jpg", "alt": "Intérieur d’un atelier individuel : établis, rangements, voûte en pierre" },
+            { "src": "/images/projets/agora/agora-workshop-front.jpg", "alt": "Vue frontale d’un atelier vitré donnant sur le couloir central" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mobilier",
+      "label": "Mobilier",
+      "title": "Mobilier.",
+      "blocks": [
+        {
+          "type": "text",
+          "paragraphs": [
+            "Le projet a impliqué la conception d’une collection composée de plusieurs pièces de mobilier : table, chaise, luminaire, console et objets de complément. Chaque élément joue un rôle spécifique dans l’harmonie générale de l’ensemble."
+          ]
+        },
+        {
+          "type": "feature",
+          "number": "01",
+          "label": "La table",
+          "title": "La table.",
+          "paragraphs": [
+            "La table a été pensée dans une optique de modularité et de flexibilité. Grâce à ses roulettes et à ses aimants en néodyme positionnés aux coins, elle peut s’assembler avec d’autres tables pour former de grandes tablées ou des configurations plus réduites.",
+            "Le plateau repose sur un système d’encastrement par gravité, permettant un remplacement simple des pièces et un déplacement plus léger entre les différents bâtiments."
+          ],
+          "media": [
+            { "src": "/images/projets/agora/agora-furniture-set.jpg", "alt": "Ensemble table et chaises Agora" },
+            { "src": "/images/projets/agora/agora-table-floating.jpg", "alt": "Table Agora avec plateau posé" },
+            { "src": "/images/projets/agora/agora-table-magnet.jpg", "alt": "Détail d’un aimant au coin de la table" }
+          ],
+          "layout": "stacked",
+          "object": "table-aimantee"
+        },
+        {
+          "type": "feature",
+          "number": "02",
+          "label": "La suspension",
+          "title": "La suspension.",
+          "paragraphs": [
+            "La suspension synthétise l’identité visuelle de la collection de tables et chaises avec celle des Totems. Elle associe le liège à une structure métallique et diffuse une lumière directe vers le bas et indirecte vers les volumes supérieurs."
+          ],
+          "media": [
+            { "src": "/images/projets/agora/agora-suspension.jpg", "alt": "Suspension en liège et métal conçue pour Agora" },
+            { "src": "/images/projets/agora/agora-banquet.jpg", "alt": "Banquet : tables aimantées assemblées, chaises et suspensions" }
+          ],
+          "layout": "media-left"
+        },
+        {
+          "type": "feature",
+          "number": "03",
+          "label": "Les chaises",
+          "title": "Les chaises.",
+          "paragraphs": [
+            "Les dossiers et assises sont en fibre de bois, afin de réutiliser les déchets de production des artisans bois installés dans les casemates."
+          ],
+          "media": [
+            { "src": "/images/projets/agora/agora-chair-back.jpg", "alt": "Dossier de chaise en fibre de bois" },
+            { "src": "/images/projets/agora/agora-table-detail.jpg", "alt": "Détail de chant du plateau de table" }
+          ],
+          "layout": "media-right"
+        }
+      ]
+    },
+    {
+      "id": "plans",
+      "label": "Plans et organisation",
+      "title": "Plans et organisation.",
+      "blocks": [
+        {
+          "type": "text",
+          "paragraphs": [
+            "Les documents techniques rendent lisible l’organisation des flux, la relation entre les espaces de vie, les ateliers et les zones de travail. Ils prolongent la logique du projet : faire de la circulation un support d’échange."
+          ]
+        },
+        {
+          "type": "media",
+          "layout": "duo",
+          "items": [
+            { "src": "/images/projets/agora/agora-plan-01.png", "alt": "Plans du Bâtiment 01 d’Agora, rez-de-chaussée, R+1 et R+2", "fit": "contain" },
+            { "src": "/images/projets/agora/agora-plan-02.png", "alt": "Plan masse du projet Agora", "fit": "contain" }
+          ]
+        }
+      ]
+    }
+  ]
+}

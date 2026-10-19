@@ -233,6 +233,15 @@ html[data-menu-open] {
   color: var(--color-lin);
 }
 
+/* Le contenu de la section apparaît avec le fond (jamais de texte clair sur Lin). */
+[data-js] [data-reveal="tone"] > * {
+  transition: opacity 900ms var(--ease-soft);
+}
+
+[data-js] [data-reveal="tone"]:not([data-revealed]) > * {
+  opacity: 0;
+}
+
 [data-parallax] {
   transform: translate3d(0, var(--parallax, 0px), 0);
   will-change: transform;
@@ -264,6 +273,10 @@ html[data-menu-open] {
   [data-js] [data-reveal="tone"]:not([data-revealed]) {
     background-color: var(--color-cacao);
     color: var(--color-lin);
+  }
+
+  [data-js] [data-reveal="tone"]:not([data-revealed]) > * {
+    opacity: 1;
   }
 
   [data-parallax] {

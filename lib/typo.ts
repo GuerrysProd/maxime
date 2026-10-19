@@ -3,7 +3,7 @@
  * apostrophe ’, espaces insécables dans « », avant : ; ? ! et entre un nombre et son unité.
  * Idempotente : on peut l’appliquer plusieurs fois au même texte.
  */
-const NBSP = " ";
+const NBSP = "\u00A0";
 
 /** Clés dont la valeur n’est pas du texte affiché (chemins, identifiants…). */
 const SKIPPED_KEYS = new Set([
@@ -23,15 +23,18 @@ const SKIPPED_KEYS = new Set([
   "code",
   "count",
   "frieze",
+  "color",
+  "layout",
+  "fit",
 ]);
 
 export function frTypo(text: string): string {
   return text
     .replace(/(\p{L})'(\p{L})/gu, "$1’$2")
-    .replace(/«[  ]?/g, `«${NBSP}`)
-    .replace(/[  ]?»/g, `${NBSP}»`)
-    .replace(/[  ]([:;?!])/g, `${NBSP}$1`)
-    .replace(/(\d)[  ](h|min|m²|m|cm|mm|km|kg|€|%)(?=$|[\s.,;:!?)»])/g, `$1${NBSP}$2`);
+    .replace(/«[ \u00A0]?/g, `«${NBSP}`)
+    .replace(/[ \u00A0]?»/g, `${NBSP}»`)
+    .replace(/[ \u00A0]([:;?!])/g, `${NBSP}$1`)
+    .replace(/(\d)[ \u00A0](h|min|m²|m|cm|mm|km|kg|€|%)(?=$|[\s.,;:!?)»])/g, `$1${NBSP}$2`);
 }
 
 /** Applique frTypo à toutes les chaînes d’un arbre JSON, sauf aux clés techniques. */

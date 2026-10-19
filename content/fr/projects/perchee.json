@@ -1,0 +1,188 @@
+{
+  "slug": "perchee",
+  "_note": "Textes : textes/perchee.txt (site actuel), découpés en chapitres, fautes corrigées (« ne semblant plus », « posés »). Design Parade : « Proposition pour… » en brouillon (SOURCES-REELLES §4). Les images « Perchée 01/02/03 » sont les mêmes que perchee-main / perchee-bouquet / perchee-candles : seules les premières sont utilisées.",
+  "lead": "Une étude de la cabane pensée comme un lieu de retrait et de mémoire, entre souvenir d’enfance et regard adulte.",
+  "specs": [
+    { "label": "Lieu", "value": "Méditerranée" },
+    { "label": "Cadre", "value": { "value": "Proposition pour Design Parade 2026", "draft": true } },
+    { "label": "Statut", "status": true },
+    { "label": "Discipline", "value": "Architecture intérieure" },
+    { "label": "Année", "value": "[À COMPLÉTER : année]" },
+    { "label": "Crédits", "value": "[À COMPLÉTER]" }
+  ],
+  "similar": { "label": "Un projet similaire ?", "type": "residence" },
+  "chapters": [
+    {
+      "id": "refuge",
+      "label": "La cabane comme refuge",
+      "title": "La cabane comme refuge.",
+      "blocks": [
+        {
+          "type": "text",
+          "paragraphs": [
+            "Les moments les plus intenses de nos vies sont ceux où tout est nouveau. L’enfance, l’adolescence… ces années où chaque limite franchie nous électrise, où l’on réinvente sans cesse les règles d’une liberté évanescente.",
+            "Dans notre culture occidentale, un lieu incarne cette liberté mieux qu’aucun autre : la cabane. Un territoire d’émancipation et de retrait où l’on apprend, à l’écart des regards trop normatifs, à créer son propre monde.",
+            "C’est à cette cabane que rend hommage Perchée. Le projet ne cherche pas à figer un souvenir, ni à en proposer une reconstitution fidèle : il matérialise une mémoire en croisant l’expérience sensible d’un enfant avec le regard distancié de l’adulte qu’il est devenu.",
+            "À travers des matières brutes, des gestes simples et une relation directe au sol, à la lumière et à l’odeur, Perchée explore la cabane comme un espace de retrait, de protection et de liberté intérieure. L’architecture devient alors un outil de réinterprétation.",
+            "Le projet s’ancre en Méditerranée, dans un espace en surplomb, ouvert sur le paysage mais filtré par les arbres. Comme peut l’inspirer le site de la Villa Noailles, la cabane devient un point d’observation protégé : à la fois ouverte et retirée."
+          ]
+        },
+        {
+          "type": "media",
+          "layout": "full",
+          "items": [
+            { "src": "/images/projets/perchee/perchee-salon.jpg", "alt": "Assises basses, table et olivier au centre de la cabane, rideaux et fenêtre en fond" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "centre",
+      "label": "Le centre",
+      "title": "Le centre.",
+      "blocks": [
+        {
+          "type": "text",
+          "paragraphs": [
+            "Au centre de la pièce : des assises et une table aux dimensions croisées. Ni vraiment pour enfants, ni tout à fait pour adultes. Un entre-deux volontaire.",
+            "Quand on s’y installe, on retrouve la sensation d’un jeune adolescent qui s’assoit dans son vieux mobilier d’enfant en ressentant ses dimensions ne semblant plus vraiment adaptées à son corps.",
+            "Le sol en terre sèche constitue un socle du projet. Il nous force à oublier le confort lisse des intérieurs modernes. La terre ne porte pas simplement le projet, elle en est l’origine.",
+            "Les rideaux instaurent une limite souple et réversible, jamais définitive. On peut se retirer sans s’enfermer. Tirer l’étoffe, l’entrouvrir, le laisser flotter : des gestes simples qui engagent le corps sans rigidifier l’espace.",
+            "Observer. Pas seulement l’intérieur de la cabane, mais ce qu’il y a au-delà. Une fois le regard affiné par la pénombre, l’attention s’élargit. Le projet déplace le regard du proche vers le lointain."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lavande",
+      "label": "La lavande",
+      "title": "La lavande ou l’art de façonner le paysage.",
+      "blocks": [
+        {
+          "type": "text",
+          "paragraphs": [
+            "Une cabane, ça se construit avec les moyens du bord, des matériaux locaux, souvent trouvés sur site et bon marché. C’est en hommage à cette notion que le projet met en lumière un matériau local, abondant et secondaire dans la production dont il est issu : la paille de lavande.",
+            "Elle est un résidu végétal issu de la récolte et de la distillation de la plante. Une matière rigide, sèche, souvent considérée comme secondaire, provenant majoritairement des cultures de lavandin du sud-est de la France, notamment sur le plateau de Valensole.",
+            "Dans le projet, la paille de lavande est déplacée de son usage ordinaire pour devenir matière sensible, support de mémoire et de perception. Son caractère pauvre, répétitif et fragile en fait un matériau particulièrement juste pour évoquer le paysage agricole.",
+            "Utilisée telle quelle, sans transformation lourde, elle conserve ses aspérités et ses variations. Elle porte en elle l’empreinte du territoire et devient, au sein de la cabane, un matériau à observer autant qu’à toucher et à sentir."
+          ]
+        },
+        {
+          "type": "media",
+          "layout": "full",
+          "items": [
+            { "src": "/images/projets/perchee/perchee-lavender-wall.jpg", "alt": "Le mur entier en parement de paille de lavande, olivier et table basse au premier plan" }
+          ]
+        },
+        {
+          "type": "text",
+          "paragraphs": [
+            "La marqueterie de paille s’inspire d’une vue aérienne des champs de Valensole, dont elle reprend les lignes étirées et répétitives. Le paysage est recomposé à distance, à travers une matière fragile, irrégulière, encore chargée d’odeur."
+          ]
+        },
+        {
+          "type": "beforeAfter",
+          "before": { "src": "/images/projets/perchee/perchee-wall-map-before.jpg", "alt": "Vue aérienne des champs du plateau de Valensole", "caption": "Vue aérienne des champs" },
+          "after": { "src": "/images/projets/perchee/perchee-wall-map-after.jpg", "alt": "La même carte transposée en marqueterie de paille de lavande", "caption": "Marqueterie de paille de lavande" },
+          "initial": 50
+        }
+      ]
+    },
+    {
+      "id": "manifeste",
+      "label": "Le manifeste",
+      "title": "Les points clés du manifeste.",
+      "blocks": [
+        {
+          "type": "feature",
+          "label": "L’objet comme expérience",
+          "title": "L’objet comme expérience.",
+          "paragraphs": [
+            "À cette lecture du territoire répondent des gestes plus proches, plus intimes. Le porte-bouquet accueille un bouquet sans chercher à le préserver. Les fleurs sèchent, se transforment, perdent leur couleur et leur parfum. Le temps devient visible.",
+            "Le mur se transforme en lieu de dépôt, d’attention. On y observe la matière végétale qui s’altère : prélever, garder un temps, regarder changer."
+          ],
+          "media": [
+            { "src": "/images/projets/perchee/perchee-02.jpg", "alt": "Porte-bouquet accroché au mur de paille, bouquet de lavande séchée" }
+          ],
+          "layout": "media-right"
+        },
+        {
+          "type": "feature",
+          "label": "L’environnement comme ressource",
+          "title": "L’environnement comme ressource.",
+          "paragraphs": [
+            "L’applique s’inscrit dans cette logique. Son abat-jour : un simple fragment d’écorce de chêne-liège, prélevé localement et utilisé tel quel. Sans mise en forme, sans transformation.",
+            "On déplace des fragments du paysage à l’intérieur. L’objet ne s’impose pas, il inscrit discrètement la matière du lieu dans l’espace habité."
+          ],
+          "media": [
+            { "src": "/images/projets/perchee/perchee-cork-sconce.jpg", "alt": "Applique dont l’abat-jour est un fragment d’écorce de chêne-liège, sur le mur de paille" }
+          ],
+          "layout": "media-left"
+        },
+        {
+          "type": "feature",
+          "label": "Bougeoirs minéraux",
+          "title": "Bougeoirs minéraux.",
+          "paragraphs": [
+            "Les bougeoirs posés sur la table sont réalisés à partir de cailloux simplement trouvés et percés pour accueillir des bougies. On détourne les éléments du sol pour répondre à un besoin immédiat.",
+            "La pierre, lourde et stable, permet d’ancrer la flamme, fragile et éphémère, sans la mettre en scène."
+          ],
+          "media": [
+            { "src": "/images/projets/perchee/perchee-03.jpg", "alt": "Bougeoirs en pierres percées posés sur la table, bougies allumées" }
+          ],
+          "layout": "media-right"
+        }
+      ]
+    },
+    {
+      "id": "olivier",
+      "label": "L’olivier",
+      "title": "L’olivier.",
+      "blocks": [
+        {
+          "type": "text",
+          "paragraphs": [
+            "L’olivier introduit une temporalité longue, en contraste avec l’immédiateté de l’enfance. Planté dans un pot pentagonal en bois, il se trouve volontairement contenu par une forme géométrique affirmée : une structure imposée au vivant.",
+            "Cette tension entre l’organique et le cadre évoque le passage de l’enfance à l’âge adulte, ce moment où la liberté intuitive rencontre progressivement des règles, des formes, des limites."
+          ]
+        },
+        {
+          "type": "media",
+          "layout": "duo",
+          "items": [
+            { "src": "/images/projets/perchee/perchee-olive-pot.jpg", "alt": "Olivier planté dans un pot pentagonal en bois à claire-voie" },
+            { "src": "/images/projets/perchee/perchee-olive-detail.jpg", "alt": "Détail du pot pentagonal de l’olivier, damier de bois clair et foncé" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "seuil",
+      "label": "Le seuil vertical",
+      "title": "Le seuil vertical.",
+      "blocks": [
+        {
+          "type": "text",
+          "paragraphs": [
+            "L’échelle occupe une place centrale dans le projet. C’est le dispositif du passage. Elle engage une progression corporelle qui fait écho au basculement de l’enfance vers l’âge adulte.",
+            "Dans l’imaginaire de la cabane, l’échelle est souvent la première épreuve. Un seuil volontairement non immédiat qui conditionne l’accès au refuge."
+          ]
+        },
+        {
+          "type": "media",
+          "layout": "full",
+          "items": [
+            { "src": "/images/projets/perchee/perchee-ladder-detail.jpg", "alt": "Échelle en bois appuyée contre le mur de paille, menant vers la cabane" }
+          ]
+        },
+        {
+          "type": "text",
+          "paragraphs": [
+            "Perchée nous rappelle ainsi qu’on a tous eu besoin, un jour, d’un refuge pour grandir. Un lieu où l’on décidait des règles, où l’on apprenait à être seul sans être isolé, libre sans être perdu.",
+            "Aujourd’hui, entre la terre sous nos pieds et la Méditerranée au loin, entre l’écorce brute et la flamme fragile, le projet propose simplement une pause. Un espace suspendu où l’architecture redevient ce qu’elle a longtemps été naïvement : un abri qui nous aide à mieux appréhender le monde."
+          ]
+        }
+      ]
+    }
+  ]
+}

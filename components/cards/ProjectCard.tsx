@@ -13,7 +13,7 @@ export type CardSize = "lg" | "md" | "sm" | "xs";
 export function ProjectCard({
   project,
   size = "md",
-  ratio = "4 / 3",
+  ratio,
   sizes,
   parallax,
   headingLevel = 3,
@@ -24,16 +24,17 @@ export function ProjectCard({
 }: {
   project: Project;
   size?: CardSize;
+  /** Sans ratio, le cadre suit la variable CSS --card-ratio posée par le conteneur. */
   ratio?: string;
   sizes: string;
   parallax?: boolean;
-  headingLevel?: 3 | 4;
+  headingLevel?: 2 | 3 | 4;
   className?: string;
   style?: CSSProperties;
   reveal?: boolean;
   revealDelay?: number;
 }) {
-  const Heading = headingLevel === 3 ? "h3" : "h4";
+  const Heading = (`h${headingLevel}` as "h2" | "h3" | "h4");
   return (
     <Link
       href={projectHref(project.slug)}
@@ -42,7 +43,7 @@ export function ProjectCard({
       data-reveal={reveal ? "" : undefined}
       style={{ ...style, ...(revealDelay ? ({ "--reveal-delay": `${revealDelay}ms` } as CSSProperties) : {}) }}
     >
-      <div className={styles.media} style={{ aspectRatio: ratio }}>
+      <div className={styles.media} style={ratio ? { aspectRatio: ratio } : undefined}>
         <Picture image={project.cover} sizes={sizes} parallax={parallax ? 0.04 : undefined} imageClassName={styles.image} />
       </div>
       <div className={styles.body}>

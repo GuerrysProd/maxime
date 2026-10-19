@@ -138,8 +138,15 @@
   background: rgba(245, 240, 232, 0.12);
 }
 
+/* Pages intérieures (aperçus 03, 05) : bouton plein cacao dès le départ. */
+.header[data-variant="solid"] .cta {
+  background: var(--color-cacao);
+  border-color: var(--color-cacao);
+  color: var(--color-lin);
+}
+
 .header[data-variant="solid"] .cta:hover {
-  background: rgba(56, 43, 43, 0.06);
+  background: #4c3c3b;
 }
 
 .header[data-compact] .cta {

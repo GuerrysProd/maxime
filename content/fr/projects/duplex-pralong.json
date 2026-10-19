@@ -1,0 +1,197 @@
+{
+  "slug": "duplex-pralong",
+  "_note": "Textes : textes/pralong.txt (site actuel), découpés dans le gabarit « chapitres » de la maquette, sans ajout. Images : les 13 originaux de images-par-projet/02-duplex-pralong. La palette reprend les matières citées dans le texte ; ses teintes sont relevées sur les images (brouillon).",
+  "specs": [
+    { "label": "Lieu", "value": "Courchevel 1850, Savoie" },
+    { "label": "Année", "value": "[À COMPLÉTER : année]" },
+    { "label": "Statut", "status": true },
+    { "label": "Surface", "value": "[À COMPLÉTER : m²]" },
+    { "label": "Mission", "value": { "value": "Rénovation, architecture intérieure, mobilier & luminaires", "draft": true } },
+    { "label": "Crédits", "value": "Architecture intérieure & mobilier : Maxime Vallat · Images : [À COMPLÉTER]" }
+  ],
+  "similar": { "label": "Un projet similaire ?", "type": "residence" },
+  "chapters": [
+    {
+      "id": "le-projet",
+      "label": "Le projet",
+      "title": "Rénover sans effacer le caractère alpin.",
+      "blocks": [
+        {
+          "type": "text",
+          "paragraphs": [
+            "Le Duplex Pralong est un projet de rénovation d’un appartement situé à Courchevel 1850. L’intervention conserve la présence du bois et la chaleur attendue d’un intérieur de montagne, tout en clarifiant les volumes, les circulations et les usages.",
+            "La nouvelle composition associe des essences sombres, des enduits clairs et des touches métalliques. Ce contraste donne plus de profondeur aux pièces et permet à la lumière naturelle de structurer le séjour sans rompre avec l’identité du lieu.",
+            "Le mobilier et les luminaires ont été dessinés ou sélectionnés comme des éléments d’architecture. Chacun répond à une fonction précise et participe à une ambiance cohérente, confortable et contemporaine."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "existant",
+      "label": "L’existant",
+      "title": "Un volume généreux à rendre plus lisible.",
+      "blocks": [
+        {
+          "type": "beforeAfter",
+          "before": { "src": "/images/projets/duplex-pralong/avant-vue-nord.jpg", "alt": "Avant travaux, vue nord : séjour lambrissé, sol carrelé, escalier en bois et lustre central", "caption": "Avant travaux — vue nord" },
+          "after": { "src": "/images/projets/duplex-pralong/vue-nord-paysage.jpg", "alt": "Après rénovation, même vue : mur d’escalier aux lignes arrondies, boiseries sombres, canapé et mobilier dessiné pour le séjour", "caption": "Après rénovation", "position": "50% 50%" },
+          "initial": 50
+        },
+        {
+          "type": "text",
+          "paragraphs": [
+            "Le duplex d’origine possédait déjà une forte présence de bois, mais les limites entre les espaces et les apports de lumière manquaient de hiérarchie. Le projet réorganise cette matière existante dans une écriture plus précise."
+          ]
+        },
+        {
+          "type": "media",
+          "layout": "wide",
+          "items": [
+            { "src": "/images/projets/duplex-pralong/avant-vue-sud.jpg", "alt": "Avant travaux, vue sud : cheminée en pierre, lambris, escalier en bois", "caption": "Avant travaux — vue sud" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ambiance",
+      "label": "L’ambiance",
+      "title": "Une enveloppe sombre, ouverte par la lumière.",
+      "blocks": [
+        {
+          "type": "text",
+          "paragraphs": [
+            "Le bois foncé enveloppe le salon et la salle à manger pour créer une continuité entre les deux niveaux. Les surfaces claires de l’escalier, du tapis et de certaines pièces de mobilier captent la lumière et maintiennent un équilibre dans l’ensemble."
+          ]
+        },
+        {
+          "type": "media",
+          "layout": "portrait",
+          "items": [
+            { "src": "/images/projets/duplex-pralong/vue-nord-portrait.jpg", "alt": "Le séjour vu de haut : courbe claire de l’escalier, boiseries sombres, canapé et mobilier en contrebas" }
+          ]
+        },
+        {
+          "type": "palette",
+          "items": [
+            { "name": "Essences sombres", "color": "#3B281D" },
+            { "name": "Enduits clairs", "color": "#E7DFD2" },
+            { "name": "Touches métalliques", "color": "linear-gradient(135deg, #E9E4DC 0%, #A8A196 45%, #D9D3C9 60%, #7E776D 100%)" },
+            { "name": "Textile", "color": "#8A7650" }
+          ],
+          "note": { "value": "Matières citées dans le texte, teintes relevées sur les images — à valider", "draft": true }
+        }
+      ]
+    },
+    {
+      "id": "mobilier",
+      "label": "Mobilier",
+      "title": "Des pièces qui organisent le séjour.",
+      "blocks": [
+        {
+          "type": "text",
+          "paragraphs": [
+            "Le mobilier ne cherche pas à reproduire les codes rustiques du chalet. Il apporte des formes nettes et des matières tactiles capables de dialoguer simplement avec le bois existant."
+          ]
+        },
+        {
+          "type": "feature",
+          "number": "01",
+          "label": "Le fauteuil",
+          "title": "Réfléchir la lumière au cœur du bois.",
+          "paragraphs": [
+            "Le fauteuil associe une coque métallique à une assise textile plus souple. Ses faces réfléchissantes allègent visuellement la pièce et renvoient les variations de lumière du séjour, tandis que le tissu maintient une sensation de confort adaptée à un appartement de montagne."
+          ],
+          "media": [
+            { "src": "/images/projets/duplex-pralong/fauteuil.jpg", "alt": "Le fauteuil : coque métallique réfléchissante, assise textile vert olive, devant la cheminée" }
+          ],
+          "layout": "media-left",
+          "object": "fauteuil-pralong"
+        },
+        {
+          "type": "feature",
+          "number": "02",
+          "label": "Demande sur mesure",
+          "title": "Prévoir aussi les usages particuliers.",
+          "paragraphs": [
+            "Le séjour accueille aussi un panier pour le chien des occupants, conçu dans les mêmes matières et tonalités que le fauteuil. Cette demande précise est intégrée au projet comme un élément de mobilier à part entière : elle répond à un usage quotidien tout en préservant la cohérence des proportions, des finitions et de l’ambiance générale."
+          ],
+          "media": [
+            { "src": "/images/projets/duplex-pralong/panier-chien-fauteuil.jpg", "alt": "Panier pour chien sur mesure, coque métallique et coussin vert olive assortis au fauteuil, sous une fenêtre ouverte sur les sommets" }
+          ],
+          "layout": "media-right"
+        },
+        {
+          "type": "feature",
+          "number": "03",
+          "label": "Les tables basses",
+          "title": "Deux volumes, plusieurs usages.",
+          "paragraphs": [
+            "Ces tables basses ont été dessinées à l’origine pour le concours de la Villa Noailles. Réimaginées pour le Duplex Pralong, elles trouvent une nouvelle expression dans les matières et les tonalités du projet, tout en conservant leur principe de volumes complémentaires et leur capacité à s’adapter aux usages du salon."
+          ],
+          "media": [
+            { "src": "/images/projets/duplex-pralong/tables-basses-paysage.jpg", "alt": "Les deux tables basses devant le canapé : un plateau clair au-dessus d’un volume en bois sombre" },
+            { "src": "/images/projets/duplex-pralong/tables-basses-portrait.jpg", "alt": "Les tables basses vues de plus près, plateau clair et volume sombre imbriqués" }
+          ],
+          "layout": "stacked",
+          "object": "tables-basses"
+        }
+      ]
+    },
+    {
+      "id": "lumiere",
+      "label": "Lumière",
+      "title": "Éclairer les usages, préserver l’atmosphère.",
+      "blocks": [
+        {
+          "type": "pair",
+          "items": [
+            {
+              "title": "Une suspension à l’échelle de la table.",
+              "paragraphs": [
+                "La suspension suit la longueur de la table pour répartir la lumière sur toute sa surface. Son dessin horizontal installe un centre clair dans la salle à manger sans encombrer les perspectives vers le salon."
+              ],
+              "media": { "src": "/images/projets/duplex-pralong/suspension-salle-a-manger.jpg", "alt": "Suspension horizontale claire au-dessus de la table de la salle à manger, boiseries sombres" }
+            },
+            {
+              "title": "Une lumière mobile près du canapé.",
+              "paragraphs": [
+                "Le lampadaire articulé permet d’ajuster précisément l’éclairage pour la lecture ou l’éclairage d’ambiance. Sa structure fine se détache sur le bois sombre et évite d’ajouter un volume massif à proximité du canapé."
+              ],
+              "media": { "src": "/images/projets/duplex-pralong/lampadaire-salon.jpg", "alt": "Lampadaire articulé à structure fine près du canapé, devant un mur en bois sombre" }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "applique-pinturault",
+      "label": "L’applique Pinturault",
+      "kicker": "Pièce dessinée pour le projet",
+      "title": "L’applique Pinturault.",
+      "blocks": [
+        {
+          "type": "text",
+          "paragraphs": [
+            "Deux appliques ont été imaginées pour l’entrée du duplex, en hommage au palmarès sportif de Courchevel et à son champion de ski alpin local, Alexis Pinturault.",
+            "La coque métallique reprend la forme des protections de bâtons utilisées en compétition de slalom géant. Transposée à l’échelle d’un luminaire, cette courbe protège la source, dirige la lumière contre le mur et donne à l’entrée un repère immédiatement identifiable."
+          ]
+        },
+        {
+          "type": "media",
+          "layout": "duo",
+          "items": [
+            { "src": "/images/projets/duplex-pralong/croquis-applique-baton-slalom.png", "alt": "Croquis comparant une protection de bâton de slalom à l’applique Pinturault", "caption": "Croquis — protection de bâton et applique", "fit": "contain" },
+            { "src": "/images/projets/duplex-pralong/applique-pinturault.jpg", "alt": "Applique Pinturault allumée, lumière dirigée contre le mur", "caption": "L’applique allumée" }
+          ]
+        },
+        {
+          "type": "media",
+          "layout": "portrait",
+          "items": [
+            { "src": "/images/projets/duplex-pralong/entree.jpg", "alt": "Les deux appliques Pinturault installées de part et d’autre de l’entrée du duplex", "caption": "Dans l’entrée, la paire accompagne l’arrivée par une lumière indirecte et donne un point de départ clair au parcours." }
+          ]
+        }
+      ]
+    }
+  ]
+}

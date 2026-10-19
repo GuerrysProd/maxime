@@ -1,0 +1,16 @@
+{
+  "_note": "Textes des pages de rubrique (en-têtes, métadonnées).",
+  "projects": {
+    "meta": {
+      "title": "Projets",
+      "description": "Résidences, lieux d’accueil, jardins et objets, de la Méditerranée aux Alpes : les projets de Maxime Vallat, architecte d’intérieur & designer."
+    },
+    "eyebrow": "Index des projets",
+    "title": "Projets",
+    "intro": "Résidences, lieux d’accueil, jardins et objets, de la Méditerranée aux Alpes.",
+    "counts": "{projects} projets, {preparation} en préparation."
+  },
+  "cta": {
+    "intro": "Une résidence en montagne ou sur le littoral, une pièce sur mesure : décrivez-moi votre projet en quelques lignes."
+  }
+}

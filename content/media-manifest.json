@@ -26,6 +26,86 @@
       "source": "05-agora/Agora 01.png",
       "sourceHash": "cdea7c44757274feea4d1da809c759adf8f98171-c92ffdda"
     },
+    "/images/projets/agora/agora-banquet.jpg": {
+      "width": 2500,
+      "height": 1406,
+      "blurDataURL": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAADQAQCdASoQAAkAA4BaJQBOgB3gsOhJ4AD+05XruUy2ov9LURHzviLLIQypECRaxWar6Uq4kAA=",
+      "kind": "photo",
+      "source": "05-agora/agora-banquet.jpg",
+      "sourceHash": "9a6deb4f4b8f0fd543ec9bfc31aa3eaa5f7baaca-c92ffdda"
+    },
+    "/images/projets/agora/agora-chair-back.jpg": {
+      "width": 1800,
+      "height": 1512,
+      "blurDataURL": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAADwAQCdASoQAA0AA4BaJQBOgCG8MDmc5IAA/vN2Fqje1ndPLPIVvCDU5EV8VO10CVhxTC1SFDVEhsw1Jq8VWSrRpXaeuAAA",
+      "kind": "photo",
+      "source": "05-agora/agora-chair-back.jpg",
+      "sourceHash": "ef7eecd7104385838ca550d4443142ea5eb3e0a5-c92ffdda"
+    },
+    "/images/projets/agora/agora-furniture-set.jpg": {
+      "width": 2500,
+      "height": 2100,
+      "blurDataURL": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAADQAQCdASoQAA0AA4BaJYgCdAEO+epfAAD+7ctbbkNDSHDhbymHE5de6ahlFGJUPrbOzyAA",
+      "kind": "photo",
+      "source": "05-agora/agora-furniture-set.jpg",
+      "sourceHash": "b810231d0144dd6e5ab99ca38af75940a17a04b7-c92ffdda"
+    },
+    "/images/projets/agora/agora-general-project-iso.png": {
+      "width": 2560,
+      "height": 1440,
+      "blurDataURL": "data:image/webp;base64,UklGRgQBAABXRUJQVlA4WAoAAAAQAAAADwAACAAAQUxQSHgAAAABcFpt27I874c2iFrd2YLsDCDVk1YikRUYgAEgkaguU7g++AwRkfgRwR9RWoHo9K54RgvRaABBbDRZ7K8sKAGMwcr4RpI3FqFy3emDvN3JQb9tya7O5P1OXod5M4Aa7w/yNO5EBaK0Amdvt637FCBawZfDBECj8AVWUDggZgAAADACAJ0BKhAACQADgFolkAJ0BitmYAP4n38AAPud9xRkFRZisp1j0XgwJje5EGArmvVH73iRoInh5+0Ayb8lbzilnVQthVldqL5Wflx7+WBX15gPj+0qJrttk0n0RRErSKAIxFgAAA==",
+      "kind": "drawing",
+      "source": "05-agora/agora-general-project-iso.png",
+      "sourceHash": "041da2f35fffa385bde4220e838f003d2981fc80-c92ffdda"
+    },
+    "/images/projets/agora/agora-living-iso.png": {
+      "width": 2200,
+      "height": 1237,
+      "blurDataURL": "data:image/webp;base64,UklGRuIAAABXRUJQVlA4WAoAAAAQAAAADwAACAAAQUxQSHAAAAABcFNt27I87/fh7s7EZBGcErSggI80cK/CxmGCEDbC9LtChoiYAPwkDsbxJ2PInq7Tsh1xuPpvTdLWNkRoXzRFELS5hRCYSZokaso+DYBQvGuSrGi3LggAQ117fNTvyAvObGqD6blXAjH8jkUATgAAVlA4IEwAAAAQAgCdASoQAAkAA4BaJZwAD4iwkfh73EKYAP7qkcMr5k6liZtYfBTURT8cicFQBsOaPA4aH8YtKO46VE0Lal347KafCAyYmXWHCAAA",
+      "kind": "drawing",
+      "source": "05-agora/agora-living-iso.png",
+      "sourceHash": "dca9b0c581f23207847c5b1ec0c1013971cf6236-c92ffdda"
+    },
+    "/images/projets/agora/agora-living.jpg": {
+      "width": 2200,
+      "height": 1237,
+      "blurDataURL": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAACwAQCdASoQAAkAA4BaJQBOgBQnDSfAAP5g0zh4Og1t2hmx/ZcRnBhpPRx69c24XEjCUuHSHW6RSPLiLDLqpyfo+lQeAAAA",
+      "kind": "photo",
+      "source": "05-agora/agora-living.png",
+      "sourceHash": "fa8c8c5819f8cea83ff91ce6ab8c78fbbf7d5c5f-c92ffdda"
+    },
+    "/images/projets/agora/agora-plan-01.png": {
+      "width": 2560,
+      "height": 1810,
+      "blurDataURL": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAADwAQCdASoQAAsAA4BaJaQAAxaUwFSVeAAA/vZpmFG9WnPz70tQaINd0F51G8b9wKnB9AAA",
+      "kind": "drawing",
+      "source": "05-agora/agora-plan-01.png",
+      "sourceHash": "9145b453dce52dfe3d490d1b3583fe009d8d4650-c92ffdda"
+    },
+    "/images/projets/agora/agora-plan-02.png": {
+      "width": 2560,
+      "height": 1382,
+      "blurDataURL": "data:image/webp;base64,UklGRioAAABXRUJQVlA4IB4AAAAwAQCdASoQAAkAA4BaJZwAA3AA/vR0uTsIeJuAAAA=",
+      "kind": "drawing",
+      "source": "05-agora/agora-plan-02.png",
+      "sourceHash": "b4746e119206aec050279bce484053224d4341d5-c92ffdda"
+    },
+    "/images/projets/agora/agora-suspension.jpg": {
+      "width": 2560,
+      "height": 1440,
+      "blurDataURL": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAADwAQCdASoQAAkAA4BaJYwCdAEWMkqeDUAA/tYQcmA0renKCT5UqiHm93j/sAAA",
+      "kind": "photo",
+      "source": "05-agora/agora-suspension.jpg",
+      "sourceHash": "d0aa31ad251bf1b1512ee3db72fa86f4248382b0-c92ffdda"
+    },
+    "/images/projets/agora/agora-table-detail.jpg": {
+      "width": 1800,
+      "height": 1512,
+      "blurDataURL": "data:image/webp;base64,UklGRkgAAABXRUJQVlA4IDwAAAAwAgCdASoQAA0AA4BaJYwCdAEPEHWeGNowAAD+0xuN59ac650RqLBmLueqbN5pYIJ+PvREwVZ51DbAAAA=",
+      "kind": "photo",
+      "source": "05-agora/agora-table-detail.jpg",
+      "sourceHash": "7b49ea5e2619d46dc34cbb794d9007dbe6d71ab0-c92ffdda"
+    },
     "/images/projets/agora/agora-table-floating.jpg": {
       "width": 1800,
       "height": 1512,
@@ -50,6 +130,46 @@
       "source": "05-agora/agora-totem-01.jpg",
       "sourceHash": "8d62054556c434d4b9ffb6168b4d37eb8d8b4978-c92ffdda"
     },
+    "/images/projets/agora/agora-totem-02.jpg": {
+      "width": 2200,
+      "height": 1237,
+      "blurDataURL": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAADwAQCdASoQAAkAA4BaJaACdACzWl9XfAAA/u/Uc+ve/sclXq8g5JIGRVcK5WwCYoW+vZptxDOC83i4W8zIqGkn/8TPJdhhYoAAAA==",
+      "kind": "photo",
+      "source": "05-agora/agora-totem-02.jpg",
+      "sourceHash": "475a36af45f27fe7162a9aa031f2b05251510148-c92ffdda"
+    },
+    "/images/projets/agora/agora-totem-03.jpg": {
+      "width": 2560,
+      "height": 1440,
+      "blurDataURL": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAADQAQCdASoQAAkAA4BaJaACdAEK7yhkgAD+8dCqf6e8JDxBV8jgeC7urzbGqFYKcc0x3ob1t7E3vTlC8r9SP4312AA=",
+      "kind": "photo",
+      "source": "05-agora/agora-totem-03.jpg",
+      "sourceHash": "0a00a03d287d6895c8a510c582c3ddc89cae5a14-c92ffdda"
+    },
+    "/images/projets/agora/agora-workshop-front.jpg": {
+      "width": 2560,
+      "height": 1440,
+      "blurDataURL": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAADQAQCdASoQAAkAA4BaJQBOgB58N9mwAAD+z1mhpfH+Adj8Q5QmhRGwQrl4y58y1NA3ZYlSjEiyijZUjKvpsIRhrci1BOQAAAA=",
+      "kind": "photo",
+      "source": "05-agora/agora-workshop-front.jpg",
+      "sourceHash": "dde0d4914400981e94f8eef12e9fbff6478f1a64-c92ffdda"
+    },
+    "/images/projets/agora/agora-workshop-inside.jpg": {
+      "width": 2560,
+      "height": 1440,
+      "blurDataURL": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAADQAQCdASoQAAkAA4BaJYwCdADbmPdHwAD+zOXVcekFJZZa9HpnTHaaTWIK1BEXt+929aokDOELG0gNiP+/xSCQDzGueobYAAA=",
+      "kind": "photo",
+      "source": "05-agora/agora-workshop-inside.jpg",
+      "sourceHash": "25716a233d0d37850dcf0bf430aaf3224e16462f-c92ffdda"
+    },
+    "/images/projets/agora/agora-workshop-iso.png": {
+      "width": 2560,
+      "height": 1440,
+      "blurDataURL": "data:image/webp;base64,UklGRvYAAABXRUJQVlA4WAoAAAAQAAAADwAACAAAQUxQSGsAAAABcFpt27Lc7/v+ePKkMzAAdNjBGo09yD4MI9Cs00g0l9//GSJiAgDMQEkuGVSihEJ/sbsMMNWQw9T9/t3bsoZEzdzn8/tzz/M6Akrv8HPd7+vvvjoogNPdXl33vl/VEEAEipNhWxGiTQmbAABWUDggZAAAADACAJ0BKhAACQADgFoljAJ0BilvOX1i7JQAAP47lynDiJFbX3MDaF1ssjNUo55fvT/rtn19A4aXl40wWSZqLelMGdTp20S0gzsCq2WX9s70gvTXlevdVrJzY5pe/uMyjoRCgAA=",
+      "kind": "drawing",
+      "source": "05-agora/agora-workshop-iso.png",
+      "sourceHash": "9aa1a5a922b3532e9fe3455cc8c65535848a5b40-c92ffdda"
+    },
     "/images/projets/alta/alta-01.jpg": {
       "width": 2048,
       "height": 1152,
@@ -57,6 +177,14 @@
       "kind": "photo",
       "source": "03-alta/Alta 01.jpg",
       "sourceHash": "18a91d1538e5d86e6d33bab7fde57744dcba84ba-c92ffdda"
+    },
+    "/images/projets/alta/alta-02.jpg": {
+      "width": 2500,
+      "height": 2500,
+      "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAAAQAgCdASoQABAAA4BaJYgCdAEQMoqwlwOgAMtDNOqXhzX6JOzxrZgX5lsaf47uYiNMo7KL6+0F3nFa2IYsojmc4BPPgXOhSQJ+RCVoAAA=",
+      "kind": "photo",
+      "source": "03-alta/Alta 02.jpg",
+      "sourceHash": "a284eda0fd557c8adf3dbeff1bf17ff3fb4e5275-c92ffdda"
     },
     "/images/projets/alta/alta-03.jpg": {
       "width": 2560,
@@ -66,6 +194,134 @@
       "source": "03-alta/Alta 03.jpg",
       "sourceHash": "96f278e6003e51731b20e1249bdb09d83da194dc-c92ffdda"
     },
+    "/images/projets/alta/alta-04.jpg": {
+      "width": 2560,
+      "height": 1440,
+      "blurDataURL": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAAAwAgCdASoQAAkAA4BaJZACdEf/gbBNAWExQAD+2Xe4JPRD0CGTY5cJrMclhkOgBXZKbFQ1A8H5ILBo0aex6KECLXWprPpMTBkEaLzYQ+6S7u3jRQnL8Jt5AAA=",
+      "kind": "photo",
+      "source": "03-alta/Alta 04.jpg",
+      "sourceHash": "1caeb44561a53fcdc15f44e515f1a2291965ad2e-c92ffdda"
+    },
+    "/images/projets/alta/alta-06.jpg": {
+      "width": 2560,
+      "height": 1440,
+      "blurDataURL": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAACwAQCdASoQAAkAA4BaJZgCdABf5ZgAAN5mStiUo0KrfvjFuIeM/KlvbuDvOuK50KiIP/DkfqgMVI1bougmg5eN8rfhsLma1zFOYusv9vGtcv7Tc4cREghPR5JlQlmyJAb9LIAA",
+      "kind": "photo",
+      "source": "03-alta/Alta 06.jpeg",
+      "sourceHash": "b8195063da68d7ab42200260205c618ba29b05b2-c92ffdda"
+    },
+    "/images/projets/alta/alta-07.jpg": {
+      "width": 2560,
+      "height": 1440,
+      "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAAAQAgCdASoQAAkAA4BaJZACdAEYGTZlyxpAAP5aUzrNPYsNca4Ev1r/v6lv5H361NY6JlUQd1eC9xcif7m938UeFHT3VLOitdz29ZoAAAA=",
+      "kind": "photo",
+      "source": "03-alta/Alta 07.jpg",
+      "sourceHash": "8cddf3660467a5d909445ad0ebbedaac4477dc75-c92ffdda"
+    },
+    "/images/projets/alta/alta-08.jpg": {
+      "width": 2560,
+      "height": 1440,
+      "blurDataURL": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAAAQAgCdASoQAAkAA4BaJZACdGuAAc/wHzwAAP6jTf1o9FxHn/+sPFHlZn99JQC46dWECtFqNh1B95vVcr7cOvDPS0OIkBZsKSmrUZUIkNRDPSxwAAA=",
+      "kind": "photo",
+      "source": "03-alta/Alta 08.jpg",
+      "sourceHash": "403746f6dc0fb54833e5dc86da467ef948e7d043-c92ffdda"
+    },
+    "/images/projets/alta/alta-13.jpg": {
+      "width": 1920,
+      "height": 2560,
+      "blurDataURL": "data:image/webp;base64,UklGRp4AAABXRUJQVlA4IJIAAADwAwCdASoQABUAPu1iqU2ppaOiMAgBMB2JZgCdMoR3ABpFQPAhg50AAP0c3RmNQ0mxmFplURRaR/a1iECx9p/6ICYxy9sIeqz+GpN4GcZTgxaRR6ZoQ1ublYfksuM1HAO8KCqKjl80CZhT4kpLiqPUc4lL734ta81VPbvleQmV5B23/svI8YLYm+hRxiBeJYAAAA==",
+      "kind": "photo",
+      "source": "03-alta/Alta 13.jpg",
+      "sourceHash": "33d9e136aaee179787f28e483a71a89487699ee6-c92ffdda"
+    },
+    "/images/projets/alta/alta-14.jpg": {
+      "width": 2560,
+      "height": 1440,
+      "blurDataURL": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAAAwAgCdASoQAAkAA4BaJbACdEf/gbJdouAFIAD+0Nn89kux1QtsXFaRWWRnINMW42Th3WD6gNYTAFDJzcO/tRqRXU9sYmDAw/B1i2p+k3OJAngim4qX0AAA",
+      "kind": "photo",
+      "source": "03-alta/Alta 14.jpg",
+      "sourceHash": "385e9b655694fbed1e45418a00753181a25c997a-c92ffdda"
+    },
+    "/images/projets/alta/alta-15.jpg": {
+      "width": 2560,
+      "height": 1440,
+      "blurDataURL": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAADQAQCdASoQAAkAA4BaJZACdAD5OezFvAD+7svyxMdoxOVHbf71n1ZXEp0PNEt73jZYVi7WSkr2tgZobnuqhgmO3gRdsGrBnAA=",
+      "kind": "photo",
+      "source": "03-alta/Alta 15.jpg",
+      "sourceHash": "b35a5fc2253474a632e0f3e080074e19d30aaa8e-c92ffdda"
+    },
+    "/images/projets/alta/alta-16.jpg": {
+      "width": 2560,
+      "height": 1440,
+      "blurDataURL": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAADwAQCdASoQAAkAA4BaJaACdADw0mKWsIAA/oIONBmj/HT1XzgB9jychSNK4ZfSOi44BT79oUalHoDQ41tnX3GH0tYCtGQ3KCg4RTdfqXfKkZ5Gm/tYAAAA",
+      "kind": "photo",
+      "source": "03-alta/Alta 16.jpeg",
+      "sourceHash": "770e3db74639b59b842a09d0b26a3086c696e6ff-c92ffdda"
+    },
+    "/images/projets/alta/alta-document-10.png": {
+      "width": 2560,
+      "height": 1920,
+      "blurDataURL": "data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAADQAQCdASoQAAwAA4BaJZwAAugwOpL6qAD+8oZgBPbJF/AtnbmwzZfsPbUWFKAe0Q0prqf9347x2D9QSOPXhAAA",
+      "kind": "drawing",
+      "source": "03-alta/alta-document-10.png",
+      "sourceHash": "80a02353f96b3416cbc3941583e20c7803ef9249-c92ffdda"
+    },
+    "/images/projets/alta/alta-document-11.png": {
+      "width": 2560,
+      "height": 1920,
+      "blurDataURL": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAADQAQCdASoQAAwAA4BaJaQAApzjGnNAAAD++LppLs/sT2Nw2GuDqghqGcdBCP/R7tw2s5Wwvh06Vwup9/Pg2/Fmic3QEPc2ewAAAA==",
+      "kind": "drawing",
+      "source": "03-alta/alta-document-11.png",
+      "sourceHash": "7b564d065199c23de8e67319c6ab548342d2a846-c92ffdda"
+    },
+    "/images/projets/alta/alta-document-12.png": {
+      "width": 2560,
+      "height": 1920,
+      "blurDataURL": "data:image/webp;base64,UklGRjwAAABXRUJQVlA4IDAAAACwAQCdASoQAAwAA4BaJZwAAt+KGPSAAP74ExjeigHMp9YfsV62FKudxOoP3ythgAA=",
+      "kind": "drawing",
+      "source": "03-alta/alta-document-12.png",
+      "sourceHash": "30b01ab93c8c5beee8952cd1d6c17e413eeabff5-c92ffdda"
+    },
+    "/images/projets/alta/alta-plan-02.png": {
+      "width": 2560,
+      "height": 1810,
+      "blurDataURL": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAADwAQCdASoQAAsAA4BaJaQAAujRGwS/DgAA/vZC0VetGR2VqGB6n95yvorL19GuhSkOpPjohkCcIAAA",
+      "kind": "drawing",
+      "source": "03-alta/alta-plan-02.png",
+      "sourceHash": "c78d096e20bc37e2f79c4f90e36824b55833dc98-c92ffdda"
+    },
+    "/images/projets/alta/alta-structure-iso.png": {
+      "width": 2560,
+      "height": 1440,
+      "blurDataURL": "data:image/webp;base64,UklGRgQBAABXRUJQVlA4WAoAAAAQAAAADwAACAAAQUxQSIMAAAABgGJt27Lo+QR3iU6nUUlkd4lkZwmwG5onrTQy422a+3zz+x4iYgIAAtjtIJRSSqBNTi8P8w4IIRrXRkjSt7RoZzORIANCH9KP9Pj2cXd7d96mdMSf9CeEEP8/acC7fpEkIUnS3490DABAMNcrTU5P4k/qgsPQmhjPajZoCeOMEQAgAABWUDggWgAAADACAJ0BKhAACQADgFolAF2AxdzA/m515RAAAP7pBhJzm67zupB6Vo0SHP0Wn01JA/74kNwPHCflcX48EpLICqEG87jxsoqeODfl37EovJUHWuS4swpwAA3AAA==",
+      "kind": "drawing",
+      "source": "03-alta/alta-structure-iso.png",
+      "sourceHash": "3c9b6b6033ed68d244cfa1f6e4fafd518d73e736-c92ffdda"
+    },
+    "/images/projets/batiment-s/espace-vie.jpg": {
+      "width": 1726,
+      "height": 911,
+      "blurDataURL": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAADQAQCdASoQAAgAA4BaJQBOgB6wiwwcEAD+h5V7Ajym6F9uunz5pjn91rVq2puIKMzK3uOhkiDeDn1EGE/Q2KY/k7xoGIwyBjwAAA==",
+      "kind": "photo",
+      "source": "07-batiment-s/espace-vie.png",
+      "sourceHash": "47d9f06c9a410c37812bc71d3edebba90c0a9634-c92ffdda"
+    },
+    "/images/projets/batiment-s/existant-02.jpg": {
+      "width": 2560,
+      "height": 1920,
+      "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADQAQCdASoQAAwAA4BaJZQAAv3Gu4a8AAD5dZkT3dHXCVLZDL+tYyGpra72RWlGBqN9HT8349N19CvRzYHsqclia+7JVwMJSJ9C+TUIAAA=",
+      "kind": "photo",
+      "source": "07-batiment-s/existant-02.jpg",
+      "sourceHash": "a4caaf005f5c5007454d9866a8f207d4ac85ed56-c92ffdda"
+    },
+    "/images/projets/batiment-s/existant-03.jpg": {
+      "width": 2560,
+      "height": 1920,
+      "blurDataURL": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAACwAQCdASoQAAwAA4BaJZQAAqyglTNwAPR1ZFa1yfS5vWNg6ugS15hYN+WpSjCSsvH2wycalMt6a2oFXP9AyDEKEHXXrTPm9KQAAA==",
+      "kind": "photo",
+      "source": "07-batiment-s/existant-03.jpg",
+      "sourceHash": "283937f46b5211349ef10a6e687ff647f4495374-c92ffdda"
+    },
     "/images/projets/batiment-s/hero-passerelle.jpg": {
       "width": 1726,
       "height": 911,
@@ -73,6 +329,83 @@
       "kind": "photo",
       "source": "07-batiment-s/hero-passerelle.png",
       "sourceHash": "61b1c917c7e4a0a006c9c897280c7f19fe59f91a-c92ffdda"
+    },
+    "/images/projets/batiment-s/plan-general.jpg": {
+      "width": 2560,
+      "height": 1810,
+      "blurDataURL": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAADQAQCdASoQAAsAA4BaJaQAAqH1S6e4AAD+90CEMsh6qjcdRknUXx7A4GA2gdkwztem5AAA",
+      "kind": "drawing",
+      "source": "07-batiment-s/plan-general.jpg",
+      "sourceHash": "531e6c709ecad59bb7042ea4df9d8fca0b1312d3-c92ffdda"
+    },
+    "/images/projets/batiment-s/plan-general.pdf": {
+      "kind": "file",
+      "source": "07-batiment-s/plan-general.pdf",
+      "sourceHash": "f2c2b8f7a7a2c5fee99f952e90e284aa5261544c-c92ffdda"
+    },
+    "/images/projets/batiment-s/zoning-art.png": {
+      "width": 2560,
+      "height": 1200,
+      "blurDataURL": "data:image/webp;base64,UklGRvQAAABXRUJQVlA4WAoAAAAQAAAADwAABwAAQUxQSHEAAAABcFpt27I87/eiC7hWEpVEp5OokJlAs5Oo3lnDB3B3iO7ODBGR+BZM+CNYgGDxF/UggAgEqy9SLi2CYGKCxp2aXpab0d0DJqjSjebtsb2dai4QDK7M8fG49KphG4EA7/5xbSUcSgJIAIA971QAIGZ8AABWUDggXAAAABACAJ0BKhAACAADgFolnAAPh+8sgH56BgAA/uAKd0Y7IrRIL5t/bOl09n0tErI1ilZrKPrklLrCRpvUUPB2AN575k4C4vXIjoTsKZPDAnKdCDRViVx9UpB96AAA",
+      "kind": "drawing",
+      "source": "07-batiment-s/zoning-art.png",
+      "sourceHash": "8c28ddab99629e7b1fc9ab4410acf8967c2226fe-c92ffdda"
+    },
+    "/images/projets/batiment-s/zoning-general.png": {
+      "width": 2560,
+      "height": 1200,
+      "blurDataURL": "data:image/webp;base64,UklGRuoAAABXRUJQVlA4WAoAAAAQAAAADwAABwAAQUxQSHQAAAABcFpt27LcnwAT/ExA/xvWbQabw7ouQGMFSCTGcNfo0H5Fh4iI5E9oCcJQ/ISSIMgOTt04IBGEC73h8/U65lCaQKx9fb1evvdaZ5Gkpu7L952XNe8UTaLVzct7Wc9pyVQA45fvjmqJiIFAakGo1U8GAaEUP1ZQOCBQAAAAEAIAnQEqEAAIAAOAWiWkAA+LT7/63wbSAAD+tlv6WD4xVm3n/sbssfO3OZXCd0wRQjU47b/fiUctKdyJqBRg53vQ4qS1ZYWs+pZs+EgAAAA=",
+      "kind": "drawing",
+      "source": "07-batiment-s/zoning-general.png",
+      "sourceHash": "a93b865e0ce0779349ce4ec57ad08fd0de47806c-c92ffdda"
+    },
+    "/images/projets/batiment-s/zoning-passerelle.png": {
+      "width": 2560,
+      "height": 1200,
+      "blurDataURL": "data:image/webp;base64,UklGRgABAABXRUJQVlA4WAoAAAAQAAAADwAABwAAQUxQSHMAAAABcGLb1rLc930/NgK3SqKS6DSNtL8zA8uaaJAsMw2X7O40d4cxRETim3HCH8YZCCZ/TgMCiEAw+8KF/DwATpyg8Sam1+V6eBfBCcpUo3V/bG/HsgcErSN5fDwu3VLIQiBA3DyuzbhNQQAxALCm7XIAxDk+AFZQOCBmAAAAMAIAnQEqEAAIAAOAWiWQAsQvAII4sRBxYhAA/ueuS4PrhgOYcTDH8L2fFolo90AUD29M2ArxVc2I1NuQvfuvVU0HsEOu9ZRTfCB2qiH27eTeGWpYI5osF5/Qnwguo7bN/hh/sgAA",
+      "kind": "drawing",
+      "source": "07-batiment-s/zoning-passerelle.png",
+      "sourceHash": "99593e99b6adf97da8845d6bd605bf2d3172f440-c92ffdda"
+    },
+    "/images/projets/batiment-s/zoning-rangements.png": {
+      "width": 2560,
+      "height": 1200,
+      "blurDataURL": "data:image/webp;base64,UklGRgwBAABXRUJQVlA4WAoAAAAQAAAADwAABwAAQUxQSHYAAAABgGJb27Lqef8PnYBrJVFJdJpbpjMD6+4aWXSG4QNwd0l+3e8YIiLxm2OEfzjGgaAL1BQggAgEvT/SqG+DYMQIMm9q/bI7zd99YARJvtt7+7i8PbUdICgtlfvHx8u4FTYQCPCdP177cZOYAOIAwFg1iwAQY/gBVlA4IHAAAAAQAgCdASoQAAgAA4BaJYgBTAFu55yQwAU8AP7gCndKQyLDUo+ckV4pxSw+lolZGwk9WZ96uO07KXrLqiA2QkJtPIiBhyBDDkz/mP8UR1HdTb35piDivq6Jq4ohhrfLuLjvwbnhsvnhvPY/5RoZAAAA",
+      "kind": "drawing",
+      "source": "07-batiment-s/zoning-rangements.png",
+      "sourceHash": "c53e6ea4de957fd5fc39cff3f627f6d0f3afc321-c92ffdda"
+    },
+    "/images/projets/batiment-s/zoning-sport.png": {
+      "width": 2560,
+      "height": 1200,
+      "blurDataURL": "data:image/webp;base64,UklGRgIBAABXRUJQVlA4WAoAAAAQAAAADwAABwAAQUxQSHQAAAABgJpt27Lsfr4XXcC1kqgkOtElQ2YCzU7yCAMwhi7g7hDd9f9niIjEL8cI/3CMA0EXKCtBABEIen+0WlmGwIgRZJ707Lrajh9eMIIk02zdn7v7uW4HQWUpHp/Pa78eMRAI8O2et3bSJCaAOAAwlswiAMQYvlZQOCBoAAAAEAIAnQEqEAAIAAOAWiWgAnQGKoZv9IcTYAD+569cj0P0bzfvfoEfSD5zPpaJaPdPHqb32eVQQr4PmcO74Fycq5bIJR/fhXbG/mRpgYFMCrUNdNlL84wEgDxQ8eiemOIyTnMCM+QAAAA=",
+      "kind": "drawing",
+      "source": "07-batiment-s/zoning-sport.png",
+      "sourceHash": "8a8a25e5b7d532e388d5a0cd700369f4ffb24975-c92ffdda"
+    },
+    "/images/projets/batiment-s/zoning-travail.png": {
+      "width": 2442,
+      "height": 1212,
+      "blurDataURL": "data:image/webp;base64,UklGRvoAAABXRUJQVlA4WAoAAAAQAAAADwAABwAAQUxQSHYAAAABcFpt27I8n/xIJTtkGtFtADILMAWR+JN+WIXMAmR3l+rwPdgQEZH4E0pCINGa5wEILQCdrDs7cgIIAJFyh4bPM49Kw19tn8nX5W54qkjETjSvF0nTs+Mo2kPeyde46+TdEHJNQzNqZL0AoCR8tUGz5AEApQAAVlA4IF4AAAAQAgCdASoQAAgAA4BaJZAAD4hPrHNGAZPEAP7oTYPVaLb4/tgCJTu7jqoATQBLjb2X4p22Kztasb8vXhZCsj7yhzrlJ0BaCe+3Bfz/ccdQyGBvOn/1dkPUPpjZldoA",
+      "kind": "drawing",
+      "source": "07-batiment-s/zoning-travail.png",
+      "sourceHash": "cedcee3006281fc52676187a2b13e5bcde66979c-c92ffdda"
+    },
+    "/images/projets/batiment-s/zoning-vide.png": {
+      "width": 2560,
+      "height": 1200,
+      "blurDataURL": "data:image/webp;base64,UklGRvAAAABXRUJQVlA4WAoAAAAQAAAADwAABwAAQUxQSHQAAAABcFpt27I87/+hC7hWEpVEp2mi/p0JNDvJG4cBGMMHcHdo7g4zRETim2OEPxzjQDB4C2oQQASC0RMqFed+MGIEhTsxuSzWwzsPRpAl643bY3s7VV0gqG25w+Nx6VaCJgIB/OZxbcYsUgKIAwBz3ioBQIzhA1ZQOCBWAAAAEAIAnQEqEAAIAAOAWiWkAA+Hjx5HM/QO4AD+4Ap3RjAf96LviVzU6XS2fTnvViiOsu8Pz4OwVrz42q1Wq7zaDM/DvnTbsgyhT1aDRyXjpzy9qmTUAAA=",
+      "kind": "drawing",
+      "source": "07-batiment-s/zoning-vide.png",
+      "sourceHash": "6bc676c5ebffc9a04eb1f489156d0d8a7eeba833-c92ffdda"
+    },
+    "/images/projets/batiment-s/zoning-vie.png": {
+      "width": 2560,
+      "height": 1200,
+      "blurDataURL": "data:image/webp;base64,UklGRg4BAABXRUJQVlA4WAoAAAAQAAAADwAABwAAQUxQSHIAAAABcFpt27I8z/ehE7hVEpVEp2kl0ZlAuyUaJA4DMIZFmrvT3B1miIjEt5DEHyEFCHu0ZAIBEoQjkqqU53FISsIYys2uy/XwHoYkdIVG9/bY3Y71IAiTN398PC7dWtJJEAhvHtdm1q0lQAEArqJHA4BS4gNWUDggdgAAADACAJ0BKhAACAADgFolsAJ0BiqGcBG71muAAP7nrkuD64XkO9oLsQjZvxaJaPdPHBe3pmwKP9R5Cd+YYTe0c/U2tsS6lr8U5O2O8H0II/bB+UPJ0Lbfye2tHAARVjsYu1uZJmSjYpicvNyMBFR77b5b/hcAAAA=",
+      "kind": "drawing",
+      "source": "07-batiment-s/zoning-vie.png",
+      "sourceHash": "b41bba9e5e65c09db5d21176fd37f46807b72d64-c92ffdda"
     },
     "/images/projets/chateau-gasqui/key-elements/abri-ete.jpg": {
       "width": 2560,
@@ -106,6 +439,22 @@
       "source": "02-duplex-pralong/applique-pinturault.jpg",
       "sourceHash": "f121a04f319c4b374dd8bd774c217c0f637106ae-c92ffdda"
     },
+    "/images/projets/duplex-pralong/avant-vue-nord.jpg": {
+      "width": 1672,
+      "height": 941,
+      "blurDataURL": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAAAQAgCdASoQAAkAA4BaJQBOgB7HmIWlDcAAAP7tHu4pL4j7lUAZb69ZEenP+AQUSMjMAjXt0Pb5KO7w20nUxMdsigy22CAA",
+      "kind": "photo",
+      "source": "02-duplex-pralong/avant-vue-nord.png",
+      "sourceHash": "9cb29be5d36f8a75dc588e6e52cd477322e1d3d6-c92ffdda"
+    },
+    "/images/projets/duplex-pralong/avant-vue-sud.jpg": {
+      "width": 1672,
+      "height": 941,
+      "blurDataURL": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAADQAQCdASoQAAkAA4BaJYgCdAEN6Nl3EAD+iR5MCdi1eGHeJmJhoeLweo1DyiWdcOpNfKkdnotm3lsBZcL2x4KL0EXqmWS63DAAAA==",
+      "kind": "photo",
+      "source": "02-duplex-pralong/avant-vue-sud.jpg",
+      "sourceHash": "197822430dac8ee9fcd0d5d28395c226d8427d25-c92ffdda"
+    },
     "/images/projets/duplex-pralong/croquis-applique-baton-slalom.png": {
       "width": 1265,
       "height": 1243,
@@ -113,6 +462,14 @@
       "kind": "drawing",
       "source": "02-duplex-pralong/croquis-applique-baton-slalom.png",
       "sourceHash": "cb6741c89633a6b335f0d715f7731f3cb4c5843b-c92ffdda"
+    },
+    "/images/projets/duplex-pralong/entree.jpg": {
+      "width": 768,
+      "height": 1350,
+      "blurDataURL": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAADwAwCdASoQABwALrV2u12jqampiYC0SygFvcI+3Qf9IoWAYe/3vRgAAP73jOw5E9IYTYBC4qvr5W+92enUiYLH7WByC5WPpF/BmTWErB2QgGzp2nGuf+hR+1algJdgAAA=",
+      "kind": "photo",
+      "source": "02-duplex-pralong/entree.jpg",
+      "sourceHash": "a62c3e81569a7db5e4f032579e98f7b936100bc9-c92ffdda"
     },
     "/images/projets/duplex-pralong/fauteuil.jpg": {
       "width": 1080,
@@ -122,6 +479,30 @@
       "source": "02-duplex-pralong/fauteuil.png",
       "sourceHash": "eed34df37d9a091b1d996f1612bf69bf4477cfda-c92ffdda"
     },
+    "/images/projets/duplex-pralong/lampadaire-salon.jpg": {
+      "width": 1080,
+      "height": 1350,
+      "blurDataURL": "data:image/webp;base64,UklGRooAAABXRUJQVlA4IH4AAABQBACdASoQABQAPu1iqU2ppaQiMAgBMB2JYgCdMoADVP6YIuEo4HJocdlAAP7vF7EIBTzElx3HWy0rTt3E4dviCYVadX791S+BdEw88l8/+ETAA+D333uWuLqZ1o1oIMA1kRz4pbKYWKgA31B3z/TXcvgVD+Mrixj9t0GugAA=",
+      "kind": "photo",
+      "source": "02-duplex-pralong/lampadaire-salon.png",
+      "sourceHash": "a6d9578f446175f2ff84e0859f881c36e2f77a25-c92ffdda"
+    },
+    "/images/projets/duplex-pralong/panier-chien-fauteuil.jpg": {
+      "width": 1122,
+      "height": 1402,
+      "blurDataURL": "data:image/webp;base64,UklGRogAAABXRUJQVlA4IHwAAAAwBACdASoQABQAPu1iqU2ppaOiMAgBMB2JQBOmUI7gBSXwLO6nuP1JywAA/peX3JY+jTJ6QBp/ZOCLJRAOyiLA8HodEBMnWDxU6v0evueI9mC6bw4D5ggVlQ/fZ337Gx7eYUt+B8v6wAtimnfbi9yOXtHE1e0sYcEmAAAA",
+      "kind": "photo",
+      "source": "02-duplex-pralong/panier-chien-fauteuil.jpg",
+      "sourceHash": "9d201779554f3572173ccda00c3dd43ad84075aa-c92ffdda"
+    },
+    "/images/projets/duplex-pralong/suspension-salle-a-manger.jpg": {
+      "width": 1080,
+      "height": 1350,
+      "blurDataURL": "data:image/webp;base64,UklGRowAAABXRUJQVlA4IIAAAAAwBACdASoQABQAPu1iqU2ppaQiMAgBMB2JQBOmUI7gBVwfVWw411idg0wA/u6WKl5p6FOQFSr3TPuU4/ML3uMFPVvcAnud4KfvQNGFylGJM+EtGMjRKr/b316iNLk5Oy4aCtIY09FglRhE0/zr44oUAZg3X6A/CedjrJqqyLaAAA==",
+      "kind": "photo",
+      "source": "02-duplex-pralong/suspension-salle-a-manger.jpg",
+      "sourceHash": "8eb687c3347dfdd9dfb9e2f5412b924d3d33cf42-c92ffdda"
+    },
     "/images/projets/duplex-pralong/tables-basses-paysage.jpg": {
       "width": 1080,
       "height": 607,
@@ -130,6 +511,14 @@
       "source": "02-duplex-pralong/tables-basses-paysage.jpg",
       "sourceHash": "d76b3e1c0dbc3888972a5ae2d164f68e3a774d21-c92ffdda"
     },
+    "/images/projets/duplex-pralong/tables-basses-portrait.jpg": {
+      "width": 1080,
+      "height": 1350,
+      "blurDataURL": "data:image/webp;base64,UklGRoIAAABXRUJQVlA4IHYAAAAQBACdASoQABQAPu1iqU2ppaOiMAgBMB2JQBOgA8NtVOOGVejcWKzNAAD+xZTl/N1e9FKlIVjLwAvrqW36DdLJrOUBwJ9ps2vtkpKJzexAnBZB6EdEMITi1cvlclMKQfRt8apVe14hltgHvl3LRdEKDsIDYsAA",
+      "kind": "photo",
+      "source": "02-duplex-pralong/tables-basses-portrait.jpg",
+      "sourceHash": "1c12f1526eb6b5e00d3fb882398ed53d97430ff3-c92ffdda"
+    },
     "/images/projets/duplex-pralong/vue-nord-paysage.jpg": {
       "width": 2100,
       "height": 1171,
@@ -137,6 +526,14 @@
       "kind": "photo",
       "source": "02-duplex-pralong/vue-nord-paysage.jpg",
       "sourceHash": "e505e960f6a327765b41ebedd94f07c96433506e-c92ffdda"
+    },
+    "/images/projets/duplex-pralong/vue-nord-portrait.jpg": {
+      "width": 1080,
+      "height": 1350,
+      "blurDataURL": "data:image/webp;base64,UklGRqIAAABXRUJQVlA4IJYAAABwBACdASoQABQAPu1iqU2ppaOiMAgBMB2JQBOmUAXoAu3/0JmxieMMkOEvuAD+rc8Ar2yY449Jynb3Yv/v6MltfdZ7+4Flac5W1QCEQt+8gG+46zcaIjDRB+kpCtjLdzfsI9FZa5+UBZ6zzrB2sekjN+Kfxh5okCSNPRdk7da7eArkZDraqUnQsxc7aCr/o8VVo7qAAAA=",
+      "kind": "photo",
+      "source": "02-duplex-pralong/vue-nord-portrait.jpg",
+      "sourceHash": "9fc0ed70b64bad08b7e9feb1be3772a348642232-c92ffdda"
     },
     "/images/projets/page-blanche/page-blanche-01.jpg": {
       "width": 2560,
@@ -154,6 +551,14 @@
       "source": "01-perchee/Perchée 01.png",
       "sourceHash": "533fab824370641dbf92d9cc4eab15fd8e909889-c92ffdda"
     },
+    "/images/projets/perchee/perchee-02.jpg": {
+      "width": 1600,
+      "height": 2560,
+      "blurDataURL": "data:image/webp;base64,UklGRqwAAABXRUJQVlA4IKAAAAAwBACdASoQABoAPu1iqU2ppaOiMAgBMB2JQBOgA4lacMAtk7OUznHewgAA/sBXNCJ5dZ0y6IzFCDEf0whL6c7GSyhzEnd+B18vlGUMDRzYEW29xXC10oHIK3HAYPcndAsjTF54weKFgHFeRYv0lOynMp80rCk9OX0IA0Lmctp23G9oAtra2v3LZ7YVyijLLUGA/JuIBrHOqTI+ayuugAAA",
+      "kind": "photo",
+      "source": "01-perchee/Perchée 02.jpg",
+      "sourceHash": "d11723e9d9eaf9908114307f0f430a6d94af644d-c92ffdda"
+    },
     "/images/projets/perchee/perchee-03.jpg": {
       "width": 1024,
       "height": 1536,
@@ -161,6 +566,70 @@
       "kind": "photo",
       "source": "01-perchee/Perchée 03.jpg",
       "sourceHash": "6fe8179121367e13d77084dbd89630e56daea6c5-c92ffdda"
+    },
+    "/images/projets/perchee/perchee-cork-sconce.jpg": {
+      "width": 2275,
+      "height": 1280,
+      "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADwAQCdASoQAAkAA4BaJQBOgMW5xbOxiGAA/t24r0EqrWGJui1fJLj7MlGZnYBGb/Rg0eVHZI34wrv4wfuO6NKn4LP/yEN7d60WRQTTX0AAAA==",
+      "kind": "photo",
+      "source": "01-perchee/perchee-cork-sconce.jpg",
+      "sourceHash": "8a0902a1d128613d4e41b73800c8fc70d7e8658f-c92ffdda"
+    },
+    "/images/projets/perchee/perchee-ladder-detail.jpg": {
+      "width": 2275,
+      "height": 1280,
+      "blurDataURL": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAADwAQCdASoQAAkAA4BaJQBOgCIj66p/t8AA/qwDNxakYdm3n2vR5eP5oB/sNbbYLPx3Rcaq602os0xx/i2arOjYqCvJzCVd9gAAAA==",
+      "kind": "photo",
+      "source": "01-perchee/perchee-ladder-detail.jpg",
+      "sourceHash": "8134b39230895ebf4612d097e046729e3643be04-c92ffdda"
+    },
+    "/images/projets/perchee/perchee-lavender-wall.jpg": {
+      "width": 2275,
+      "height": 1280,
+      "blurDataURL": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAADwAQCdASoQAAkAA4BaJQBOgB6vqhBIRAAA/vM+lNp2n1GcCm3CtiRxnARI5nxXOv7P6k/771ocAAAA",
+      "kind": "photo",
+      "source": "01-perchee/perchee-lavender-wall.png",
+      "sourceHash": "e46aa4e3aa58066f22e63c78114e77036f3da0fc-c92ffdda"
+    },
+    "/images/projets/perchee/perchee-olive-detail.jpg": {
+      "width": 2275,
+      "height": 1280,
+      "blurDataURL": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAADwAQCdASoQAAkAA4BaJYwCdAYsjuCWcgAA/vhVzgCdvSJsdv+D/0o7XUnpjxHhwfhj9bsvmJvJf8UVwG5T2dGEU/iLDTjYxwWufvXHffvQy0R1RIAAAA==",
+      "kind": "photo",
+      "source": "01-perchee/perchee-olive-detail.jpg",
+      "sourceHash": "665315e9540ee9677c2a48298bb0f98959e233d7-c92ffdda"
+    },
+    "/images/projets/perchee/perchee-olive-pot.jpg": {
+      "width": 1800,
+      "height": 2560,
+      "blurDataURL": "data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAADwAwCdASoQABcAPu1orU6ppiSiMAgBMB2JYwCdABjPvAoOJNs5Fq6IAP6lGbc5I7TcIfNjyQjWnRF3RMaesvFKlPmgpzNTD3jez8X1Ky+4u2NA7mj5JHOs3oee/AWku/XwVrDB+hRffe+A7QhAGlAA",
+      "kind": "photo",
+      "source": "01-perchee/perchee-olive-pot.png",
+      "sourceHash": "a76540af5211268a2eba21183074398e35300cc7-c92ffdda"
+    },
+    "/images/projets/perchee/perchee-salon.jpg": {
+      "width": 2275,
+      "height": 1280,
+      "blurDataURL": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAADQAQCdASoQAAkAA4BaJYwCdAEf++TqAAD+TmVp+6/BTSofJkfNa/c4VfvRknkPqZCwLqhKFClE+jR+GtKLqWcgAAA=",
+      "kind": "photo",
+      "source": "01-perchee/perchee-salon.png",
+      "sourceHash": "cffceee53c9cb6c25101f08a2af88696c786cfeb-c92ffdda"
+    },
+    "/images/projets/perchee/perchee-wall-map-after.jpg": {
+      "width": 2560,
+      "height": 1664,
+      "blurDataURL": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAADwAQCdASoQAAoAA4BaJQBOgCFrh6rU1AAA/t2enRCDS1VmotL3O6zmHysWQNgwCg+MrXY9rgAAAA==",
+      "kind": "photo",
+      "source": "01-perchee/perchee-wall-map-after.png",
+      "sourceHash": "ab994417ba7cac89eb95daf3065c632f187b0fcd-c92ffdda"
+    },
+    "/images/projets/perchee/perchee-wall-map-before.jpg": {
+      "width": 2528,
+      "height": 1664,
+      "blurDataURL": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAAAQAgCdASoQAAsAA4BaJQBdgCKUXV4+wSzgAP6sDyxT8t8qOATHv5qlw+dibLzmGOVZslTTDsdHyiPzwL0/VWKSkvWzJ1rHqSlAAA==",
+      "kind": "photo",
+      "source": "01-perchee/perchee-wall-map-before.png",
+      "sourceHash": "ecb0d8bbf72f114bec6d7afd2fe772dcd2a703e1-c92ffdda"
     },
     "/images/projets/projet-dionys/dionys-01.jpg": {
       "width": 2560,
@@ -177,6 +646,22 @@
       "kind": "photo",
       "source": "04-rolex-retail-express/rolex-counter.jpg",
       "sourceHash": "116a79ef2a628aae6323b0d11a88ae5904e07a81-c92ffdda"
+    },
+    "/images/projets/rolex-retail-express/rolex-display-detail.jpg": {
+      "width": 2400,
+      "height": 1350,
+      "blurDataURL": "data:image/webp;base64,UklGRkgAAABXRUJQVlA4IDwAAACQAQCdASoQAAkAA4BaJQBOgBLPHIAA/sS1Ggncje+QRZYL7P9sj+MU0rvzmTUb4GM7hYIw14kZO9XwAAA=",
+      "kind": "photo",
+      "source": "04-rolex-retail-express/rolex-display-detail.png",
+      "sourceHash": "3ffad08b2ac9921ba7f227e44f04ba9532a62480-c92ffdda"
+    },
+    "/images/projets/rolex-retail-express/rolex-entry.jpg": {
+      "width": 2400,
+      "height": 1350,
+      "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADQAQCdASoQAAkAA4BaJYgCdAEelm99YADOOlN6vJt5TzH5WGVdKvJFMNA2rMPhr3Do1Q4srkvSv3/RduIUUEEf5VY6eMJpJzKKfMrbgAA=",
+      "kind": "photo",
+      "source": "04-rolex-retail-express/rolex-entry.jpg",
+      "sourceHash": "7e5d1d915734334d274e82e01137157b6da1d487-c92ffdda"
     }
   }
 }

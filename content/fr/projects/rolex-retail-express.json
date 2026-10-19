@@ -1,0 +1,81 @@
+{
+  "slug": "rolex-retail-express",
+  "_note": "Textes : textes/rolex.txt (site actuel). Projet personnel, concept non commandité, sans logo (SOURCES-REELLES §4). Le site actuel dit « 24h » (titre) et « 22h » (étiquette) : « 24 h » conservé, écart signalé. Le plan d’aménagement (rolex-plan.png) n’est pas affiché : son cartouche indique « Client : Rolex SA », ce qui contredit « non commandité ». « Rolex 01/02 » = rolex-counter / rolex-entry.",
+  "lead": "Une boutique en 24 h.",
+  "intro": [
+    "Projet personnel réalisé dans le cadre d’une candidature à un poste d’architecte d’intérieur chez Rolex, à Genève."
+  ],
+  "specs": [
+    { "label": "Cadre", "value": "Projet personnel — concept non commandité" },
+    { "label": "Programme", "value": "Boutique horlogère" },
+    { "label": "Surface", "value": "57 m²" },
+    { "label": "Livrables", "value": "Mobilier, plan d’aménagement, vues 3D" },
+    { "label": "Statut", "status": true },
+    { "label": "Année", "value": "[À COMPLÉTER : année]" }
+  ],
+  "similar": { "label": "Un commerce à concevoir ?", "type": "hospitalite" },
+  "chapters": [
+    {
+      "id": "parti-pris",
+      "label": "Parti pris",
+      "title": "Parti pris personnel.",
+      "blocks": [
+        {
+          "type": "text",
+          "paragraphs": [
+            "M’inspirer au mieux de la charte décorative de Rolex pour concevoir un espace de vente chaleureux, fidèle aux couleurs et au standing de la marque."
+          ]
+        },
+        {
+          "type": "media",
+          "layout": "full",
+          "items": [
+            { "src": "/images/projets/rolex-retail-express/rolex-entry.jpg", "alt": "Vue générale de la boutique depuis l’entrée : îlot central en bois, vitrine, présentoirs muraux" }
+          ]
+        },
+        {
+          "type": "text",
+          "paragraphs": [
+            "L’îlot central, dont la silhouette évoque la proue élancée d’un voilier, s’impose comme un élément structurant de l’espace. Il intègre en son cœur une vitrine centrale, mettant en valeur les pièces exposées avec élégance.",
+            "Sa forme finement dentelée fait écho à la lunette Fluted emblématique de la marque, un motif que l’on retrouve également dans le traitement de la façade d’entrée, renforçant ainsi l’identité visuelle du lieu.",
+            "Le bois, choisi comme matériau principal, apporte une chaleur naturelle qui contraste avec la précision et la rigueur formelle de l’ensemble."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "matieres",
+      "label": "Matières et présentation",
+      "title": "Matières et présentation.",
+      "blocks": [
+        {
+          "type": "text",
+          "paragraphs": [
+            "Les murs, habillés de marbre Crema Marfil, introduisent une dimension minérale qui dialogue avec les autres matières. Ce choix renforce l’élégance du lieu tout en jouant sur un équilibre subtil entre noblesse et sobriété.",
+            "Les présentoirs, réalisés en chêne massif et recouverts de simili-cuir blanc crème, conjuguent texture et raffinement. Leur teinte claire participe à l’unité esthétique de l’espace, mettant en lumière les pièces horlogères."
+          ]
+        },
+        {
+          "type": "media",
+          "layout": "wide",
+          "items": [
+            { "src": "/images/projets/rolex-retail-express/rolex-display-detail.jpg", "alt": "Détail d’un présentoir en chêne et simili-cuir blanc crème, devant le pilier cannelé" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "plan",
+      "label": "Plan d’aménagement",
+      "title": "Plan d’aménagement.",
+      "blocks": [
+        {
+          "type": "text",
+          "paragraphs": [
+            "Le plan organise un espace boutique de 57 m² autour du comptoir-présentoir vitré, complété par les meubles de présentation, un bar d’accueil, les rangements, le sas de sécurité et les espaces techniques nécessaires au fonctionnement quotidien."
+          ]
+        }
+      ]
+    }
+  ]
+}

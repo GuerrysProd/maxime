@@ -159,11 +159,6 @@ export const projectSchema = z.object({
   summary: z.string(),
   disclaimer: z.string().optional(),
   status: z.object({ value: projectStatus, draft: z.boolean() }),
-  year: draftable.optional(),
-  surface: draftable.optional(),
-  mission: draftable.optional(),
-  credits: draftable.optional(),
-  partners: z.array(z.string()).optional(),
   cover: imageRef,
   hero: imageRef,
   template: z.enum(["chapitres", "modules"]),
@@ -188,6 +183,113 @@ export const projectsSchema = z.object({
 });
 export type Projects = z.output<typeof projectsSchema>;
 export type ProjectInPreparation = Projects["inPreparation"][number];
+
+/* ---------- Fiche projet (gabarit « chapitres ») ---------- */
+
+/** Image de contenu avec légende facultative. */
+export const figure = z
+  .object({
+    src: z.string().startsWith("/images/"),
+    alt: z.string(),
+    position: z.string().optional(),
+    caption: z.string().optional(),
+    /** « contain » pour un croquis ou un plan (fond clair, pas de recadrage). */
+    fit: z.enum(["cover", "contain"]).optional(),
+  })
+  .transform(({ caption, fit, ...ref }) => ({ image: resolveImage(ref), caption, fit: fit ?? "cover" }));
+export type Figure = z.output<typeof figure>;
+
+const paragraphs = z.array(z.string());
+const zoneCopy = z.object({ label: z.string(), title: z.string(), text: z.string() });
+
+/** Blocs d’un chapitre, dans l’ordre d’affichage. */
+export const chapterBlock = z.discriminatedUnion("type", [
+  z.object({ type: z.literal("text"), paragraphs }),
+  z.object({
+    type: z.literal("media"),
+    layout: z.enum(["full", "wide", "duo", "portrait"]),
+    items: z.array(figure).min(1),
+  }),
+  z.object({
+    type: z.literal("beforeAfter"),
+    before: figure,
+    after: figure,
+    initial: z.number().min(0).max(100).default(50),
+    caption: z.string().optional(),
+  }),
+  z.object({
+    type: z.literal("feature"),
+    number: z.string().optional(),
+    label: z.string(),
+    title: z.string(),
+    paragraphs,
+    media: z.array(figure),
+    layout: z.enum(["media-left", "media-right", "stacked"]),
+    /** Pièce de la rubrique Objets décrite par ce bloc. */
+    object: z.string().optional(),
+  }),
+  z.object({
+    type: z.literal("pair"),
+    items: z.array(z.object({ title: z.string(), paragraphs, media: figure })).length(2),
+  }),
+  z.object({
+    type: z.literal("palette"),
+    items: z.array(z.object({ name: z.string(), color: z.string() })),
+    note: draftable,
+  }),
+  z.object({ type: z.literal("quote"), text: z.string(), author: z.string(), draft: z.boolean() }),
+  z.object({ type: z.literal("list"), items: z.array(z.object({ title: z.string(), text: z.string() })) }),
+  z.object({
+    type: z.literal("zoning"),
+    /** Bâtiment fermé (état initial) et ouvert (pointeur sur le bâtiment, hors des pôles). */
+    closed: imageRef,
+    open: imageRef,
+    overview: zoneCopy,
+    openState: zoneCopy,
+    zones: z
+      .array(
+        zoneCopy.extend({
+          id: z.string(),
+          layer: imageRef,
+          /** Placement du calque s’il ne couvre pas toute la scène (en % de la scène). */
+          box: z.object({ left: z.number(), top: z.number(), width: z.number() }).optional(),
+        }),
+      )
+      .min(1),
+  }),
+  z.object({ type: z.literal("download"), label: z.string(), href: z.string(), meta: z.string().optional() }),
+]);
+export type ChapterBlock = z.output<typeof chapterBlock>;
+
+export const chapterSchema = z.object({
+  id: z.string(),
+  /** Libellé court : sommaire et surtitre « 01 — Le projet ». */
+  label: z.string(),
+  /** Surtitre propre au chapitre, s’il diffère du libellé. */
+  kicker: z.string().optional(),
+  title: z.string(),
+  blocks: z.array(chapterBlock),
+});
+export type Chapter = z.output<typeof chapterSchema>;
+
+const specRow = z.union([
+  z.object({ label: z.string(), status: z.literal(true) }),
+  z.object({ label: z.string(), value: draftable }),
+]);
+
+export const projectDetailSchema = z.object({
+  slug: z.string(),
+  _note: z.string().optional(),
+  /** Phrase d’ouverture (serif) ; par défaut, le résumé du projet. */
+  lead: z.string().optional(),
+  intro: paragraphs.optional(),
+  specs: z.array(specRow),
+  chapters: z.array(chapterSchema).min(1),
+  /** Lien d’appel en bas du sommaire (« Un projet similaire ? »). */
+  similar: z.object({ label: z.string(), type: z.string() }).optional(),
+});
+export type ProjectDetail = z.output<typeof projectDetailSchema>;
+export type SpecRow = ProjectDetail["specs"][number];
 
 /* ---------- Objets ---------- */
 
@@ -236,6 +338,17 @@ export const faqSchema = z.object({
 });
 export type FaqItem = z.output<typeof faqSchema>["items"][number];
 
+/* ---------- Pages de rubrique ---------- */
+
+const pageMeta = z.object({ title: z.string(), description: z.string() });
+
+export const pagesSchema = z.object({
+  _note: z.string().optional(),
+  projects: z.object({ meta: pageMeta, eyebrow: z.string(), title: z.string(), intro: z.string(), counts: z.string() }),
+  cta: z.object({ intro: z.string() }),
+});
+export type Pages = z.output<typeof pagesSchema>;
+
 /* ---------- Dictionnaire d’interface ---------- */
 
 export const uiSchema = z.object({
@@ -261,5 +374,27 @@ export const uiSchema = z.object({
   friezePause: z.string(),
   friezePlay: z.string(),
   quickActions: z.string(),
+  allProjects: z.string(),
+  projectPosition: z.string(),
+  specSheet: z.string(),
+  chapters: z.string(),
+  chaptersNav: z.string(),
+  nextProject: z.string(),
+  viewProject: z.string(),
+  viewObject: z.string(),
+  piecesLabel: z.string(),
+  piecesTitle: z.string(),
+  allObjects: z.string(),
+  beforeAfter: z.object({ label: z.string(), valueText: z.string(), hint: z.string(), before: z.string(), after: z.string() }),
+  zoning: z.object({ stage: z.string(), hint: z.string(), zones: z.string(), reset: z.string() }),
+  filters: z.object({
+    group: z.string(),
+    all: z.string(),
+    views: z.string(),
+    grid: z.string(),
+    list: z.string(),
+    columns: z.object({ number: z.string(), project: z.string(), category: z.string(), place: z.string(), status: z.string() }),
+  }),
+  inPreparation: z.string(),
 });
 export type Ui = z.output<typeof uiSchema>;

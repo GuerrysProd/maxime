@@ -27,6 +27,14 @@ const PAGES = [
   { name: "accueil", path: "/", desktop: "01-accueil.html", mobile: "02-accueil-mobile.html" },
   { name: "accueil-hero-b", path: "/2", desktop: "01b-accueil-hero-b.html", mobile: null },
   { name: "menu-mobile", path: "/", desktop: null, mobile: "02b-menu-mobile.html", openMenu: true, viewportOnly: true },
+  { name: "projets", path: "/projets", desktop: "05-projets.html", mobile: "05b-projets-mobile.html" },
+  { name: "projets-index", path: "/projets?vue=index", desktop: null, mobile: null },
+  { name: "projet-duplex-pralong", path: "/projets/duplex-pralong", desktop: "03-projet-duplex-pralong.html", mobile: null },
+  { name: "projet-perchee", path: "/projets/perchee", desktop: null, mobile: null },
+  { name: "projet-alta", path: "/projets/alta", desktop: null, mobile: null },
+  { name: "projet-agora", path: "/projets/agora", desktop: null, mobile: null },
+  { name: "projet-batiment-s", path: "/projets/batiment-s", desktop: null, mobile: null },
+  { name: "projet-rolex-retail-express", path: "/projets/rolex-retail-express", desktop: null, mobile: null },
 ];
 
 const VIEWPORTS = [

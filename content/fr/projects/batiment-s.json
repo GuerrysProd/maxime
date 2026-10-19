@@ -1,0 +1,202 @@
+{
+  "slug": "batiment-s",
+  "_note": "Textes : textes/batiment-s.txt et site-actuel/src/batiment-s.js (textes des zones). « Bâtiment S 01/02 » = espace-vie / hero-passerelle ; existant-escalier = existant-02 (même photo). Le calque « travail » est plus petit que les autres : sa boîte (en %) reprend le placement de batiment-s.css. Les zones sont dans l’ordre de détection du site actuel (passerelle d’abord). Cadre du projet, rôle de Maxime et année inconnus.",
+  "lead": "Un nouveau bâtiment pour la vie étudiante d’un nouveau campus.",
+  "intro": [
+    "Réaménager un bâtiment existant pour en faire un lieu identifié, ouvert et mixte : un espace commun où les étudiants peuvent travailler, se rencontrer, créer, faire du sport et accéder aux services qui leur sont destinés."
+  ],
+  "specs": [
+    { "label": "Lieu", "value": "Université de Toulon" },
+    { "label": "Programme", "value": "Réhabilitation, pôle de vie étudiante" },
+    { "label": "Statut", "status": true },
+    { "label": "Cadre", "value": "[À COMPLÉTER : étude, concours ou projet académique]" },
+    { "label": "Rôle", "value": "[À COMPLÉTER : rôle de Maxime Vallat]" },
+    { "label": "Année", "value": "[À COMPLÉTER : année]" }
+  ],
+  "similar": { "label": "Un lieu collectif à repenser ?", "type": "collectif" },
+  "chapters": [
+    {
+      "id": "hall",
+      "label": "Le hall",
+      "title": "Faire du hall un cœur de campus.",
+      "blocks": [
+        {
+          "type": "text",
+          "paragraphs": [
+            "Le Bâtiment S possède une identité forte : un grand hall, une hauteur généreuse et de larges ouvertures. Pourtant, ce potentiel était peu exploité. Les services et les activités étudiantes restaient dispersés, tandis que le bâtiment était davantage traversé qu’habité.",
+            "Le projet s’appuie sur cette structure existante pour organiser un lieu de vie lisible. L’enjeu n’est pas d’ajouter une succession de salles isolées, mais de créer des relations visibles entre les usages, les niveaux et les personnes.",
+            "La stratégie tient en une phrase : favoriser la cohésion étudiante par l’interconnectivité. Les fonctions de travail, de détente, de création, de sport et d’information se regroupent autour d’un même volume, avec différents degrés d’intensité et de calme."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "existant",
+      "label": "L’existant",
+      "kicker": "Le point de départ",
+      "title": "Préserver l’identité, activer les usages.",
+      "blocks": [
+        {
+          "type": "text",
+          "paragraphs": [
+            "Le projet conserve les qualités spatiales du bâtiment — sa double hauteur, ses façades vitrées et son grand hall — pour les rendre réellement disponibles à la vie quotidienne du campus."
+          ]
+        },
+        {
+          "type": "media",
+          "layout": "duo",
+          "items": [
+            { "src": "/images/projets/batiment-s/existant-02.jpg", "alt": "Le hall d’origine : grand escalier central, double hauteur et façades vitrées", "caption": "L’existant — le hall" },
+            { "src": "/images/projets/batiment-s/existant-03.jpg", "alt": "La trémie du R+1 vue de l’étage, garde-corps et baies vitrées", "caption": "L’existant — l’étage" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "passerelle",
+      "label": "La passerelle",
+      "title": "Une passerelle qui relie les fonctions.",
+      "blocks": [
+        {
+          "type": "text",
+          "paragraphs": [
+            "Le geste central est une passerelle multidirectrice déployée dans le grand hall. Une partie du plancher existant du R+1 est retirée pour prolonger la perception de la double hauteur et connecter directement les niveaux.",
+            "La circulation ne sert plus uniquement à aller d’un point à un autre. Elle devient un espace d’usage : un lieu pour déjeuner, faire une pause, observer l’activité du bâtiment et accéder aux différents pôles sans rompre avec le volume central."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "organisation",
+      "label": "Organisation spatiale",
+      "kicker": "Organisation spatiale",
+      "title": "Explorer les espaces du projet.",
+      "blocks": [
+        {
+          "type": "zoning",
+          "closed": { "src": "/images/projets/batiment-s/zoning-general.png", "alt": "Isométrie du Bâtiment S, façades fermées" },
+          "open": { "src": "/images/projets/batiment-s/zoning-vide.png", "alt": "" },
+          "overview": {
+            "label": "Vue générale",
+            "title": "Un volume commun à activer.",
+            "text": "Le Bâtiment S devient un ensemble continu où la grande hauteur, les circulations et les usages se répondent."
+          },
+          "openState": {
+            "label": "Bâtiment ouvert",
+            "title": "Un espace commun, lisible et traversant.",
+            "text": "Même hors des pôles identifiés, l’ouverture du bâtiment rend perceptibles les niveaux, les circulations et l’activité collective qui se développe autour du hall."
+          },
+          "zones": [
+            {
+              "id": "passerelle",
+              "label": "Intervention centrale",
+              "title": "Passerelle multidirectrice",
+              "text": "La passerelle relie les niveaux et plusieurs pôles du projet. Elle transforme la circulation en un lieu à part entière, utilisable pour se déplacer, faire une pause, déjeuner ou observer le hall.",
+              "layer": { "src": "/images/projets/batiment-s/zoning-passerelle.png", "alt": "" }
+            },
+            {
+              "id": "travail",
+              "label": "Pôle calme",
+              "title": "Espace de travail",
+              "text": "Une nouvelle plateforme et un R+2 utilisent des volumes auparavant inexploités. Le R+1 accueille une zone calme et insonorisée, tandis que les niveaux hauts bénéficient des vues et de la lumière des façades.",
+              "layer": { "src": "/images/projets/batiment-s/zoning-travail.png", "alt": "" },
+              "box": { "left": 2.6936, "top": 11.1351, "width": 82.2222 }
+            },
+            {
+              "id": "rangements",
+              "label": "Entrée Sud",
+              "title": "Entrée & rangements",
+              "text": "Des casiers et rangements sont installés à l’entrée Sud pour permettre aux étudiants de rester dans le bâtiment et d’y concentrer leurs activités sans multiplier les détours.",
+              "layer": { "src": "/images/projets/batiment-s/zoning-rangements.png", "alt": "" }
+            },
+            {
+              "id": "sport",
+              "label": "Aile Nord",
+              "title": "Espace sportif",
+              "text": "La salle de sport existante est agrandie et reconnectée à la vie générale du bâtiment. Elle devient un pôle visible et facilement accessible depuis le cœur du campus.",
+              "layer": { "src": "/images/projets/batiment-s/zoning-sport.png", "alt": "" }
+            },
+            {
+              "id": "art",
+              "label": "Aile Nord",
+              "title": "Espace arts",
+              "text": "L’espace dédié à l’art et à la musique rassemble les activités de création dans l’aile Nord, au contact direct des autres usages étudiants.",
+              "layer": { "src": "/images/projets/batiment-s/zoning-art.png", "alt": "" }
+            },
+            {
+              "id": "vie",
+              "label": "Pôle collectif",
+              "title": "Espace de vie",
+              "text": "Le grand hall devient un espace de détente et de convivialité. La double hauteur et la lumière naturelle font de ce volume le point de rencontre immédiat du bâtiment.",
+              "layer": { "src": "/images/projets/batiment-s/zoning-vie.png", "alt": "" }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "programmation",
+      "label": "Programmation",
+      "kicker": "Une programmation mixte",
+      "title": "Rester, travailler, créer, se retrouver.",
+      "blocks": [
+        {
+          "type": "media",
+          "layout": "full",
+          "items": [
+            { "src": "/images/projets/batiment-s/espace-vie.jpg", "alt": "Espace de vie du Bâtiment S : hall en double hauteur, gradins, végétation et étudiants" }
+          ]
+        },
+        {
+          "type": "text",
+          "paragraphs": [
+            "Autour du hall se distribuent les espaces de détente et de déjeuner, les bureaux du DEVE, les salles de travail collectif et individuel, les casiers de l’entrée Sud, les activités artistiques et l’extension de la salle de sport.",
+            "Le projet accueille aussi des usages plus informels : jeux, pique-nique, filet de détente, jardin extérieur et mobilier modulable. Le bâtiment devient un lieu où l’on peut rester, et non plus seulement passer."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "materiaux",
+      "label": "Matériaux",
+      "title": "Des matériaux au service de l’ouverture.",
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            { "title": "Bois", "text": "Le chêne et le contreplaqué apportent une continuité chaleureuse entre plateformes, circulations et mobilier." },
+            { "title": "Béton ciré", "text": "Au rez-de-chaussée, il unifie les sols et donne une base minérale qui met en valeur la végétation." },
+            { "title": "Verre & végétation", "text": "Le verre protège acoustiquement sans couper les vues ; la végétation anime la double hauteur et filtre certains rapports entre les espaces." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "plan-general",
+      "label": "Plan général",
+      "kicker": "Plan général",
+      "title": "Un programme regroupé autour du hall.",
+      "blocks": [
+        {
+          "type": "text",
+          "paragraphs": [
+            "Le plan rassemble les fonctions étudiantes dans un même ensemble et rend lisible leur articulation autour du volume central."
+          ]
+        },
+        {
+          "type": "media",
+          "layout": "full",
+          "items": [
+            { "src": "/images/projets/batiment-s/plan-general.jpg", "alt": "Plan général du Bâtiment S, rez-de-chaussée et R+1, avec légende des espaces", "fit": "contain" }
+          ]
+        },
+        {
+          "type": "download",
+          "label": "Ouvrir le plan général",
+          "href": "/images/projets/batiment-s/plan-general.pdf",
+          "meta": "PDF · 5,4 Mo"
+        }
+      ]
+    }
+  ]
+}
