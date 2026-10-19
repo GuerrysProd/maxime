@@ -41,6 +41,18 @@
       "storyTitle": "Réfléchir la lumière au cœur du bois.",
       "story": [
         "Le fauteuil associe une coque métallique à une assise textile plus souple. Ses faces réfléchissantes allègent visuellement la pièce et renvoient les variations de lumière du séjour, tandis que le tissu maintient une sensation de confort adaptée à un appartement de montagne."
+      ],
+      "insets": [
+        {
+          "label": "Déclinaison sur mesure",
+          "title": "Prévoir aussi les usages particuliers.",
+          "paragraphs": [
+            "Le séjour accueille aussi un panier pour le chien des occupants, conçu dans les mêmes matières et tonalités que le fauteuil. Cette demande précise est intégrée au projet comme un élément de mobilier à part entière : elle répond à un usage quotidien tout en préservant la cohérence des proportions, des finitions et de l’ambiance générale."
+          ],
+          "media": [
+            { "src": "/images/projets/duplex-pralong/panier-chien-fauteuil.jpg", "alt": "Panier pour chien sur mesure, coque métallique et coussin vert olive assortis au fauteuil" }
+          ]
+        }
       ]
     },
     {
@@ -104,6 +116,19 @@
       "story": [
         "La table a été pensée dans une optique de modularité et de flexibilité. Grâce à ses roulettes et à ses aimants en néodyme positionnés aux coins, elle peut s’assembler avec d’autres tables pour former de grandes tablées ou des configurations plus réduites.",
         "Le plateau repose sur un système d’encastrement par gravité, permettant un remplacement simple des pièces et un déplacement plus léger entre les différents bâtiments."
+      ],
+      "insets": [
+        {
+          "label": "Avec la table",
+          "title": "Les chaises.",
+          "paragraphs": [
+            "Les dossiers et assises sont en fibre de bois, afin de réutiliser les déchets de production des artisans bois installés dans les casemates."
+          ],
+          "media": [
+            { "src": "/images/projets/agora/agora-furniture-set.jpg", "alt": "La table Agora et ses chaises à dossier et assise en fibre de bois" },
+            { "src": "/images/projets/agora/agora-chair-back.jpg", "alt": "Dossier de chaise en fibre de bois" }
+          ]
+        }
       ]
     },
     {
@@ -140,6 +165,69 @@
       "summary": "[À COMPLÉTER : présentation de la pièce]",
       "media": [
         { "type": "image", "src": "/images/objets/seau-roche-ruinart/seaux-ruinart-01.jpg", "alt": "Deux seaux à champagne en bloc translucide, creusés d’une cavité sculptée, avec deux flûtes" }
+      ]
+        },
+    {
+      "slug": "suspension-agora",
+      "number": "08",
+      "name": "Suspension Agora",
+      "category": "Luminaire",
+      "type": "Luminaire — suspension",
+      "note": { "value": "Nouvelle pièce de la collection — nom à confirmer", "draft": true },
+      "materials": { "value": "Liège, structure métallique", "draft": true },
+      "dimensions": "[À COMPLÉTER : H × l × P]",
+      "light": "[À COMPLÉTER : source lumineuse]",
+      "edition": "[À COMPLÉTER : pièce unique ou série]",
+      "project": "agora",
+      "media": [
+        { "type": "image", "src": "/images/projets/agora/agora-suspension.jpg", "alt": "Suspension Agora : barre en liège sur structure métallique, suspendue à deux tiges" },
+        { "type": "image", "src": "/images/projets/agora/agora-banquet.jpg", "alt": "Suspensions Agora au-dessus des tables aimantées assemblées en banquet" }
+      ],
+      "summary": "Le liège et le métal des tables et des Totems, réunis dans une suspension qui éclaire vers le bas et vers le haut.",
+      "story": [
+        "La suspension synthétise l’identité visuelle de la collection de tables et chaises avec celle des Totems. Elle associe le liège à une structure métallique et diffuse une lumière directe vers le bas et indirecte vers les volumes supérieurs."
+      ]
+    },
+    {
+      "slug": "applique-ecorce-liege",
+      "number": "09",
+      "name": "Applique en écorce de liège",
+      "category": "Luminaire",
+      "type": "Luminaire — applique",
+      "note": { "value": "Pièce de Perchée (proposition pour Design Parade 2026) — nom à confirmer", "draft": true },
+      "materials": { "value": "Fragment d’écorce de chêne-liège, prélevé localement", "draft": true },
+      "dimensions": "[À COMPLÉTER : H × l × P]",
+      "light": "[À COMPLÉTER : source lumineuse]",
+      "edition": "[À COMPLÉTER : pièce unique ou série]",
+      "project": "perchee",
+      "media": [
+        { "type": "image", "src": "/images/projets/perchee/perchee-cork-sconce.jpg", "alt": "Applique dont l’abat-jour est un fragment d’écorce de chêne-liège, sur le mur de paille de lavande" }
+      ],
+      "summary": "Un abat-jour fait d’un simple fragment d’écorce de chêne-liège, utilisé tel quel.",
+      "storyTitle": "L’environnement comme ressource.",
+      "story": [
+        "L’applique s’inscrit dans cette logique. Son abat-jour : un simple fragment d’écorce de chêne-liège, prélevé localement et utilisé tel quel. Sans mise en forme, sans transformation.",
+        "On déplace des fragments du paysage à l’intérieur. L’objet ne s’impose pas, il inscrit discrètement la matière du lieu dans l’espace habité."
+      ]
+    },
+    {
+      "slug": "bougeoirs-mineraux",
+      "number": "10",
+      "name": "Bougeoirs minéraux",
+      "category": "Objet",
+      "type": "Objet — bougeoirs",
+      "note": { "value": "Pièce de Perchée (proposition pour Design Parade 2026) — à confirmer", "draft": true },
+      "materials": { "value": "Cailloux trouvés, percés", "draft": true },
+      "dimensions": "[À COMPLÉTER : H × l × P]",
+      "edition": "[À COMPLÉTER : pièce unique ou série]",
+      "project": "perchee",
+      "media": [
+        { "type": "image", "src": "/images/projets/perchee/perchee-03.jpg", "alt": "Bougeoirs en pierres percées posés sur la table, bougies allumées" }
+      ],
+      "summary": "Des cailloux trouvés et percés pour accueillir des bougies : la pierre ancre la flamme.",
+      "story": [
+        "Les bougeoirs posés sur la table sont réalisés à partir de cailloux simplement trouvés et percés pour accueillir des bougies. On détourne les éléments du sol pour répondre à un besoin immédiat.",
+        "La pierre, lourde et stable, permet d’ancrer la flamme, fragile et éphémère, sans la mettre en scène."
       ]
     }
   ]

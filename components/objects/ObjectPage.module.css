@@ -70,6 +70,62 @@
   padding-top: 8px;
 }
 
+.kicker {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.note {
+  font-size: 11px;
+}
+
+/* ---------- Encarts (déclinaison, pièce associée) ---------- */
+
+.inset {
+  align-items: center;
+  row-gap: 32px;
+  padding-bottom: 120px;
+}
+
+.insetMedia {
+  grid-column: 1 / span 6;
+  display: grid;
+  gap: var(--gutter);
+}
+
+.insetMedia[data-count="2"] {
+  grid-template-columns: 3fr 2fr;
+  align-items: end;
+}
+
+.insetFrame {
+  position: relative;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  background: #2c2222;
+}
+
+.insetMedia[data-count="2"] .insetFrame:first-child {
+  aspect-ratio: 4 / 3;
+}
+
+.insetText {
+  grid-column: 8 / span 5;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  font-size: 17px;
+  line-height: 1.7;
+  color: var(--color-pierre);
+}
+
+.insetTitle {
+  font-size: 40px;
+  line-height: 1.1;
+  color: var(--color-lin);
+}
+
 /* ---------- Histoire ---------- */
 
 .story {
@@ -312,8 +368,13 @@
   }
 
   .storyTitle,
-  .lightTitle {
+  .lightTitle,
+  .insetTitle {
     font-size: 34px;
+  }
+
+  .inset {
+    padding-bottom: 80px;
   }
 
   .light,

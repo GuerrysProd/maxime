@@ -117,7 +117,8 @@
           "media": [
             { "src": "/images/projets/perchee/perchee-cork-sconce.jpg", "alt": "Applique dont l’abat-jour est un fragment d’écorce de chêne-liège, sur le mur de paille" }
           ],
-          "layout": "media-left"
+          "layout": "media-left",
+          "object": "applique-ecorce-liege"
         },
         {
           "type": "feature",
@@ -130,7 +131,8 @@
           "media": [
             { "src": "/images/projets/perchee/perchee-03.jpg", "alt": "Bougeoirs en pierres percées posés sur la table, bougies allumées" }
           ],
-          "layout": "media-right"
+          "layout": "media-right",
+          "object": "bougeoirs-mineraux"
         }
       ]
     },

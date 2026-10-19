@@ -49,6 +49,7 @@
       "cover": { "src": "/images/projets/perchee/perchee-01.jpg", "alt": "Intérieur de la cabane Perchée : murs de terre et de paille, rideaux, table basse", "position": "42% 50%" },
       "hero": { "src": "/images/projets/perchee/perchee-01.jpg", "alt": "Intérieur de la cabane Perchée : murs de terre et de paille, rideaux, table basse" },
       "template": "chapitres",
+      "pieces": ["applique-ecorce-liege", "bougeoirs-mineraux"],
       "featured": true
     },
     {
@@ -100,7 +101,7 @@
       "cover": { "src": "/images/projets/agora/agora-01.jpg", "alt": "Espace de vie du tiers-lieu Agora : charpente bois, fauteuils enveloppants, totems en liège", "position": "30% 50%" },
       "hero": { "src": "/images/projets/agora/agora-01.jpg", "alt": "Espace de vie du tiers-lieu Agora : charpente bois, fauteuils enveloppants, totems en liège" },
       "template": "chapitres",
-      "pieces": ["totem-liege", "table-aimantee"]
+      "pieces": ["totem-liege", "table-aimantee", "suspension-agora"]
     },
     {
       "slug": "batiment-s",

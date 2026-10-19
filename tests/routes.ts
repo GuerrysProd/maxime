@@ -18,6 +18,9 @@ export const ROUTES = [
   "/objets/table-aimantee",
   "/objets/lampe-spotlight",
   "/objets/seau-roche-ruinart",
+  "/objets/suspension-agora",
+  "/objets/applique-ecorce-liege",
+  "/objets/bougeoirs-mineraux",
 ];
 
 /** Pages liées mais construites aux étapes suivantes (brief §10). À vider au fil des étapes. */

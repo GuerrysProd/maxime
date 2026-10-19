@@ -306,6 +306,8 @@ export const objectSchema = z.object({
   edition: draftable.optional(),
   project: z.string().nullable(),
   projectMissing: z.string().optional(),
+  /** Mention à valider affichée sous le type (pièce ajoutée, nom provisoire…). */
+  note: draftable.optional(),
   extraSpecs: z.array(z.object({ label: z.string(), value: draftable })).optional(),
   media: z.array(mediaItem).min(1),
   sketch: imageRef.optional(),
@@ -314,6 +316,10 @@ export const objectSchema = z.object({
   summary: z.string().optional(),
   storyTitle: z.string().optional(),
   story: z.array(z.string()).optional(),
+  /** Encarts : déclinaison ou pièce associée, présentée dans la fiche (panier, chaises…). */
+  insets: z
+    .array(z.object({ label: z.string(), title: z.string(), paragraphs: z.array(z.string()), media: z.array(figure).min(1) }))
+    .optional(),
 });
 export type ObjectPiece = z.output<typeof objectSchema>;
 

@@ -151,7 +151,8 @@
             { "src": "/images/projets/agora/agora-suspension.jpg", "alt": "Suspension en liège et métal conçue pour Agora" },
             { "src": "/images/projets/agora/agora-banquet.jpg", "alt": "Banquet : tables aimantées assemblées, chaises et suspensions" }
           ],
-          "layout": "media-left"
+          "layout": "media-left",
+          "object": "suspension-agora"
         },
         {
           "type": "feature",

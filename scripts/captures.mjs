@@ -39,6 +39,8 @@ const PAGES = [
   { name: "objet-applique-pinturault", path: "/objets/applique-pinturault", desktop: "06b-objet-applique-pinturault.html", mobile: null },
   { name: "objet-table-aimantee", path: "/objets/table-aimantee", desktop: null, mobile: null },
   { name: "objet-lampe-spotlight", path: "/objets/lampe-spotlight", desktop: null, mobile: null },
+  { name: "objet-fauteuil-pralong", path: "/objets/fauteuil-pralong", desktop: null, mobile: null },
+  { name: "objet-suspension-agora", path: "/objets/suspension-agora", desktop: null, mobile: null },
 ];
 
 const VIEWPORTS = [

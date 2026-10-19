@@ -57,7 +57,14 @@ export function ObjectPage({ piece }: { piece: ObjectPiece }) {
               <MediaSlot item={main} sizes="(max-width: 900px) 100vw, 58vw" preload />
             </figure>
             <div className={styles.intro}>
-              <p className="meta muted">{piece.type}</p>
+              <div className={styles.kicker}>
+                <p className="meta muted">{piece.type}</p>
+                {piece.note && (
+                  <p className={`meta muted ${styles.note}`}>
+                    <DraftText value={piece.note} />
+                  </p>
+                )}
+              </div>
               <h1 className={`serif ${styles.title}`}>{piece.name}</h1>
               {piece.summary && (
                 <p className={styles.summary}>
@@ -97,6 +104,35 @@ export function ObjectPage({ piece }: { piece: ObjectPiece }) {
               </div>
             </section>
           )}
+
+          {piece.insets?.map((inset, i) => (
+            <section key={inset.title} className={`wrap g12 ${styles.inset}`} aria-labelledby={`encart-${i}`} data-reveal="">
+              <div className={styles.insetMedia} data-count={inset.media.length}>
+                {inset.media.map((figure, j) => (
+                  <div key={j} className={styles.insetFrame}>
+                    <Image
+                      src={figure.image.src}
+                      alt={figure.image.alt}
+                      fill
+                      sizes="(max-width: 900px) 100vw, 40vw"
+                      placeholder={figure.image.blurDataURL ? "blur" : "empty"}
+                      blurDataURL={figure.image.blurDataURL}
+                      style={{ objectFit: "cover", objectPosition: figure.image.position }}
+                    />
+                  </div>
+                ))}
+              </div>
+              <div className={styles.insetText}>
+                <p className="meta muted">{inset.label}</p>
+                <h2 id={`encart-${i}`} className={`serif ${styles.insetTitle}`}>
+                  {inset.title}
+                </h2>
+                {inset.paragraphs.map((text, j) => (
+                  <p key={j}>{text}</p>
+                ))}
+              </div>
+            </section>
+          ))}
         </div>
 
         {(piece.sketch || more.length > 0) && (
